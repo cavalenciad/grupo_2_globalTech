@@ -24,3 +24,10 @@ Una breve descripción de los integrantes del equipo:
 - Mariana Quintero Castañeda: 
       Estudiante de estadística, fotógrafa y aficionada por el baile, la natación  y el aprendizaje de nuevas cosas.
       Correo: mqcyd09@gmail.com 
+      
+Referentes:
+- https://www.corsair.com/lm/es/
+- https://www.coolermaster.com/
+- https://www.hyperxgaming.com/es
+- https://www.aorus.com/es-co
+- https://clonesyperifericos.com/
