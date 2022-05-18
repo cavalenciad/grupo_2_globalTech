@@ -31,3 +31,5 @@ Referentes:
 - https://www.hyperxgaming.com/es
 - https://www.aorus.com/es-co
 - https://clonesyperifericos.com/
+
+Tablero: https://app.clickup.com/25733839/v/li/187585520
