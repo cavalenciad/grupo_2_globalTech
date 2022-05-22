@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+a{
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #959595;
+    transition: ease 0.5s;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    box-shadow: 0px 1px 5px #a3a3a3;
+}
+
+.navbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:hover{
+    color: #2962FF;
+}
+
+.fa-bars{
+    font-size: 28px;
+}
+
+
+@media (min-width: 0px) and (max-width: 576px){
+    header img{
+        width: 200px;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    header img{
+        width: 350px;
+    }
+
+    .navbar{
+        display: none;
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 1920px){
+    header img{
+        width: 350px;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+}  
+
+.cabecera {
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.listadoyCantidad{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+
+}
+
+.contenedor{
+    background-color: rgb(114, 101, 97);
+    width: 95%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagenproducto{
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+
+
+.boton button{
+    width: 50px;
+    height: 25px;
+    background-color: azure;
+
+}
