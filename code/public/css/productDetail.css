@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #959595;
+    transition: ease 0.5s;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    box-shadow: 0px 1px 5px #a3a3a3;
+}
+
+.navbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a:hover{
+    color: #2962FF;
+}
+
+.fa-bars{
+    font-size: 28px;
+}
+
+
+@media (min-width: 0px) and (max-width: 576px){
+    header img{
+        width: 200px;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    header img{
+        width: 350px;
+    }
+
+    .navbar{
+        display: none;
+    }
+} 
+
+@media (min-width: 769px) and (max-width: 1920px){
+    header img{
+        width: 350px;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+}  
+
+main{
+    padding: 10px;
+}
+
+.container{
+    display : flex;
+    flex-direction : row;
+}
+
+.imagen{
+    width: 100%;
+    height: 200px;
+    background-color: brown;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.productImage{
+    background-color: royalblue;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    margin: 10px;
+}
+
+.productDescription{
+    color: aqua;
+    font-weight: 100;
+    background-color: royalblue;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bigImage{
+    background-color: brown;
+    width: 100%;
+    height: 75%;
+}
+
+.imageDescription{
+    background-color: brown;
+    width: 25%;
+    height: 100%;
+    margin: 5px;
+}
+
+.bigImageDescription{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.blockDescription{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.colorSeleccion{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carrito{
+    width: 50%;
+}
+
+.masProductos{
+    width: 50%;
+}
+
+.compra{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.textDescription{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
