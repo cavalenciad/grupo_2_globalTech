@@ -33,3 +33,8 @@ Referentes:
 - https://clonesyperifericos.com/
 
 Tablero: https://app.clickup.com/25733839/v/li/187585520
+
+Paleta de colores del logo: 
+- #0091EA 
+- #2962FF
+- #00B8D4
