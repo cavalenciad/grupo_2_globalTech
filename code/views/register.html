@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <form action="/register" method="POST">
+        <div>
+            <label for="Email">Dirección de correo electronico</label>
+            <input type="email" name="Email" id="Email" required>
+        </div>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            <label for="pais">País</label>
+            <select name="pais">
+                <option value="CO">Colombia</option>
+                <option value="AR">Argentina</option>
+                <option value="BO">Bolivia</option>
+                <option value="BR">Brasil</option>
+                <option value="CA">Canadá</option>
+                <option value="CL">Chile</option>
+                <option value="CR">Costa Rica</option>
+                <option value="CU">Cuba</option>
+                <option value="EC">Ecuador</option>
+                <option value="SV">El Salvador</option>
+                <option value="US">Estados Unidos</option>
+                <option value="GT">Guatemala</option>
+                <option value="HT">Haití</option>
+                <option value="HN">Honduras</option>
+                <option value="UM">Islas menores de Estados Unidos</option>
+                <option value="VI">Islas Vírgenes (EEUU)</option>
+                <option value="JM">Jamaica</option>
+                <option value="MX">México</option>
+                <option value="NI">Nicaragua</option>
+                <option value="PA">Panamá</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="DO">República Dominicana</option>
+                <option value="UY">Uruguay</option>
+                <option value="VE">Venezuela</option>
+            </select>
+        </div>
+        <div>
+            <label for="Contraseña">Contraseña</label>
+            <input type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            <label for="confirmarContraseña">Confirmar Contraseña</label>
+            <input type="password" name="confirmarContraseña" id="confirmarContraseña" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            <input type="checkbox" name="aceptoTerminos" id="aceptoTerminos" required>
+            <label for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label>
+        </div>
+        <button type="submit">Registrar</button>
+        <button type="submit">¿Ya tiene una cuenta?</button>
+    </form>
+
+
+</body>
+
+</html>
