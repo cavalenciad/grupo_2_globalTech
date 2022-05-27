@@ -5,26 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
     <title>Registro</title>
 </head>
 
 <body>
     <form action="/register" method="POST">
+        <h3>Registro</h3>
         <div>
-            <label for="Email">Dirección de correo electronico</label>
-            <input type="email" name="Email" id="Email" required>
+            <input placeholder="Dirección de correo electronico" type="email" name="Email" id="Email" required>
         </div>
         <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" minlength="8" maxlength="15" required>
+            <input placeholder="Nombre" type="text" name="nombre" id="nombre" minlength="8" maxlength="15" required>
         </div>
         <div>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
+            
+            <input placeholder="Apellido" type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
         </div>
+        <label class="pais" for="pais">País</label>
         <div>
-            <label for="pais">País</label>
+            
             <select name="pais">
                 <option value="CO">Colombia</option>
                 <option value="AR">Argentina</option>
@@ -55,16 +55,14 @@
             </select>
         </div>
         <div>
-            <label for="Contraseña">Contraseña</label>
-            <input type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
+            <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
         </div>
         <div>
-            <label for="confirmarContraseña">Confirmar Contraseña</label>
-            <input type="password" name="confirmarContraseña" id="confirmarContraseña" minlength="8" maxlength="15" required>
+            <input placeholder="Confirmar contraseña" type="password" name="confirmarContraseña" id="confirmarContraseña" minlength="8" maxlength="15" required>
         </div>
-        <div>
+        <div class="aceptoTerminos">
             <input type="checkbox" name="aceptoTerminos" id="aceptoTerminos" required>
-            <label for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label>
+            <label  for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label>
         </div>
         <button type="submit">Registrar</button>
         <button type="submit">¿Ya tiene una cuenta?</button>
