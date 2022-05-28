@@ -1,19 +1,23 @@
 *{
+    font-family: roboto;
     margin: 8px;
     padding: 3px;
     box-sizing: border-box;
 } 
 
+/*--- Estilos register.css---*/
 form{
     
     flex-wrap: wrap;
-    width: 45%;
+    width: 50%;
     margin: 0 auto;
-    border-radius: 45%;
-    background-color: #4B0082;
+    border-style: 45%;
+    background-color:brown;
+    justify-items: center;
     font-family: cursive;
     text-align: center;
-    
+    padding: 65px;
+    margin-top: 5px;
     
 }
 
@@ -22,9 +26,10 @@ body{
 }
 
 input{
-    width: 40%;
+    width: 56%;
+    height: 10px;
     padding: 10px;
-    margin: 25px;
+    margin: 0px;
     border-radius: 5px;
 }
 
@@ -34,18 +39,37 @@ h3{
    color: white; 
    text-align: center;
    font-size: 30px;
+   font-family: cursive;
 
+}
+
+select{
+    font-size: 12px;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 .pais{
+    
     color:aliceblue;
-    padding: 15px;
-    text-align: 20px;
+    font-size: 15px;
+    position: relative;
+    right: 90px;
+    
+    margin: 0px;
+    border-radius: 5px;
+    
 }
 
 .aceptoTerminos{
-    text-align:center;
-    position: relative;
-    right: 170px;
+    font-size: 10px;
+    text-align:justify;
+    
+}
+
+.register{
+
+    text-align: center;
 }
 
