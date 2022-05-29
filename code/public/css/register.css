@@ -1,75 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+
 *{
     font-family: roboto;
-    margin: 8px;
-    padding: 3px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
     box-sizing: border-box;
 } 
+/*----Titulo Registro----*/
+form h3{
+    margin: 0;
+   color: white; 
+   text-align: center;
+   height: 40px;
+   margin-bottom: 30px;
+   border-bottom: 1px solid;
+   font-size: 20px;
+   
+
+}
 
 /*--- Estilos register.css---*/
 form{
-    
-    flex-wrap: wrap;
-    width: 50%;
+    width: 350px;
+    height: 420px;
+    background-color: #4e4d4d;
     margin: 0 auto;
-    border-style: 45%;
-    background-color:brown;
-    justify-items: center;
-    font-family: cursive;
+    margin-top: 40px;
+    box-shadow: 0px 0px 0px #9d9d9d;
+    padding:  10px 20px;
+    border-top: 4px solid #017bab;
+    color: white;
     text-align: center;
-    padding: 65px;
-    margin-top: 5px;
-    
+    border-radius: 5px;
+      
 }
 
 body{
-    justify-content: center;
+    background-image: url("/images/Images_login_register/background-register.jpg");
+    background-size: cover;
+    
 }
 
 input{
-    width: 56%;
+    width: 90%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    color:grey;
     height: 10px;
-    padding: 10px;
-    margin: 0px;
+    padding: 11px 10px;
+    font-size: 10px;
+    font-weight: bold;
     border-radius: 5px;
-}
-
-
-
-h3{
-   color: white; 
-   text-align: center;
-   font-size: 30px;
-   font-family: cursive;
-
+    position: relative;
 }
 
 select{
-    font-size: 12px;
-    padding: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    width: 90%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    color:grey;
+    height: 30px;
+    padding: 7px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+
 }
 
-.pais{
+
+
+
+
+
+
+.estiloPais{
+    font-family: roboto;
     
-    color:aliceblue;
-    font-size: 15px;
-    position: relative;
-    right: 90px;
-    
-    margin: 0px;
-    border-radius: 5px;
-    
+}
+
+form p a{
+    font-size: 10px;
+    color: #fff;
+    text-decoration: none;
+
 }
 
 .aceptoTerminos{
     font-size: 10px;
-    text-align:justify;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    text-align:start;
     
 }
 
-.register{
-
-    text-align: center;
+#aceptoTerminos{
+    width: 20px;
 }
+
+button{
+    width: 100px;
+    height: 40px;
+    background-color: #017bab;
+    border: none;
+    color:white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
 

@@ -8,6 +8,10 @@
     font-family: roboto;
 }
 
+body{
+    background-image: url("/");
+}
+
 /* -------------- CABECERA ------------- */
 
 header{
@@ -21,7 +25,7 @@ header{
     position: fixed;
 }
 
-.navbar{
+.Snavbar{
     width: 70%;
     display: flex;
     justify-content: space-around;
@@ -37,7 +41,7 @@ a{
     transition: ease 0.5s;
 }
 
-.navbar a:hover{
+.Snavbar a:hover{
     color: #2962FF;
 }
 
@@ -50,13 +54,13 @@ a{
 
 /* ---------------- SLIDE ---------- */
 
-.carrusel img{
+.Scarrusel img{
     width: 100%;
 }
 
 /* ---------------- SECCIÓN PRICIPAL HOME ---------- */
 
-.seccionPrincipalHome{
+.SseccionPrincipalHome{
     text-align: center;
     width: 90%;
     margin: auto;
@@ -65,12 +69,12 @@ a{
 
 }
 
-.seccionPrincipalHome h1{
+.SseccionPrincipalHome h1{
    font-size: 40px;
    color: #2962FF;
 }
 
-.seccionPrincipalHome p{
+.SseccionPrincipalHome p{
     margin-top: 20px;
     font-size: 18px;
 
@@ -78,14 +82,14 @@ a{
 
 /* ---------------- CATEGORIAS DESTACADAS ---------- */
 
-.categoriasDestacadas{
+.ScategoriasDestacadas{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 15px;
 }
 
-.categoriasDestacadas div{
+.ScategoriasDestacadas div{
     margin-top: 7px;
     margin-bottom: 7px;
     width: 100%;
@@ -96,7 +100,7 @@ a{
 
 /* ---------------- PRODUCTOS DESTACADOS ---------- */
 
-.seccionProductosHome{
+.SseccionProductosHome{
     text-align: center;
     width: 90%;
     margin: auto;
@@ -104,19 +108,72 @@ a{
     margin-bottom: 50px;
 }
 
-.seccionProductosHome h2{
+.SseccionProductosHome h2{
     font-size: 36px;
     color: #2962FF;
  }
  
- .seccionProductosHome p{
+ .SseccionProductosHome p{
      margin-top: 20px;
      font-size: 18px;
  
  }
 
+/* ---------------- CAJAS DE PRODUCTOS ---------- */
 
-/* ---------- MEDIA QUERY ----------- */
+.SproductosDestacados{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+.SproductosDestacados div{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 100%;
+    height: 350px;
+    box-shadow: 0px 0px 5px #9d9d9d;
+    border-radius: 10px;
+}
+
+/* ---------------- PIE DE PAGINA ---------- */
+
+.Sfooter{
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Sfooter div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sfooter img{
+    width: 100%;
+}
+
+.Sfooter h3{
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sfooter p{
+    margin-top: 15px;
+}
+
+
+/* ---------- MEDIA QUERYS ----------- */
 
 
 @media (min-width: 0px) and (max-width: 576px){
@@ -125,34 +182,60 @@ a{
         width: 200px;
     }
 
-    .navbar{
+    .Snavbar{
         display: none;
+    }
+
+    /* ------------- CATEGORIAS PRODUCTOS ----------- */
+
+    .ScategoriasDestacadas div{
+        width: 22.50%;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
-@media (min-width: 577px) and (max-width: 768px){
+@media (min-width: 577px) and (max-width: 899px){
 
     header img{
         width: 350px;
     }
 
-    .navbar{
+    .Snavbar{
         display: none;
     }
 
-    .seccionPrincipalHome{
+    /* ------------- CATEGORIAS PRODUCTOS ----------- */
+
+    .SseccionPrincipalHome{
         width: 90%;
     }
 
-    .categoriasDestacadas div{
-        width: 48%;
-        height: 300px;
+    .ScategoriasDestacadas div{
+        width: 22.50%;
+        height: 150px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    /* ------------- CAJAS PRODUCTOS ----------- */
+
+    .SproductosDestacados div{
+        width: 46%;
+        height: 300px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter img{
+        width: 50%;
+    }
 } 
 
-@media (min-width: 769px) and (max-width: 1920px){
+@media (min-width: 900px) and (max-width: 1920px){
 
     header img{
         width: 350px;
@@ -162,12 +245,34 @@ a{
         display: none;
     }
 
-    .seccionPrincipalHome{
+    /* ------------- CATEGORIAS PRODUCTOS ----------- */
+
+    .SseccionPrincipalHome{
         width: 70%;
     }
 
-    .categoriasDestacadas div{
-        width: 24%;
-        height: 350px;
+    .ScategoriasDestacadas div{
+        width: 11.25%;
+        height: 170px;
     }
+
+    /* ------------- CAJAS PRODUCTOS ----------- */
+
+    .SproductosDestacados div{
+        width: 24%;
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter div{
+        width: 30%;
+    }
+
+    .Sfooter img{
+        width: 80%;
+    }
+
 } 

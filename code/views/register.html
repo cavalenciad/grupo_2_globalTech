@@ -25,10 +25,11 @@
             
             <input placeholder="Apellido*" type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
         </div>
-        <label class="pais" for="pais">País</label>
-        <div>
+             
+        <div >
             
-            <select name="pais">
+            <select> 
+                <option value="seleccionarPais">Seleccionar país</option>
                 <option value="CO">Colombia</option>
                 <option value="AR">Argentina</option>
                 <option value="BO">Bolivia</option>
@@ -63,12 +64,13 @@
         <div>
             <input placeholder="Confirmar contraseña*" type="password" name="confirmarContraseña" id="confirmarContraseña" minlength="8" maxlength="15" required>
         </div>
-        <div >
+        <div class="aceptoTerminos">
+            
             <input type="checkbox" name="aceptoTerminos" id="aceptoTerminos" required>
-            <label  class="aceptoTerminos" for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label>
+            <label   for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label> 
         </div>
         <button type="submit">Registrarse</button>
-        <i type="submit">¿Ya tiene una cuenta?</i>
+        <p><a  href="#">¿Ya tiene una cuenta?</a></p>
     </form>
 
 
