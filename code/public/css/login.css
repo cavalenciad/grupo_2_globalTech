@@ -1,38 +1,85 @@
-*{
-    margin: 8px;
-    padding: 3px;
-    box-sizing: border-box;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 
-form{
-    
-    flex-wrap: wrap;
-    width: 45%;
-    margin: 0 auto;
-    border-radius: 45%;
-    background-color: #4B0082;
-    font-family: cursive;
-    text-align: center;
-    
-    
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    justify-content: center;
+    background-image: url("/images/Images_login_register/fondo-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-input{
-    width: 40%;
-    padding: 10px;
-    margin: 25px;
+form {
+    width: 400px;
+    height: auto;
+    background-color: #4e4d4d;
+    margin: 0 auto;
+    margin-top: 180px;
+    box-shadow: 2px 2px 15px #9d9d9d;
+    padding: 20px 30px;
+    border-top: 4px solid #0091EA;
+    color: white;
+    text-align: center;
+}
+
+form h3 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+
+input {
+    width: 90%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    background-color: white;
+    height: 10px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
     border-radius: 5px;
 }
 
+.jBotones {
+    width: 100px;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+form p {
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
 
-h3{
-   color: white; 
-   text-align: center;
-   font-size: 30px;
+form a {
+    color: white ;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+form a:hover {
+    text-decoration: underline;
 
 }
+
+
+
+
+
+
+
