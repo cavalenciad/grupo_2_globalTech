@@ -87,7 +87,14 @@ select{
 
 }
 
+<<<<<<< HEAD
 
+=======
+.estiloPais{
+    font-family: roboto;
+    
+}
+>>>>>>> 179e5808d1bd76a74d7a7a78c9fb8479c861ec3a
 
 form p a{
     font-size: 10px;
@@ -101,6 +108,7 @@ form p a{
     padding-left: 30px;
     padding-right: 10px;
     text-align:start;   
+<<<<<<< HEAD
     flex-wrap: wrap;
     position: relative;
     left: 10px;
@@ -114,6 +122,8 @@ form p a{
   position: relative;
   top: 2px;
   right: 4px;
+=======
+>>>>>>> 179e5808d1bd76a74d7a7a78c9fb8479c861ec3a
 }
 
 #aceptoTerminos{

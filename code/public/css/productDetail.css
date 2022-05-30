@@ -96,8 +96,21 @@ main{
     width: 100%;
     padding: 10px;
     margin: 10px;
-    border: solid rgb(39, 39, 39, 0.5) 2px;
+    border: solid rgb(39, 39, 39, 0.5) 1px;
     border-radius: 5px;
+    align-self: center;
+}
+
+.namePrice .name{
+    font-size: 50px;
+    color: rgb(39, 39, 39);
+    text-align: center;
+}
+
+.namePrice p{
+    font-size: 20px;
+    color: rgb(39, 39, 39);
+    text-align: center;
 }
 
 .bigImage img{
@@ -128,25 +141,26 @@ main{
     margin: 5px;
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
-.colorSeleccion{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.carrito{
+#color{
+    background-color: transparent;
+    border: solid 1px rgb(39, 39, 39);
     width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
-.masProductos{
+.cart, .buy{
+    background-color: transparent;
+    border: solid 1px rgb(39, 39, 39);
     width: 50%;
-}
-
-.compra{
-    width: 100%;
-    margin: 0 auto;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .textDescription{
@@ -154,4 +168,9 @@ main{
     margin: 5px;
     padding: 5px;
     text-align: justify;
+    color: rgb(39, 39, 39);
+}
+
+.textDescription p{
+    font-size: 20px;
 }
