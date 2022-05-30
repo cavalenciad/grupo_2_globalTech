@@ -14,16 +14,31 @@ body{
 }
 
 form {
-    width: 400px;
+    width: 25%;
     height: auto;
-    background-color: #4e4d4d;
     margin: 0 auto;
-    margin-top: 180px;
-    box-shadow: 2px 2px 15px #9d9d9d;
+    margin-top: 500px;
     padding: 20px 30px;
-    border-top: 4px solid #0091EA;
+    border-top: 4px solid #017bab;
     color: white;
     text-align: center;
+    border-radius: 8px;
+    position : relative;
+    left: 15%;
+    box-shadow: 0px 0px 3px #9d9d9d;
+}
+
+form input {
+    width: 78%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    color:grey;
+    height: 5px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
 }
 
 form h3 {
@@ -48,19 +63,22 @@ input {
 }
 
 .jBotones {
-    width: 100px;
+    width: 120px;
     height: 40px;
-    background: #017bab;
+    background-color: #017bab;
     border: none;
-    color: white;
-    margin-bottom: 16px;
+    color:white;
+    margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
 }
 
-form p {
+.jOlvidaste {
     height: 40px;
     text-align: center;
     border-bottom: 1px solid;
@@ -69,17 +87,107 @@ form p {
 form a {
     color: white ;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 form a:hover {
     text-decoration: underline;
+}
 
+.content-input input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+ 
+.content-input input{
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.content-input{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 60px;
+	display: block;
+}
+ 
+.content-input input + i{
+       background: #f0f0f0;
+       border:2px solid rgba(0,0,0,0.2);
+       position: absolute; 
+       left: 100px;
+       top: 8px;
+}
+ 
+.content-input input[type=checkbox ] + i{
+	width: 35px;
+	height: 15px;
+	border-radius: 15px;
+}
+
+.content-input input[type=checkbox] + i:before{
+	content: ''; /* No hay contenido */
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.content-input input[type=checkbox]:checked + i:before{
+	left: 20px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+ 
+.content-input input[type=checkbox]:checked + i{
+ background: #017bab;
 }
 
 
+/*------Media Queries--------*/
 
 
+/*---Media Querie Móvil---*/
 
+@media (min-width: 280px) and (max-width: 576px){
+
+form{
+        width: 80%;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+}
+}
+
+/*---Media Querie Tablet---*/
+
+@media (min-width: 577px) and (max-width: 768px){
+    form{
+        width: 500px;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+}
+} 
+
+/*---Media Querie Desktop---*/
+
+@media (min-width: 769px) and (max-width: 1920px){
+    form{
+        width: 500px;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+    }
+}  
 
 

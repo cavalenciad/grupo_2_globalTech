@@ -23,6 +23,7 @@ header{
     box-shadow: 0px 1px 5px #a3a3a3;
     background-color: #fff;
     position: fixed;
+    z-index: 1;
 }
 
 .Snavbar{
@@ -34,6 +35,11 @@ header{
 /* -------------- ESTILOS ITEMS MENU ------------- */
 
 a{
+<<<<<<< HEAD
+    
+=======
+    font-size: 16px;
+>>>>>>> 179e5808d1bd76a74d7a7a78c9fb8479c861ec3a
     font-family: roboto;
     letter-spacing: 2px;
     font-weight: 600;
@@ -80,6 +86,10 @@ a{
 
 }
 
+.fa-bridge-suspension{
+    width: 50px;
+}
+
 /* ---------------- CATEGORIAS DESTACADAS ---------- */
 
 .ScategoriasDestacadas{
@@ -93,9 +103,34 @@ a{
     margin-top: 7px;
     margin-bottom: 7px;
     width: 100%;
-    height: 350px;
+    height: 512px;
     box-shadow: 0px 0px 5px #9d9d9d;
     border-radius: 10px;
+}
+
+.Scategoria{
+    text-align: center;
+}
+
+.Scategoria{
+    transition: all 0.2s ease;
+}
+
+.Scategoria p{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00B8D4;
+}
+
+.Scategoria:hover{
+    transform: translateY(-20px);
+}
+
+.ScategoriasDestacadas img{
+    width: 80%;
+
 }
 
 /* ---------------- PRODUCTOS DESTACADOS ---------- */
@@ -133,9 +168,47 @@ a{
     margin-top: 7px;
     margin-bottom: 7px;
     width: 100%;
-    height: 350px;
+    height: auto;
     box-shadow: 0px 0px 5px #9d9d9d;
     border-radius: 10px;
+}
+
+/* ---------------- PRODUCTOS ---------- */
+
+.Sproducto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.Sproducto img{
+    width: 55%;
+}
+
+.Sproducto h4{
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sproducto p{
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+   
+}
+
+.Sproducto a{
+    padding: 10px;
+    color: #ffffff;
+    background-color: #2962FF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #c3c3c3;
+    margin-bottom: 15px;
 }
 
 /* ---------------- PIE DE PAGINA ---------- */
@@ -175,7 +248,6 @@ a{
 
 /* ---------- MEDIA QUERYS ----------- */
 
-
 @media (min-width: 0px) and (max-width: 576px){
 
     header img{
@@ -190,9 +262,13 @@ a{
 
     .ScategoriasDestacadas div{
         width: 22.50%;
-        height: 100px;
+        height: 120px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .Scategoria p{
+        font-size: 16px;
     }
 }
 
@@ -214,7 +290,7 @@ a{
 
     .ScategoriasDestacadas div{
         width: 22.50%;
-        height: 150px;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -223,10 +299,25 @@ a{
 
     .SproductosDestacados div{
         width: 46%;
-        height: 300px;
-        margin-top: 5px;
+        height: auto;
+        margin-top: 15px;
         margin-bottom: 5px;
     }
+
+
+    /* ---------------- PRODUCTOS ---------- */
+
+    .Sproducto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+}
+
+    .Sproducto img{
+        width: 65%;
+}
     
     /* ---------------- PIE DE PAGINA ---------- */
 
@@ -238,7 +329,7 @@ a{
 @media (min-width: 900px) and (max-width: 1920px){
 
     header img{
-        width: 350px;
+        width: 200px;
     }
 
     .fa-bars{
@@ -253,17 +344,31 @@ a{
 
     .ScategoriasDestacadas div{
         width: 11.25%;
-        height: 170px;
+        height: auto;
     }
 
     /* ------------- CAJAS PRODUCTOS ----------- */
 
     .SproductosDestacados div{
         width: 24%;
-        height: 300px;
+        height: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    /* ---------------- PRODUCTOS ---------- */
+
+    .Sproducto{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+}
+
+    .Sproducto img{
+        width: 65%;
+}
 
     /* ---------------- PIE DE PAGINA ---------- */
 
@@ -275,4 +380,7 @@ a{
         width: 80%;
     }
 
-} 
+}
+
+
+

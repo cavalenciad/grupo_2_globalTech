@@ -13,21 +13,40 @@
 </head>
 
 <body>
-    <form  action="/register" method="POST">
-        <h3>Registro</h3>
-        <div>
-            <input placeholder="Dirección de correo electronico*" type="email" name="Email" id="Email" required>
-        </div>
-        <div>
-            <input placeholder="Nombre*" type="text" name="nombre" id="nombre" minlength="8" maxlength="15" required>
-        </div>
-        <div>
-            
-            <input placeholder="Apellido*" type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
-        </div>
-             
-        <div >
-            
+  <header>
+    <!-------- LOGO -------->
+    <img src="images/Logo-letras.png" alt="Logo Global Tech">
+    <!-------- NAVBAR -------->
+    <nav class="Snavbar">
+        <a href="/">INICIO</a>
+        <a href="#">QUIÉNES SOMOS</a>
+        <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
+        <a href="/productCart">CARRITO DE COMPRAS</a>
+        <a href="/registro">REGISTRO</a>
+        <a href="/login">LOGIN</a>
+
+    </nav>
+    <!-------- ICONO MENU HAMBURGUESA -------->
+    <div class="Sburger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
+    <form class="MformRegister" action="#">
+        <h3>Regístrate en Global Tech</h3>
+        
+          <div>
+            <input type="email" placeholder="Email*" required>
+          
+          <div>
+            <input type="text" placeholder="Nombre*"  required>
+          </div>
+          <div>
+            <input type="text" placeholder="Apellidos*"  required>
+          </div>
+          <div>
+            <input type="text" placeholder="Nombre de usuario*" maxlength="10"  required>
+          </div>
+          <div class="Mpais">
             <select> 
                 <option value="seleccionarPais">Seleccionar país</option>
                 <option value="CO">Colombia</option>
@@ -58,6 +77,46 @@
                 <option value="VE">Venezuela</option>
             </select>
         </div>
+          <div>
+            <input type="password" placeholder="Contraseña*" maxlenght="10" required>
+          </div>
+          <div>
+            <input type="password" placeholder="Confirmar contraseña*" maxlenght="10" required>
+          </div>
+        </div>
+        
+        </div>
+        <div class="MaceptoTerminos">
+                <input  class="Mcheckbox" type="checkbox" id="aceptoTerminos">Acepto los
+                <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
+                 y la
+                  <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
+                
+         </div>
+        <div class="Mbutton">
+          <input href="/grupo_2_globalTech/code/views/login.html" type="submit" id="yaTengoCuenta" value="YA TENGO CUENTA">
+          <input type="submit" id="Registrarse" value="REGISTRARSE">
+          
+        </div>
+      </div>
+    </div>
+    
+    <!----
+    <form  action="/register" method="POST">
+        <h3>Registro</h3>
+        <div>
+            <input placeholder="Dirección de correo electronico*" type="email" name="Email" id="Email" required>
+        </div>
+        <div>
+            <input placeholder="Nombre*" type="text" name="nombre" id="nombre" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            
+            <input placeholder="Apellido*" type="text" name="apellido" id="apellido" minlength="8" maxlength="15" required>
+        </div>
+    -->
+        
+        <!--
         <div>
             <input placeholder="Contraseña*" type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
         </div>
@@ -65,15 +124,14 @@
             <input placeholder="Confirmar contraseña*" type="password" name="confirmarContraseña" id="confirmarContraseña" minlength="8" maxlength="15" required>
         </div>
         <div class="aceptoTerminos">
-            
-            <input type="checkbox" name="aceptoTerminos" id="aceptoTerminos" required>
-            <label   for="aceptoTerminos">Acepto los términos y condiciones y la política de privacidad</label> 
-        </div>
+            <span>
+                <input  class="checkbox" type="checkbox" id="aceptoTerminos">Acepto los
+                <a href="#" target="_blank">términos y condiciones</a>
+                 y la
+                  <a href="#" target="_blank">política de privacidad.</a>
+                </span>
+         </div>
         <button type="submit">Registrarse</button>
-        <p><a  href="#">¿Ya tiene una cuenta?</a></p>
+        <p><a href="#">¿Ya tiene una cuenta?</a></p>
     </form>
-
-
-</body>
-
-</html>
+    -->
