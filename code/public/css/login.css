@@ -16,16 +16,16 @@ body{
 form {
     width: 25%;
     height: auto;
-    background-color: rgba(220, 220, 220, 0.622);;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 500px;
     padding: 20px 30px;
-    border-top: 4px solid #0091EA;
+    border-top: 4px solid #017bab;
     color: white;
     text-align: center;
     border-radius: 8px;
     position : relative;
     left: 15%;
+    box-shadow: 0px 0px 3px #9d9d9d;
 }
 
 form input {
@@ -155,51 +155,38 @@ form a:hover {
 
 /*------Media Queries--------*/
 
+
 /*---Media Querie Móvil---*/
 
-@media (min-width: 0px) and (max-width: 576px){
-    header img{
-        width: 200px;
-    }
+@media (min-width: 280px) and (max-width: 576px){
 
-    .navbar{
-        display: none;
-    }
-
-    .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
-        font-size: 9px;
-    }
-
-    .QlistadoyCantidad{
-        font-size: 15px;
-    }
-
-    .Qtitulo{
-        font-size: 20px;
-    }    
+form{
+        width: 80%;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+}
 }
 
 /*---Media Querie Tablet---*/
 
 @media (min-width: 577px) and (max-width: 768px){
-    header img{
-        width: 350px;
-    }
-
-    .navbar{
-        display: none;
-    }
+    form{
+        width: 500px;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+}
 } 
 
 /*---Media Querie Desktop---*/
 
 @media (min-width: 769px) and (max-width: 1920px){
-    header img{
-        width: 350px;
-    }
-
-    .fa-bars{
-        display: none;
+    form{
+        width: 500px;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
     }
 }  
 
