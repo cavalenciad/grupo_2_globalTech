@@ -69,12 +69,6 @@ select{
 
 }
 
-
-
-
-
-
-
 .estiloPais{
     font-family: roboto;
     
@@ -91,9 +85,7 @@ form p a{
     font-size: 10px;
     padding-left: 10px;
     padding-right: 10px;
-
-    text-align:start;
-    
+    text-align:start;   
 }
 
 #aceptoTerminos{

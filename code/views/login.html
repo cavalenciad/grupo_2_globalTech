@@ -11,14 +11,20 @@
         <form action="/login" method="POST">
             <h3>Iniciar Sesión</h3>
         <div>
-            <input placeholder="Dirección de correo electrónico" type="email" name="Email" id="Email" required>
+            <input placeholder="Email" type="email" name="Email" id="Email" required>
         </div> 
         <div>
-            <input placeholder="Contraseña"type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
+            <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
+        </div>
+        <div>
+            <label class="content-input">
+                <input type="checkbox" name="recuerdame" id="recuerdame" value="recuerdame">Recuerdame
+                <i></i>
+            </label>
         </div>
         <button class="jBotones" type="submit">Iniciar Sesión</button>
-        <button class="jBotones"type="submit">Registrarse</button>
-        <p class="jOlvidaste"> <a href="#">¿Olvidaste tu contraseña?</a></p>
+        <p class="jNoCuenta"> <a href="#">¿Aún no tiene una cuenta?</a>
+        </p><p class="jOlvidaste"> <a href="#">¿Ha olvidado su contraseña?</a></p>
         </form>
     
 </body>
