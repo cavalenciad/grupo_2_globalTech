@@ -18,7 +18,7 @@ form {
     height: auto;
     background-color: rgba(220, 220, 220, 0.622);;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px 30px;
     border-top: 4px solid #0091EA;
     color: white;
@@ -118,7 +118,7 @@ form a:hover {
        background: #f0f0f0;
        border:2px solid rgba(0,0,0,0.2);
        position: absolute; 
-       left: 85px;
+       left: 100px;
        top: 8px;
 }
  
