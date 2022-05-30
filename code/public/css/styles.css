@@ -34,6 +34,7 @@ header{
 /* -------------- ESTILOS ITEMS MENU ------------- */
 
 a{
+    
     font-family: roboto;
     letter-spacing: 2px;
     font-weight: 600;
@@ -238,7 +239,7 @@ a{
 @media (min-width: 900px) and (max-width: 1920px){
 
     header img{
-        width: 350px;
+        width: 200px;
     }
 
     .fa-bars{

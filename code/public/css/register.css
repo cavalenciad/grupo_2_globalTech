@@ -16,53 +16,71 @@ form h3{
    margin-bottom: 30px;
    border-bottom: 1px solid;
    font-size: 20px;
+
    
 
 }
 
-/*--- Estilos register.css---*/
+/*--- Estilos CAJA COMPLETA---*/
 form{
-    width: 350px;
-    height: 420px;
-    background-color: #4e4d4d;
+    width: 24%;
+    height: 70%;
+    
     margin: 0 auto;
-    margin-top: 40px;
-    box-shadow: 0px 0px 0px #9d9d9d;
+    margin-top: 145px;
+    box-shadow: 0px 0px 3px #9d9d9d;
     padding:  10px 20px;
     border-top: 4px solid #017bab;
     color: white;
     text-align: center;
     border-radius: 5px;
-      
+    align-items: center;
 }
 
 body{
-    background-image: url("/images/Images_login_register/background-register.jpg");
+    background-image: url("/images/Images_login_register/backgroundRegister.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
     
 }
 
+
 input{
-    width: 90%;
+    width: 82%;
     border: 1px solid white;
     margin-bottom: 15px;
-    color:grey;
-    height: 10px;
+    color: #000000;
+    height: 34px;
     padding: 11px 10px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     position: relative;
+
+}
+
+
+.pais{
+  width: 91%;
+  position: relative;
+  left: 20px;
+  height: 34px;
+  padding-bottom: 46px;
+  font-size: 15px;
+  
 }
 
 select{
     width: 90%;
     border: 1px solid white;
-    margin-bottom: 15px;
+    
     color:grey;
-    height: 30px;
+    height: 35px;
     padding: 7px 8px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 5px;
     position: relative;
@@ -70,15 +88,6 @@ select{
 }
 
 
-
-
-
-
-
-.estiloPais{
-    font-family: roboto;
-    
-}
 
 form p a{
     font-size: 10px;
@@ -88,27 +97,131 @@ form p a{
 }
 
 .aceptoTerminos{
-    font-size: 10px;
-    padding-left: 10px;
+    font-size: 12px;
+    padding-left: 30px;
     padding-right: 10px;
+    text-align:start;   
+    flex-wrap: wrap;
+    position: relative;
+    left: 10px;
+}
 
-    text-align:start;
-    
+.terminosPolitica{
+  color: #0091EA;
+}
+
+.checkbox{
+  position: relative;
+  top: 2px;
+  right: 4px;
 }
 
 #aceptoTerminos{
-    width: 20px;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0.8px;
 }
 
-button{
-    width: 100px;
+form a:hover {
+    text-decoration: underline;
+}
+
+
+  form .button {
+    height: 35px;
+    margin: 25px 0;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 22px;
+  }
+   
+
+   form .button input {
+    width: 130px;
     height: 40px;
-    background-color: #017bab;
+    background-color: #0091EA;
     border: none;
     color:white;
     margin-bottom: 10px;
     border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    margin-bottom: 45px;
+    
+}
+   form .button input:hover{
+     transform: scale(0.99); 
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    }
+
+    .register{
+      position: relative;
+      bottom: 20px;
+    }
+
+    
+/*---- Media querys Movil---
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    form {
+        width: 50px;
+    }
+
+    form{
+        display: none;
+    }
+
 }
 
+---- Media querys Tablet---
+
+@media (min-width: 577px) and (max-width: 899px) {
+
+    header img {
+        width: 350px;
+    }
 
 
+}
+
+---- Media querys Escritorio---
+
+@media (min-width: 900px) and (max-width: 1920px) {
+
+    header img {
+        width: 200px;
+    }
+}
+
+   @media(max-width: 584px){
+   .container{
+    max-width: 100%;
+  }
+  form .user-details .input-box{
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    form .category{
+      width: 100%;
+    }
+    .content form .user-details{
+      max-height: 300px;
+      overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+      width: 5px;
+    }
+    }
+    @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  }
+
+
+  */
