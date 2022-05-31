@@ -8,7 +8,7 @@
 }
 
 body{
-    background-image: url("/images/Images_login_register/fondo-login.jpg");
+    background-image: url("/images/Images_login_register/backgroundLogin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -62,20 +62,27 @@ input {
     border-radius: 5px;
 }
 
-.jBotones {
-    width: 120px;
+button {
+    width: 130px;
     height: 40px;
-    background-color: #017bab;
+    background-color: #0091EA;
     border: none;
     color:white;
     margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 10px;
+    
+    margin-bottom: 45px;
+    
+}
+
+button :hover{
+     transform: scale(0.99); 
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
 .jOlvidaste {
@@ -93,6 +100,7 @@ form a {
 form a:hover {
     text-decoration: underline;
 }
+
 
 .content-input input,
 .content-select select{
@@ -129,7 +137,7 @@ form a:hover {
 }
 
 .content-input input[type=checkbox] + i:before{
-	content: ''; /* No hay contenido */
+	content: ''; 
 	width: 13px;
 	height: 13px;
 	background: #fff;
@@ -155,8 +163,7 @@ form a:hover {
 
 /*------Media Queries--------*/
 
-
-/*---Media Querie Móvil---*/
+/*---Media Querie Small-----*/
 
 @media (min-width: 280px) and (max-width: 576px){
 
@@ -167,8 +174,17 @@ form{
         bottom: 300px;
 }
 }
+.content-input input + i{
+    background: #f0f0f0;
+    border:2px solid rgba(0,0,0,0.2);
+    position: absolute; 
+    left: 30px;
+    top: 8px;
+}
 
-/*---Media Querie Tablet---*/
+
+
+/*---Media Querie Medium---*/
 
 @media (min-width: 577px) and (max-width: 768px){
     form{
@@ -179,9 +195,9 @@ form{
 }
 } 
 
-/*---Media Querie Desktop---*/
+/*---Media Querie Large---*/
 
-@media (min-width: 769px) and (max-width: 1920px){
+@media (min-width: 769px) and (max-width: 992px){
     form{
         width: 500px;
         position: relative;
@@ -190,4 +206,14 @@ form{
     }
 }  
 
+/*---Media Querie Extra Large---*/
+
+@media (min-width: 993px) and (max-width: 1500px){
+    form{
+        width: 500px;
+        position: relative;
+        left: 0%;
+        bottom: 300px;
+    }
+}  
 
