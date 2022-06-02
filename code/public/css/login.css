@@ -7,11 +7,61 @@
     box-sizing: border-box;
 }
 
-body{
+/* -------------- CABECERA ------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+}
+
+.Snavbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+
+.Snavbar a {
+  font-size: 16px;
+  font-family: roboto;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #959595;
+  transition: ease 0.5s;
+}
+
+.Snavbar a:hover {
+  color: #2962FF;
+}
+
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
+.fa-bars {
+  font-size: 28px;
+  color: #2962FF;
+}
+
+
+body {
     background-image: url("/images/Images_login_register/backgroundLogin.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: round;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 145px;
 }
+/*----Caja de registro-----*/
 
 form {
     width: 25%;
@@ -23,7 +73,7 @@ form {
     color: white;
     text-align: center;
     border-radius: 8px;
-    position : relative;
+    position: relative;
     left: 15%;
     box-shadow: 0px 0px 3px #9d9d9d;
 }
@@ -32,7 +82,7 @@ form input {
     width: 78%;
     border: 1px solid white;
     margin-bottom: 15px;
-    color:grey;
+    color: grey;
     height: 5px;
     padding: 20px;
     font-size: 16px;
@@ -50,6 +100,8 @@ form h3 {
     font-size: 20px;
 }
 
+/*------Cajas para completar login----*/
+
 input {
     width: 90%;
     border: 1px solid white;
@@ -62,12 +114,14 @@ input {
     border-radius: 5px;
 }
 
+/*------Botones Login----*/
+
 button {
     width: 130px;
     height: 40px;
     background-color: #0091EA;
     border: none;
-    color:white;
+    color: white;
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 12px;
@@ -75,13 +129,11 @@ button {
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
-    
     margin-bottom: 45px;
-    
 }
 
-button :hover{
-     transform: scale(0.99); 
+button :hover {
+    transform: scale(0.99);
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
@@ -92,7 +144,7 @@ button :hover{
 }
 
 form a {
-    color: white ;
+    color: white;
     text-decoration: none;
     font-size: 16px;
 }
@@ -101,119 +153,209 @@ form a:hover {
     text-decoration: underline;
 }
 
+/*-----Checkbox recuerdame----*/
 
 .content-input input,
-.content-select select{
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
- 
-.content-input input{
-	visibility: hidden;
-	position: absolute;
-	right: 0;
+.content-select select {
+    appearance: none; /*-----Con esta opción le decimos al navegador que no aplique ninguna apariencia por defecto----*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
-.content-input{
-	position: relative;
-	margin-bottom: 30px;
-	padding:5px 0 5px 60px;
-	display: block;
-}
- 
-.content-input input + i{
-       background: #f0f0f0;
-       border:2px solid rgba(0,0,0,0.2);
-       position: absolute; 
-       left: 100px;
-       top: 8px;
-}
- 
-.content-input input[type=checkbox ] + i{
-	width: 35px;
-	height: 15px;
-	border-radius: 15px;
+.content-input input {
+    visibility: hidden; /*-----Lo ocultamos para que cada vez que demos click en label este se active-----*/
+    position: absolute;
+    right: 0;
 }
 
-.content-input input[type=checkbox] + i:before{
-	content: ''; 
-	width: 13px;
-	height: 13px;
-	background: #fff;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 1;
-	left: 0px;
-	top: 0px;
-	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
-	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+/*------Con este codigo le damos la forma al ovalo exterior-----*/
+
+.content-input {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 5px 0 5px 60px;
+    display: block;
 }
 
-.content-input input[type=checkbox]:checked + i:before{
-	left: 20px;
-	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
-	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+.content-input input+i {
+    background: #f0f0f0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 100px;
+    top: 8px;
 }
+
+.content-input input[type=checkbox]+i {
+    width: 35px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+/*----------Cierre codigo ovalo exterior--------*/
+
+/*-------Con este pseudo elemento :before añadiremos el boton-----*/
+
+.content-input input[type=checkbox]+i:before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    -webkit-box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*------ Con este codigo añadimos movimiento cuando el usuario haga click en el checkbox------*/
+
+.content-input input[type=checkbox]:checked+i:before {
+    left: 20px;
+    -webkit-box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 0 -3px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*-------Por último añadiremos color a nuestro checkbox personalizado------*/
+
+.content-input input[type=checkbox]:checked+i {
+    background: #017bab;
+}
+
+
+.Sfooter {
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: 150px;
+  }
+  
+  .Sfooter div {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .Sfooter img {
+    width: 100%;
+  }
+  
+  .Sfooter h3 {
+    color: #2962FF;
+    letter-spacing: 1px;
+  }
+  
+  .Sfooter p {
+    margin-top: 15px;
+  }
+
  
-.content-input input[type=checkbox]:checked + i{
- background: #017bab;
-}
-
+  
 
 /*------Media Queries--------*/
 
-/*---Media Querie Small-----*/
+/*---Media Querie Móvil-----*/
 
-@media (min-width: 280px) and (max-width: 576px){
+@media (min-width: 0px) and (max-width: 576px) {
 
-form{
+header img {
+    width: 200px;
+}
+    
+.Snavbar {
+    display: none;
+}
+
+.Sburger-menu{
+    font-size: 28px;
+    color: #2962FF;
+}
+
+form {
         width: 80%;
         position: relative;
         left: 0%;
         bottom: 300px;
+    }
 }
-}
-.content-input input + i{
+
+.content-input input+i {
     background: #f0f0f0;
-    border:2px solid rgba(0,0,0,0.2);
-    position: absolute; 
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
     left: 30px;
     top: 8px;
 }
 
 
 
-/*---Media Querie Medium---*/
+/*---Media Querie Tablet ---*/
 
-@media (min-width: 577px) and (max-width: 768px){
-    form{
-        width: 500px;
-        position: relative;
-        left: 0%;
-        bottom: 300px;
+@media (min-width: 577px) and (max-width: 899px) {
+
+.Sburger-menu .fa-bars {
+    font-size: 28px;
+    color: #2962FF;
 }
-} 
+      
 
-/*---Media Querie Large---*/
+header img {
+        width: 350px;
+      }
+    
+.Snavbar {
+        display: none;
+      }
+    
+.Sfooter img {
+        width: 50%;
+      }
 
-@media (min-width: 769px) and (max-width: 992px){
-    form{
+form {
         width: 500px;
         position: relative;
         left: 0%;
         bottom: 300px;
     }
-}  
+}
 
-/*---Media Querie Extra Large---*/
+/*---Media Querie Desktop---*/
 
-@media (min-width: 993px) and (max-width: 1500px){
-    form{
+@media (min-width: 900px) and (max-width: 1920px) {
+
+/* -------------- CABECERA ------------- */
+  header img {
+    width: 200px;
+  }
+
+ .Sburger-menu .fa-bars {
+    display: none;
+}
+
+  /* ---------------- PIE DE PAGINA ---------- */
+
+  .Sfooter div{
+    width: 30%;
+}
+
+.Sfooter img{
+    width: 80%;
+}
+
+    form {
         width: 500px;
         position: relative;
         left: 0%;
         bottom: 300px;
     }
-}  
+}
 
