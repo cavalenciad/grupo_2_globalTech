@@ -35,11 +35,8 @@ header{
 /* -------------- ESTILOS ITEMS MENU ------------- */
 
 a{
-<<<<<<< HEAD
     
-=======
     font-size: 16px;
->>>>>>> 179e5808d1bd76a74d7a7a78c9fb8479c861ec3a
     font-family: roboto;
     letter-spacing: 2px;
     font-weight: 600;
@@ -294,6 +291,7 @@ a{
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    
 
     /* ------------- CAJAS PRODUCTOS ----------- */
 
