@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +7,13 @@
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/register.css">
-    
     <title>Registro</title>
 </head>
-
 <body>
- 
   <header>
-
-   
    <!-------- LOGO -------->
- 
     <img src="images/Logo-letras.png" alt="Logo Global Tech">
- 
+
     <!-------- NAVBAR -------->
     <nav class="Snavbar">
         <a href="/">INICIO</a>
@@ -32,28 +25,35 @@
 
     </nav>
     <!-------- ICONO MENU HAMBURGUESA -------->
+
     <div class="Sburger-menu">
         <i class="fas fa-bars"></i>
     </div>
 </header>
+<!-------- IMAGEN DE FONDO -------->
+
 <div class="MimagenFondo">
     <form class="MformRegister" action="#">
         <h3>Regístrate en Global Tech</h3>
-        
-          <div>
+
+        <!-------- CAJA DE FORMULARIO -------->
+
+          <div class="McompletarFormulario">
             <input type="email" placeholder="Email*" required>
           
-          <div>
+          <div class="McompletarFormulario">
             <input type="text" placeholder="Nombre*"  required>
           </div>
-          <div>
+          <div class="McompletarFormulario">
             <input type="text" placeholder="Apellidos*"  required>
           </div>
-          <div>
+          <div class="McompletarFormulario">
             <input type="text" placeholder="Nombre de usuario*" maxlength="10"  required>
           </div>
-          <div class="Mpais">
-            <select> 
+          <!-------- SELECCIONAR PAÍS -------->
+
+          <div class="McompletarFormulario">
+            <select class="Mpais"> 
                 <option value="seleccionarPais">Seleccionar país</option>
                 <option value="CO">Colombia</option>
                 <option value="AR">Argentina</option>
@@ -83,33 +83,33 @@
                 <option value="VE">Venezuela</option>
             </select>
         </div>
-          <div>
+          <!-------- CONTRASEÑA -------->
+          <div class="McompletarFormulario">
             <input type="password" placeholder="Contraseña*" maxlenght="10" required>
           </div>
-          <div>
+          <div class="McompletarFormulario">
             <input type="password" placeholder="Confirmar contraseña*" maxlenght="10" required>
           </div>
         </div>
-        
-        
+        <!-------- ACEPTO TÉRMINOS -------->
+
         <div class="MaceptoTerminos">
                 <input  class="Mcheckbox" type="checkbox" id="aceptoTerminos">Acepto los
                 <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
                  y la
                   <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
-                
          </div>
+         <!-------- BOTONES REGISTRAR Y YA TENGO CUENTA -------->
+
         <div class="Mbutton">
           <input type="submit" id="Registrarse" value="REGISTRARSE">
           <input  href="/grupo_2_globalTech/code/views/login.html" type="submit" id="yaTengoCuenta" value="YA TENGO CUENTA">
-         
-          
         </div>
-      
-   
-
-    </form>
+  </form>
   </div>
+
+  <!-------- FOOTER: PIE DE PÁGINA -------->
+
     <footer class="Sfooter">
       <div>
           <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
@@ -127,10 +127,8 @@
              Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
              Mollitia, eveniet impedit iusto ab sequi temporibus 
              quaerat eligendi necessitatibus laborum vitae!</p>
-      </div>
-    
+         </div>
   </footer>
-
 </body>
  </html>
    

@@ -8,10 +8,12 @@
   box-sizing: border-box;
 }
 
+  /*----BAACKGROUND REGISTER----*/
+
 .MimagenFondo {
-  background-image: url("/images/Images_login_register/backgroundRegister.jpg");
+  background-image: url(/images/Images_login_register/backgroundRegister.jpg);
   background-size: cover;
-  background-repeat: round;
+  background-repeat:no-repeat;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -22,7 +24,7 @@
 
 
 
-/* -------------- CABECERA ------------- */
+/*----CABECERA DE LA PÁGINA----*/
 
 header {
   display: flex;
@@ -44,12 +46,12 @@ header {
   justify-content: space-around;
 }
 
-/* -------------- ESTILOS ITEMS MENU ------------- */
+/*----ESTILOS ITEMS MENU----*/
 
 
 .Snavbar a {
   font-size: 16px;
-  font-family: roboto;
+  font-family: 'roboto';
   letter-spacing: 2px;
   font-weight: 600;
   color: #959595;
@@ -60,45 +62,43 @@ header {
   color: #2962FF;
 }
 
-/* ---------- ICONO MENU HAMBURGUESA -------------- */
+/*----ICONO MENU HAMBURGUESA----*/
 
 .fa-bars {
   font-size: 28px;
   color: #2962FF;
 }
 
-/*----Titulo Registro----*/
+
+/*--- CAJA DEL FORM REGISTRO---*/
+
+.MformRegister {
+  width: 24%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0px 0px 6px #9d9d9d;
+  padding: 8px;
+  border-top: 4px solid #017bab;
+  border-radius: 8px;
+  margin-bottom: 145px;
+  margin-top: 90px;
+}
+
+/*----TITULO CAJA REGISTRO----*/
+
 .MformRegister h3 {
   margin: 0;
-  color: white;
+  color:#fff;
   text-align: center;
   height: 40px;
   margin-bottom: 30px;
   border-bottom: 1px solid;
   font-size: 20px;
-
-
-
 }
 
-/*--- Caja del form register---*/
-.MformRegister {
-  width: 24%;
-  height: auto;
-  margin: 0 auto;
-  padding-top: 145px;
-  padding-bottom: 145px;
-  box-shadow: 0px 0px 3px #9d9d9d;
-  padding: 10px 20px;
-  border-top: 4px solid #017bab;
-  color: white;
-  text-align: center;
-  border-radius: 8px;
-  align-items: center;
-  margin-bottom: 145px;
-}
+/*----CAJAS PARA COMPLETAR FORMULARIO----*/
 
-input {
+.McompletarFormulario input{
   width: 82%;
   border: 1px solid white;
   margin-bottom: 15px;
@@ -108,43 +108,32 @@ input {
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
-  position: relative;
+ 
 
 }
 
+/*----ESTILO DE SELECCIÓN PAÍS----*/
 
 .Mpais {
-  width: 91%;
-  position: relative;
-  left: 20px;
+  width: 82%;
   height: 34px;
-  padding-bottom: 46px;
-  font-size: 15px;
-
-}
-
-select {
-  width: 90%;
-  border: 1px solid white;
-  color: grey;
-  height: 35px;
-  padding: 7px 8px;
+  padding-bottom: 6px;
+  padding-top: 4px;
+  margin-bottom: 15px;
   font-size: 14px;
-  font-weight: bold;
-  border-radius: 5px;
-  position: relative;
+  color: #000000;
 
 }
 
-
-
+/*----ESTILOS DE LOS PARRAFOS Y ARTICULOS----*/
 
 .MformRegister p a {
   font-size: 10px;
   color: #fff;
   text-decoration: none;
-
 }
+
+/*----SECCIÓN DE ACEPTO TÉRMINOS----*/
 
 .MaceptoTerminos {
   font-size: 12px;
@@ -153,7 +142,8 @@ select {
   text-align: start;
   flex-wrap: wrap;
   position: relative;
-  left: 10px;
+  left: 15px;
+  color:#fff;
 }
 
 .MterminosPolitica {
@@ -172,10 +162,13 @@ select {
   box-shadow: 0.8px;
 }
 
+/*----ESTILO SUBRAYADO DEL ACEPTO TÉRMINOS----*/
+
 .MformRegister a:hover {
   text-decoration: underline;
 }
 
+/*----BOTONES DE REGISTRARME Y YAATENGO CUENTA----*/
 
 .Mbutton {
   height: 35px;
@@ -192,28 +185,21 @@ select {
   background-color: #0091EA;
   border: none;
   color: white;
-  margin-bottom: 10px;
   border-radius: 5px;
   font-size: 12px;
   font-weight: bold;
-  text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  margin-bottom: 45px;
-
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+/*----ESTILOS DE REGISTRARME Y YA TENGO CUENTA----*/
 
 .Mbutton input:hover {
   transform: scale(0.99);
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
-.register {
-  position: relative;
-  bottom: 20px;
-}
-
+/*----PIE DE PÁGINA----*/
 
 .Sfooter {
   width: 100%;
@@ -252,6 +238,8 @@ select {
 
 @media (min-width: 0px) and (max-width: 576px) {
 
+/*----CABECERA----*/
+
   header img {
     width: 200px;
   }
@@ -260,66 +248,68 @@ select {
     display: none;
   }
 
+  
+/*--- CAJA DEL FORM REGISTRO---*/
 
+.MformRegister {
+  width: 95%;
+  height: 550px;
+  margin: 0 auto;
 
+}
   .MformRegister h3 {
     font-size: 20px;
     position: relative;
     top: 10px;
-    color: white;
-  }
-
-  .MformRegister {
-    width: 100%;
-    height: 700px;
-    margin-top: 70px;
-    margin-bottom: 200px;
-
+    
   }
 
   .MformRegister input {
 
-    width: 100%;
+    width: 95%;
     height: 35px;
+    padding: 7px;
 
   }
 
-
+/*----SELECCIONAR PAÍS----*/
 
   .Mpais {
-    width: 593px;
-    height: 1px;
-    position: relative;
-    left: -30px;
+    width: 95%;
+    height: 35px;
+    margin-bottom: 15px;
 
   }
+
+  /*----ACEPTO TÉRMINOS Y CONDICIONES----*/
 
   .MaceptoTerminos {
+    
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 14px;
     position: relative;
-    left: -25px;
+    left: -13px;
 
 
   }
 
-  .Mbutton {
-    width: 180px;
-    height: 35px;
-    margin: 25px 0;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-bottom: 22px;
-    display: flex;
-    flex-wrap: wrap;
+  /*----BOTONES REGISTRARME Y YA TENGO CUENTA----*/
 
+  .Mbutton {
+    margin-top: 5px;
+  }
+
+  .Mbutton input{
+    width: 130px;
   }
 
 }
 
-/*---- Media querys Tablet---*/
+/*---- Media queries Tablet---*/
 
 @media (min-width: 577px) and (max-width: 899px) {
+
+  /*----CABECERA----*/
 
   header img {
     width: 350px;
@@ -329,17 +319,73 @@ select {
     display: none;
   }
 
+  /*--- CAJA DEL FORM REGISTRO---*/
+
+.MformRegister {
+  width: 95%;
+  height: 550px;
+  margin: 0 auto;
+
+}
+  .MformRegister h3 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    
+  }
+
+  .MformRegister input {
+
+    width: 95%;
+    height: 35px;
+    padding: 7px;
+
+  }
+
+/*----SELECCIONAR PAÍS----*/
+
+  .Mpais {
+    width: 95%;
+    height: 35px;
+    margin-bottom: 15px;
+
+  }
+
+  /*----ACEPTO TÉRMINOS Y CONDICIONES----*/
+
+  .MaceptoTerminos {
+    
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    left: -13px;
+
+
+  }
+
+  /*----BOTONES REGISTRARME Y YA TENGO CUENTA----*/
+
+  .Mbutton {
+    margin-top: 5px;
+  }
+
+  .Mbutton input{
+    width: 130px;
+  }
+
+  /*----PIE DE PÁGINA----*/
+
   .Sfooter img {
     width: 50%;
   }
 
 }
 
-/*---- Media querys Escritorio---*/
+/*---- Media queries Escritorio---*/
 
 @media (min-width: 900px) and (max-width: 1920px) {
 
-  /* -------------- CABECERA ------------- */
+  /*----CABECERA DE LA PÁGINA----*/
   header img {
     width: 200px;
   }
@@ -348,7 +394,7 @@ select {
     display: none;
   }
 
-  /* ---------------- PIE DE PAGINA ---------- */
+  /*----PIE DE PÁGINA----*/
 
   .Sfooter div{
     width: 30%;
