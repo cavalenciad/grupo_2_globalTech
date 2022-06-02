@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,38 @@
     <link rel="stylesheet" href="css/login.css">
     <title>Iniciar Sesión</title>
 </head>
+
 <body>
-        <form action="/login" method="POST">
-            <h3>Iniciar Sesión</h3>
+    <header>
+<!-------- LOGO -------->
+
+        <img src="images/Logo-letras.png" alt="Logo Global Tech">
+
+<!-------- NAVBAR -------->
+        <nav class="Snavbar">
+            <a href="/">INICIO</a>
+            <a href="#">SOBRE NOSOTROS</a>
+            <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
+            <a href="/productCart">CARRITO DE COMPRAS</a>
+            <a href="/registro">REGISTRO</a>
+            <a href="/login">LOGIN</a>
+
+        </nav>
+
+<!-------- ICONO MENU HAMBURGUESA -------->
+
+<div class="Sburger-menu">
+    <i class="fas fa-bars"></i>
+</div>
+    </header>
+    <form action="/login" method="POST">
+        <h3>Iniciar Sesión</h3>
         <div>
             <input placeholder="Email" type="email" name="Email" id="Email" required>
-        </div> 
+        </div>
         <div>
-            <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8" maxlength="15" required>
+            <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8"
+                maxlength="15" required>
         </div>
         <div>
             <label class="content-input">
@@ -25,7 +50,31 @@
 
         <button type="submit">Iniciar Sesión</button>
         <p class="jNoCuenta"> <a href="#">¿Aún no tiene una cuenta?</a>
-        </p><p class="jOlvidaste"> <a href="#">¿Ha olvidado su contraseña?</a></p>
-        </form>
+        </p>
+        <p class="jOlvidaste"> <a href="#">¿Ha olvidado su contraseña?</a></p>
+    </form>
+
+<!-------- PIE DE PAGINA -------->
+
+<footer class="Sfooter">
+    <div>
+        <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
+    </div>
+    <div>
+        <h3>MAPA DEL SITIO</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+            Mollitia, eveniet impedit iusto ab sequi temporibus 
+            quaerat eligendi necessitatibus laborum vitae!</p>
+    </div>
+    <div>
+       <h3>DATOS DE CONTACTO</h3>
+       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+           Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+           Mollitia, eveniet impedit iusto ab sequi temporibus 
+           quaerat eligendi necessitatibus laborum vitae!</p>
+    </div>
+</footer> 
 </body>
+
 </html>
