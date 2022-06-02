@@ -9,35 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <header>
         <!-------- LOGO -------->
         <img src="images/Logo-letras.png" alt="Logo Global Tech">
         <!-------- NAVBAR -------->
-        <nav class="navbar">
+        <nav class="Snavbar">
             <a href="/">INICIO</a>
-            <a href="#">QUIÉNES SOMOS</a>
-            <a href="/productDetail">DETALLE DE PRODUCTO</a>
+            <a href="#">SOBRE NOSOTROS</a>
+            <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
             <a href="/productCart">CARRITO DE COMPRAS</a>
+            <a href="/registro">REGISTRO</a>
+            <a href="/login">LOGIN</a>
+
         </nav>
         <!-------- ICONO MENU HAMBURGUESA -------->
-        <div class="burger-menu">
+        <div class="Sburger-menu">
             <i class="fas fa-bars"></i>
         </div>
-       
     </header>
 
     <main>
-        <div>
-            <div class="image">
-                <img src="/images/image_productDescription/ps5.jpg" alt="Play Station 5">
-            </div>
-            
+        <div class="image">
+            <img src="/images/image_productDescription/ps5.jpg" alt="Play Station 5">
         </div>
+
         <section class="container">
             <div class="productImage">
                 <div class="bigImage">
                     <img src="/images/image_productDescription/ps5-frontView.jpg" alt="Front view">
                 </div>
+                
                 <div class="imageDescriptionContainer">
                     <div class="imageDescription">
                         <img src="/images/image_productDescription/ps5-frontView.jpg" alt="Front view">
@@ -53,11 +55,13 @@
                     </div>
                 </div>
             </div>
+
             <div class="productDescription">
                 <div class="namePrice">
                     <p class="name">Play Station 5</p>
                     <p>Precio: $3'500.000COP</p>
                 </div>
+
                 <div class="colorMenu">
                     <div class="blockDescription">
                         <label for="color">Selecciona el color</label>
@@ -69,9 +73,9 @@
                         </select>
                         <button class="cart">Añadir al Carrito</button>
                         <button class="buy">Comprar Ahora</button>
-                    </div>
-                    
+                    </div>    
                 </div>
+
                 <div class="textDescription">
                     <h3>Descripción del producto</h3><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus quia quod tenetur pariatur rerum labore dignissimos, dicta enim debitis, dolor ducimus officia voluptate possimus natus ullam, laudantium laboriosam id!</p><br>
@@ -83,5 +87,27 @@
         </section>
 
     </main>
+
+    <!-------- PIE DE PAGINA -------->
+
+    <footer class="Sfooter">
+        <div>
+            <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
+        </div>
+        <div>
+            <h3>MAPA DEL SITIO</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+                Mollitia, eveniet impedit iusto ab sequi temporibus 
+                quaerat eligendi necessitatibus laborum vitae!</p>
+        </div>
+        <div>
+           <h3>DATOS DE CONTACTO</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+               Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+               Mollitia, eveniet impedit iusto ab sequi temporibus 
+               quaerat eligendi necessitatibus laborum vitae!</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -13,30 +13,37 @@
 
     <!--elementos cabecera-->
     <header>
-         <!-------- LOGO -------->
-         <img src="images/Logo-letras.png" alt="Logo Global Tech">
-         <!-------- NAVBAR -------->
-         <nav class="navbar">
-             <a href="index.html">INICIO</a>
-             <a href="index.html">QUIÉNES SOMOS</a>
-             <a href="productDetail.html">DETALLE DE PRODUCTO</a>
-             <a href="productCart.html">CARRITO DE COMPRAS</a>
-         </nav>
-         <!-------- ICONO MENU HAMBURGUESA -------->
-         <div class="burger-menu">
-             <i class="fas fa-bars"></i>
-         </div>
-        
-    
+        <!-------- LOGO -------->
+        <img src="images/Logo-letras.png" alt="Logo Global Tech">
+        <!-------- NAVBAR -------->
+        <nav class="Snavbar">
+            <a href="/">INICIO</a>
+            <a href="#">SOBRE NOSOTROS</a>
+            <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
+            <a href="/productCart">CARRITO DE COMPRAS</a>
+            <a href="/registro">REGISTRO</a>
+            <a href="/login">LOGIN</a>
+
+        </nav>
+        <!-------- ICONO MENU HAMBURGUESA -------->
+        <div class="Sburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
-    <img src="images/images_productCart/banner-productCart.jpg" alt="banner carrito de compras" class="Qcabecera">
-    <h1 class="Qtitulo">CARRITO DE COMPRAS</h1>
+    <div id="Qtituloenbaner">
+        <img src="images/images_productCart/banner-productCart.jpg" alt="banner carrito de compras" class="Qcabecera">
+        <a href="" class="Qtitulo">CARRITO DE COMPRAS<i class="fa-solid fa-cart-shopping"></i></a>
+     
+    </div>
+
+    
 
     <div class="QlistadoyCantidad">
         <p>Listado de productos</p>
-        <p>Cantidad</p>
+        <p class="Qcantidad">Cantidad</p>
     </div>
+    <hr>
     <div class="Qcontenedor">
 
             
@@ -47,7 +54,10 @@
                     <p>Precio: $000.000</p>
                     <p>Eliminar</p>
                 </div>
-                <button>- +</button>
+                <div class="QbotonAgregar">
+                    <button class="Qmenos">-</button>
+                    <button class="Qmas">+</button>
+                </div>
             </div>
 
             
@@ -59,8 +69,10 @@
                     <p>Precio: $000.000</p>
                     <p>Eliminar</p>
                 </div>
-                    <button>- +</button>
-                
+                <div class="QbotonAgregar">
+                    <button class="Qmenos">-</button>
+                    <button class="Qmas">+</button>
+                </div>
             </div>
 
             
@@ -71,11 +83,16 @@
                     <p>Precio: $000.000</p>
                     <p>Eliminar</p>
                 </div>
-                <button>- +</button>
+
+                <div class="QbotonAgregar">
+                    <button class="Qmenos">-</button>
+                    <button class="Qmas">+</button>
+                </div>
             </div>
 
         
     </div>
+    <hr>
     <div class="Qtotalcarrito">
         <div>
             <p><b>TOTAL DEL CARRITO</b></p>
@@ -86,5 +103,27 @@
             <button>Comprar</button>
         </div>
     </div>
+
+    <!-------- PIE DE PAGINA -------->
+
+    <footer class="Sfooter">
+        <div>
+            <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
+        </div>
+        <div>
+            <h3>MAPA DEL SITIO</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+                Mollitia, eveniet impedit iusto ab sequi temporibus 
+                quaerat eligendi necessitatibus laborum vitae!</p>
+        </div>
+        <div>
+           <h3>DATOS DE CONTACTO</h3>
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+               Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
+               Mollitia, eveniet impedit iusto ab sequi temporibus 
+               quaerat eligendi necessitatibus laborum vitae!</p>
+        </div>
+    </footer>
 </body>
 </html>
