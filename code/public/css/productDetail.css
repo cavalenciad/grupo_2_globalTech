@@ -15,62 +15,56 @@ a{
     transition: ease 0.5s;
 }
 
+/* -------------- CABECERA ------------- */
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
     height: 80px;
     box-shadow: 0px 1px 5px #a3a3a3;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
 }
 
-.navbar{
+.Snavbar{
     width: 70%;
     display: flex;
     justify-content: space-around;
 }
 
-.navbar a:hover{
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+a{
+    font-size: 16px;
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #959595;
+    transition: ease 0.5s;
+}
+
+.Snavbar a:hover{
     color: #2962FF;
 }
 
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
 .fa-bars{
     font-size: 28px;
+    color: #2962FF;
 }
 
+/* ---------- IMAGEN PRINCIPAL -----------*/
 
-@media (min-width: 0px) and (max-width: 576px){
-    header img{
-        width: 200px;
-    }
-
-    .navbar{
-        display: none;
-    }
+.image img{
+    width: 100%;
+    margin-top: 80px;
 }
 
-@media (min-width: 577px) and (max-width: 768px){
-    header img{
-        width: 350px;
-    }
-
-    .navbar{
-        display: none;
-    }
-} 
-
-@media (min-width: 769px) and (max-width: 1920px){
-    header img{
-        width: 350px;
-    }
-
-    .fa-bars{
-        display: none;
-    }
-}  
-
-main{
-    padding: 10px;
-}
+/* ---------- IMAGEN Y DESCRIPCIÓN DE PRODUCTO ----------*/
 
 .container{
     display : flex;
@@ -78,15 +72,8 @@ main{
     flex-wrap: wrap;
 }
 
-.image img{
-    width: 100%;
-    margin: 0 auto;
-    align-self: center;
-}
-
 .productImage{
     width: 100%;
-    margin: 0 auto;
     margin: 10px;
 }
 
@@ -173,4 +160,118 @@ main{
 
 .textDescription p{
     font-size: 20px;
+}
+
+/* ---------------- PIE DE PAGINA ---------- */
+
+.Sfooter{
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Sfooter div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sfooter img{
+    width: 100%;
+}
+
+.Sfooter h3{
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sfooter p{
+    margin-top: 15px;
+}
+
+
+/* ---------- MEDIA QUERYS ----------- */
+
+@media (min-width: 0px) and (max-width: 576px){
+
+    header img{
+        width: 200px;
+    }
+
+    .Snavbar{
+        display: none;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 899px){
+
+    header img{
+        width: 350px;
+    }
+
+    .Snavbar{
+        display: none;
+    }
+    
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter img{
+        width: 50%;
+    }
+} 
+
+@media (min-width: 900px) and (max-width: 1920px){
+
+    header img{
+        width: 200px;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    /* ---------- DESCRIPCIÓN DE PRODUCTO -----------*/
+
+    .container{
+        margin: 10px;
+        padding: 10px;
+        display : flex;
+        flex-direction : row;
+    }
+    
+    .productImage{
+        width: 50%;
+    }
+    
+    .productDescription{
+        width: 50%;
+        padding: 10px;
+        margin: 5px;
+        border: solid rgb(39, 39, 39, 0.5) 1px;
+        border-radius: 5px;
+        align-self: left;
+    }
+
+    .container{
+        display : flex;
+        flex-direction : row;
+    }
+
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter div{
+        width: 30%;
+    }
+
+    .Sfooter img{
+        width: 80%;
+    }
+
 }
