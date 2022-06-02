@@ -1,228 +1,364 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 
-*{
-    font-family: roboto;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-} 
+* {
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.MimagenFondo {
+  background-image: url("/images/Images_login_register/backgroundRegister.jpg");
+  background-size: cover;
+  background-repeat: round;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 145px;
+  padding-bottom: 145px;
+  
+}
+
+
+
+/* -------------- CABECERA ------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+
+
+}
+
+.Snavbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+
+.Snavbar a {
+  font-size: 16px;
+  font-family: roboto;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #959595;
+  transition: ease 0.5s;
+}
+
+.Snavbar a:hover {
+  color: #2962FF;
+}
+
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
+.fa-bars {
+  font-size: 28px;
+  color: #2962FF;
+}
+
 /*----Titulo Registro----*/
-.MformRegister h3{
-    margin: 0;
-   color: white; 
-   text-align: center;
-   height: 40px;
-   margin-bottom: 30px;
-   border-bottom: 1px solid;
-   font-size: 20px;
+.MformRegister h3 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
 
-   
+
 
 }
 
-/*--- Estilos CAJA COMPLETA---*/
+/*--- Caja del form register---*/
 .MformRegister {
-    width: 24%;
-    height: 70%;
-    
-    margin: 0 auto;
-    margin-top: 145px;
-    box-shadow: 0px 0px 3px #9d9d9d;
-    padding:  10px 20px;
-    border-top: 4px solid #017bab;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    align-items: center;
-}
-
-body{
-    background-image: url("/images/Images_login_register/backgroundRegister.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    
+  width: 24%;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 145px;
+  padding-bottom: 145px;
+  box-shadow: 0px 0px 3px #9d9d9d;
+  padding: 10px 20px;
+  border-top: 4px solid #017bab;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  align-items: center;
+  margin-bottom: 145px;
 }
 
 
-input{
-    width: 82%;
-    border: 1px solid white;
-    margin-bottom: 15px;
-    color: #000000;
-    height: 34px;
-    padding: 11px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    position: relative;
+
+
+input {
+  width: 82%;
+  border: 1px solid white;
+  margin-bottom: 15px;
+  color: #000000;
+  height: 34px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
 
 }
 
 
-.Mpais{
+.Mpais {
   width: 91%;
   position: relative;
   left: 20px;
   height: 34px;
   padding-bottom: 46px;
   font-size: 15px;
-  
-}
-
-select{
-    width: 90%;
-    border: 1px solid white;
-    
-    color:grey;
-    height: 35px;
-    padding: 7px 8px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-    position: relative;
 
 }
 
-
-
-
-.MformRegister p a{
-    font-size: 10px;
-    color: #fff;
-    text-decoration: none;
+select {
+  width: 90%;
+  border: 1px solid white;
+  color: grey;
+  height: 35px;
+  padding: 7px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
 
 }
 
-.MaceptoTerminos{
-    font-size: 12px;
-    padding-left: 30px;
-    padding-right: 10px;
-    text-align:start;   
-    flex-wrap: wrap;
-    position: relative;
-    left: 10px;
+
+
+
+.MformRegister p a {
+  font-size: 10px;
+  color: #fff;
+  text-decoration: none;
+
 }
 
-.MterminosPolitica{
+.MaceptoTerminos {
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 10px;
+  text-align: start;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10px;
+}
+
+.MterminosPolitica {
   color: #0091EA;
 }
 
-.Mcheckbox{
+.Mcheckbox {
   position: relative;
   top: 2px;
   right: 4px;
 }
 
-#aceptoTerminos{
-    width: 15px;
-    height: 15px;
-    box-shadow: 0.8px;
+#aceptoTerminos {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0.8px;
 }
 
 .MformRegister a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 
- .Mbutton {
+.Mbutton {
+  height: 35px;
+  margin: 25px 0;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 22px;
+}
+
+
+.Mbutton input {
+  width: 130px;
+  height: 40px;
+  background-color: #0091EA;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  margin-bottom: 45px;
+
+}
+
+.Mbutton input:hover {
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.register {
+  position: relative;
+  bottom: 20px;
+}
+
+
+.Sfooter {
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Sfooter div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sfooter img {
+  width: 100%;
+}
+
+.Sfooter h3 {
+  color: #2962FF;
+  letter-spacing: 1px;
+}
+
+.Sfooter p {
+  margin-top: 15px;
+}
+
+
+/*---- Media querys Movil---*/
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+  header img {
+    width: 200px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+
+
+
+  .MformRegister h3 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    color: white;
+  }
+
+  .MformRegister {
+    width: 100%;
+    height: 700px;
+    margin-top: 70px;
+    margin-bottom: 200px;
+
+  }
+
+  .MformRegister input {
+
+    width: 100%;
+    height: 35px;
+
+  }
+
+
+
+  .Mpais {
+    width: 593px;
+    height: 1px;
+    position: relative;
+    left: -30px;
+
+  }
+
+  .MaceptoTerminos {
+    margin-top: 10px;
+    font-size: 17px;
+    position: relative;
+    left: -25px;
+
+
+  }
+
+  .Mbutton {
+    width: 180px;
     height: 35px;
     margin: 25px 0;
     padding: 10px;
     padding-bottom: 50px;
     margin-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+
   }
-   
-
-   .Mbutton input {
-    width: 130px;
-    height: 40px;
-    background-color: #0091EA;
-    border: none;
-    color:white;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-    margin-bottom: 45px;
-    
-}
- .Mbutton input:hover{
-     transform: scale(0.99); 
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-    }
-
-    .register{
-      position: relative;
-      bottom: 20px;
-    }
-
-    
-/*---- Media querys Movil---
-
-@media (min-width: 0px) and (max-width: 576px) {
-
-    form {
-        width: 50px;
-    }
-
-    form{
-        display: none;
-    }
 
 }
 
----- Media querys Tablet---
+/*---- Media querys Tablet---*/
 
 @media (min-width: 577px) and (max-width: 899px) {
 
-    header img {
-        width: 350px;
-    }
+  header img {
+    width: 350px;
+  }
 
+  .Snavbar {
+    display: none;
+  }
+
+  .Sfooter img {
+    width: 50%;
+  }
 
 }
 
----- Media querys Escritorio---
+/*---- Media querys Escritorio---*/
 
 @media (min-width: 900px) and (max-width: 1920px) {
 
-    header img {
-        width: 200px;
-    }
+  /* -------------- CABECERA ------------- */
+  header img {
+    width: 200px;
+  }
+
+  .Sburger-menu .fa-bars {
+    display: none;
+  }
+
+  /* ---------------- PIE DE PAGINA ---------- */
+
+  .Sfooter div{
+    width: 30%;
 }
 
-   @media(max-width: 584px){
-   .container{
-    max-width: 100%;
-  }
-  form .user-details .input-box{
-      margin-bottom: 15px;
-      width: 100%;
-    }
-    form .category{
-      width: 100%;
-    }
-    .content form .user-details{
-      max-height: 300px;
-      overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar{
-      width: 5px;
-    }
-    }
-    @media(max-width: 459px){
-    .container .content .category{
-      flex-direction: column;
-    }
-  }
+.Sfooter img{
+    width: 80%;
+}
+}
 
-
-  */
