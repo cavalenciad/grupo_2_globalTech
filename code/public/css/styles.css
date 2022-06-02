@@ -8,10 +8,6 @@
     font-family: roboto;
 }
 
-body{
-    background-image: url("/");
-}
-
 /* -------------- CABECERA ------------- */
 
 header{
@@ -34,7 +30,14 @@ header{
 
 /* -------------- ESTILOS ITEMS MENU ------------- */
 
+<<<<<<< HEAD
 a{
+=======
+
+.Snavbar a{
+
+    
+>>>>>>> e24a82459fffc88f4bba6d864deb8d776710c5fd
     font-size: 16px;
     font-family: roboto;
     letter-spacing: 2px;
@@ -58,6 +61,7 @@ a{
 
 .Scarrusel img{
     width: 100%;
+    margin-top: 80px;
 }
 
 /* ---------------- SECCIÓN PRICIPAL HOME ---------- */
@@ -184,6 +188,7 @@ a{
 }
 
 .Sproducto h4{
+    width: 100%;
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -246,6 +251,8 @@ a{
 
 @media (min-width: 0px) and (max-width: 576px){
 
+    /* -------------- CABECERA ------------- */
+
     header img{
         width: 200px;
     }
@@ -269,6 +276,8 @@ a{
 }
 
 @media (min-width: 577px) and (max-width: 899px){
+
+    /* -------------- CABECERA ------------- */
 
     header img{
         width: 350px;
@@ -323,6 +332,8 @@ a{
 } 
 
 @media (min-width: 900px) and (max-width: 1920px){
+
+    /* -------------- CABECERA ------------- */
 
     header img{
         width: 200px;

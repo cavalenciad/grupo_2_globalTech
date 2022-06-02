@@ -4,10 +4,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    text-decoration: none;
+    font-family: roboto;
 }
 
-a{
+/* -------------- CABECERA ------------- */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 1px 5px #a3a3a3;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}
+
+.Snavbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+
+.Snavbar a{
+    font-size: 16px;
     font-family: roboto;
     letter-spacing: 2px;
     font-weight: 600;
@@ -15,49 +40,37 @@ a{
     transition: ease 0.5s;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 80px;
-    box-shadow: 0px 1px 5px #a3a3a3;
-}
-
-.navbar{
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar a:hover{
+.Snavbar a:hover{
     color: #2962FF;
 }
 
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
 .fa-bars{
     font-size: 28px;
+    color: #2962FF;
 }
+
 
 
 /*--------------Product cart-----------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: roboto;
-}
+
 
 .Qcabecera {
     width: 100%;
+    margin-top: 80px;
 }
 
 #Qtituloenbaner{
     position: relative;
 }
 
+
+
 .Qtitulo{
     text-align: center;
     position: absolute;
-    top: 186px;
+    top: 278px;
     left: 75%;
     color: white;
     margin: 0;
@@ -109,7 +122,7 @@ header{
 .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
     width: 33%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 30px;
     
 }
 
@@ -124,6 +137,7 @@ header{
     position: relative;
     width: 19%;
     padding: 9px;
+    left: 20px;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -173,12 +187,48 @@ hr{
     height: 3px;    
 }
 
+/* ---------------- PIE DE PAGINA ---------- */
+
+.Sfooter{
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Sfooter div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sfooter img{
+    width: 100%;
+}
+
+.Sfooter h3{
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sfooter p{
+    margin-top: 15px;
+}
+
 @media (min-width: 0px) and (max-width: 576px){
+    /* -------------- CABECERA ------------- */
+
     header img{
         width: 200px;
     }
 
-    .navbar{
+    .Snavbar{
         display: none;
     }
 
@@ -190,9 +240,7 @@ hr{
         font-size: 15px;
     }
 
-    .Qtitulo{
-        font-size: 20px;
-    }
+   
 
     .Qbotondecompra button{
         background-color: #96adeb;
@@ -209,6 +257,7 @@ hr{
         padding: 0px;
         border-radius: 10px;
         border: 1px solid black;
+        left: 20px;
     }
     
     .Qmas{
@@ -232,7 +281,7 @@ hr{
         text-align: center;
         color: white;
         position: absolute;
-        top: 59%;
+        top: 73%;
         font-size: 75%
         
     }
@@ -241,27 +290,23 @@ hr{
 }
 
 @media (min-width: 577px) and (max-width: 768px){
+    /* -------------- CABECERA ------------- */
+
     header img{
         width: 350px;
     }
 
-    .navbar{
+    .Snavbar{
         display: none;
     }
 
     .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
-        font-size: 11px;
-    }
-
-    .QlistadoyCantidad{
         font-size: 15px;
     }
 
-    .Qtitulo{
+    .QlistadoyCantidad{
         font-size: 20px;
     }
-
-    
 
     .QbotonAgregar{
         position: relative;
@@ -292,9 +337,15 @@ hr{
         text-align: center;
         color: white;
         position: absolute;
-        top: 59%;
-        font-size: 75%
+        top: 78%;
+        font-size: 90%
         
+    }
+
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter img{
+        width: 50%;
     }
 } 
 
@@ -303,7 +354,40 @@ hr{
         width: 350px;
     }
 
-    .fa-bars{
+    .Sburger-menu{
         display: none;
+    }
+
+    .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
+        font-size: 20px;
+    }
+
+    .QlistadoyCantidad{
+        font-size: 25px;
+    }
+
+
+    .Qtitulo{
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 78%;
+        font-size: 160%
+        
+    }
+
+    .Qcantidad{
+        position: relative;
+        left: 7%;
+    }
+
+    /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter div{
+        width: 30%;
+    }
+
+    .Sfooter img{
+        width: 80%;
     }
 }  
