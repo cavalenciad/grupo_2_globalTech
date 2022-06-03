@@ -1,134 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/register.css">
-    <title>Registro</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/register.css">
+  
+  <title>Registro</title>
 </head>
+
 <body>
   <header>
-   <!-------- LOGO -------->
+      <!-------- LOGO -------->
     <img src="images/Logo-letras.png" alt="Logo Global Tech">
 
-    <!-------- NAVBAR -------->
+      <!-------- NAVBAR -------->
     <nav class="Snavbar">
-        <a href="/">INICIO</a>
-        <a href="#">QUIÉNES SOMOS</a>
-        <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
-        <a href="/productCart">CARRITO DE COMPRAS</a>
-        <a href="/registro">REGISTRO</a>
-        <a href="/login">LOGIN</a>
+      <a href="/">INICIO</a>
+      <a href="#">QUIÉNES SOMOS</a>
+      <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
+      <a href="/productCart">CARRITO DE COMPRAS</a>
+      <a href="/registro">REGISTRO</a>
+      <a href="/login">LOGIN</a>
 
     </nav>
-    <!-------- ICONO MENU HAMBURGUESA -------->
+      <!-------- ICONO MENU HAMBURGUESA -------->
 
     <div class="Sburger-menu">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </div>
-</header>
-<!-------- IMAGEN DE FONDO -------->
+  </header>
+      <!-------- IMAGEN DE FONDO -------->
 
-<div class="MimagenFondo">
+  <div class="MimagenFondo">
     <form class="MformRegister" action="#">
-        <h3>Regístrate en Global Tech</h3>
+      <h3>Regístrate en Global Tech</h3>
 
-        <!-------- CAJA DE FORMULARIO -------->
+      <!-------- CAJA DE FORMULARIO -------->
 
-          <div class="McompletarFormulario">
-            <input type="email" placeholder="Email*" required>
-          
-          <div class="McompletarFormulario">
-            <input type="text" placeholder="Nombre*"  required>
-          </div>
-          <div class="McompletarFormulario">
-            <input type="text" placeholder="Apellidos*"  required>
-          </div>
-          <div class="McompletarFormulario">
-            <input type="text" placeholder="Nombre de usuario*" maxlength="10"  required>
-          </div>
-          <!-------- SELECCIONAR PAÍS -------->
+      <div class="McompletarFormulario">
+        <input type="email" placeholder="Email*" required>
 
-          <div class="McompletarFormulario">
-            <select class="Mpais"> 
-                <option value="seleccionarPais">Seleccionar país</option>
-                <option value="CO">Colombia</option>
-                <option value="AR">Argentina</option>
-                <option value="BO">Bolivia</option>
-                <option value="BR">Brasil</option>
-                <option value="CA">Canadá</option>
-                <option value="CL">Chile</option>
-                <option value="CR">Costa Rica</option>
-                <option value="CU">Cuba</option>
-                <option value="EC">Ecuador</option>
-                <option value="SV">El Salvador</option>
-                <option value="US">Estados Unidos</option>
-                <option value="GT">Guatemala</option>
-                <option value="HT">Haití</option>
-                <option value="HN">Honduras</option>
-                <option value="UM">Islas menores de Estados Unidos</option>
-                <option value="VI">Islas Vírgenes (EEUU)</option>
-                <option value="JM">Jamaica</option>
-                <option value="MX">México</option>
-                <option value="NI">Nicaragua</option>
-                <option value="PA">Panamá</option>
-                <option value="PY">Paraguay</option>
-                <option value="PE">Perú</option>
-                <option value="PR">Puerto Rico</option>
-                <option value="DO">República Dominicana</option>
-                <option value="UY">Uruguay</option>
-                <option value="VE">Venezuela</option>
-            </select>
+        <div class="McompletarFormulario">
+          <input type="text" placeholder="Nombre*" required>
         </div>
-          <!-------- CONTRASEÑA -------->
-          <div class="McompletarFormulario">
-            <input type="password" placeholder="Contraseña*" maxlenght="10" required>
-          </div>
-          <div class="McompletarFormulario">
-            <input type="password" placeholder="Confirmar contraseña*" maxlenght="10" required>
-          </div>
+        <div class="McompletarFormulario">
+          <input type="text" placeholder="Apellidos*" required>
         </div>
-        <!-------- ACEPTO TÉRMINOS -------->
-
-        <div class="MaceptoTerminos">
-                <input  class="Mcheckbox" type="checkbox" id="aceptoTerminos">Acepto los
-                <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
-                 y la
-                  <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
-         </div>
-         <!-------- BOTONES REGISTRAR Y YA TENGO CUENTA -------->
-
-        <div class="Mbutton">
-          <input type="submit" id="Registrarse" value="REGISTRARSE">
-          <input  href="/grupo_2_globalTech/code/views/login.html" type="submit" id="yaTengoCuenta" value="YA TENGO CUENTA">
+        <div class="McompletarFormulario">
+          <input type="text" placeholder="Nombre de usuario*" maxlength="10" required>
         </div>
-  </form>
+        <!-------- SELECCIONAR PAÍS -------->
+
+        <div class="McompletarFormulario">
+          <select class="Mpais">
+            <option value="seleccionarPais">Seleccionar país</option>
+            <option value="CO">Colombia</option>
+            <option value="AR">Argentina</option>
+            <option value="BO">Bolivia</option>
+            <option value="BR">Brasil</option>
+            <option value="CA">Canadá</option>
+            <option value="CL">Chile</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CU">Cuba</option>
+            <option value="EC">Ecuador</option>
+            <option value="SV">El Salvador</option>
+            <option value="US">Estados Unidos</option>
+            <option value="GT">Guatemala</option>
+            <option value="HT">Haití</option>
+            <option value="HN">Honduras</option>
+            <option value="UM">Islas menores de Estados Unidos</option>
+            <option value="VI">Islas Vírgenes (EEUU)</option>
+            <option value="JM">Jamaica</option>
+            <option value="MX">México</option>
+            <option value="NI">Nicaragua</option>
+            <option value="PA">Panamá</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Perú</option>
+            <option value="PR">Puerto Rico</option>
+            <option value="DO">República Dominicana</option>
+            <option value="UY">Uruguay</option>
+            <option value="VE">Venezuela</option>
+          </select>
+        </div>
+        <!-------- CONTRASEÑA -------->
+        <div class="McompletarFormulario">
+          <input type="password" placeholder="Contraseña*" maxlenght="10" required>
+        </div>
+        <div class="McompletarFormulario">
+          <input type="password" placeholder="Confirmar contraseña*" maxlenght="10" required>
+        </div>
+      </div>
+      <!-------- ACEPTO TÉRMINOS -------->
+
+      <div class="MaceptoTerminos">
+        <input class="Mcheckbox" type="checkbox" id="aceptoTerminos">Acepto los
+        <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
+        y la
+        <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
+      </div>
+      <!-------- BOTONES REGISTRAR Y YA TENGO CUENTA -------->
+
+      <div class="Mbutton">
+        <input type="submit" id="Registrarse" value="REGISTRARSE">
+        <input href="/grupo_2_globalTech/code/views/login.html" type="submit" id="yaTengoCuenta"
+          value="YA TENGO CUENTA">
+      </div>
+    </form>
   </div>
+      <!-------- FOOTER: PIE DE PÁGINA -------->
 
-  <!-------- FOOTER: PIE DE PÁGINA -------->
-
-    <footer class="Sfooter">
-      <div>
-          <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
-      </div>
-      <div>
-          <h3>MAPA DEL SITIO</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-              Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
-              Mollitia, eveniet impedit iusto ab sequi temporibus 
-              quaerat eligendi necessitatibus laborum vitae!</p>
-      </div>
-      <div>
-         <h3>DATOS DE CONTACTO</h3>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-             Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
-             Mollitia, eveniet impedit iusto ab sequi temporibus 
-             quaerat eligendi necessitatibus laborum vitae!</p>
-         </div>
+  <footer class="Sfooter">
+    <div>
+      <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
+    </div>
+    <div>
+      <h3>MAPA DEL SITIO</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Totam nobis, nostrum laborum cum minus deserunt similique facere harum.
+        Mollitia, eveniet impedit iusto ab sequi temporibus
+        quaerat eligendi necessitatibus laborum vitae!</p>
+    </div>
+    <div>
+      <h3>DATOS DE CONTACTO</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Totam nobis, nostrum laborum cum minus deserunt similique facere harum.
+        Mollitia, eveniet impedit iusto ab sequi temporibus
+        quaerat eligendi necessitatibus laborum vitae!</p>
+    </div>
   </footer>
 </body>
- </html>
-   
+</html>
