@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* -------------- CABECERA ------------- */
@@ -45,21 +46,21 @@ header {
 
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
 
-.fa-bars {
+.Sburger-menu .fa-bars {
   font-size: 28px;
   color: #2962FF;
 }
 
 
-body {
+.jImagenFondo {
     background-image: url("/images/Images_login_register/backgroundLogin.jpg");
     background-size: cover;
-    background-repeat: round;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     text-align: center;
     padding-top: 2px;
-    padding-bottom: 145px;
+    padding-bottom: 2px;
 }
 /*----Caja de registro-----*/
 
@@ -275,11 +276,6 @@ header img {
     display: none;
 }
 
-.Sburger-menu{
-    font-size: 28px;
-    color: #2962FF;
-}
-
 form {
         width: 80%;
         position: relative;
@@ -301,12 +297,6 @@ form {
 /*---Media Querie Tablet ---*/
 
 @media (min-width: 577px) and (max-width: 899px) {
-
-.Sburger-menu .fa-bars {
-    font-size: 28px;
-    color: #2962FF;
-}
-      
 
 header img {
         width: 350px;
