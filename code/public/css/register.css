@@ -335,12 +335,10 @@ header {
   }
 
   .MformRegister input {
-
     width: 95%;
     height: 35px;
     padding: 7px;
-
-  }
+}
 
 /*----SELECCIONAR PAÍS----*/
 
@@ -348,8 +346,7 @@ header {
     width: 95%;
     height: 35px;
     margin-bottom: 15px;
-
-  }
+}
 
   /*----ACEPTO TÉRMINOS Y CONDICIONES----*/
 
@@ -359,9 +356,7 @@ header {
     font-size: 14px;
     position: relative;
     left: -13px;
-
-
-  }
+}
 
   /*----BOTONES REGISTRARME Y YA TENGO CUENTA----*/
 
