@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="css/login.css">
     <title>Iniciar Sesión</title>
 </head>
@@ -16,7 +19,8 @@
         <img src="images/Logo-letras.png" alt="Logo Global Tech">
 
 <!-------- NAVBAR -------->
-        <nav class="Snavbar">
+     
+<nav class="Snavbar">
             <a href="/">INICIO</a>
             <a href="#">SOBRE NOSOTROS</a>
             <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
@@ -25,13 +29,14 @@
             <a href="/login">LOGIN</a>
 
         </nav>
-
+  
 <!-------- ICONO MENU HAMBURGUESA -------->
 
 <div class="Sburger-menu">
     <i class="fas fa-bars"></i>
 </div>
-    </header>
+</header>
+<div class="jImagenFondo">
     <form action="/login" method="POST">
         <h3>Iniciar Sesión</h3>
         <div>
@@ -41,11 +46,13 @@
             <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8"
                 maxlength="15" required>
         </div>
-        <div>
-            <label class="content-input">
+        <!---<div class="content-input">
                 <input type="checkbox" name="recuerdame" id="recuerdame" value="recuerdame">Recuerdame
                 <i></i>
-            </label>
+        </div>-->
+
+        <div class="jRecuerdame">
+            <input  class="jCheckbox" type="checkbox" id="jRecuerdame">Recuerdame
         </div>
 
         <button type="submit">Iniciar Sesión</button>
@@ -53,7 +60,7 @@
         </p>
         <p class="jOlvidaste"> <a href="#">¿Ha olvidado su contraseña?</a></p>
     </form>
-
+</div>
 <!-------- PIE DE PAGINA -------->
 
 <footer class="Sfooter">
