@@ -190,10 +190,17 @@ a{
 }
 
 .Sproducto p{
-    font-size: 16px;
     padding: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
    
+}
+
+.Sprecio{
+    width: 100%;
+    font-weight: 600;
+    font-size: 23px;
+    color: #000;
+    letter-spacing: 1px;
 }
 
 .Sproducto a{
@@ -238,6 +245,45 @@ a{
 .Sfooter p{
     margin-top: 15px;
 }
+
+
+.Sfondo{
+    background-image: url('/images/images_index/slide-3.jpg');
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.StituloFondo{
+    width: 70%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.StextoFondo{
+    width: 60%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.Sfondo a{
+    padding: 10px;
+    color: #00B8D4;
+    background-color:#ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 
 
 /* ---------- MEDIA QUERYS ----------- */
@@ -316,6 +362,7 @@ a{
     .Sproducto img{
         width: 65%;
 }
+
     
     /* ---------------- PIE DE PAGINA ---------- */
 

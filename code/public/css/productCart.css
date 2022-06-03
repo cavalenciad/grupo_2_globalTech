@@ -349,9 +349,9 @@ hr{
     }
 } 
 
-@media (min-width: 769px) and (max-width: 1920px){
+@media (min-width: 900px) and (max-width: 1920px){
     header img{
-        width: 350px;
+        width: 200px;
     }
 
     .Sburger-menu{
