@@ -190,13 +190,14 @@ header {
   font-weight: bold;
   margin-left: 10px;
   margin-right: 10px;
+  transition: all 0.3s ease;
 }
 
 /*----ESTILOS DE REGISTRARME Y YA TENGO CUENTA----*/
 
 .Mbutton input:hover {
-  transform: scale(0.99);
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background-color:  #2962FF;
+  
 }
 
 /*----PIE DE PÁGINA----*/

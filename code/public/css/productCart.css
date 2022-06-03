@@ -48,7 +48,7 @@ header{
 
 .fa-bars{
     font-size: 28px;
-    color: #2962FF;
+    color: #00B8D4;
 }
 
 
@@ -86,7 +86,7 @@ header{
     justify-content: space-around;
     font-size: 25px;
     margin-top: 30px;
-    
+    font-weight: 500;
 }
 
 .Qcantidad{
@@ -105,6 +105,8 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px #9d9d9d;
+    margin-top: 40px;
 }
 
 .Qproducto1, .Qproducto2, .Qproducto3{
@@ -137,16 +139,17 @@ header{
 }
 
 .QbotonAgregar{
-    color: #2962FF;
+    background-color: #2962FF;
     position: relative;
-    width: 19%;
+    width: 16%;
     padding: 9px;
     left: 20px;
     border-radius: 10px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 3px #9d9d9d; 
 }
 
 .Qmas{
+    color: #fff;
     position: relative;
     float: right;
     background: none;
@@ -155,6 +158,7 @@ header{
 }
 
 .Qmenos{
+    color: #fff;
     position: relative;
     float: left;
     background: none;
@@ -164,36 +168,38 @@ header{
 }
 
 .Qtotalcarrito{
-    width: 95%;
+    width: 60%;
     height: auto;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 20px;  
-    border: 2px solid #070707;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px #9d9d9d;
 
 }
 
-.Qbotondecompra button{
-    background-color: #2962FF ;
+.Qbotondecompra button {
+    background-color: #00B8D4 ;
     border-radius: 5px;
     width: 11%;
     height: 30px;
     border: none;
     margin: 15px;
+    box-shadow: 0px 0px 3px #9d9d9d;
+    transition:all 0.3s ease ;
+}
+
+.Qbotondecompra button:hover{
+    background-color: #2962FF;
 }
 
 .QbotonComprafinal{
     color: #fff;
 }
 
-hr{
-    background: #070707 !important;
-    height: 3px;    
-}
 
 /* ---------------- PIE DE PAGINA ---------- */
 
@@ -246,14 +252,15 @@ hr{
 
     .QlistadoyCantidad{
         font-size: 15px;
+        font-weight: 550;
     }
 
    
 
     .Qbotondecompra button{
-        background-color: #96adeb;
+        background-color: #00B8D4;
         border-radius: 5px;
-        width: 15%;
+        width: 30%;
         height: 30px;
         border: none;
         margin: 15px;
@@ -264,7 +271,6 @@ hr{
         width: 16%;
         padding: 0px;
         border-radius: 10px;
-        border: 1px solid black;
         left: 20px;
     }
     
@@ -309,11 +315,12 @@ hr{
     }
 
     .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .QlistadoyCantidad{
         font-size: 20px;
+        font-weight: 500;
     }
 
     .QbotonAgregar{
@@ -321,7 +328,6 @@ hr{
         width: 16%;
         padding: 0px;
         border-radius: 10px;
-        border: 1px solid black;
     }
     
     .Qmas{
@@ -349,7 +355,14 @@ hr{
         font-size: 90%
         
     }
-
+    .Qbotondecompra button{
+        background-color: #00B8D4;
+        border-radius: 5px;
+        width: 30%;
+        height: 30px;
+        border: none;
+        margin: 15px;
+    }
     /* ---------------- PIE DE PAGINA ---------- */
 
     .Sfooter img{

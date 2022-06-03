@@ -47,7 +47,7 @@ a{
 
 .fa-bars{
     font-size: 28px;
-    color: #2962FF;
+    color: #00B8D4;
 }
 
 /* ---------------- SLIDE ---------- */
@@ -206,10 +206,61 @@ a{
 .Sproducto a{
     padding: 10px;
     color: #ffffff;
-    background-color: #2962FF;
+    background-color: #00B8D4;
     border-radius: 5px;
     box-shadow: 0px 0px 3px #c3c3c3;
     margin-bottom: 15px;
+    transition: all 0.3 ease;
+}
+
+.Sproducto a:hover{
+    background-color:#2962FF ;
+}
+
+
+/* ---------------- FONDO FIJO ---------- */
+
+.Sfondo{
+    background-image: url('/images/images_index/slide-3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.StituloFondo{
+    width: 80%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.StextoFondo{
+    width: 80%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.Sfondo a{
+    padding: 10px;
+    color: #ffffff;
+    background-color:#00B8D4;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.Sfondo a:hover{
+    background-color: #2962FF;
 }
 
 /* ---------------- PIE DE PAGINA ---------- */
@@ -244,44 +295,6 @@ a{
 
 .Sfooter p{
     margin-top: 15px;
-}
-
-
-.Sfondo{
-    background-image: url('/images/images_index/slide-3.jpg');
-    background-attachment: fixed;
-    height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-
-}
-
-.StituloFondo{
-    width: 70%;
-    color: #ffffff;
-    text-shadow: 0px 0px 3px #000;
-    font-size: 35px;
-    margin-bottom: 25px;
-}
-
-.StextoFondo{
-    width: 60%;
-    color: #ffffff;
-    text-shadow: 0px 0px 3px #000;
-    font-size: 28px;
-    margin-bottom: 25px;
-}
-
-.Sfondo a{
-    padding: 10px;
-    color: #00B8D4;
-    background-color:#ffffff;
-    border-radius: 5px;
-    margin-bottom: 15px;
 }
 
 
@@ -415,6 +428,37 @@ a{
 
     .Sproducto img{
         width: 65%;
+}
+
+    /* ---------------- FONDO FIJO ---------- */
+
+    .Sfondo{
+    background-image: url('/images/images_index/slide-3.jpg');
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.StituloFondo{
+    width: 70%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.StextoFondo{
+    width: 60%;
+    color: #ffffff;
+    text-shadow: 0px 0px 3px #000;
+    font-size: 28px;
+    margin-bottom: 25px;
 }
 
     /* ---------------- PIE DE PAGINA ---------- */
