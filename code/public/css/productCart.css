@@ -117,6 +117,8 @@ header{
     width: 33%;
     margin-top: 10px;
     margin-left: 10px;
+    box-shadow: 0px 0px 5px #9d9d9d;
+    border-radius: 10px;
 }
 
 .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
@@ -131,9 +133,11 @@ header{
     width: 30%;
     height: 30px;
     margin-left: 10px;
+    
 }
 
 .QbotonAgregar{
+    color: #2962FF;
     position: relative;
     width: 19%;
     padding: 9px;
@@ -174,12 +178,16 @@ header{
 }
 
 .Qbotondecompra button{
-    background-color: #96adeb;
+    background-color: #2962FF ;
     border-radius: 5px;
     width: 11%;
     height: 30px;
     border: none;
     margin: 15px;
+}
+
+.QbotonComprafinal{
+    color: #fff;
 }
 
 hr{
@@ -349,9 +357,9 @@ hr{
     }
 } 
 
-@media (min-width: 769px) and (max-width: 1920px){
+@media (min-width: 900px) and (max-width: 1920px){
     header img{
-        width: 350px;
+        width: 200px;
     }
 
     .Sburger-menu{
