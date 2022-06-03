@@ -131,11 +131,12 @@ button {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 45px;
+    transition: all 0.3s;
 }
 
 button :hover {
     transform: scale(0.99);
-    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    background-color: #2962FF;
 }
 
 .jOlvidaste {
@@ -148,10 +149,6 @@ form a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-}
-
-form a:hover {
-    text-decoration: underline;
 }
 
 
