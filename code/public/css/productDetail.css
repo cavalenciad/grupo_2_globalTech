@@ -104,7 +104,13 @@ header{
 
 .bigImage img{
     width: 100%;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px #959595;
+    transition: all 0.3s ease;
+}
+
+.bigImage img:hover{
+    box-shadow: 0px 0px 10px #2962ff;
 }
 
 .imageDescription{
@@ -115,7 +121,14 @@ header{
 .imageDescription img{
     width: 100%;
     margin: 5px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px #959595;
+    transition: all 0.3s ease;
+}
+
+.imageDescription img:hover{
+    box-shadow: 0px 0px 10px #2962ff;
+    transform: scale(1.1);
 }
 
 .imageDescriptionContainer{
