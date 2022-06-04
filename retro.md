@@ -1,4 +1,4 @@
-Primera Retrospectiva
+Primera Retrospectiva 24 de mayo
 
 Start Doing:
 - División del trabajo
