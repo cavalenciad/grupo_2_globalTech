@@ -134,7 +134,7 @@ button {
     transition: all 0.3s;
 }
 
-button :hover {
+button:hover {
     transform: scale(0.99);
     background-color: #2962FF;
 }
