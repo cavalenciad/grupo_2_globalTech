@@ -3,8 +3,10 @@ const path = require("path");
 const app = express();
 
 const rutaMain = require("./routers/main.js");
+const rutaRegister = require("./routers/register.js");
 
 app.use("/", rutaMain);
+app.use("/register", rutaRegister)
 
 app.get("/productDetail", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/productDetail.html"));
