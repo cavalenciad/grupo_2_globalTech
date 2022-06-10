@@ -7,4 +7,4 @@ const loginController ={
 },
 };
 
-module.exports = registerController;
+module.exports = loginController;
