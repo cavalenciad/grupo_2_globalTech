@@ -18,3 +18,15 @@ General:
 •	Se subió la retro al repositorio.
 •	Se actualizó el click up.
 •	Se realizó la Daily.
+
+Daily 09/06/2022
+
+General:
+-Se actualiza a Camilo sobre la reunión del 07/06/2022
+-Se conversa sobre el Sprint 3 y quedamos en el acuerdo de que Mariana y Camilo van a actulizar las rutas de acuerdo al tema anterior.
+-Se conversa sobre los formularios de carga y edición.
+-Se conversa sobre el invetario y surge la duda sobre que es, si es otra pagina nueva o un excel (Quedamos de preguntar en clase).
+-Se conversa sobre los partial, en especifico el head (Quedamos de preguntar en clase).
+-Como opcional del sprint 3 se va a hacer las redes, esta la opción de hacerlo flotante o en el footer.
+-Se pacta la siguiente reunión para el viernes despues de clase.
+-Se pacta la reunión posterior para el domingo a la 1 pm.
