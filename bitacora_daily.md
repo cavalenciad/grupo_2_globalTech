@@ -30,3 +30,10 @@ General:
 -Como opcional del sprint 3 se va a hacer las redes, esta la opción de hacerlo flotante o en el footer.
 -Se pacta la siguiente reunión para el viernes despues de clase.
 -Se pacta la reunión posterior para el domingo a la 1 pm.
+
+Daily 10/06/2022
+- Se confirma la reunión para el domingo 12 de junio a la 01:00 p.m.
+- Tenemos algunas dudas respecto a como se va a modularizar el css
+- Tratamos la solución de Heroku
+- Estamos pendientes de actualizar a Mariana respecto a lo conversado el día de hoy
+- Se conversa acerca del listado de productos, creemos que se puede hacer con un json, pero se debe consultar si hay un método para el llamado de imágenes
