@@ -12,6 +12,9 @@ app.use("/register", rutaRegister);
 app.use("/login", rutaLogin);
 app.use("/productCart", rutaProductCart);
 
+
+/*--- END POINT ---*/
+
 app.get("/productDetail", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/productDetail.html"));
    });
