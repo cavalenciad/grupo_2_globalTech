@@ -21,7 +21,7 @@ app.use("/productList", rutaProductList);
 
 /* ------------ PROXÍMO A ELIMINAR LUEGO DEL RUTEO ------------- */
 
-
+/*--------*/
 /*--- END POINT ---*/
 
 /*app.get("/productDetail", (req, res) => {
