@@ -11,24 +11,11 @@
 </head>
 <body>
 
-    <header>
-        <!-------- LOGO -------->
-        <img src="images/Logo-letras.png" alt="Logo Global Tech">
-        <!-------- NAVBAR -------->
-        <nav class="Snavbar">
-            <a href="/">INICIO</a>
-            <a href="#">SOBRE NOSOTROS</a>
-            <a href="/productDetail"><i class="fa-solid fa-gamepad-modern"></i></i>DETALLE DE PRODUCTO</a>
-            <a href="/productCart"><i class="fa-solid fa-cart-shopping"></i> CARRITO DE COMPRAS</a>
-            <a href="/registro">REGISTRO</a>
-            <a href="/login">LOGIN</a>
+    <!-- Menú de navegación -->
+    <%- include("./partials/header.ejs")%>
 
-        </nav>
-        <!-------- ICONO MENU HAMBURGUESA -------->
-        <div class="Sburger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
+    <!-- Redes sociales -->
+    <%- include("./partials/social.ejs")%>
 
     <main>
         <div class="image">
@@ -89,26 +76,9 @@
 
     </main>
 
-    <!-------- PIE DE PAGINA -------->
+    <!-- PIE DE PAGINA -->
 
-    <footer class="Sfooter">
-        <div>
-            <img src="images/LogoGlobalTech.png" alt="Logo Global Tech">
-        </div>
-        <div>
-            <h3>MAPA DEL SITIO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
-                Mollitia, eveniet impedit iusto ab sequi temporibus 
-                quaerat eligendi necessitatibus laborum vitae!</p>
-        </div>
-        <div>
-           <h3>DATOS DE CONTACTO</h3>
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-               Totam nobis, nostrum laborum cum minus deserunt similique facere harum. 
-               Mollitia, eveniet impedit iusto ab sequi temporibus 
-               quaerat eligendi necessitatibus laborum vitae!</p>
-        </div>
-    </footer>
+    <%- include("./partials/footer.ejs")%>
+
 </body>
 </html>

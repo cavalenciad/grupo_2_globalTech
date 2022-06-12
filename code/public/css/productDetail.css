@@ -58,6 +58,47 @@ header{
     color: #2962FF;
 }
 
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social{
+    position:fixed;
+    top:200px;
+    left:0;
+    padding:0px;
+    margin:0px;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    font-size:15px;
+    transition:all 0.3s ease-in-out;
+  }
+  .social li:hover{
+      margin-right:-20px;
+  }
+  .social li:hover .fa-brands{
+      margin-left:10px;
+  }
+  
+  .fa-brands{
+    color:#fff;
+    transition:all 0.3s ease-in-out;
+  }
+  .fb{
+    background-color:#3C5A98;
+  }
+  .twitter{
+      background-color:#1EA1F2;
+  }
+  .insta{
+      background-color:#C13584;
+  }
+  .wpp{
+      background-color:#25D366;
+  }
+
 /* ---------- IMAGEN PRINCIPAL -----------*/
 
 .image img{
@@ -269,6 +310,20 @@ header{
     .Sburger-menu .fa-bars{
         display: none;
     }
+
+    /* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+    .social li{
+        padding:10px 10px;
+        font-size:25px;
+        transition:all 0.3s ease-in-out;
+      }
+      .social li:hover{
+          margin-right:-30px;
+      }
+      .social li:hover .fa-brands{
+          margin-left:20px;
+      }
 
     /* ---------- DESCRIPCIÓN DE PRODUCTO -----------*/
 
