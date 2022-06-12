@@ -6,6 +6,7 @@ const rutaMain = require("./routers/main.js");
 const rutaRegister = require("./routers/register.js");
 const rutaLogin = require("./routers/login.js");
 const rutaProductCart = require("./routers/ProductCart.js");
+const rutaProductDetail = require("./routers/productDetail.js");
 
 app.set("view engine", "ejs");
 app.set("views", "./views")
@@ -14,6 +15,7 @@ app.use("/", rutaMain);
 app.use("/register", rutaRegister);
 app.use("/login", rutaLogin);
 app.use("/productCart", rutaProductCart);
+app.use("/productDetail", rutaProductDetail);
 
 /* ------------ PROXÍMO A ELIMINAR LUEGO DEL RUTEO ------------- */
 
