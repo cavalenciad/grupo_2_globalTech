@@ -50,13 +50,55 @@ header{
     font-size: 28px;
     color: #00B8D4;
 }
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social{
+    position:fixed;
+    top:200px;
+    left:0;
+    padding:0px;
+    margin:0px;
+    z-index: 1;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    font-size:15px;
+    transition:all 0.3s ease-in-out;
+  }
+  .social li:hover{
+      margin-right:-20px;
+  }
+  .social li:hover .fa-brands{
+      margin-left:10px;
+  }
+  
+  .fa-brands{
+    color:#fff;
+    transition:all 0.3s ease-in-out;
+  }
+  .fb{
+    background-color:#3C5A98;
+  }
+  .twitter{
+      background-color:#1EA1F2;
+  }
+  .insta{
+      background-color:#C13584;
+  }
+  .wpp{
+      background-color:#25D366;
+  }
+
 
 
 
 /*--------------Product cart-----------*/
 
 
-.Qcabecera {
+.Qcabecera{
     width: 100%;
     margin-top: 80px;
 }
@@ -378,6 +420,23 @@ header{
     .Sburger-menu{
         display: none;
     }
+
+     /* -------------- REDES SOCIALES FLOTANTES ------------ */
+    .social{
+        z-index: 0;
+    }
+
+     .social li{
+        padding:10px 10px;
+        font-size:25px;
+        transition:all 0.3s ease-in-out;
+      }
+      .social li:hover{
+          margin-right:-30px;
+      }
+      .social li:hover .fa-brands{
+          margin-left:20px;
+      }
 
     .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
         font-size: 20px;

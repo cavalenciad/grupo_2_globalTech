@@ -44,12 +44,56 @@ a{
   color: #2962FF;
 }
 
+
+
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
 
 .Sburger-menu .fa-bars {
   font-size: 28px;
   color: #00B8D4;
 }
+
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social{
+  position:fixed;
+  top:200px;
+  left:0;
+  padding:0px;
+  margin:0px;
+}
+.social{
+  list-style:none;
+}
+.social li{
+  padding:10px 10px;
+  font-size:15px;
+  transition:all 0.3s ease-in-out;
+}
+.social li:hover{
+    margin-right:-20px;
+}
+.social li:hover .fa-brands{
+    margin-left:10px;
+}
+
+.fa-brands{
+  color:#fff;
+  transition:all 0.3s ease-in-out;
+}
+.fb{
+  background-color:#3C5A98;
+}
+.twitter{
+    background-color:#1EA1F2;
+}
+.insta{
+    background-color:#C13584;
+}
+.wpp{
+    background-color:#25D366;
+}
+
 
 
 .jImagenFondo {
@@ -68,7 +112,7 @@ form {
     width: 25%;
     height: auto;
     margin: 0 auto;
-    margin-top: 500px;
+    margin-top: 300px;
     padding: 20px 30px;
     border-top: 4px solid #017bab;
     color: white;
@@ -143,6 +187,19 @@ button:hover {
     height: 40px;
     text-align: center;
     border-bottom: 1px solid;
+}
+
+.jNoCuenta {
+  height: 40px;
+  text-align: center;
+}
+
+.jOlvidaste :hover{
+  text-decoration: underline;
+}
+
+.jNoCuenta :hover{
+  text-decoration: underline;
 }
 
 form a {
@@ -288,6 +345,20 @@ header img {
 
 .fa-bars {
     display: none;
+}
+
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.social li{
+  padding:10px 10px;
+  font-size:25px;
+  transition:all 0.3s ease-in-out;
+}
+.social li:hover{
+    margin-right:-30px;
+}
+.social li:hover .fa-brands{
+    margin-left:20px;
 }
 
   /* ---------------- PIE DE PAGINA ---------- */

@@ -19,6 +19,9 @@ app.use("/productDetail", rutaProductDetail);
 
 /* ------------ PROXÍMO A ELIMINAR LUEGO DEL RUTEO ------------- */
 
+
+/*--- END POINT ---*/
+
 app.get("/productDetail", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/productDetail.html"));
    });
