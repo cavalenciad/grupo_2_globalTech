@@ -315,7 +315,6 @@ header{
 
     .social li{
         padding:10px 10px;
-        font-size:25px;
         transition:all 0.3s ease-in-out;
       }
       .social li:hover{
