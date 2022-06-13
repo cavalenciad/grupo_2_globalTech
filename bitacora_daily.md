@@ -37,3 +37,4 @@ Daily 10/06/2022
 - Tratamos la solución de Heroku
 - Estamos pendientes de actualizar a Mariana respecto a lo conversado el día de hoy
 - Se conversa acerca del listado de productos, creemos que se puede hacer con un json, pero se debe consultar si hay un método para el llamado de imágenes
+
