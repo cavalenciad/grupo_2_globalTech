@@ -37,3 +37,17 @@ Daily 10/06/2022
 - Tratamos la solución de Heroku
 - Estamos pendientes de actualizar a Mariana respecto a lo conversado el día de hoy
 - Se conversa acerca del listado de productos, creemos que se puede hacer con un json, pero se debe consultar si hay un método para el llamado de imágenes
+
+Daily 12/06/2022
+- Se conversa sobre los botones de redes sociales.
+- Se crea la carpeta partials y se agrega el footer.ejs, el header.ejs y el social.ejs.
+- Cambiamos la extencion de los archicos de HTML a ejs de login, productCart, register, productDetail e index.
+- Se agrega el include de header, footer y social en los archivos login, productDetail, productCart, register e index.
+- Se agrega el boton de las redes sociales en cada pestaña.
+- Se cambia el sendFile en cada controller por render.
+- Se establece la linea a seguir respecto a la vista listado de productos.
+- Se reparten las tareas para finalizar el sprint 3. 
+- Juan Manuel y Mariana se encargan del formulario de carga y edición de productos.
+- Mateo y Camilo se encargan de la vista de listado de productos.
+- Sebastian se encarga del json y vistas parciales 
+- Se define reunión final del sprint para el martes 21 de junio.

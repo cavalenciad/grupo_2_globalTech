@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+
+*{
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+ /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
+
+ .QimagenFondo form{
+    background-image: url(/grupo_2_globalTech/code/public/images/images_productCart/audifonos\ .jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    
+  }
