@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+    <link href="/css/formularioProductos.css" rel="stylesheets">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
+    <title>FORMULARIO DE PRODUCTOS</title>
+</head>
+<body>
+    <div class="QimagenFondo">
+        <form>
+            <h3>Formulario para agregar productos</h3>
+            <div>
+                <input placeholder="Nombre" type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <input placeholder="Descripción" type="text" name="description" id="description" required>
+            </div>
+            <div>
+                <label>Imagen 1</label>
+                <input type="file" name="imagen" id="imagen" required>
+            </div>
+            <div>
+                <label>Imagen 2</label>
+                <input type="file" name="imagen" id="imagen" required>
+            </div>
+            <div>
+                <label>Imagen 3</label>
+                <input type="file" name="imagen" id="imagen" required>
+            </div>
+            <div>
+                <label>Imagen 4</label>
+                <input type="file" name="imagen" id="imagen" required>
+            </div>
+            <div>
+                <label>Categoría</label>
+                <select name="Categorias"> 
+                    <option value="Portatiles Gamer">Portatiles Gamer</option>
+                    <option value="Accesorios y Perifericos">Accesorios y Periféricos</option>
+                    <option value="Celulares Gamer">Celulares Gamer</option>
+                    <option value="Hardware">Hardware</option>
+                    <option value="Consolas">Consolas</option>
+                </select>
+            </div>
+            <div>
+                <input placeholder="Características" type="text" name="características" id="características" required>
+            </div>
+            <div>
+                <input placeholder="Precio" type="number" name="precio" id="precio" required>
+            </div>
+            <div>
+                <input placeholder="Inventario" type="number" name="inventario" id="inventario" required>
+            </div>
+            <div>
+                <button type="submit">Cargar producto</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
