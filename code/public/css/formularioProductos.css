@@ -9,15 +9,92 @@
 }
 
  /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
+    
 
- .QimagenFondo form{
-    background-image: url(/grupo_2_globalTech/code/public/images/images_productCart/audifonos\ .jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
+ .QimagenFondo {
+    background-image: url("/images/images_productCart/diadema.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 145px;
-    padding-bottom: 145px;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
+  }
+
+  .QformProducts{
+    width: 24%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 6px #9d9d9d;
+    padding: 8px;
+    border-top: 4px solid #017bab;
+    border-radius: 8px;
+    margin-bottom: 145px;
+    margin-top: 90px;
+  }
+
+/*-----------TITULO:CAJA FORMULARIO------------*/
+  
+.QformProducts h3{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+
+  }
+
+  /*----CAJA DE FORMULARIO----*/
+
+  .QcompletarFormulario input{
+    width: 82%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    color: black;
+    height: 34px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  /*----CAJA DE CATEGORIAS----*/
+ .Qcategorias{
+  padding: 5px ;
+  margin-top: 15px;
+  margin-bottom: 15px;}
+  
+ 
+
+  /*-----BOTÓN DE CAJA----*/
+
+  .Qboton{
+    height: 35px;
+    margin: 25px 0;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 22px;
+
+  }
+
+  .Qboton input{
+    width: 130px;
+    height: 40px;
+    background-color: #00b8d4;
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .Qboton input:hover{
+    background-color: #2962ff;
   }

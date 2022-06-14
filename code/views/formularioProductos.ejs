@@ -5,41 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <link href="/css/formularioProductos.css" rel="stylesheets">
+    <link href="css/formularioProductos.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
       crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
     <title>FORMULARIO DE PRODUCTOS</title>
 </head>
 <body>
+
+    <!-------- MENU DE NAVEGACIÓN -------->
+    <%- include("./partials/header.ejs")%>
+
+
     <div class="QimagenFondo">
-        <form>
+        <form action="/formularioProductos" method="post" class="QformProducts">
             <h3>Formulario para agregar productos</h3>
-            <div>
+            
+            <!----CAJA DE FORMULARIO----->
+            
+            <div class="QcompletarFormulario">
                 <input placeholder="Nombre" type="text" name="name" id="name" required>
             </div>
-            <div>
+            
+            <div class="QcompletarFormulario">
                 <input placeholder="Descripción" type="text" name="description" id="description" required>
             </div>
+            
             <div>
-                <label>Imagen 1</label>
+                <label class="Qimagenes">Imagen 1</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
+
             <div>
-                <label>Imagen 2</label>
+                <label class="Qimagenes">Imagen 2</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
+
             <div>
-                <label>Imagen 3</label>
+                <label class="Qimagenes">Imagen 3</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
+
             <div>
-                <label>Imagen 4</label>
+                <label class="Qimagenes">Imagen 4</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
-            <div>
-                <label>Categoría</label>
-                <select name="Categorias"> 
+
+            <div class="QcompletarFormulario">
+                <label class="Qcategorias">Categoría</label>
+                <select name="Categorias" class="Qcategorias"> 
                     <option value="Portatiles Gamer">Portatiles Gamer</option>
                     <option value="Accesorios y Perifericos">Accesorios y Periféricos</option>
                     <option value="Celulares Gamer">Celulares Gamer</option>
@@ -47,18 +61,24 @@
                     <option value="Consolas">Consolas</option>
                 </select>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Características" type="text" name="características" id="características" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Precio" type="number" name="precio" id="precio" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Inventario" type="number" name="inventario" id="inventario" required>
             </div>
-            <div>
-                <button type="submit">Cargar producto</button>
-                <button type="reset">Borrar</button>
+
+            <!-------- BOTONES -------->
+
+            <div class="Qboton">
+                <input type="submit" id="Cargar producto" value="Cargar producto">
+                <input type="reset" id="Borrar" value="Borrar">
             </div>
         </form>
     </div>
