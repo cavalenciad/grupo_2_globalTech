@@ -1,16 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: 'roboto';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 1px 5px #a3a3a3;
+    background-color: #fff;
+    position: fixed;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.Snavbar {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+a{
+    font-size: 16px;
     font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #959595;
+    transition: ease 0.5s;
+}
+
+.Snavbar a:hover{
+    color: #2962FF;
+}
+
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
+.fa-bars{
+    font-size: 28px;
+    color: #00B8D4;
+}
+
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    padding: 0px;
+    margin: 0px;
+}
+
+.social {
+    list-style: none;
+}
+
+.social li {
+    padding: 10px 10px;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.social li:hover {
+    margin-right: -20px;
+}
+
+.social li:hover .fa-brands {
+    margin-left: 10px;
+}
+
+.fa-brands {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.fb {
+    background-color: #3C5A98;
+}
+
+.twitter {
+    background-color: #1EA1F2;
+}
+
+.insta {
+    background-color: #C13584;
+}
+
+.wpp {
+    background-color: #25D366;
 }
 
 /* -- Cabecera de productos -- */
 
-.categories{
+.categories {
     text-align: center;
     width: 90%;
     margin: auto;
@@ -18,20 +108,20 @@
     margin-bottom: 50px;
 }
 
-.categories h2{
+.categories h2 {
     font-size: 36px;
     color: #2962FF;
- }
- 
- .categories p{
-     margin-top: 20px;
-     font-size: 18px;
- 
- }
+}
+
+.categories p {
+    margin-top: 20px;
+    font-size: 18px;
+
+}
 
 /*-- Caja de Productos --*/
 
-.categories{
+.categories {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -39,7 +129,7 @@
     margin-bottom: 35px;
 }
 
-.categories div{
+.categories div {
     margin-top: 7px;
     margin-bottom: 7px;
     width: 100%;
@@ -50,7 +140,7 @@
 
 /*-- Caja de Categorías --*/
 
-.consoles{
+.consoles {
     display: flex;
     justify-content: space-around;
     flex-wrap: row;
@@ -58,7 +148,7 @@
     margin-bottom: 35px;
 }
 
-.consolesDetail{
+.consolesDetail {
     margin: 7px;
     width: 100%;
     height: auto;
@@ -73,7 +163,7 @@
 
 /* ---------------- PRODUCTOS ---------- */
 
-.boxImage{
+.boxImage {
     width: 90%;
     height: 200px;
     margin: 7px;
@@ -81,7 +171,7 @@
     background-color: #00B8D4;
 }
 
-.consolesDetail h4{
+.consolesDetail h4 {
     width: 100%;
     font-size: 24px;
     margin-top: 5px;
@@ -90,13 +180,13 @@
     letter-spacing: 1px;
 }
 
-.consolesDetail p{
+.consolesDetail p {
     padding: 10px;
     margin-bottom: 5px;
-   
+
 }
 
-.price{
+.price {
     width: 100%;
     font-weight: 600;
     font-size: 23px;
@@ -104,7 +194,7 @@
     letter-spacing: 1px;
 }
 
-.consolesDetail a{
+.consolesDetail a {
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
@@ -114,13 +204,13 @@
     transition: all 0.3 ease;
 }
 
-.consolesDetail a:hover{
-    background-color:#2962FF ;
+.consolesDetail a:hover {
+    background-color: #2962FF;
 }
 
 /* -- Accesorios -- */
 
-.accesories{
+.accesories {
     display: flex;
     justify-content: space-around;
     flex-wrap: row;
@@ -128,7 +218,7 @@
     margin-bottom: 35px;
 }
 
-.accesoriesDetail{
+.accesoriesDetail {
     margin: 7px;
     width: 100%;
     height: auto;
@@ -143,7 +233,7 @@
 
 /* ---------------- PRODUCTOS ---------- */
 
-.accesoriesDetail h4{
+.accesoriesDetail h4 {
     width: 100%;
     font-size: 24px;
     margin-top: 5px;
@@ -152,13 +242,13 @@
     letter-spacing: 1px;
 }
 
-.accesoriesDetail p{
+.accesoriesDetail p {
     padding: 10px;
     margin-bottom: 5px;
-   
+
 }
 
-.accesoriesDetail a{
+.accesoriesDetail a {
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
@@ -168,13 +258,13 @@
     transition: all 0.3 ease;
 }
 
-.accesoriesDetail a:hover{
-    background-color:#2962FF ;
+.accesoriesDetail a:hover {
+    background-color: #2962FF;
 }
 
 /* -- SmartPhones -- */
 
-.smartphone{
+.smartphone {
     display: flex;
     justify-content: space-around;
     flex-wrap: row;
@@ -182,7 +272,7 @@
     margin-bottom: 35px;
 }
 
-.smartphoneDetail{
+.smartphoneDetail {
     margin: 7px;
     width: 100%;
     height: auto;
@@ -197,7 +287,7 @@
 
 /* ---------------- PRODUCTOS ---------- */
 
-.smartphoneDetail h4{
+.smartphoneDetail h4 {
     width: 100%;
     font-size: 24px;
     margin-top: 5px;
@@ -206,13 +296,13 @@
     letter-spacing: 1px;
 }
 
-.smartphoneDetail p{
+.smartphoneDetail p {
     padding: 10px;
     margin-bottom: 5px;
-   
+
 }
 
-.smartphoneDetail a{
+.smartphoneDetail a {
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
@@ -222,13 +312,13 @@
     transition: all 0.3 ease;
 }
 
-.smartphoneDetail a:hover{
-    background-color:#2962FF ;
+.smartphoneDetail a:hover {
+    background-color: #2962FF;
 }
 
 /* -- Portátiles -- */
 
-.laptop{
+.laptop {
     display: flex;
     justify-content: space-around;
     flex-wrap: row;
@@ -236,7 +326,7 @@
     margin-bottom: 35px;
 }
 
-.laptopDetail{
+.laptopDetail {
     margin: 7px;
     width: 100%;
     height: auto;
@@ -251,7 +341,7 @@
 
 /* ---------------- PRODUCTOS ---------- */
 
-.laptopDetail h4{
+.laptopDetail h4 {
     width: 100%;
     font-size: 24px;
     margin-top: 5px;
@@ -260,13 +350,13 @@
     letter-spacing: 1px;
 }
 
-.laptopDetail p{
+.laptopDetail p {
     padding: 10px;
     margin-bottom: 5px;
-   
+
 }
 
-.laptopDetail a{
+.laptopDetail a {
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
@@ -276,13 +366,13 @@
     transition: all 0.3 ease;
 }
 
-.laptopDetail a:hover{
-    background-color:#2962FF ;
+.laptopDetail a:hover {
+    background-color: #2962FF;
 }
 
 /* -- Hardware -- */
 
-.hardware{
+.hardware {
     display: flex;
     justify-content: space-around;
     flex-wrap: row;
@@ -290,7 +380,7 @@
     margin-bottom: 35px;
 }
 
-.hardwareDetail{
+.hardwareDetail {
     margin: 7px;
     width: 100%;
     height: auto;
@@ -301,12 +391,12 @@
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 /* ---------------- PRODUCTOS ---------- */
 
-.hardwareDetail h4{
+.hardwareDetail h4 {
     width: 100%;
     font-size: 24px;
     margin-top: 5px;
@@ -315,16 +405,16 @@
     letter-spacing: 1px;
 }
 
-.hardwareDetail:hover{
+.hardwareDetail:hover {
     box-shadow: 0px 0px 5px #2962FF;
 }
 
-.hardwareDetail p{
+.hardwareDetail p {
     padding: 10px;
     margin-bottom: 5px;
 }
 
-.hardwareDetail a{
+.hardwareDetail a {
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
@@ -334,6 +424,112 @@
     transition: all 0.3 ease;
 }
 
-.hardwareDetail a:hover{
-    background-color:#2962FF ;
+.hardwareDetail a:hover {
+    background-color: #2962FF;
 }
+
+/* -- PIE DE PAGINA -- */
+
+.Sfooter {
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Sfooter div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sfooter img {
+    width: 100%;
+}
+
+.Sfooter h3 {
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sfooter p {
+    margin-top: 15px;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    /* -------------- CABECERA ------------- */
+
+    header img {
+        width: 200px;
+    }
+
+    .Snavbar {
+        display: none;
+    }
+}
+
+    @media (min-width: 577px) and (max-width: 899px) {
+
+        /* -------------- CABECERA ------------- */
+
+        header img {
+            width: 350px;
+        }
+
+        .Snavbar {
+            display: none;
+        }
+
+         /* ---------------- PIE DE PAGINA ---------- */
+
+    .Sfooter img{
+        width: 50%;
+    }
+    }
+
+        @media (min-width: 900px) and (max-width: 1920px) {
+
+            /* -------------- CABECERA ------------- */
+
+            header img {
+                width: 200px;
+            }
+
+            .fa-bars {
+                display: none;
+            }
+        
+
+            /* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+            .social li {
+                padding: 10px 10px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .social li:hover {
+                margin-right: -30px;
+            }
+
+            .social li:hover .fa-brands {
+                margin-left: 20px;
+            }
+
+             /* ---------------- PIE DE PAGINA ---------- */
+
+             .Sfooter div{
+                width: 30%;
+         }
+
+            .Sfooter img{
+                width: 80%;
+         }
+        }
+    
