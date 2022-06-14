@@ -11,13 +11,13 @@
  /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
 
  .QimagenFondo {
-    background-image: url(/grupo_2_globalTech/code/public/images/images_productCart/audifonos\ .jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
+    background-image: url("/images/images_productCart/diadema.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 145px;
-    padding-bottom: 145px;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
   }
