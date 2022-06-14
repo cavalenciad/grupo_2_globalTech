@@ -8,6 +8,51 @@
   box-sizing: border-box;
 }
 
+/*----CABECERA DE LA PÁGINA----*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+
+
+}
+
+.Snavbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*----ESTILOS ITEMS MENU----*/
+
+
+.Snavbar a {
+  font-size: 16px;
+  font-family: 'roboto';
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #959595;
+  transition: ease 0.5s;
+}
+
+.Snavbar a:hover {
+  color: #2962FF;
+}
+
+/*----ICONO MENU HAMBURGUESA----*/
+
+.fa-bars {
+  font-size: 28px;
+  color: #00B8D4;
+}
+
  /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
     
 
@@ -98,3 +143,113 @@
   .Qboton input:hover{
     background-color: #2962ff;
   }
+
+  /*---- Media querys Movil---*/
+
+@media (min-width: 0px) and (max-width: 576px){
+  
+  /*----CABECERA----*/
+
+  header img {
+    width: 200px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+  /*--- CAJA DEL FORM ---*/
+
+.QformProducts {
+  width: 95%;
+  height: 550px;
+  margin: 0 auto;
+
+}
+  .QformProducts h3 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    
+  }
+
+  .QformProducts input {
+
+    width: 95%;
+    height: 35px;
+    padding: 7px;
+
+  }
+  /*----BOTONES----*/
+
+  .Qboton {
+    margin-top: 5px;
+  }
+
+  .Qboton input{
+    width: 130px;
+  }
+  
+
+}
+
+
+
+/*---- Media queries Tablet---*/
+
+@media (min-width: 577px) and (max-width: 899px) {
+  
+
+  /*----CABECERA----*/
+
+  header img {
+    width: 350px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+   /*--- CAJA DEL FORM ---*/
+
+.QformProducts {
+  width: 95%;
+  height: 550px;
+  margin: 0 auto;
+
+}
+  .QformProducts h3 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+    
+  }
+
+  .QformProducts input {
+    width: 95%;
+    height: 35px;
+    padding: 7px;
+}
+/*----BOTONES----*/
+
+.Qboton {
+  margin-top: 5px;
+}
+
+.Qboton input{
+  width: 130px;
+}
+
+}
+
+/*---- Media queries Escritorio---*/
+
+@media (min-width: 900px) and (max-width: 1920px){
+  /*----CABECERA DE LA PÁGINA----*/
+  header img {
+    width: 200px;
+  }
+
+  .Sburger-menu .fa-bars {
+    display: none;
+  }
+  
+}
