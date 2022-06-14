@@ -12,32 +12,49 @@
     <title>FORMULARIO DE PRODUCTOS</title>
 </head>
 <body>
+
+<!-- MENU NAVEGACIÓN -->
+
+<header>  
+    <!-------- LOGO -------->
+    <a href="/"><img src="images/Logo-letras.png" alt="Logo Global Tech"></a>
+</header>
+
     <div class="QimagenFondo">
-        <form>
+        <form class="QformProducts" action="#">
             <h3>Formulario para agregar productos</h3>
-            <div>
+            
+            <!----CAJA DE FORMULARIO----->
+            
+            <div class="QcompletarFormulario">
                 <input placeholder="Nombre" type="text" name="name" id="name" required>
             </div>
-            <div>
+            
+            <div class="QcompletarFormulario">
                 <input placeholder="Descripción" type="text" name="description" id="description" required>
             </div>
-            <div>
+            
+            <div class="QcompletarFormulario">
                 <label>Imagen 1</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <label>Imagen 2</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <label>Imagen 3</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <label>Imagen 4</label>
                 <input type="file" name="imagen" id="imagen" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <label>Categoría</label>
                 <select name="Categorias"> 
                     <option value="Portatiles Gamer">Portatiles Gamer</option>
@@ -47,16 +64,22 @@
                     <option value="Consolas">Consolas</option>
                 </select>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Características" type="text" name="características" id="características" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Precio" type="number" name="precio" id="precio" required>
             </div>
-            <div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Inventario" type="number" name="inventario" id="inventario" required>
             </div>
-            <div>
+
+            <!-------- BOTONES -------->
+
+            <div class="Qboton">
                 <button type="submit">Cargar producto</button>
                 <button type="reset">Borrar</button>
             </div>
