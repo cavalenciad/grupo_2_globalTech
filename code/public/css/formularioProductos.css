@@ -144,54 +144,92 @@ header {
     background-color: #2962ff;
   }
 
-  /*---- Media querys Movil---*/
+  /*----PIE DE PÁGINA----*/
+
+.Sfooter {
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Sfooter div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sfooter img {
+  width: 100%;
+}
+
+.Sfooter h3 {
+  color: #2962FF;
+  letter-spacing: 1px;
+}
+
+.Sfooter p {
+  margin-top: 15px;
+}
+
+
+
+/*---- Media querys Movil---*/
 
 @media (min-width: 0px) and (max-width: 576px){
   
   /*----CABECERA----*/
 
-  header img {
-    width: 200px;
-  }
+header img {
+  width: 200px;
+}
 
-  .Snavbar {
-    display: none;
-  }
-  /*--- CAJA DEL FORM ---*/
+.Snavbar {
+  display: none;
+}
+
+
+/*--- CAJA DEL FORM ---*/
 
 .QformProducts {
   width: 95%;
-  height: 550px;
+  height: 700px;
   margin: 0 auto;
-
-}
-  .QformProducts h3 {
-    font-size: 20px;
-    position: relative;
-    top: 10px;
-    
-  }
-
-  .QformProducts input {
-
-    width: 95%;
-    height: 35px;
-    padding: 7px;
-
-  }
-  /*----BOTONES----*/
-
-  .Qboton {
-    margin-top: 5px;
-  }
-
-  .Qboton input{
-    width: 130px;
-  }
-  
-
+  padding-bottom: 10px;
+  position: relative;
+  top: 100px;
+  margin-bottom: 10px;
+  bottom: 50px;
 }
 
+.QformProducts h3 {
+  font-size: 20px;
+  position: relative;
+  top: 10px;    
+}
+
+.QformProducts input {
+  width: 95%;
+  height: 35px;
+  padding: 7px;
+}
+
+/*----BOTONES----*/
+
+.Qboton {
+  margin-top: 5px;
+}
+
+.Qboton input{
+  width: 130px;
+}
+}
 
 
 /*---- Media queries Tablet---*/
@@ -199,35 +237,36 @@ header {
 @media (min-width: 577px) and (max-width: 899px) {
   
 
-  /*----CABECERA----*/
+/*----CABECERA----*/
 
-  header img {
-    width: 350px;
-  }
+header img {
+  width: 350px;
+}
 
-  .Snavbar {
-    display: none;
-  }
-   /*--- CAJA DEL FORM ---*/
+.Snavbar {
+  display: none;
+}
+   
+/*--- CAJA DEL FORM ---*/
 
 .QformProducts {
   width: 95%;
   height: 550px;
   margin: 0 auto;
-
 }
-  .QformProducts h3 {
-    font-size: 20px;
-    position: relative;
-    top: 10px;
-    
-  }
-
-  .QformProducts input {
-    width: 95%;
-    height: 35px;
-    padding: 7px;
+  
+.QformProducts h3 {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
 }
+
+.QformProducts input {
+  width: 95%;
+  height: 35px;
+  padding: 7px;
+}
+
 /*----BOTONES----*/
 
 .Qboton {
@@ -243,13 +282,24 @@ header {
 /*---- Media queries Escritorio---*/
 
 @media (min-width: 900px) and (max-width: 1920px){
-  /*----CABECERA DE LA PÁGINA----*/
-  header img {
+  
+/*----CABECERA DE LA PÁGINA----*/
+  
+header img {
     width: 200px;
   }
 
-  .Sburger-menu .fa-bars {
+.Sburger-menu .fa-bars {
     display: none;
   }
-  
+
+ /*----PIE DE PÁGINA----*/
+
+ .Sfooter div{
+  width: 30%;
+}
+
+.Sfooter img{
+  width: 80%;
+}
 }

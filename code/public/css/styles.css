@@ -348,22 +348,22 @@ a{
 
     /* -------------- CABECERA ------------- */
 
-    header img{
-        width: 200px;
-    }
+header img{
+    width: 200px;
+}
 
-    .Snavbar{
-        display: none;
-    }
+.Snavbar{
+    display: none;
+}
 
     /* ------------- CATEGORIAS PRODUCTOS ----------- */
 
-    .ScategoriasDestacadas div{
-        width: 22.50%;
-        height: 120px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.ScategoriasDestacadas div{
+    width: 22.50%;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
 
     .Scategoria p{
         font-size: 16px;

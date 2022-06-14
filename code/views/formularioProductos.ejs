@@ -24,6 +24,10 @@
             <!----CAJA DE FORMULARIO----->
             
             <div class="QcompletarFormulario">
+                <input placeholder="ID" type="number" name="id" id="id" required>
+            </div>
+
+            <div class="QcompletarFormulario">
                 <input placeholder="Nombre" type="text" name="name" id="name" required>
             </div>
             
@@ -78,9 +82,11 @@
 
             <div class="Qboton">
                 <input type="submit" id="Cargar producto" value="Cargar producto">
-                <input type="reset" id="Borrar" value="Borrar">
+                <input type="button" id="Actualizar" value="Actualizar">
             </div>
         </form>
     </div>
+     <!--- FOOTER: PIE DE PÁGINA --->
+     <%- include("./partials/footer.ejs")%>
 </body>
 </html>
