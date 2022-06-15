@@ -16,12 +16,24 @@
      <!-------- REDES SOCIALES -------->
      <%- include("./partials/social.ejs")%>
 
-    <!-- Categoría Consolas -->
-
-    <section class="categories">
+     <section class="categories">
         <h2>Consolas de Video Juegos</h2>
         <p>Para aquellos que les encantan los video juegos, pero que no quieren gastar sumas astronómicas en set ups de escritorio o portátiles para video juegos, la opción que mas se adapta son las consolas, ya que ofrecen un excelente rendimiento por un menor precio, además, debemos tener en cuenta los juegos exclusivos de cada marca para sus consolas y así comprar la que mejor se acomode a nuestros gustos y presupuestos.</p>
     </section>
+
+    <div class="consoles">
+        <% products.forEach(description => { %>
+            <div class="consolesDetail">
+                <img src="/images/Productos/<%= description.imagen1 %>" alt="<%=description.nombre%>"/>
+                <h4><%= description.nombre%></h4>
+                <p><%= description.precio%></p>
+                <a href="/productDetail<%= description.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+            </div>
+        <% }) %>
+    </div>
+
+    <!-- Categoría Consolas -->
+
 
     <div class="consoles">
         <div class="consolesDetail">

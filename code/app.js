@@ -43,8 +43,7 @@ app.get("/login", (req, res) => {
    });*/
    
    
-const publicPath = path.resolve(__dirname, "./public");
-app.use(express.static(publicPath));
+app.use(express.static("./public"));
 
 app.listen(3050, () =>
    console.log("Servidor activo")
