@@ -1,0 +1,52 @@
+[
+{
+    "categoria": "celulares",
+    "nombre": "Xperia PRO-I 5G",
+    "descripcion": "El Xperia PRO-I redefine la cámara como el primer teléfono inteligente del mundo con sensor de imagen Exmor RS® de 1 pulgada y detección de fases AF[i], grabación de video 4K a 120 fps de alta velocidad de fotogramas (primer [ii]) del mundo), y capacidades modulares únicas de videoblogging empaquetadas en un teléfono inteligente. Así que puedes ser creativo, donde quieras, cuando quieras. Es la cámara. [i] Xperia PRO-I cuenta con un sensor de imagen Sony tipo 1.0 con enfoque automático de detección de fase. Verificado por el servicio SpecTRAX de Strategy Analytics contra las especificaciones de la cámara publicadas para más de 19,600 teléfonos inteligentes. Correcto hasta el 26 de octubre de 2021. [ii] El Xperia PRO-I soporta grabación interna de películas 4K de alta velocidad de fotogramas a hasta 120 fps, para una reproducción suave y expresiva de movimiento lento a hasta 5 x. Verificado por el servicio SpecTRAX de Strategy Analytics contra las especificaciones de video publicadas para más de 19,600 teléfonos inteligentes. Correcto hasta el 26 de octubre de 2021 [iii] Esta característica solo está disponible para la lente de 15/16 de pulgada (24 mm).",
+    "precio": "6.480.000",
+    "imagen1": "XperiaPro-Vista1.jpg",
+    "imagen2": "XperiaPro-Vista2.jpg",
+    "imagen3": "XperiaPro-Vista3.jpg",
+    "imagen4": "XperiaPro-Vista4.jpg"
+},{
+    "categoria": "celulares",
+    "nombre": "Black Shark 4",
+    "descripcion": "El teléfono inteligente más sensible Una tasa de actualización de 144 Hz y una tasa de muestreo táctil de hasta 720 Hz le da a Black Shark 4 el retraso táctil más bajo de la industria de solo 8.3 ms para juegos más suaves y sensibles. Qualcomm Snapdragon 870: con la gama completa de tecnologías Snapdragon Elite Gaming, el Snapdragon 870 aumenta las velocidades de procesamiento en un 12% y velocidades de GPU en un 10% para un rendimiento móvil de élite. Disparadores magnéticos desplegables: gracias a nuestra innovadora tecnología de elevación magnética, los disparadores de hombro ultra sensibles parecen magia con una suave presión para un control preciso y personalizable en juegos competitivos. Cuando no están en uso, los gatillos desaparecen sin problemas en el borde del Black Shark 4.",
+    "precio": "2.800.000",
+    "imagen1": "BlackShark4-Vista1.jpg",
+    "imagen2": "BlackShark4-Vista2.jpg",
+    "imagen3": "BlackShark4-Vista3.jpg",
+    "imagen4": "BlackShark4-Vista4.jpg"
+},
+{
+    "categoria": "celulares",
+    "nombre": "Xiaomi 11T 5G + 4G Volte",
+    "descripcion": "Cine AI con un clic Múltiples efectos de videografía computacional e interruptor de un solo toque. ¡Es hora de llevar tu creatividad al siguiente nivel! Grabe perfectamente cualquier sonido interesante con Audio ZoomTres micrófonos que funcionan simultáneamente te permiten acercarte a tu sujeto mientras acercas un video. Cámara profesional de 108 MP La notable resistencia del hardware y la afinación de algoritmos profesionales te proporcionan una increíble resolución de imagen y textura tanto en entornos claros como oscuros Cámara ultra gran angular de 120° con modo nocturno Captura fácilmente escenas nocturnas expansivas.",
+    "precio": "1.360.000",
+    "imagen1": "XiaomiMi11T-Vista1.jpg",
+    "imagen2": "XiaomiMi11T-Vista2.jpg",
+    "imagen3": "XiaomiMi11T-Vista3.jpg",
+    "imagen4": "XiaomiMi11T-Vista4.jpg"
+},
+{
+    "categoria": "celulares",
+    "nombre": "ROG Phone Gaming Smartphone",
+    "descripcion": "Pantalla QHD (2560 x 1440) de 16.1 pulgadas diagonal, QHD (2560 x 1440), 165 Hz, tiempo de respuesta de 3 ms, IPS, microborde, antideslumbrante, luz azul baja, 300 nits, 100% sRGB. Procesador Intel Corei7-11800H de 11ª generación: Intel Corei7-11800H de 11ª generación. Aporta la combinación perfecta de funciones para que puedas imparar. Realice las cosas rápidamente con alto rendimiento, capacidad de respuesta instantánea y la mejor conectividad de su clase. 32 GB DDR4-3200 RAM y SSD PCIe de 1 TB: RAM DDR4-3200 de gran ancho de banda de 32 GB para ejecutar sin problemas múltiples aplicaciones y pestañas del navegador todo a la vez, SSD PCIe de 1 TB para un amplio espacio de almacenamiento. Obtén hasta 15 veces más rápido que un disco duro tradicional. El sello original se abre solo para actualizar. Ofrecemos una garantía estándar de 1 año en RAM actualizada. Incluye alfombrilla para ratón.",
+    "precio": "6.200.000",
+    "imagen1": "RogPhone-Vista1.jpg",
+    "imagen2": "RogPhone-Vista2.jpg",
+    "imagen3": "RogPhone-Vista3.jpg",
+    "imagen4": "RogPhone-Vista4.jpg"
+},
+{
+    "categoria": "celulares",
+    "nombre": "Xiaomi Redmi Note 11 Pro",
+    "descripcion": "CPU Snapdragon 695: CPU Octa-Core, hasta 2.2 GHz GPU: Qualcomm Adreno 619 Bluetooth 5.1 Wi-Fi: 802.11a/b/g/n/ac - GPS L1 | Glonass G1 | BDS B1 | Galileo E1 Altavoces duales Conector de auriculares de 0.138 in Sensor de proximidad de audio de alta resolución | Sensor de luz ambiental | Acelerómetro | Brújula electrónica | Blaster IR | Giroscopecertificación - Cámara ancha de 108 MP f/1.9 0.7 μm, 9 en 1 binning en una gran cámara macro de 2.1 μm de 1/1.52 pulgadas tamaño del sensor 8MP cámara ultra ancha f/2.2 FOV 118° 2MP macro cámara f/2.4 16MP cámara frontal f/2.4",
+    "precio": "1.270.000",
+    "imagen1": "RedmiNote11Pro-Vista1.jpg",
+    "imagen2": "RedmiNote11Pro-Vista2.jpg",
+    "imagen3": "RedmiNote11Pro-Vista3.jpg",
+    "imagen4": "RedmiNote11Pro-Vista4.jpg"
+}
+
+]

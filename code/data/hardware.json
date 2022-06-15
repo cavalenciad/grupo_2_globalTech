@@ -1,0 +1,53 @@
+[
+{
+    "categoria": "hardware",
+    "nombre": "GIGABYTE AORUS 2TB PCIe 4.0 NVMe M.2",
+    "descripcion": "AORUS Next Generation PCIe 4.0 NVMe SSD ▪ Factor de forma M.2 2280 ▪ Interfaz: PCI-Express 4.0 x4, NVMe 1.4 ▪ Capacidad: 2TB ▪ Velocidad de lectura secuencial: hasta 7,000 MB/s ▪ Velocidad de escritura secuencial: hasta 5,500 MB/s ▪ Nivelación de desgaste, tecnologías de sobreaprovisionamiento ▪ TRIM & S.M.A.R.T.",
+    "precio": "1.127.000",
+    "imagen1": "AorusM2-Vista1.jpg",
+    "imagen2": "AorusM2-Vista2.jpg",
+    "imagen3": "AorusM2-Vista3.jpg",
+    "imagen4": "AorusM2-Vista4.jpg"
+},
+
+{
+    "categoria": "hardware",
+    "nombre": "ASUS ROG STRIX NVIDIA RTX 3090",
+    "descripcion": "El ROG STRIX GeForce RTX 3090 se ha mejorado radicalmente para acomodar los nuevos chips Ampere de NVIDIA. El diseño uniforme del ventilador de Last Gen ha sido usurpado por un nuevo esquema de rotación y roles especializados para ventiladores centrales y auxiliares. Debajo de las cuchillas, un disipador de calor más grande e impresionante está listo para las cargas térmicas más exigentes. Has estado esperando lo último y mejor en diseño de GPU.",
+    "precio": "8.100.000",
+    "imagen1": "Asus3090-Vista1.jpg",
+    "imagen2": "Asus3090-Vista2.jpg",
+    "imagen3": "Asus3090-Vista3.jpg",
+    "imagen4": "Asus3090-Vista4.jpg"
+},
+{
+    "categoria": "hardware",
+    "nombre": "HYPERX FURY Beast Kit 128GB",
+    "descripcion": "Kingston FURY Beast DDR4 RGB ofrece un impulso de rendimiento y estilo con velocidades de hasta 3733 MHz, estilo agresivo e iluminación RGB que recorre la longitud del módulo para efectos suaves e impresionantes. Esta deslumbrante y rentable actualización está disponible en velocidades de 2666 MHz a 3733 MHz, latencias CL15-19, capacidades de módulo único de 8 GB a 32 GB y capacidades de kit de 16 GB a 128 GB. Cuenta con overclocking automático Plug N Play a velocidades de 2666 MHz y está listo para Intel XMP y listo para Ryzen. FURY Beast DDR4 RGB se mantiene fresco con su elegante disipador de calor de perfil bajo.",
+    "precio": "1.973.000",
+    "imagen1": "Hyperx-Vista1.jpg",
+    "imagen2": "Hyperx-Vista2.jpg",
+    "imagen3": "Hyperx-Vista3.jpg",
+    "imagen4": "Hyperx-Vista4.jpg"
+},
+{
+    "categoria": "hardware",
+    "nombre": "AMD Ryzen 9 5950X",
+    "descripcion": "Sea imparable con la velocidad sin precedentes de los mejores procesadores de escritorio del mundo. Los procesadores AMD Ryzen™ serie 5000 ofrecen lo último en alto rendimiento, ya sea que estés jugando con los últimos juegos, diseñando el próximo rascacielos o procesando datos científicos. Con AMD Ryzen™, siempre estarás a la cabeza.",
+    "precio": "2.600000",
+    "imagen1": "Ryzen5950x-Vista1.jpg",
+    "imagen2": "Ryzen5950x-Vista2.jpg",
+    "imagen3": "Ryzen5950x-Vista3.jpg",
+    "imagen4": "Ryzen5950x-Vista4.jpg"
+},
+{
+    "categoria": "hardware",
+    "nombre": "GIGABYTE X570 AORUS Master ",
+    "descripcion": "Compatible con AMD Ryzen de 3ª generación/Ryzen de 2ª generación/Ryzen con procesadores gráficos Radeon Vega Dual Channel ECC/DDR4 sin búfer ECC, 4 DIMMs directos 14 fases Infineon digital VRM solución con 50a etapa de potencia avanzado diseño térmico. Disipador de calor Fins-Array y tubo de calor directo de contacto triple ultrarrápido NVMe PCIe 4.0/3.0/3.0 x4 M.2 Con triple protección térmica Intel Wi-Fi 6 802.11ax y BT 5 con una antena o US ALC1220-VB y ESS Sabre 9218 DAC, 130Db trasero Realtek 2.5GbE + Intel Gigabit LAN USB turbocompresor para dispositivo móvil Soporte de carga rápida RGB Fusion con luz LED direccionable multizona, diseño Show ventilador inteligente 5, cabezales de ventilador híbridos Con parada de ventilador y detección de ruido, 1 panel frontal y 1 USB 3.2 Gen 2 Type-C integrado I/O Shield Q-Flash Plus actualiza BIOS sin instalar CPU, memoria, GPU.",
+    "precio": "1.500.000",
+    "imagen1": "X570-Vista1.jpg",
+    "imagen2": "X570-Vista2.jpg",
+    "imagen3": "X570-Vista3.jpg",
+    "imagen4": "X570-Vista4.jpg"
+}
+]
