@@ -242,9 +242,9 @@ header {
   
 }
 
-/*----PIE DE PÁGINA----*/
+/* ---------------- PIE DE PAGINA ---------- */
 
-.Sfooter {
+.Sfooter{
   width: 100%;
   background-color: #ececec;
   display: flex;
@@ -255,7 +255,7 @@ header {
   padding-bottom: 20px;
 }
 
-.Sfooter div {
+.Sfooter div{
   padding-top: 20px;
   padding-bottom: 20px;
   width: 90%;
@@ -263,18 +263,19 @@ header {
   text-align: center;
 }
 
-.Sfooter img {
+.Sfooter img{
   width: 100%;
 }
 
-.Sfooter h3 {
+.Sfooter h3{
   color: #2962FF;
   letter-spacing: 1px;
 }
 
-.Sfooter p {
+.Sfooter p{
   margin-top: 15px;
 }
+
 
 
 /*---- Media querys Movil---*/
@@ -351,6 +352,7 @@ header {
 /*---- Media queries Tablet---*/
 
 @media (min-width: 577px) and (max-width: 899px) {
+  
 
   /*----CABECERA----*/
 

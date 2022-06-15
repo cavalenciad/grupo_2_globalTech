@@ -1,25 +1,305 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 
-
-* {
-  font-family: Roboto;
+*{
+  font-family: roboto;
   margin: 0;
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
 }
 
+/*----CABECERA DE LA PÁGINA----*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+
+
+}
+
+.Snavbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*----ESTILOS ITEMS MENU----*/
+
+
+.Snavbar a {
+  font-size: 16px;
+  font-family: 'roboto';
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #959595;
+  transition: ease 0.5s;
+}
+
+.Snavbar a:hover {
+  color: #2962FF;
+}
+
+/*----ICONO MENU HAMBURGUESA----*/
+
+.fa-bars {
+  font-size: 28px;
+  color: #00B8D4;
+}
+
  /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
     
 
  .QimagenFondo {
-    background-image: url(/grupo_2_globalTech/code/public/images/images_productCart/audifonos\ .jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
+    background-image: url("/images/images_productCart/diadema.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 145px;
-    padding-bottom: 145px;
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:white;
   }
+
+  .QformProducts{
+    width: 24%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0px 0px 6px #9d9d9d;
+    padding: 8px;
+    border-top: 4px solid #017bab;
+    border-radius: 8px;
+    margin-bottom: 145px;
+    margin-top: 90px;
+  }
+
+/*-----------TITULO:CAJA FORMULARIO------------*/
+  
+.QformProducts h3{
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+
+  }
+
+  /*----CAJA DE FORMULARIO----*/
+
+  .QcompletarFormulario input{
+    width: 82%;
+    border: 1px solid white;
+    margin-bottom: 15px;
+    color: black;
+    height: 34px;
+    padding: 11px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  /*----CAJA DE CATEGORIAS----*/
+ .Qcategorias{
+  padding: 5px ;
+  margin-top: 15px;
+  margin-bottom: 15px;}
+  
+ 
+
+  /*-----BOTÓN DE CAJA----*/
+
+  .Qboton{
+    height: 35px;
+    margin: 25px 0;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 22px;
+
+  }
+
+  .Qboton input{
+    width: 130px;
+    height: 40px;
+    background-color: #00b8d4;
+    border: none;
+    color:#fff;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .Qboton input:hover{
+    background-color: #2962ff;
+  }
+
+  /*----PIE DE PÁGINA----*/
+
+.Sfooter {
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Sfooter div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sfooter img {
+  width: 100%;
+}
+
+.Sfooter h3 {
+  color: #2962FF;
+  letter-spacing: 1px;
+}
+
+.Sfooter p {
+  margin-top: 15px;
+}
+
+
+
+/*---- Media querys Movil---*/
+
+@media (min-width: 0px) and (max-width: 576px){
+  
+  /*----CABECERA----*/
+
+header img {
+  width: 200px;
+}
+
+.Snavbar {
+  display: none;
+}
+
+
+/*--- CAJA DEL FORM ---*/
+
+.QformProducts {
+  width: 95%;
+  height: 700px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
+  top: 100px;
+  margin-bottom: 10px;
+  bottom: 50px;
+}
+
+.QformProducts h3 {
+  font-size: 20px;
+  position: relative;
+  top: 10px;    
+}
+
+.QformProducts input {
+  width: 95%;
+  height: 35px;
+  padding: 7px;
+}
+
+/*----BOTONES----*/
+
+.Qboton {
+  margin-top: 5px;
+}
+
+.Qboton input{
+  width: 130px;
+}
+}
+
+
+/*---- Media queries Tablet---*/
+
+@media (min-width: 577px) and (max-width: 899px) {
+  
+
+/*----CABECERA----*/
+
+header img {
+  width: 350px;
+}
+
+.Snavbar {
+  display: none;
+}
+   
+/*--- CAJA DEL FORM ---*/
+
+.QformProducts {
+  width: 95%;
+  height: 550px;
+  margin: 0 auto;
+}
+  
+.QformProducts h3 {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.QformProducts input {
+  width: 95%;
+  height: 35px;
+  padding: 7px;
+}
+
+/*----BOTONES----*/
+
+.Qboton {
+  margin-top: 5px;
+}
+
+.Qboton input{
+  width: 130px;
+}
+
+}
+
+/*---- Media queries Escritorio---*/
+
+@media (min-width: 900px) and (max-width: 1920px){
+  
+/*----CABECERA DE LA PÁGINA----*/
+  
+header img {
+    width: 200px;
+  }
+
+.Sburger-menu .fa-bars {
+    display: none;
+  }
+
+ /*----PIE DE PÁGINA----*/
+
+ .Sfooter div{
+  width: 30%;
+}
+
+.Sfooter img{
+  width: 80%;
+}
+}
