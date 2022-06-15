@@ -199,13 +199,28 @@ header img {
 
 .QformProducts {
   width: 95%;
-  height: 700px;
+  height: auto;
   margin: 0 auto;
   padding-bottom: 10px;
   position: relative;
   top: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
   bottom: 50px;
+}
+
+.QimagenFormulario div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Qimagenes{
+  margin-top: 10px;
+}
+
+.QimagenFormulario #imagen{
+  width: 70%;
 }
 
 .QformProducts h3 {
