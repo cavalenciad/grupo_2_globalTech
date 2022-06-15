@@ -54,4 +54,5 @@ Daily 12/06/2022
 
 Daily 14/06/2022
 - Se realizan cambios en el formulario de de creación y edición de productos
-- 
+- Se actualizan los precios en el Product.json
+

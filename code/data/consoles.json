@@ -1,0 +1,53 @@
+[
+    
+    {
+        "categoria": "consolas",
+        "nombre": "Nintendo Switch",
+        "descripcion": "Obtén el sistema de juego que te permite jugar los juegos que desees, donde estés, como quieras. Incluye la consola Nintendo Switch y la base Nintendo Switch en negro, con controladores JoyCon en contraste izquierdo y derecho, uno rojo, uno azul. También incluye todos los extras que necesitas para empezar. Número de modelo: HAC-001(-01) (el número de serie del producto comienza con XKW). Este modelo incluye una duración de la batería de aproximadamente 4,5 - 9 horas. La duración de la batería dependerá de los juegos que juegues, Por ejemplo, la batería durará aproximadamente 5.5 horas para The Legend of Zelda: Breath of the Wild (los juegos se venden por separado).",
+        "precio": "1.212.000",
+        "imagen1": "NintendoSwitch-Vista1.jpg",
+        "imagen2": "NintendoSwitch-Vista2.jpg",
+        "imagen3": "NintendoSwitch-Vista3.jpg",
+        "imagen4": "NintendoSwitch-Vista4.jpg"
+    },
+    {
+        "categoria": "consolas",
+        "nombre": "Microsoft Xbox One 1TB",
+        "descripcion": "Conéctate y juega con tus amigos y familiares en Xbox Live, la red de juegos más rápida y fiable Encuentra amigos, rivales y compañeros de equipo en la mejor comunidad mundial de juegos. Xbox Live es la red multijugador más avanzada y proporciona un juego estable y descargas rápidas. Compite, conecte y comparta entre plataformas con los jugadores de Xbox One y Windows 10. Obtén dos o cuatro juegos gratis cada mes con Xbox Live Gold.",
+        "precio": "1.150.000",
+        "imagen1": "XboxOne-Vista1.jpg",
+        "imagen2": "XboxOne-Vista2.jpg",
+        "imagen3": "XboxOne-Vista3.jpg",
+        "imagen4": "XboxOne-Vista4.jpg"
+    },
+    {
+        "categoria": "consolas",
+        "nombre": "PlayStation 4 1TB Spider man",
+        "descripcion": "Incluye un sistema PlayStation 4 SSD negro azabache de 1 TB, un controlador inalámbrico DualShock 4 a juego, y el juego Spider-Man de Marvel. Ofrece potentes gráficos y velocidad, capacidades sociales profundamente integradas, juegos conectados, personalización inteligente, funciones innovadoras de segunda pantalla y más para una experiencia completa. Proporciona un amplio espacio de almacenamiento para varios juegos y un montón de aplicaciones. Títulos de Indie, imágenes de juego grabadas y más.",
+        "precio": "1.600.000",
+        "imagen1": "PlayStation4-Vista1.jpg",
+        "imagen2": "PlayStation4-Vista2.jpg",
+        "imagen3": "PlayStation4-Vista3.jpg",
+        "imagen4": "PlayStation4-Vista4.jpg"
+    },
+    {
+        "categoria": "consolas",
+        "nombre": "Xbox series x 1TB SSD ",
+        "descripcion": "Presentamos Xbox Series X, la Xbox más rápida y potente que nunca. Juega miles de títulos de cuatro generaciones de consolas: todos los juegos se ven y juegan mejor en Xbox Series X. En el corazón de la Serie X se encuentra la arquitectura Xbox Velocity, que combina una SSD personalizada con software integrado para un juego más rápido y optimizado con tiempos de carga significativamente reducidos. Muévete sin problemas entre varios juegos en un destello con un resumen rápido. Explora nuevos mundos ricos y disfruta de la acción como nunca antes con los inigualables 12 Teraflops de potencia de procesamiento gráfico crudo. Disfruta de juegos en 4K con hasta 120 fotogramas por segundo, sonido espacial 3D avanzado y mucho más. Empieza con una biblioteca instantánea de más de 100 juegos de alta calidad, incluidos todos los nuevos títulos de Xbox Game Studios el día en que se lanzan como Halo Infinite, con Xbox Game Pass Ultimate",
+        "precio": "2.400.000",
+        "imagen1": "XboxSeriesX-Vista1.jpg",
+        "imagen2": "XboxSeriesX-Vista2.jpg",
+        "imagen3": "XboxSeriesX-Vista3.jpg",
+        "imagen4": "XboxSeriesX-Vista4.jpg"
+    },
+    {
+        "categoria": "consolas",
+        "nombre": "PlayStation 5 1TB SSD",
+        "descripcion": "La consola PS5 desata nuevas posibilidades de juego que nunca has anticipado. Disfrute de una carga ultrarrápida con una SSD de alta velocidad, una inmersión más profunda con soporte para retroalimentación háptica, disparadores adaptativos y audio 3D, y una nueva generación de increíbles juegos de PlayStation.",
+        "precio": "2.000.000",
+        "imagen1": "PlayStation5-Vista1.jpg",
+        "imagen2": "PlayStation5-Vista2.jpg",
+        "imagen3": "PlayStation5-Vista3.jpg",
+        "imagen4": "PlayStation5-Vista4.jpg"
+    }
+]
