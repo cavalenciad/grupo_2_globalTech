@@ -55,4 +55,8 @@ Daily 12/06/2022
 Daily 14/06/2022
 - Se realizan cambios en el formulario de de creación y edición de productos
 - Se actualizan los precios en el Product.json
+- Se actualiza la pestaña listada producto con los archivos JSON
+- se independiza cada categoría de productos en JSON diferentes
+- Se asigna tarea para organizar la pestaña de Listado producto en todas las resoluciones
+- Se define reunión para mañana para afinar ultimos detalles del Sprint 3
 

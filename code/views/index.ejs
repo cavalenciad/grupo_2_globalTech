@@ -35,7 +35,7 @@
     <!-------- SECCIÓN PRODUCTOS DESTACADOS -------->
     <div class="ScategoriasDestacadas">
         <div class="Scategoria">
-            <a href="#">
+            <a href="/productList#consoles">
                 <img src="images/images_index/headset.png" alt="Icono perifericos">
                 <p>Periféricos</p>
             </a>
@@ -93,42 +93,14 @@
     </section>
 
     <div class="SproductosDestacados">
+        <% featured.forEach(featured => { %>
         <div class="Sproducto">
-            <img src="images/images_index/play5.jpg" alt="Playstation 5">
-            <h4>Playstation 5 + mando</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Suscipit iusto, nostrum, necessitatibus nihil quibusdam tempora esse sapiente velit temporibus 
-                excepturi assumenda, neque vero expedita.</p>
-                <p class="Sprecio">$ 3.600.000</p>
-                <a href="/"><i class="fas fa-info-circle"></i> Más información</a>
+            <img src="/images/Productos/<%= featured.imagen1 %>" alt="<%=featured.nombre%>"/>
+            <h4><%= featured.nombre%></h4>
+            <p class="Sprecio"><%= featured.precio%></p>
+            <a href="/productDetail<%= featured.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
         </div>
-        <div class="Sproducto">
-            <img src="/images/images_index/diedemas.png" alt="Perifericos">
-            <h4>Audifonos Gamer</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Suscipit iusto, nostrum, necessitatibus nihil quibusdam tempora esse sapiente velit temporibus 
-                excepturi assumenda, neque vero expedita.</p>
-                <p class="Sprecio">$ 400.000</p>
-                <a href="/"><i class="fas fa-info-circle"></i> Más información</a>
-        </div>
-        <div class="Sproducto">
-            <img src="images/images_index/Gaming-laptop.png" alt="portatil gamer">
-            <h4>MSI GE76 Raider</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Suscipit iusto, nostrum, necessitatibus nihil quibusdam tempora esse sapiente velit temporibus 
-                excepturi assumenda, neque vero expedita.</p>
-                <p class="Sprecio">$ 11.500.000</p>
-                <a href="/"><i class="fas fa-info-circle"></i> Más información</a>
-        </div>
-        <div class="Sproducto">
-            <img src="images/images_index/chasis.jpg" alt="Torre pc">
-            <h4>Thermaltake View 51</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Suscipit iusto, nostrum, necessitatibus nihil quibusdam tempora esse sapiente velit temporibus 
-                excepturi assumenda, neque vero expedita.</p>
-                <p class="Sprecio">$ 1.050.000</p>
-                <a href="/"><i class="fas fa-info-circle"></i> Más información</a>
-        </div>
+        <% }) %>
     </div>
 
     <div class="Sfondo">
