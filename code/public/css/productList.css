@@ -18,6 +18,7 @@ header {
     background-color: #fff;
     position: fixed;
     margin-top: -50px;
+    margin-bottom: 100px;
     z-index: 1;
 }
 
@@ -26,6 +27,8 @@ header {
     display: flex;
     justify-content: space-around;
 }
+
+
 
 /* -------------- ESTILOS ITEMS MENU ------------- */
 
@@ -111,6 +114,7 @@ a{
 .categories h2 {
     font-size: 36px;
     color: #2962FF;
+    margin-top: 50px;
 }
 
 .categories p {
@@ -174,7 +178,7 @@ a{
 .consolesDetail h4 {
     width: 100%;
     font-size: 24px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 5px;
     color: #2962FF;
     letter-spacing: 1px;
