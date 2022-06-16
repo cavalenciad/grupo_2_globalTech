@@ -20,8 +20,6 @@ header {
   background-color: #fff;
   position: fixed;
   z-index: 1;
-
-
 }
 
 .Snavbar {
@@ -112,6 +110,12 @@ header {
   padding: 5px ;
   margin-top: 15px;
   margin-bottom: 15px;}
+
+  textarea {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 4px;
+  }
   
  
 
@@ -213,6 +217,10 @@ header img {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.QdivInterno {
+  margin-top: 15px;
 }
 
 .Qimagenes{
