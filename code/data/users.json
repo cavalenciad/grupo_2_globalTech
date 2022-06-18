@@ -18,12 +18,12 @@
     "Imagen": ""
     },
     {
-    "Identificador": "",
-    "Nombre": "",
-    "Apellido": "",
-    "Email": "",
-    "Contraseña": "",
-    "Categoría": "",
+    "ID": "3",
+    "Nombre": "Camilo Andrés",
+    "Apellido": "Valencia Devia",
+    "Email": "cavalenciad@outlook.com",
+    "Contraseña": "Admin3",
+    "Categoría": "Administrador",
     "Imagen": ""
     },
     {
