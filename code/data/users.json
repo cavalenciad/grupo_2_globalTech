@@ -9,12 +9,12 @@
     "Imagen": ""
     },
     {
-    "Identificador": "",
-    "Nombre": "",
-    "Apellido": "",
-    "Email": "",
-    "Contraseña": "",
-    "Categoría": "",
+    "ID": "2",
+    "Nombre": "Mariana",
+    "Apellido": "Quintero Castañeda",
+    "Email": "mqcyd09@gmail.com",
+    "Contraseña": "Admin2",
+    "Categoría": "Administrador",
     "Imagen": ""
     },
     {
