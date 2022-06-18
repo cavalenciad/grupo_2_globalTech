@@ -1,19 +1,25 @@
 [
 
-    {
-        "categoria": "hardware",
+    {   
+        "id": "7",
         "nombre": "ASUS ROG STRIX NVIDIA RTX 3090",
         "descripcion": "El ROG STRIX GeForce RTX 3090 se ha mejorado radicalmente para acomodar los nuevos chips Ampere de NVIDIA. El diseño uniforme del ventilador de Last Gen ha sido usurpado por un nuevo esquema de rotación y roles especializados para ventiladores centrales y auxiliares. Debajo de las cuchillas, un disipador de calor más grande e impresionante está listo para las cargas térmicas más exigentes. Has estado esperando lo último y mejor en diseño de GPU.",
+        "categoria": "hardware",
+        "color1": "blanco",
+        "color2": "negro",
         "precio": "$ 8.100.000 COP",
         "imagen1": "Asus3090-Vista1.jpg",
         "imagen2": "Asus3090-Vista2.jpg",
         "imagen3": "Asus3090-Vista3.jpg",
         "imagen4": "Asus3090-Vista4.jpg"
     },    
-    {
-        "categoria": "consolas",
+    {   
+        "id" : "4",
         "nombre": "Xbox series x 1TB SSD ",
         "descripcion": "Presentamos Xbox Series X, la Xbox más rápida y potente que nunca. Juega miles de títulos de cuatro generaciones de consolas: todos los juegos se ven y juegan mejor en Xbox Series X. En el corazón de la Serie X se encuentra la arquitectura Xbox Velocity, que combina una SSD personalizada con software integrado para un juego más rápido y optimizado con tiempos de carga significativamente reducidos. Muévete sin problemas entre varios juegos en un destello con un resumen rápido. Explora nuevos mundos ricos y disfruta de la acción como nunca antes con los inigualables 12 Teraflops de potencia de procesamiento gráfico crudo. Disfruta de juegos en 4K con hasta 120 fotogramas por segundo, sonido espacial 3D avanzado y mucho más. Empieza con una biblioteca instantánea de más de 100 juegos de alta calidad, incluidos todos los nuevos títulos de Xbox Game Studios el día en que se lanzan como Halo Infinite, con Xbox Game Pass Ultimate",
+        "categoria": "consolas",
+        "color1" : "blanco",
+        "color2" :"negro",
         "precio": "2.400.000",
         "imagen1": "XboxSeriesX-Vista1.jpg",
         "imagen2": "XboxSeriesX-Vista2.jpg",
@@ -21,9 +27,12 @@
         "imagen4": "XboxSeriesX-Vista4.jpg"
     },
     {
-        "categoria": "Perifericos",
+        "id": "18",
         "nombre": "Redragon Teclado mecánico",
         "descripcion": "Conmutadores mecánicos personalizados (equivalente en color verde cerezo) para un rendimiento definitivo de juegos. Luz Led de color rojo ajustable y teclas moldeadas por inyección de doble disparo para una retroiluminación cristalina. Construcción de metal y ABS, teclas mecánicas y conector USB chapado en oro soportan juegos de núcleo duro. Conmutadores mecánicos personalizados diseñados para mayor durabilidad, capacidad de respuesta y durabilidad. Teclas mecánicas con resistencia media, sonido de clic audible y retroalimentación táctil.",
+        "categoria": "Perifericos",
+        "color1" : "blanco",
+        "color2" :"negro",
         "precio": "133.000",
         "imagen1": "TecladoRedragon-Vista1.jpg",
         "imagen2": "TecladoRedragon-Vista2.jpg",
@@ -31,9 +40,12 @@
         "imagen4": "TecladoRedragon-Vista4.jpg"
     },
     {
-        "categoria": "Portatiles",
+        "id" : "12",
         "nombre": "MSI GE76 Raider",
         "descripcion": "Intel Core i7-11800H (8 núcleos 16 hilos, velocidad de reloj base de 2,3 GHz, turbo máximo a 4,6 GHz, caché L3 de 24 MB); Killer Wi-Fi 6E AX1675 (2x2) + Bluetooth 5.2. Bisel fino de 17.3 pulgadas FHD (1920 x 1080) nivel IPS 144Hz, 16:9, 45% NTSC; GPU para portátil GeForce RTX 3060 hasta 1802 MHz Boost Clock, potencia máxima de gráficos de 130 W con impulso dinámico; soporta 3 monitores digitales externos a través de HDMI, Thunderbolt 4 y mDP v11 .4, monitor externo .4, Resolución: 8K @ 60Hz.",
+        "categoria": "Portatiles",
+        "color1" : "blanco",
+        "color2" :"negro",
         "precio": "7.660.000",
         "imagen1": "MsiGe76-Vista1.jpg",
         "imagen2": "MsiGe76-Vista2.jpg",
