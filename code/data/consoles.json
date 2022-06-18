@@ -1,14 +1,18 @@
 [
     
     {
-        "categoria": "consolas",
+        "id": "1",
         "nombre": "Nintendo Switch",
         "descripcion": "Obtén el sistema de juego que te permite jugar los juegos que desees, donde estés, como quieras. Incluye la consola Nintendo Switch y la base Nintendo Switch en negro, con controladores JoyCon en contraste izquierdo y derecho, uno rojo, uno azul. También incluye todos los extras que necesitas para empezar. Número de modelo: HAC-001(-01) (el número de serie del producto comienza con XKW). Este modelo incluye una duración de la batería de aproximadamente 4,5 - 9 horas. La duración de la batería dependerá de los juegos que juegues, Por ejemplo, la batería durará aproximadamente 5.5 horas para The Legend of Zelda: Breath of the Wild (los juegos se venden por separado).",
+        "categoria": "consolas",
+        "color1": "blanco",
+        "color2": "negro",
         "precio": "1.212.000",
         "imagen1": "NintendoSwitch-Vista1.jpg",
         "imagen2": "NintendoSwitch-Vista2.jpg",
         "imagen3": "NintendoSwitch-Vista3.jpg",
         "imagen4": "NintendoSwitch-Vista4.jpg"
+
     },
     {
         "categoria": "consolas",
