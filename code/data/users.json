@@ -1,11 +1,11 @@
 [
     {
-    "Identificador": "",
-    "Nombre": "",
-    "Apellido": "",
-    "Email": "",
-    "Contraseña": "",
-    "Categoría": "",
+    "ID": "1",
+    "Nombre": "Mateo",
+    "Apellido": "Roldán Gutiérrez",
+    "Email": "teo781@hotmail.com",
+    "Contraseña": "Admin1",
+    "Categoría": "Administrador",
     "Imagen": ""
     },
     {
