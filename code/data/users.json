@@ -36,12 +36,12 @@
     "Imagen": ""
     },
     {
-    "Identificador": "",
-    "Nombre": "",
-    "Apellido": "",
-    "Email": "",
-    "Contraseña": "",
-    "Categoría": "",
+    "ID": "5",
+    "Nombre": "Sebastián",
+    "Apellido": "Jiménez Mesa",
+    "Email": "sebastianjdeveloper@gmail.com",
+    "Contraseña": "Admin5",
+    "Categoría": "Administrador",
     "Imagen": ""
     }
 
