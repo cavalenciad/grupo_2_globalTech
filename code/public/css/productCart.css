@@ -155,21 +155,25 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: -22px;
 }
 
 .Qproducto1 img, .Qproducto2 img, .Qproducto3 img{
-    width: 33%;
+    width: 22%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
     box-shadow: 0px 0px 5px #9d9d9d;
     border-radius: 10px;
+    position: relative;
+    left: 40px;
 }
 
 .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
     width: 33%;
     padding: 10px;
     font-size: 30px;
-    
+    position: relative;
+    left: 50px;
 }
 
 
@@ -177,15 +181,16 @@ header{
     width: 30%;
     height: 30px;
     margin-left: 10px;
+    position: relative;
     
 }
 
 .QbotonAgregar{
     background-color: #00B8D4;
     position: relative;
+    left: 85px;
     width: 16%;
     padding: 9px;
-    left: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px #9d9d9d; 
 }
@@ -277,6 +282,8 @@ header{
     margin-top: 15px;
 }
 
+/*media de movil*/
+
 @media (min-width: 0px) and (max-width: 576px){
     /* -------------- CABECERA ------------- */
 
@@ -288,16 +295,18 @@ header{
         display: none;
     }
 
+    
+    
     .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
-        font-size: 9px;
+        font-size: 12px;
+        position: relative;
+        left: 31px;
     }
 
     .QlistadoyCantidad{
         font-size: 15px;
         font-weight: 550;
     }
-
-   
 
     .Qbotondecompra button{
         background-color: #00B8D4;
@@ -308,12 +317,13 @@ header{
         margin: 15px;
     }
 
+    
     .QbotonAgregar{
         position: relative;
         width: 16%;
         padding: 0px;
         border-radius: 10px;
-        left: 20px;
+        left:14%;
     }
     
     .Qmas{
@@ -345,6 +355,8 @@ header{
     
 }
 
+
+/*media tablet*/
 @media (min-width: 577px) and (max-width: 768px){
     /* -------------- CABECERA ------------- */
 
@@ -355,6 +367,8 @@ header{
     .Snavbar{
         display: none;
     }
+
+
 
     .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
         font-size: 14px;
@@ -412,6 +426,7 @@ header{
     }
 } 
 
+/*media escritorio*/
 @media (min-width: 900px) and (max-width: 1920px){
     header img{
         width: 200px;
@@ -455,9 +470,37 @@ header{
         
     }
 
+    .Qproducto1 img, .Qproducto2 img, .Qproducto3 img{
+        width: 22%;
+        margin-top: 10px;
+        margin-right: 10px;
+        box-shadow: 0px 0px 5px #9d9d9d;
+        border-radius: 10px;
+        position: relative;
+        left: -50px;
+    }
+    
+    .QtextoProducto1, .QtextoProducto2, .QtextoProducto3{
+        width: 33%;
+        padding: 10px;
+        font-size: 20px;
+        position: relative;
+        left: 25px;
+    }
+
     .Qcantidad{
         position: relative;
         left: 7%;
+    }
+
+    .QbotonAgregar{
+        background-color: #00B8D4;
+        position: relative;
+        width: 16%;
+        padding: 9px;
+        left: 280px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px #9d9d9d; 
     }
 
     /* ---------------- PIE DE PAGINA ---------- */
