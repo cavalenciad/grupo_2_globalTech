@@ -27,12 +27,12 @@
     </section>
 
     <div class="Mproducts">
-        <% consoles.forEach(consolesDescription => { %>
+        <% consoles.forEach(consolesDescription => {%>
             <div class="MproductsDetail">
                 <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>"/>
                 <h4><%= consolesDescription.nombre%></h4>
                 <p><%= consolesDescription.precio%></p>
-                <a href="/productDetail<%= consolesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/productDetail"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
