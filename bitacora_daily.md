@@ -75,3 +75,9 @@ Daily 18/06/2022
 -Se trabajo en el productDetail y los enlaces que llevan desde productList al detalle de cada producto.
 -Se pacta la siguiente reunion el Lunes a las 3 de la tarde.
 
+Daily 20/06/2022
+
+- Se actualiza el ClickUp con las tareas del sprint 4 que ya están listas.
+-  Debido a dificultades con el CRUD de productos, se intenta resolver el problema o se acuerda separar una tutoría para que nos orienten mejor.
+- Se pedirá tutoría el 21/06/22 a las 6:00pm para comprender el tema del CRUD.
+- Se crea formulario de edición de productos con sus respectivas rutas.
