@@ -42,9 +42,11 @@ const productListController ={
             hardwareDescription
 
         });
+    },
+    buscar: (req, res) => {
+        let busqueda = req.query;
+        res.send(busqueda);
     }
 }
     
-
-
 module.exports = productListController;

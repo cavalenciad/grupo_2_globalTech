@@ -58,5 +58,26 @@ Daily 14/06/2022
 - Se actualiza la pestaña listada producto con los archivos JSON
 - se independiza cada categoría de productos en JSON diferentes
 - Se asigna tarea para organizar la pestaña de Listado producto en todas las resoluciones
-- Se define reunión para mañana para afinar ultimos detalles del Sprint 3
+- Se define reunión para mañana para afinar ultimos detalles del Sprint 3.
 
+Daily 18/06/2022
+
+-Se converso sobre el carrito de compras, ya que se le deben realizar cambios en el banner.
+-Se reviso el formulario de adicion de productos y se compelto de acuerdo 
+-Se termino de ajustar los JSON de los pproductos con los colores y los id
+-Se agrego la opcion de multiple en la seleccion de imagenes (se llego a  la conclusion que dejamos los 4 campos de imagenes por que creemos que es mejor para la exportación al JSON).
+-Se crea el USER.JSON.
+-Enviar los fotos a Camilo para las ilustraciones.
+-Se completa la informacion del USER.JSON.
+-Se ve la necesidad de crear un formulario nuevo para la edicion de productos (Camilo).
+-Se revisa los enlaces de los controladores y los JSON.
+-Se trabaja en el product list y sus enlaces.
+-Se trabajo en el productDetail y los enlaces que llevan desde productList al detalle de cada producto.
+-Se pacta la siguiente reunion el Lunes a las 3 de la tarde.
+
+Daily 20/06/2022
+
+- Se actualiza el ClickUp con las tareas del sprint 4 que ya están listas.
+-  Debido a dificultades con el CRUD de productos, se intenta resolver el problema o se acuerda separar una tutoría para que nos orienten mejor.
+- Se pedirá tutoría el 21/06/22 a las 6:00pm para comprender el tema del CRUD.
+- Se crea formulario de edición de productos con sus respectivas rutas.

@@ -23,31 +23,36 @@
         </div>
 
         <section class="container">
+
+        <% consoles.forEach(consolesDescription => {%>
+        <% for(i=0; i < consoles.length; i++) {%>
+        <%if(consolesDescription.nombre == consoles[i].nombre){%>
+        
             <div class="productImage">
                 <div class="bigImage">
-                    <img src="/images/image_productDescription/ps5-box.jpg" alt="Front view">
-                </div>
+                    <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>">
+                </div>        
                 
                 <div class="imageDescriptionContainer">
                     <div class="imageDescription">
-                        <img src="/images/image_productDescription/ps5-frontView.jpg" alt="Front view">
+                        <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/image_productDescription/ps5-laidView.jpg" alt="Laid view">
+                        <img src="/images/Productos/<%= consolesDescription.imagen2 %>" alt="<%=consolesDescription.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/image_productDescription/ps5-box.jpg" alt="Box">
+                        <img src="/images/Productos/<%= consolesDescription.imagen3 %>" alt="<%=consolesDescription.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/image_productDescription/ps5-sideView.jpg" alt="Side view">
+                        <img src="/images/Productos/<%= consolesDescription.imagen4 %>" alt="<%=consolesDescription.nombre%>">
                     </div>
                 </div>
             </div>
 
             <div class="productDescription">
                 <div class="namePrice">
-                    <p class="name">Play Station 5</p>
-                    <p>Precio: $3'600.000COP</p>
+                    <p class="name"><%= consolesDescription.nombre%></p>
+                    <p><%= consolesDescription.precio%></p>
                 </div>
 
                 <div class="colorMenu">
@@ -55,9 +60,8 @@
                         <label for="color">Selecciona el color</label>
                         <select name="color" id="color">
                             <option value="vacio">...</option>
-                            <option value="negro">PS5 Black</option>
-                            <option value="blanco">PS5 White</option>
-                            <option value="dorado">PS5 Gold</option>
+                            <option value="negro"><%= consolesDescription.color1%></option>
+                            <option value="blanco"><%= consolesDescription.color2%></option>                            
                         </select>
                         <button class="cart">Añadir al Carrito</button>
                         <button class="buy">Comprar Ahora</button>
@@ -66,12 +70,14 @@
 
                 <div class="textDescription">
                     <h3>Descripción del producto</h3><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus quia quod tenetur pariatur rerum labore dignissimos, dicta enim debitis, dolor ducimus officia voluptate possimus natus ullam, laudantium laboriosam id!</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus quia quod tenetur pariatur rerum labore dignissimos, dicta enim debitis, dolor ducimus officia voluptate possimus natus ullam, laudantium laboriosam id!</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus quia quod tenetur pariatur rerum labore dignissimos, dicta enim debitis, dolor ducimus officia voluptate possimus natus ullam, laudantium laboriosam id!</p><br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus accusamus quia quod tenetur pariatur rerum labore dignissimos, dicta enim debitis, dolor ducimus officia voluptate possimus natus ullam, laudantium laboriosam id!</p>
+                    <p><%= consolesDescription.descripcion%></p>
                 </div>
             </div>
+        
+            <%}%>
+            <%}%>
+        <% }) %>
+
         </section>
 
     </main>
