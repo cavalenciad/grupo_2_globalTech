@@ -55,7 +55,7 @@ header {
     
 
  .QimagenFondo {
-    background-image: url("/images/images_productCart/diadema.jpg");
+    background-color: rgb(23, 23, 23);
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;

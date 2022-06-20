@@ -8,7 +8,8 @@ const rutaLogin = require("./routers/login.js");
 const rutaProductCart = require("./routers/ProductCart.js");
 const rutaProductDetail = require("./routers/productDetail.js");
 const rutaProductList = require("./routers/productList.js");
-const rutaFormularioProducto = require("./routers/formularioProductos.js");
+const rutaCreateProducts = require("./routers/createProducts.js");
+const rutaEditProducts = require("./routers/editProducts.js");
 
 app.set("view engine", "ejs");
 app.set("views", "./views")
@@ -19,7 +20,8 @@ app.use("/login", rutaLogin);
 app.use("/productCart", rutaProductCart);
 app.use("/productDetail", rutaProductDetail);
 app.use("/productList", rutaProductList);
-app.use("/formularioProductos", rutaFormularioProducto);
+app.use("/createProducts", rutaCreateProducts);
+app.use("/editProducts", rutaEditProducts);
 
 /* ------------ PROXÍMO A ELIMINAR LUEGO DEL RUTEO ------------- */
 

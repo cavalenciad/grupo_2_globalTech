@@ -49,6 +49,4 @@ const productListController ={
     }
 }
     
-
-
 module.exports = productListController;
