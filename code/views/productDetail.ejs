@@ -24,35 +24,32 @@
 
         <section class="container">
 
-        <% consoles.forEach(consolesDescription => {%>
-        <% for(i=0; i < consoles.length; i++) {%>
-        <%if(consolesDescription.nombre == consoles[i].nombre){%>
         
             <div class="productImage">
                 <div class="bigImage">
-                    <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>">
+                    <img src="/images/Productos/<%= consoles.imagen1 %>" alt="<%=consoles.nombre%>">
                 </div>        
                 
                 <div class="imageDescriptionContainer">
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>">
+                        <img src="/images/Productos/<%= consoles.imagen1 %>" alt="<%=consoles.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consolesDescription.imagen2 %>" alt="<%=consolesDescription.nombre%>">
+                        <img src="/images/Productos/<%= consoles.imagen2 %>" alt="<%=consoles.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consolesDescription.imagen3 %>" alt="<%=consolesDescription.nombre%>">
+                        <img src="/images/Productos/<%= consoles.imagen3 %>" alt="<%=consoles.nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consolesDescription.imagen4 %>" alt="<%=consolesDescription.nombre%>">
+                        <img src="/images/Productos/<%= consoles.imagen4 %>" alt="<%=consoles.nombre%>">
                     </div>
                 </div>
             </div>
 
             <div class="productDescription">
                 <div class="namePrice">
-                    <p class="name"><%= consolesDescription.nombre%></p>
-                    <p><%= consolesDescription.precio%></p>
+                    <p class="name"><%= consoles.nombre%></p>
+                    <p><%= consoles.precio%></p>
                 </div>
 
                 <div class="colorMenu">
@@ -60,8 +57,8 @@
                         <label for="color">Selecciona el color</label>
                         <select name="color" id="color">
                             <option value="vacio">...</option>
-                            <option value="negro"><%= consolesDescription.color1%></option>
-                            <option value="blanco"><%= consolesDescription.color2%></option>                            
+                            <option value="negro"><%= consoles.color1%></option>
+                            <option value="blanco"><%= consoles.color2%></option>                            
                         </select>
                         <button class="cart">Añadir al Carrito</button>
                         <button class="buy">Comprar Ahora</button>
@@ -70,13 +67,10 @@
 
                 <div class="textDescription">
                     <h3>Descripción del producto</h3><br>
-                    <p><%= consolesDescription.descripcion%></p>
+                    <p><%= consoles.descripcion%></p>
                 </div>
             </div>
         
-            <%}%>
-            <%}%>
-        <% }) %>
 
         </section>
 

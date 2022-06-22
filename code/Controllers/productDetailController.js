@@ -12,11 +12,20 @@ const productDetailController ={
     productDetail: (req, res) => {
         res.render("productDetail", {consoles});
     },
-    productId: (req, res) => {
+    /*productId: (req, res) => {
         let productId = consoles.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
             productId
         })
+    },*/
+
+    detalleCrud: (req, res) => {
+        let productos = consoles.find(consoles => consoles.id === req.params.id)
+        if (productos == consoles) {
+            res.render('productDetail', {consoles});
+        } else {
+            res.send('error404');
+        }
     }
 };
 
