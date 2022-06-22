@@ -21,8 +21,8 @@ const productListController ={
         let accesoriesDescription = accesories.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
             accesoriesDescription
-    });
-},
+        });
+    },
     smartPhonesDescription: (req, res) => {
         let smartPhonesDescription = smartPhones.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
@@ -33,20 +33,14 @@ const productListController ={
         let laptopsGamersDescription = laptopsGamers.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
             laptopsGamersDescription
-
-});
+        });
     },
     hardwareDescription: (req, res) => {
         let hardwareDescription = hardware.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
             hardwareDescription
-
         });
     },
-    buscar: (req, res) => {
-        let busqueda = req.query;
-        res.send(busqueda);
-    }
 }
     
 module.exports = productListController;

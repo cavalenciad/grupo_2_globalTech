@@ -43,7 +43,7 @@
     },
     {
         "id" : "4",
-        "nombre": "Xbox series x 1TB SSD ",
+        "nombre": "Xbox series x 1TB SSD",
         "descripcion": "Presentamos Xbox Series X, la Xbox más rápida y potente que nunca. Juega miles de títulos de cuatro generaciones de consolas: todos los juegos se ven y juegan mejor en Xbox Series X. En el corazón de la Serie X se encuentra la arquitectura Xbox Velocity, que combina una SSD personalizada con software integrado para un juego más rápido y optimizado con tiempos de carga significativamente reducidos. Muévete sin problemas entre varios juegos en un destello con un resumen rápido. Explora nuevos mundos ricos y disfruta de la acción como nunca antes con los inigualables 12 Teraflops de potencia de procesamiento gráfico crudo. Disfruta de juegos en 4K con hasta 120 fotogramas por segundo, sonido espacial 3D avanzado y mucho más. Empieza con una biblioteca instantánea de más de 100 juegos de alta calidad, incluidos todos los nuevos títulos de Xbox Game Studios el día en que se lanzan como Halo Infinite, con Xbox Game Pass Ultimate",
         "categoria": "consolas",
         "color1" : "blanco",
@@ -124,7 +124,7 @@
     },
     {
             "id" : "10",
-            "nombre": "GIGABYTE X570 AORUS Master ",
+            "nombre": "GIGABYTE X570 AORUS Master",
             "descripcion": "Compatible con AMD Ryzen de 3ª generación/Ryzen de 2ª generación/Ryzen con procesadores gráficos Radeon Vega Dual Channel ECC/DDR4 sin búfer ECC, 4 DIMMs directos 14 fases Infineon digital VRM solución con 50a etapa de potencia avanzado diseño térmico. Disipador de calor Fins-Array y tubo de calor directo de contacto triple ultrarrápido NVMe PCIe 4.0/3.0/3.0 x4 M.2 Con triple protección térmica Intel Wi-Fi 6 802.11ax y BT 5 con una antena o US ALC1220-VB y ESS Sabre 9218 DAC, 130Db trasero Realtek 2.5GbE + Intel Gigabit LAN USB turbocompresor para dispositivo móvil Soporte de carga rápida RGB Fusion con luz LED direccionable multizona, diseño Show ventilador inteligente 5, cabezales de ventilador híbridos Con parada de ventilador y detección de ruido, 1 panel frontal y 1 USB 3.2 Gen 2 Type-C integrado I/O Shield Q-Flash Plus actualiza BIOS sin instalar CPU, memoria, GPU.",
             "categoria": "hardware",
             "color1": "blanco",
