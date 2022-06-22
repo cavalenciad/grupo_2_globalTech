@@ -4,5 +4,6 @@ const createProductsController = require("../Controllers/createProductsControlle
 
 
 router.get("/", createProductsController.formulario);
+router.post("/", createProductsController.create);
 
 module.exports = router;

@@ -27,29 +27,29 @@
         
             <div class="productImage">
                 <div class="bigImage">
-                    <img src="/images/Productos/<%= consoles.imagen1 %>" alt="<%=consoles.nombre%>">
+                    <img src="/images/Productos/<%= imagen1 %>" alt="<%= nombre%>">
                 </div>        
                 
                 <div class="imageDescriptionContainer">
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consoles.imagen1 %>" alt="<%=consoles.nombre%>">
+                        <img src="/images/Productos/<%= imagen1 %>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consoles.imagen2 %>" alt="<%=consoles.nombre%>">
+                        <img src="/images/Productos/<%= imagen2 %>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consoles.imagen3 %>" alt="<%=consoles.nombre%>">
+                        <img src="/images/Productos/<%= imagen3 %>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= consoles.imagen4 %>" alt="<%=consoles.nombre%>">
+                        <img src="/images/Productos/<%= imagen4 %>" alt="<%= nombre%>">
                     </div>
                 </div>
             </div>
 
             <div class="productDescription">
                 <div class="namePrice">
-                    <p class="name"><%= consoles.nombre%></p>
-                    <p><%= consoles.precio%></p>
+                    <p class="name"><%= nombre%></p>
+                    <p><%=  precio%></p>
                 </div>
 
                 <div class="colorMenu">
@@ -57,8 +57,8 @@
                         <label for="color">Selecciona el color</label>
                         <select name="color" id="color">
                             <option value="vacio">...</option>
-                            <option value="negro"><%= consoles.color1%></option>
-                            <option value="blanco"><%= consoles.color2%></option>                            
+                            <option value="negro"><%=  color1%></option>
+                            <option value="blanco"><%=  color2%></option>                            
                         </select>
                         <button class="cart">Añadir al Carrito</button>
                         <button class="buy">Comprar Ahora</button>
@@ -67,7 +67,7 @@
 
                 <div class="textDescription">
                     <h3>Descripción del producto</h3><br>
-                    <p><%= consoles.descripcion%></p>
+                    <p><%=  descripcion%></p>
                 </div>
             </div>
         
