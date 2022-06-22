@@ -10,7 +10,7 @@ const hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardwa
 
 const productDetailController ={
     productDetail: (req, res) => {
-        res.render("productDetail", {consoles});
+        res.render("productDetail", {consoles, accesories, smartPhones, laptopsGamers, hardware});
     },
     /*productId: (req, res) => {
         let productId = consoles.find(item => item.nombre === req.params.nombre);
