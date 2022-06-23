@@ -6,12 +6,8 @@ const accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peri
 const smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
 const laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
 const hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
-<<<<<<< HEAD
 const products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
 
-=======
- 
->>>>>>> fb504d053c46e383c6d137598b30b8bdb1defe2d
 const productListController ={
     productList: (req, res) => {
         res.render("productList", {consoles, accesories, smartPhones, laptopsGamers, hardware});
