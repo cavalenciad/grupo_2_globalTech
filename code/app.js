@@ -6,7 +6,7 @@ const rutaMain = require("./routers/main.js");
 const rutaRegister = require("./routers/register.js");
 const rutaLogin = require("./routers/login.js");
 const rutaProductCart = require("./routers/ProductCart.js");
-const rutaProductDetail = require("./routers/productDetail.js");
+/*const rutaProductDetail = require("./routers/productDetail.js");*/
 const rutaProductList = require("./routers/productList.js");
 const rutaCreateProducts = require("./routers/createProducts.js");
 const rutaEditProducts = require("./routers/editProducts.js");
@@ -18,7 +18,7 @@ app.use("/", rutaMain);
 app.use("/register", rutaRegister);
 app.use("/login", rutaLogin);
 app.use("/productCart", rutaProductCart);
-app.use("/productDetail", rutaProductDetail);
+app.use("/productDetail", rutaProductList);
 app.use("/productList", rutaProductList);
 app.use("/createProducts", rutaCreateProducts);
 app.use("/editProducts", rutaEditProducts);

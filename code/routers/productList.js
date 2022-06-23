@@ -8,5 +8,7 @@ router.get("/productList/:nombre", productListController.accesoriesDescription);
 router.get("/productList/:nombre", productListController.smartPhonesDescription);
 router.get("/productList/:nombre", productListController.laptopsGamersDescription);
 router.get("/productList/:nombre", productListController.hardwareDescription);
+router.get("/", productListController.productDetail);
+router.get("/:nombre", productListController.detalleCrud);
 
 module.exports = router;
