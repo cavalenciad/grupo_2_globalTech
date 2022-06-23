@@ -81,3 +81,12 @@ Daily 20/06/2022
 -  Debido a dificultades con el CRUD de productos, se intenta resolver el problema o se acuerda separar una tutoría para que nos orienten mejor.
 - Se pedirá tutoría el 21/06/22 a las 6:00pm para comprender el tema del CRUD.
 - Se crea formulario de edición de productos con sus respectivas rutas.
+
+Daily 21/06/2022
+
+- Se asistio a la tutoria del tema CRUD de 6:00pm a 7:30pm.
+- Hicimos cambios en los enlaces entre páginas en la sección de categorias de productos.
+- Se organizo la sección del header y footer que no estaba apareciendo el logo de Global Tech en categoria del producto especifico.
+- Modificamos los formularios de edición y creación de productos.
+- Realizamos los ultimos cambios y retoques al sprint 3 para su presentación el día 22 de junio.
+- Se pacta la siguiente reunión el Jueves a las 8 de la tarde.
