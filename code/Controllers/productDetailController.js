@@ -11,11 +11,7 @@ const products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/produc
 
 const productDetailController ={
     productDetail: (req, res) => {
-<<<<<<< HEAD
         res.render("productDetail", {consoles, accesories, smartPhones, laptopsGamers, hardware});
-=======
-        res.render("productDetail", products);
->>>>>>> refs/remotes/origin/main
     },
     detalleCrud: (req, res) => {
         let producto = products.find(products => products.nombre === req.params.nombre)
