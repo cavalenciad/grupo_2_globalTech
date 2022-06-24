@@ -89,4 +89,12 @@ Daily 21/06/2022
 - Se organizo la sección del header y footer que no estaba apareciendo el logo de Global Tech en categoria del producto especifico.
 - Modificamos los formularios de edición y creación de productos.
 - Realizamos los ultimos cambios y retoques al sprint 3 para su presentación el día 22 de junio.
-- Se pacta la siguiente reunión el Jueves a las 8 de la tarde.
+- Se pacta la siguiente reunión el Jueves a las 8 de la noche.
+
+Daily 23/06/2022
+
+- Se crea boton de editar producto y boton de eliminar producto en la vista de product detail para administradores.
+- Se crean las rutas para los botones editar y eliminar producto en la vista de product detail para administradores.
+- Se instala el modulo override.
+- Para recordar: eliminar archivos de editar productos.
+- Proxima reunión el martes 28 de junio a las 7:00pm para ajustar detalles del sprint 4.
