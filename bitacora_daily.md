@@ -62,23 +62,23 @@ Daily 14/06/2022
 
 Daily 18/06/2022
 
--Se converso sobre el carrito de compras, ya que se le deben realizar cambios en el banner.
--Se reviso el formulario de adicion de productos y se compelto de acuerdo 
--Se termino de ajustar los JSON de los pproductos con los colores y los id
--Se agrego la opcion de multiple en la seleccion de imagenes (se llego a  la conclusion que dejamos los 4 campos de imagenes por que creemos que es mejor para la exportación al JSON).
--Se crea el USER.JSON.
--Enviar los fotos a Camilo para las ilustraciones.
--Se completa la informacion del USER.JSON.
--Se ve la necesidad de crear un formulario nuevo para la edicion de productos (Camilo).
--Se revisa los enlaces de los controladores y los JSON.
--Se trabaja en el product list y sus enlaces.
--Se trabajo en el productDetail y los enlaces que llevan desde productList al detalle de cada producto.
--Se pacta la siguiente reunion el Lunes a las 3 de la tarde.
+- Se converso sobre el carrito de compras, ya que se le deben realizar cambios en el banner.
+- Se reviso el formulario de adicion de productos y se compelto de acuerdo 
+- Se termino de ajustar los JSON de los pproductos con los colores y los id
+- Se agrego la opcion de multiple en la seleccion de imagenes (se llego a  la conclusion que dejamos los 4 campos de imagenes por que creemos que es mejor para la exportación al JSON).
+- Se crea el USER.JSON.
+- Enviar los fotos a Camilo para las ilustraciones.
+- Se completa la informacion del USER.JSON.
+- Se ve la necesidad de crear un formulario nuevo para la edicion de productos (Camilo).
+- Se revisa los enlaces de los controladores y los JSON.
+- Se trabaja en el product list y sus enlaces.
+- Se trabajo en el productDetail y los enlaces que llevan desde productList al detalle de cada producto.
+- Se pacta la siguiente reunion el Lunes a las 3 de la tarde.
 
 Daily 20/06/2022
 
 - Se actualiza el ClickUp con las tareas del sprint 4 que ya están listas.
--  Debido a dificultades con el CRUD de productos, se intenta resolver el problema o se acuerda separar una tutoría para que nos orienten mejor.
+- Debido a dificultades con el CRUD de productos, se intenta resolver el problema o se acuerda separar una tutoría para que nos orienten mejor.
 - Se pedirá tutoría el 21/06/22 a las 6:00pm para comprender el tema del CRUD.
 - Se crea formulario de edición de productos con sus respectivas rutas.
 
@@ -89,4 +89,12 @@ Daily 21/06/2022
 - Se organizo la sección del header y footer que no estaba apareciendo el logo de Global Tech en categoria del producto especifico.
 - Modificamos los formularios de edición y creación de productos.
 - Realizamos los ultimos cambios y retoques al sprint 3 para su presentación el día 22 de junio.
-- Se pacta la siguiente reunión el Jueves a las 8 de la tarde.
+- Se pacta la siguiente reunión el Jueves a las 8 de la noche.
+
+Daily 23/06/2022
+
+- Se crea boton de editar producto y boton de eliminar producto en la vista de product detail para administradores.
+- Se crean las rutas para los botones editar y eliminar producto en la vista de product detail para administradores.
+- Se instala el modulo override.
+- Para recordar: eliminar archivos de editar productos.
+- Proxima reunión el martes 28 de junio a las 7:00pm para ajustar detalles del sprint 4.

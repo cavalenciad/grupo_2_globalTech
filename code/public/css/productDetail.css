@@ -234,6 +234,37 @@ header{
     font-size: 20px;
 }
 
+/* ------------- BOTONES EDITAR Y ELIMINAR ------------- */
+
+.buttons{
+    display: flex;
+    justify-content:center;
+    margin-top: 15px;
+    margin-bottom:30px;
+}
+
+.buttons input{
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    position: relative;
+    float: right;
+    background: none;
+    border: none;
+    background-color: #00B8D4;
+    position: relative;
+    padding: 9px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #9d9d9d;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttons input:hover{
+    background-color: #2962ff;
+}
+
 /* ---------------- PIE DE PAGINA ---------- */
 
 .Sfooter{

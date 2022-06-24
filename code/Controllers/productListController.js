@@ -6,7 +6,8 @@ const accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peri
 const smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
 const laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
 const hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
- 
+const products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
+
 const productListController ={
     productList: (req, res) => {
         res.render("productList", {consoles, accesories, smartPhones, laptopsGamers, hardware});
@@ -41,6 +42,16 @@ const productListController ={
             hardwareDescription
         });
     },
+    productDetail: (req, res) => {
+        res.render("productDetail", products);
+    },
+    detalleCrud: (req, res) => {
+        let producto = products.find(products => products.nombre === req.params.nombre)
+        res.render("productDetail", producto);
+    },
+    edit:(req, res) =>{
+        res.render("editProducts")
+    }
 }
     
 module.exports = productListController;
