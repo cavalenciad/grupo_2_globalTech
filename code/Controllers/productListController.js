@@ -48,6 +48,9 @@ const productListController ={
     detalleCrud: (req, res) => {
         let producto = products.find(products => products.nombre === req.params.nombre)
         res.render("productDetail", producto);
+    },
+    edit:(req, res) =>{
+        res.render("editProducts")
     }
 }
     

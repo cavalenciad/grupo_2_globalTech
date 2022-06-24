@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const methodOverride = require('method-override')
 
 const rutaMain = require("./routers/main.js");
 const rutaRegister = require("./routers/register.js");
@@ -13,6 +14,8 @@ const rutaEditProducts = require("./routers/editProducts.js");
 
 app.set("view engine", "ejs");
 app.set("views", "./views")
+
+app.use(methodOverride ("_method"));
 
 app.use("/", rutaMain);
 app.use("/register", rutaRegister);
