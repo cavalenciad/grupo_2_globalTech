@@ -98,3 +98,17 @@ Daily 23/06/2022
 - Se instala el modulo override.
 - Para recordar: eliminar archivos de editar productos.
 - Proxima reunión el martes 28 de junio a las 7:00pm para ajustar detalles del sprint 4.
+
+Daily 24/06/2022
+
+- Terminar el put y el delete en las rutas y controladores.
+- Cambiar estilo de la página para que se noten las separaciónes por sección.
+- Actualizar textos del home y el footer.
+- Arreglar detalle de producto en los destacados del Home.
+- Mateo agregará nuevas funcionalidades a la vista del registro.
+- Agregar slide en la vista del Home.
+- Darle funcionalidad al menu de hamurguesa.
+- Enviar la foto de cada uno a Camilo - URGENTE!!
+- Dejar solo un archivo de rutas y controladores para los productos.
+- Opiniones sobre el Daily.
+- Queda pendiente por confirmar reunión para el lunes 27 de junio.
