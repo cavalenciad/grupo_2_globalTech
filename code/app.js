@@ -25,10 +25,7 @@ app.use("/products", rutaProducts);
 app.use("/createProducts", rutaCreateProducts);
 app.use("/editProducts", rutaEditProducts);
 
-<<<<<<< HEAD
    
-=======
->>>>>>> refs/remotes/origin/main
 app.use(express.static("./public"));
 
 app.listen(3050, () =>
