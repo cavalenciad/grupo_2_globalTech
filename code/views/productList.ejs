@@ -29,10 +29,10 @@
     <div class="Mproducts">
         <% consoles.forEach(consolesDescription => {%>
             <div class="MproductsDetail">
-                <img src="/images/Productos/<%= consolesDescription.imagen1 %>" alt="<%=consolesDescription.nombre%>"/>
+                <img src="/images/Productos/<%= consolesDescription.imagen1%>" alt="<%=consolesDescription.nombre%>"/>
                 <h4><%= consolesDescription.nombre%></h4>
                 <p><%= consolesDescription.precio%></p>
-                <a href="/productDetail/<%= consolesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/products/productDetail/<%= consolesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
@@ -47,10 +47,10 @@
     <div class="Mproducts">
         <% accesories.forEach(accesoriesDescription => { %>
             <div class="MproductsDetail">
-                <img src="/images/Productos/<%= accesoriesDescription.imagen1 %>" alt="<%=accesoriesDescription.nombre%>"/>
+                <img src="/images/Productos/<%= accesoriesDescription.imagen1%>" alt="<%=accesoriesDescription.nombre%>"/>
                 <h4><%= accesoriesDescription.nombre%></h4>
                 <p><%= accesoriesDescription.precio%></p>
-                <a href="/productDetail/<%= accesoriesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/products/productDetail/<%= accesoriesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
@@ -65,10 +65,10 @@
     <div class="Mproducts">
         <% laptopsGamers.forEach(laptopsGamersDescription => { %>
             <div class="MproductsDetail">
-                <img src="/images/Productos/<%= laptopsGamersDescription.imagen1 %>" alt="<%=laptopsGamersDescription.nombre%>"/>
+                <img src="/images/Productos/<%= laptopsGamersDescription.imagen1%>" alt="<%=laptopsGamersDescription.nombre%>"/>
                 <h4><%= laptopsGamersDescription.nombre%></h4>
                 <p><%= laptopsGamersDescription.precio%></p>
-                <a href="/productDetail/<%= laptopsGamersDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/products/productDetail/<%= laptopsGamersDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
@@ -82,10 +82,10 @@
     <div class="Mproducts">
         <% hardware.forEach(hardwareDescription => { %>
             <div class="MproductsDetail">
-                <img src="/images/Productos/<%=  hardwareDescription.imagen1 %>" alt="<%= hardwareDescription.nombre%>"/>
+                <img src="/images/Productos/<%=  hardwareDescription.imagen1%>" alt="<%= hardwareDescription.nombre%>"/>
                 <h4><%=  hardwareDescription.nombre%></h4>
                 <p><%=  hardwareDescription.precio%></p>
-                <a href="/productDetail/<%=  hardwareDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/products/productDetail/<%=  hardwareDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
@@ -101,10 +101,10 @@
     <div class="Mproducts">
         <% smartPhones.forEach(smartPhonesDescription => { %>
             <div class="MproductsDetail">
-                <img src="/images/Productos/<%= smartPhonesDescription.imagen1 %>" alt="<%=smartPhonesDescription.nombre%>"/>
+                <img src="/images/Productos/<%= smartPhonesDescription.imagen1%>" alt="<%=smartPhonesDescription.nombre%>"/>
                 <h4><%= smartPhonesDescription.nombre%></h4>
                 <p><%= smartPhonesDescription.precio%></p>
-                <a href="/productDetail/<%= smartPhonesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
+                <a href="/products/productDetail/<%= smartPhonesDescription.nombre%>"><i class="fas fa-info-circle"></i> Más información</a>
             </div>
         <% }) %>
     </div>
