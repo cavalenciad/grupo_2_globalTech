@@ -112,3 +112,13 @@ Daily 24/06/2022
 - Dejar solo un archivo de rutas y controladores para los productos.
 - Opiniones sobre el Daily.
 - Queda pendiente por confirmar reunión para el lunes 27 de junio.
+
+Daily 28/06/2022.
+
+-Se buscaron diferentes modelos de realizar el slider del home, pero quedamos en primero terminar con lo obligatorio del Sprint.
+-Se converso sobre el menu hamburguesa de la vista Movil.
+-Se trabajo en el router del carrito de compras.
+-Se organizaron los enlaces del productList al productDetail.
+-Se pacta la próxima reunión para el 30/06/2022 a las 7 pm.
+-Se pacta primero enrutar y despues darle la funcionalidad al Edit y el Create.
+-Queda pendiente el Login y la creación de usuarios.
