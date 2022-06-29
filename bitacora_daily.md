@@ -108,7 +108,7 @@ Daily 24/06/2022
 - Mateo agregará nuevas funcionalidades a la vista del registro.
 - Agregar slide en la vista del Home.
 - Darle funcionalidad al menu de hamurguesa.
-- Enviar la foto de cada uno a Camilo - URGENTE!!
+- Enviar la foto de cada uno a Camilo - URGENTE!! correoCamilo: cavalenciad@outlook.com
 - Dejar solo un archivo de rutas y controladores para los productos.
 - Opiniones sobre el Daily.
 - Queda pendiente por confirmar reunión para el lunes 27 de junio.
