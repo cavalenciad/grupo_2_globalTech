@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <title>Detalle de Producto</title>
+    <title><%= nombre%></title>
     <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -24,24 +24,23 @@
 
         <section class="container">
 
-        
             <div class="productImage">
                 <div class="bigImage">
-                    <img src="/images/Productos/<%= imagen1 %>" alt="<%= nombre%>">
+                    <img src="/images/Productos/<%= imagen1%>" alt="<%= nombre%>">
                 </div>        
                 
                 <div class="imageDescriptionContainer">
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= imagen1 %>" alt="<%= nombre%>">
+                        <img src="/images/Productos/<%= imagen1%>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= imagen2 %>" alt="<%= nombre%>">
+                        <img src="/images/Productos/<%= imagen2%>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= imagen3 %>" alt="<%= nombre%>">
+                        <img src="/images/Productos/<%= imagen3%>" alt="<%= nombre%>">
                     </div>
                     <div class="imageDescription">
-                        <img src="/images/Productos/<%= imagen4 %>" alt="<%= nombre%>">
+                        <img src="/images/Productos/<%= imagen4%>" alt="<%= nombre%>">
                     </div>
                 </div>
             </div>
@@ -49,7 +48,7 @@
             <div class="productDescription">
                 <div class="namePrice">
                     <p class="name"><%= nombre%></p>
-                    <p><%=  precio%></p>
+                    <p><%= precio%></p>
                 </div>
 
                 <div class="colorMenu">
@@ -57,8 +56,8 @@
                         <label for="color">Selecciona el color</label>
                         <select name="color" id="color">
                             <option value="vacio">...</option>
-                            <option value="negro"><%=  color1%></option>
-                            <option value="blanco"><%=  color2%></option>                            
+                            <option value="negro"><%= color1%></option>
+                            <option value="blanco"><%= color2%></option>                            
                         </select>
                         <button class="cart">Añadir al Carrito</button>
                         <button class="buy">Comprar Ahora</button>
@@ -67,10 +66,10 @@
 
                 <div class="textDescription">
                     <h3>Descripción del producto</h3><br>
-                    <p><%=  descripcion%></p>
+                    <p><%= descripcion%></p>
                 </div>
             </div>
-            
+                        
         </section>
 
         <div class="buttons">
