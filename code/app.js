@@ -26,27 +26,6 @@ app.use("/productList", rutaProductList);
 app.use("/createProducts", rutaCreateProducts);
 app.use("/editProducts", rutaEditProducts);
 
-/* ------------ PROXÍMO A ELIMINAR LUEGO DEL RUTEO ------------- */
-
-/*--------*/
-/*--- END POINT ---*/
-
-/*app.get("/productDetail", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/productDetail.html"));
-   });
-
-app.get("/productCart", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/productCart.html"));
-   });
-
-app.get("/register", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/register.html"));
-   });
-
-app.get("/login", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/login.html"));
-   });*/
-   
    
 app.use(express.static("./public"));
 
