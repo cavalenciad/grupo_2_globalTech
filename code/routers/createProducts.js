@@ -15,7 +15,5 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage})
 
-router.get("/", createProductsController.formulario);
-router.post("/", upload.array("imagen", 4), createProductsController.create);
 
 module.exports = router;

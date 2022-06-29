@@ -10,8 +10,9 @@ const rutaProducts = require("./routers/products.js");
 const rutaCreateProducts = require("./routers/createProducts.js");
 const rutaEditProducts = require("./routers/editProducts.js");
 
+/* ---- IMPLEMENTANDO MOTOR DE PLANTILLAS ----- */
 app.set("view engine", "ejs");
-app.set("views", "./views")
+app.set("views", "./views");
 
 /* app.use(express.urlencoded({ extended: false}));
 app.use(express.json()); */
@@ -25,7 +26,6 @@ app.use("/products", rutaProducts);
 app.use("/createProducts", rutaCreateProducts);
 app.use("/editProducts", rutaEditProducts);
 
-   
 app.use(express.static("./public"));
 
 app.listen(3050, () =>
