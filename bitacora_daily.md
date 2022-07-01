@@ -122,3 +122,9 @@ Daily 28/06/2022.
 -Se pacta la próxima reunión para el 30/06/2022 a las 7 pm.
 -Se pacta primero enrutar y despues darle la funcionalidad al Edit y el Create.
 -Queda pendiente el Login y la creación de usuarios.
+
+Daily 30/06/2022.
+
+-Se revisan las rutas en el controlador los js y los controllers.
+-Se unifican en un solo archivos todos los routers de productos.
+-Se queda en pedir una asesoria para terminar el edit y el delete.
