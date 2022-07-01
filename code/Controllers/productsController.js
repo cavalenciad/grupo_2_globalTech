@@ -1,12 +1,12 @@
 const path = require('path');
 const fs = require('fs');
 
-const consoles = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/consoles.json"), "utf-8"));
-const accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peripheralsAccesories.json"), "utf-8"));
-const smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
-const laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
-const hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
-const products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
+let consoles = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/consoles.json"), "utf-8"));
+let accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peripheralsAccesories.json"), "utf-8"));
+let smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
+let laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
+let hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
+let products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
 
 const productsController ={
     productList: (req, res) => {
@@ -49,11 +49,18 @@ const productsController ={
         let product = products.find(products => products.nombre === req.params.nombre);
         res.render('productDetail', product);
     },
-    edit:(req, res) =>{
-        res.render("editProducts");
-    },
     productCart: (req, res) =>{
         res.render("productCart");
+    },
+    formularioEdit: (req, res) =>{
+        res.render("editProducts");
+    },
+
+    formularioCreate: (req, res) =>{
+        res.render("createProducts");
+    },
+    create: (req, res) => {
+        
     }
 }
     
