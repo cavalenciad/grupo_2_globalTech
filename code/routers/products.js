@@ -1,19 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const productsController = require("../Controllers/productsController");
 const multer = require('multer');
+const productsController = require("../Controllers/productsController");
 const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb (null, "images/Productos")
+        cb(null, path.join(__dirname, '../public/images/imagenesPrueba'));
     },
     filename: (req, file, cb) => {
-        cb(null, file.filename + '-' + Date.now() + path.extname(file.originalname));
+        const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);
+        cb(null, fileName);
     }
 });
 
-const upload = multer({storage})
+const upload = multer({storage});
 
 router.get("/", productsController.productList);
 router.get("/product/:nombre", productsController.consolesDescription);
@@ -29,6 +30,6 @@ router.get("/createProducts", productsController.formularioCreate);
 
 // Enrutado por POST
 
-router.post("/createProducts", upload.single("imagen"), productsController.create)
+router.post("/createProducts", upload.single('imagen'), productsController.create);
 
 module.exports = router;

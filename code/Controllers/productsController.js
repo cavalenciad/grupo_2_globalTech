@@ -60,7 +60,8 @@ const productsController ={
         res.render("createProducts");
     },
     create: (req, res) => {
-        
+        console.log(req.file);
+        res.send('Archivo subido correctamente');
     }
 }
     
