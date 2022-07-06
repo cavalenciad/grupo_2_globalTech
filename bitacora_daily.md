@@ -128,3 +128,14 @@ Daily 30/06/2022.
 -Se revisan las rutas en el controlador los js y los controllers.
 -Se unifican en un solo archivos todos los routers de productos.
 -Se queda en pedir una asesoria para terminar el edit y el delete.
+
+Daily 5/07/2022.
+
+- Leemos atentamente lo que nos hace falta del sprint número 4.
+- Miramos la posibilidad de configurar el archivo de products.json para poder editar y eliminar los productos.
+- Estudiamos y profundizamos el tema FS (FileSync).
+- Se hablo sobre modificar el formulario de Agregar Producto, mirar si se puede subir 4 imagenes y  aumentar otra casilla para el color del producto. 
+- Cuando carguemos el producto con sus especificaciones este se debe agregar al archivo de products.json.
+- Investigamos sobre el uso del multer para poder montar archivos tipo imagen de manera ordenada en la carpeta indicada.
+- Logramos desde el controlador crear la lógica para la carga de las imagenes.
+- Preguntaren clase por que el formato tipo json nos queda en formato tipo string.
