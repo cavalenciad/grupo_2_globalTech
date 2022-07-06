@@ -108,5 +108,38 @@ Stop doing:
 - Decir que presentamos nosotros sin tener todo listo.
 - No tener un cronograma de las actividades que se adelantaran en cada reunión.
 
+* Cuarta retroespectiva 6 de julio 
+
+Start Doing:
+
+ - Realizar repasos grupales con las temáticas del playground
+
+
+More of:
+
+- Estar al día en playground.
+- Revisar nuestros códigos en equipo para tener mayor orden y coherencia minimizando errores.
+
+Keep doing:
+
+- División del trabajo.
+- Reunión después de clase para preguntas y compromisos.
+- Hacer recopilación de dudas e inquietudes y presentarlas al equipo.
+- Delegarnos tareas en los campos que no somos tan hábiles, para fortalecer conocimientos en diferentes áreas.
+- Continuar con la buena disposición y compañerismo.
+- Estar pendientes de todos los integrantes del equipo.
+- Reuniones en donde nos apoyamos mutuamente.
+- Visitar frecuentemente el click up.
+- Tratar de tener los temas estudiados para clase.
+- subir y bajar cambios al repositorio avisando previamente a los compañeros.
+
+
+Less of:
+
+- No saber las fechas de las entregas.
+- Dejar de procrastinar el sprint.
+
+Stop doing:
+
 
 
