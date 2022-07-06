@@ -60,7 +60,27 @@ const productsController ={
         res.render("createProducts");
     },
     create: (req, res) => {
-        console.log(req.file);
+        let createProduct = {
+            id: req.body.id,
+            nombre: req.body.name,
+            descripcion: req.body.description,
+            categoria: req.body.categoria,
+            color1: req.body.color1,
+            color2: req.body.color2,
+            precio: req.body.precio,
+            imagen1: req.files[0].originalname,
+            imagen2: req.files[1].originalname,
+            imagen3: req.files[2].originalname,
+            imagen4: req.files[3].originalname,
+        };
+
+        products.push(createProduct);
+
+        let productsJSON = JSON.stringify(products);
+
+        fs.writeFileSync('./data/products.json', productsJSON);
+
+        console.log(req.files);
         res.send('Archivo subido correctamente');
     }
 }

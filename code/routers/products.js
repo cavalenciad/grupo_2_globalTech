@@ -30,6 +30,6 @@ router.get("/createProducts", productsController.formularioCreate);
 
 // Enrutado por POST
 
-router.post("/createProducts", upload.single('imagen'), productsController.create);
+router.post("/createProducts", upload.array('imagen', 4), productsController.create);
 
 module.exports = router;
