@@ -76,7 +76,7 @@ const productsController ={
 
         products.push(createProduct);
 
-        let productsJSON = JSON.stringify(products);
+        let productsJSON = JSON.stringify(products, null, ' ');
 
         fs.writeFileSync('./data/products.json', productsJSON,);
 
