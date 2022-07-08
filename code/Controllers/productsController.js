@@ -78,7 +78,7 @@ const productsController ={
 
         let productsJSON = JSON.stringify(products);
 
-        fs.writeFileSync('./data/products.json', productsJSON);
+        fs.writeFileSync('./data/products.json', productsJSON,);
 
         console.log(req.files);
         res.send('Archivo subido correctamente');
