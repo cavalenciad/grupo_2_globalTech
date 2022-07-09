@@ -1,11 +1,13 @@
 const path = require('path');
 const fs = require('fs');
+const { join } = require('path');
 
 let consoles = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/consoles.json"), "utf-8"));
 let accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peripheralsAccesories.json"), "utf-8"));
 let smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
 let laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
 let hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
+let featured = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/featured.json"), "utf-8"));
 let products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
 
 const productsController ={
@@ -41,6 +43,10 @@ const productsController ={
         return res.render("productList", {
             hardwareDescription
         });
+    },
+    featured: (req, res) => {
+        let featuredDescription = featured.find(item => item.nombre === req.params.nombre);
+        return res.render("productDetail", featuredDescription);
     },
     productDetail: (req, res) => {
         res.render("productDetail", products);

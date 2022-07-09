@@ -41,6 +41,7 @@ a{
 
 .Snavbar a:hover{
     color: #2962FF;
+    font-weight: 800;
 }
 
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
