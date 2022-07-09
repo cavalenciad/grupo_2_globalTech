@@ -48,9 +48,6 @@ const productsController ={
         let featuredDescription = featured.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", featuredDescription);
     },
-    productDetail: (req, res) => {
-        res.render("productDetail", products);
-    },
     detalleCrud: (req, res) => {
         let product = products.find(products => products.nombre === req.params.nombre);
         res.render('productDetail', product);
@@ -59,7 +56,12 @@ const productsController ={
         res.render("productCart");
     },
     formularioEdit: (req, res) =>{
-        res.render("editProducts");
+        let editProducts = products.find(products => products.nombre === req.params.nombre);
+        console.log(req.params.nombre)
+        res.render("editProducts", {editProducts});
+    },
+    edit: (req, res) =>{
+        res.send('Viajó por put');
     },
 
     formularioCreate: (req, res) =>{

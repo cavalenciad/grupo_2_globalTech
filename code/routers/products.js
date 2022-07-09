@@ -6,11 +6,11 @@ const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/images/imagenesPrueba'));
+        cb(null, path.join(__dirname, '../public/images/Productos'));
     },
     filename: (req, file, cb) => {
-        const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);
-        cb(null, fileName);
+        //const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);
+        cb(null, file.originalname);
     }
 });
 
@@ -23,14 +23,20 @@ router.get("/products/:nombre", productsController.accesoriesDescription);
 router.get("/products/:nombre", productsController.smartPhonesDescription);
 router.get("/products/:nombre", productsController.laptopsGamersDescription);
 router.get("/products/:nombre", productsController.hardwareDescription);
-router.get("/productDetail", productsController.productDetail); 
-router.get("/:nombre/editProducts", productsController.formularioEdit);
+
 router.get("/productDetail/:nombre", productsController.detalleCrud);
+
+router.get("/:nombre/editProducts", productsController.formularioEdit);
+
 router.get("/cart", productsController.productCart);
 router.get("/createProducts", productsController.formularioCreate);
 
 // Enrutado por POST
 
 router.post("/createProducts", upload.array('imagen', 4), productsController.create);
+
+// Enrutado por PUT
+
+router.put("/editProducts", productsController.edit);
 
 module.exports = router;
