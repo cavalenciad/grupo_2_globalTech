@@ -139,3 +139,10 @@ Daily 5/07/2022.
 - Investigamos sobre el uso del multer para poder montar archivos tipo imagen de manera ordenada en la carpeta indicada.
 - Logramos desde el controlador crear la lógica para la carga de las imagenes.
 - Preguntaren clase por que el formato tipo json nos queda en formato tipo string.
+
+Daily 9/07/2022.
+
+- Se actualiza el tablero de trabajo con las consignas del sprint
+- Hablamos de unificar el renderizado de los productos en un solo JSON
+- Seguimos trabajando en el PUT y DELETE del sprint 4
+- Se solicita tutoria para poder resolver el tema de PUT Y DELETE
