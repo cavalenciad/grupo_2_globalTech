@@ -18,21 +18,21 @@
 
 
     <div class="QimagenFondo">
-        <form action="/editProduct" method="POST" class="QformProducts">
+        <form action="/products/productDetail/<%= nombre%>/editProducts?_method=put" method="post" class="QformProducts">
             <h3>Editar productos</h3>
             
             <!----CAJA DE FORMULARIO----->
             
             <div class="QcompletarFormulario">
-                <input placeholder="Nombre" type="text" name="name" id="name" required>
+                <input placeholder="Nombre" type="text" name="name" id="name" value="<%= nombre%>" required>
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="ID" type="number" name="id" id="id" required>
+                <input placeholder="ID" type="number" name="id" id="id" value="<%= id%>" required>
             </div>
             
             <div class="QcompletarFormulario">
-                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49"></textarea>
+                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49" value="<%= descripcion%>"></textarea>
             </div>
             
             <div class="QimagenFormulario">
@@ -60,7 +60,8 @@
 
             <div class="QcompletarFormulario">
                 <label class="Qcategorias">Categoría</label>
-                <select name="Categorias" class="Qcategorias"> 
+                <select name="Categorias" class="Qcategorias">
+                    <option><%= categoria%></option> 
                     <option value="Portatiles Gamer">Portatiles Gamer</option>
                     <option value="Accesorios y Perifericos">Accesorios y Periféricos</option>
                     <option value="Celulares Gamer">Celulares Gamer</option>
@@ -70,18 +71,18 @@
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Color" type="text" name="color" id="color" required>
+                <input placeholder="Color" type="text" name="color" id="color" value="<%= color1%>" required>
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Precio" type="number" name="precio" id="precio" required>
+                <input placeholder="Precio" type="text" name="precio" id="precio" value="<%= precio%>" required>
             </div>
 
             <!-------- BOTONES -------->
 
-            <form action="/editProducts?_method=PUT">
-                <input type="submit" name="edit" value="EDITAR PRODUCTO">
-            </form>
+            <div class="Qboton">
+                <input type="submit" id="Actualizar" value="Editar">
+            </div>
         </form>
     </div>
      <!--- FOOTER: PIE DE PÁGINA --->

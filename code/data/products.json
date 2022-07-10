@@ -400,7 +400,8 @@
   "imagen1": "buchipecoso.jpg",
   "imagen2": "Buteo swainsoni.jpg",
   "imagen3": "Catharus ustulatus.jpg",
-  "imagen4": "piranga-rubra.jpg"
+  "imagen4": "piranga-rubra.jpg",
+  "_locals": {}
  },
  {
   "id": "26",
@@ -414,5 +415,18 @@
   "imagen2": "Buteo swainsoni.jpg",
   "imagen3": "Catharus ustulatus.jpg",
   "imagen4": "piranga-rubra.jpg"
+ },
+ {
+  "id": "27",
+  "nombre": "b",
+  "descripcion": "Hola",
+  "categoria": "Consolas",
+  "color1": "b",
+  "color2": "b",
+  "precio": "2",
+  "imagen1": "buchipecoso.jpg",
+  "imagen2": "buchipecoso.jpg",
+  "imagen3": "buchipecoso.jpg",
+  "imagen4": "buchipecoso.jpg"
  }
 ]

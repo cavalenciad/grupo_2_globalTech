@@ -56,9 +56,9 @@ const productsController ={
         res.render("productCart");
     },
     formularioEdit: (req, res) =>{
-        let editProducts = products.find(products => products.nombre === req.params.nombre);
-        console.log(req.params.nombre)
-        res.render("editProducts", {editProducts});
+        let editingProducts = products.find(products => products.nombre === req.params.nombre);
+        console.log(req.params.nombre, editingProducts.nombre)
+        res.render("editProducts", editingProducts);
     },
     edit: (req, res) =>{
         res.send('Viajó por put');

@@ -26,7 +26,7 @@ router.get("/products/:nombre", productsController.hardwareDescription);
 
 router.get("/productDetail/:nombre", productsController.detalleCrud);
 
-router.get("/:nombre/editProducts", productsController.formularioEdit);
+router.get("/productDetail/:nombre/editProducts", productsController.formularioEdit);
 
 router.get("/cart", productsController.productCart);
 router.get("/createProducts", productsController.formularioCreate);
@@ -37,6 +37,6 @@ router.post("/createProducts", upload.array('imagen', 4), productsController.cre
 
 // Enrutado por PUT
 
-router.put("/editProducts", productsController.edit);
+router.put("/productDetail/:nombre/editProducts", productsController.edit);
 
 module.exports = router;
