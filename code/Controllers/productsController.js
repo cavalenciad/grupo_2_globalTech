@@ -57,10 +57,29 @@ const productsController ={
     },
     formularioEdit: (req, res) =>{
         let editingProducts = products.find(products => products.nombre === req.params.nombre);
-        console.log(req.params.nombre, editingProducts.nombre)
         res.render("editProducts", editingProducts);
     },
     edit: (req, res) =>{
+        let newValues = {
+            id: req.body.id,
+            nombre: req.body.name,
+            descripcion: req.body.description,
+            categoria: req.body.categoria,
+            color1: req.body.color1,
+            color2: req.body.color2,
+            precio: req.body.precio,
+        };
+
+        console.log(newValues);
+
+        let oldValues = products.find(products => products.nombre === req.params.nombre);
+
+        products.splice(products.indexOf(oldValues), 1, newValues);
+
+        let productsJSON = JSON.stringify(products, null, ' ');
+
+        fs.writeFileSync('./data/products.json', productsJSON,);
+
         res.send('Viajó por put');
     },
 

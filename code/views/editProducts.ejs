@@ -32,7 +32,7 @@
             </div>
             
             <div class="QcompletarFormulario">
-                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49" value="<%= descripcion%>"></textarea>
+                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49"><%= descripcion%></textarea>
             </div>
             
             <div class="QimagenFormulario">
@@ -60,8 +60,7 @@
 
             <div class="QcompletarFormulario">
                 <label class="Qcategorias">Categoría</label>
-                <select name="Categorias" class="Qcategorias">
-                    <option><%= categoria%></option> 
+                <select name="categoria" class="Qcategorias">
                     <option value="Portatiles Gamer">Portatiles Gamer</option>
                     <option value="Accesorios y Perifericos">Accesorios y Periféricos</option>
                     <option value="Celulares Gamer">Celulares Gamer</option>
@@ -71,7 +70,11 @@
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Color" type="text" name="color" id="color" value="<%= color1%>" required>
+                <input placeholder="Color 1" type="text" name="color1" id="color1" value="<%= color1%>" required>
+            </div>
+
+            <div class="QcompletarFormulario">
+                <input placeholder="Color 2" type="text" name="color2" id="color2" value="<%= color2%>" required>
             </div>
 
             <div class="QcompletarFormulario">
