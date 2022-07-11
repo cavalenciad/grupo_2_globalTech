@@ -76,9 +76,11 @@
             <form action="/products/productDetail/<%= nombre%>/editProducts" method="get">
                 <input type="submit" name="edit" value="EDITAR PRODUCTO">
             </form>
-            <form action="/productList" method="post">
+            
+            <form action="/products/<%= nombre%>?_method=DELETE" method="POST">
                 <input type="submit" name="delete" value="ELIMINAR PRODUCTO">
             </form>
+        
         </div>
 
     </main>

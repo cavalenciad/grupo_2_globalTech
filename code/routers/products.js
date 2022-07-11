@@ -37,6 +37,15 @@ router.post("/createProducts", upload.array('imagen', 4), productsController.cre
 
 // Enrutado por PUT
 
-router.put("/productDetail/:nombre/editProducts", productsController.edit);
+router.put("/productDetail/:nombre/editProducts", upload.array('imagen', 4), productsController.edit);
+
+// Enrutado por DELETE
+
+
+router.delete("/:nombre/", productsController.destroy);
+
+
+
+
 
 module.exports = router;
