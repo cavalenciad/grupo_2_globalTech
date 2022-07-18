@@ -85,7 +85,7 @@ const productsController ={
 
         fs.writeFileSync('./data/products.json', productsJSON,);
 
-        res.redirect('/products/productDetail/' + req.params.nombre);
+        res.redirect('/products');
     },
 
     formularioCreate: (req, res) =>{
