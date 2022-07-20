@@ -142,7 +142,6 @@ header {
 
 .McompletarFormulario input{
   width: 82%;
-  border: 1px solid white;
   margin-bottom: 15px;
   color: #000000;
   height: 34px;
@@ -150,9 +149,19 @@ header {
   font-size: 14px;
   font-weight: bold;
   border-radius: 5px;
- 
-
 }
+
+.McompletarFormulario .file{
+  width: 82%;
+  margin-bottom: 15px;
+  color: #ffffff;
+  height: 34px;
+  padding: 11px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
 
 /*----ESTILO DE SELECCIÓN PAÍS----*/
 

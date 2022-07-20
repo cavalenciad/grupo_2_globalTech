@@ -4,8 +4,7 @@ const app = express();
 const methodOverride = require('method-override')
 
 const rutaMain = require("./routers/main.js");
-const rutaRegister = require("./routers/register.js");
-const rutaLogin = require("./routers/login.js");
+const rutaUser = require("./routers/user.js");
 const rutaProducts = require("./routers/products.js");
 
 /* ---- IMPLEMENTANDO MOTOR DE PLANTILLAS ----- */
@@ -18,8 +17,7 @@ app.use(express.json());
 app.use(methodOverride ("_method"));
 
 app.use("/", rutaMain);
-app.use("/register", rutaRegister);
-app.use("/login", rutaLogin);
+app.use("/", rutaUser);
 app.use("/products", rutaProducts);
 
 app.use(express.static("./public"));
