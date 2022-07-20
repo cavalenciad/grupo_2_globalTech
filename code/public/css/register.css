@@ -126,6 +126,7 @@ header {
   margin-top: 90px;
 }
 
+
 /*----TITULO CAJA REGISTRO----*/
 
 .MformRegister h3 {
@@ -152,7 +153,7 @@ header {
 }
 
 .McompletarFormulario .file{
-  width: 82%;
+  width: 55%;
   margin-bottom: 15px;
   color: #ffffff;
   height: 34px;
@@ -161,6 +162,12 @@ header {
   font-weight: bold;
   border-radius: 5px;
 }
+
+.Mimagenes{
+  color: #fff;
+}
+
+
 
 
 /*----ESTILO DE SELECCIÓN PAÍS----*/
