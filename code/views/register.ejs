@@ -26,28 +26,48 @@
       <!-------- IMAGEN DE FONDO -------->
 
   <div class="MimagenFondo">
-    <form class="MformRegister" action="#">
+    <form class="MformRegister" action="/user/register" enctype="multipart/form-data" method="post">
       <h3>Regístrate en Global Tech</h3>
 
       <!-------- CAJA DE FORMULARIO -------->
 
       <div class="McompletarFormulario">
-        <input type="email" placeholder="Email*" required>
-
+        <input name="email" type="email" placeholder="Email" value= "<%= locals.oldData ? oldData.email : null%>">
+        <% if (locals.errors && errors.email) { %>
+          <div class="Merrors">
+           <%= errors.email.msg %> 
+          </div>
+         <% } %>
+      </div>
         <div class="McompletarFormulario">
-          <input type="text" placeholder="Nombre*" required>
+          <input name="nombre" type="text" placeholder="Nombre" value= "<%= locals.oldData ? oldData.nombre : null%>">
+          <% if (locals.errors && errors.nombre) { %>
+            <div class="Merrors">
+             <%= errors.nombre.msg %> 
+            </div>
+           <% } %>
         </div>
         <div class="McompletarFormulario">
-          <input type="text" placeholder="Apellidos*" required>
+          <input name="apellido" type="text" placeholder="Apellidos" value= "<%= locals.oldData ? oldData.apellido : null%>">
+          <% if (locals.errors && errors.apellido) { %>
+           <div class="Merrors">
+            <%= errors.apellido.msg %> 
+           </div>
+          <% } %>
         </div>
         <div class="McompletarFormulario">
-          <input type="text" placeholder="Nombre de usuario*" maxlength="10" required>
+          <input name="nombreUser" type="text" placeholder="Nombre de usuario" value= "<%= locals.oldData ? oldData.nombreUser : null%>">
+          <% if (locals.errors && errors.nombreUser) { %>
+            <div class="Merrors">
+             <%= errors.nombreUser.msg %> 
+            </div>
+           <% } %>
         </div>
         <!-------- SELECCIONAR PAÍS -------->
 
         <div class="McompletarFormulario">
-          <select class="Mpais">
-            <option value="seleccionarPais">Seleccionar país</option>
+          <select class="Mpais" name="pais">
+            <option disabled selected>Seleccionar país</option>
             <option value="CO">Colombia</option>
             <option value="AR">Argentina</option>
             <option value="BO">Bolivia</option>
@@ -75,27 +95,47 @@
             <option value="UY">Uruguay</option>
             <option value="VE">Venezuela</option>
           </select>
+          <% if (locals.errors && errors.pais) { %>
+            <div class="Merrors">
+             <%= errors.pais.msg %> 
+            </div>
+           <% } %>
         </div>
 
         <!-------- IMAGEN -------->
 
         <div class="McompletarFormulario">
           <label class="Mimagenes">Imagen de perfil</label>
-          <input class="file" type="file" name="imagen" id="imagen">          
+          <input class="file" type="file" name="imagen" id="imagen">
+          <% if (locals.errors && errors.imagen) { %>
+            <div class="Merrors">
+             <%= errors.imagen.msg %> 
+            </div>
+          <% } %>          
         </div>
 
         <!-------- CONTRASEÑA -------->
         <div class="McompletarFormulario">
-          <input type="password" placeholder="Contraseña*" maxlenght="10" required>
+          <input name="contrasena" type="password" placeholder="Contraseña">
+          <% if (locals.errors && errors.contrasena) { %>
+            <div class="Merrors">
+             <%= errors.contrasena.msg %> 
+            </div>
+           <% } %>
         </div>
         <div class="McompletarFormulario">
-          <input type="password" placeholder="Confirmar contraseña*" maxlenght="10" required>
+          <input name="confirmContrasena" type="password" placeholder="Confirmar contraseña">
+          <% if (locals.errors && errors.confirmContrasena) { %>
+            <div class="Merrors">
+             <%= errors.confirmContrasena.msg %> 
+            </div>
+           <% } %>
         </div>
-      </div>
+      
       <!-------- ACEPTO TÉRMINOS -------->
 
       <div class="MaceptoTerminos">
-        <input class="Mcheckbox" type="checkbox" id="aceptoTerminos">Acepto los
+        <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" required>Acepto los
         <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
         y la
         <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
