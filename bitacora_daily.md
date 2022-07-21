@@ -146,3 +146,13 @@ Daily 9/07/2022.
 - Hablamos de unificar el renderizado de los productos en un solo JSON
 - Seguimos trabajando en el PUT y DELETE del sprint 4
 - Se solicita tutoria para poder resolver el tema de PUT Y DELETE
+
+Daily 20/07/2022.
+
+- Se agrega boton de cargar imagen de perfil en el formulario de registro.
+- Se crea la ruta por post para el formulario de registro.
+- Se carga el multer para que tome la imagen del Avatar.
+- Se crea el controlador Create para que almacene en el JSON la información que viaja desde el formulario de registro.
+- Vemos el video de Validations para comenzar a implementarlo en el formulario de registro.
+- Se implementan las validaciones para todos los campos del formulario y se genera su respecivo error en caso tal de llenar el campo correctamente.
+- Se presentan problemas con los campos de contraseña e idfentificamos que el nombre del campo no debe llevar tildes ni ñ.
