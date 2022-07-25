@@ -60,6 +60,7 @@ const productsController ={
         res.render("editProducts", editingProducts);
     },
     edit: (req, res) =>{
+        console.log(req.files);
         let newValues = {
             id: req.body.id,
             nombre: req.body.name,
@@ -68,6 +69,10 @@ const productsController ={
             color1: req.body.color1,
             color2: req.body.color2,
             precio: req.body.precio,
+            imagen1: req.files[0].originalname,
+            imagen2: req.files[1].originalname,
+            imagen3: req.files[2].originalname,
+            imagen4: req.files[3].originalname,
         };
 
         console.log(newValues);
@@ -80,7 +85,7 @@ const productsController ={
 
         fs.writeFileSync('./data/products.json', productsJSON,);
 
-        res.send('Viajó por put');
+        res.redirect('/products');
     },
 
     formularioCreate: (req, res) =>{
@@ -109,6 +114,20 @@ const productsController ={
 
         console.log(req.files);
         res.send('Archivo subido correctamente');
+    },
+    destroy: (req, res) => {
+
+        let oldValues = products.find(products => products.nombre === req.params.nombre);
+        products.splice(products.indexOf(oldValues), 1);
+
+        let productsJSON = JSON.stringify(products, null, ' ');
+
+        fs.writeFileSync('./data/products.json', productsJSON,);
+        
+        //productDetail.delete(req.params.nombre);
+        res.redirect('/products')
+
+        
     }
 }
     
