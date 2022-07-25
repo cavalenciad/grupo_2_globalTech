@@ -141,6 +141,14 @@ header {
 
 /*----CAJAS PARA COMPLETAR FORMULARIO----*/
 
+.Merrors{
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 .McompletarFormulario input{
   width: 82%;
   margin-bottom: 15px;
