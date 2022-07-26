@@ -115,19 +115,19 @@ Daily 24/06/2022
 
 Daily 28/06/2022.
 
--Se buscaron diferentes modelos de realizar el slider del home, pero quedamos en primero terminar con lo obligatorio del Sprint.
--Se converso sobre el menu hamburguesa de la vista Movil.
--Se trabajo en el router del carrito de compras.
--Se organizaron los enlaces del productList al productDetail.
--Se pacta la próxima reunión para el 30/06/2022 a las 7 pm.
--Se pacta primero enrutar y despues darle la funcionalidad al Edit y el Create.
--Queda pendiente el Login y la creación de usuarios.
+- Se buscaron diferentes modelos de realizar el slider del home, pero quedamos en primero terminar con lo obligatorio del Sprint.
+- Se converso sobre el menu hamburguesa de la vista Movil.
+- Se trabajo en el router del carrito de compras.
+- Se organizaron los enlaces del productList al productDetail.
+- Se pacta la próxima reunión para el 30/06/2022 a las 7 pm.
+- Se pacta primero enrutar y despues darle la funcionalidad al Edit y el Create.
+- Queda pendiente el Login y la creación de usuarios.
 
 Daily 30/06/2022.
 
--Se revisan las rutas en el controlador los js y los controllers.
--Se unifican en un solo archivos todos los routers de productos.
--Se queda en pedir una asesoria para terminar el edit y el delete.
+- Se revisan las rutas en el controlador los js y los controllers.
+- Se unifican en un solo archivos todos los routers de productos.
+- Se queda en pedir una asesoria para terminar el edit y el delete.
 
 Daily 5/07/2022.
 
@@ -159,10 +159,10 @@ Daily 20/07/2022.
 
 Daily 25/07/2022
 
--Se agregan los estilos a los errores del formulario de registro.
--Se trabaja en el archivo de login y se logra loguear al ususario.
--Se agrega la funcionalidad para encriptar la contraseña.
--Se agrega funcionalidad para que si el usuario pone una contraseña errada, salga un error para ingrese la contraseña correcta.
--Tambien se dan estilos a los errores del formulario de Login.
+- Se agregan los estilos a los errores del formulario de registro.
+- Se trabaja en el archivo de login y se logra loguear al ususario.
+- Se agrega la funcionalidad para encriptar la contraseña.
+- Se agrega funcionalidad para que si el usuario pone una contraseña errada, salga un error para ingrese la contraseña correcta.
+- Tambien se dan estilos a los errores del formulario de Login.
 
 
