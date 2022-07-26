@@ -108,6 +108,14 @@ a{
 }
 /*----Caja de registro-----*/
 
+.jerrors{
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 form {
     width: 25%;
     height: auto;
