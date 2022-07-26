@@ -192,5 +192,25 @@
   "imagen": "avatar-1658368210825.jpg",
   "contrasena": "toño123",
   "termCond": "Si"
+ },
+ {
+  "email": "camilonofx@gmail.com",
+  "nombre": "Camilo Andrés",
+  "apellido": "Devia",
+  "nombreUser": "cavalenciad",
+  "pais": "CO",
+  "imagen": "avatar-1658797524026.jpg",
+  "contrasena": "$2a$10$orExvzV6BZhZHEVVp25j0eeYEvTycXS.uJt/VXCQJqFLD1pfhPMAC",
+  "termCond": "Si"
+ },
+ {
+  "email": "cavalenciad@outlook.com",
+  "nombre": "camilo",
+  "apellido": "valencia",
+  "nombreUser": "cavalenciad",
+  "pais": "CO",
+  "imagen": "avatar-1658800159372.jpg",
+  "contrasena": "$2a$10$FHLxQ8hB3LKqzO9WNSIY1edpcGHVlxnugRn96xz2ERb6c6/cTK8v6",
+  "termCond": "Si"
  }
 ]

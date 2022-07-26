@@ -20,28 +20,31 @@
 <%- include("./partials/social.ejs")%>
 
 <div class="jImagenFondo">
-    <form action="/login" method="POST">
+    <form action="/user/login" method="POST">
         <h3>Iniciar Sesión</h3>
         <div>
-            <input placeholder="Email" type="email" name="Email" id="Email" required>
+            <input placeholder="Email" type="text" name="email" id="Email">
+            <% if (locals.errors && errors.email) { %>
+                <div class="jerrors">
+                 <%= errors.email.msg %> 
+                </div>
+            <% } %>
         </div>
         <div>
-            <input placeholder="Contraseña" type="password" name="Contraseña" id="Contraseña" minlength="8"
-                maxlength="15" required>
+            <input placeholder="Contraseña" type="password" name="contrasena" id="Contraseña">
+                <% if (locals.errors && errors.contrasena) { %>
+                    <div class="jerrors">
+                     <%= errors.contrasena.msg %> 
+                    </div>
+                <% } %>
         </div>
-        <!---<div class="content-input">
-                <input type="checkbox" name="recuerdame" id="recuerdame" value="recuerdame">Recuerdame
-                <i></i>
-        </div>-->
-
         <div class="jRecuerdame">
             <input  class="jCheckbox" type="checkbox" id="jRecuerdame">Recuerdame
         </div>
 
         <button type="submit">Iniciar Sesión</button>
-        <p class="jNoCuenta"> <a href="#">¿Aún no tiene una cuenta?</a>
+        <p class="jNoCuenta"> <a href="/user/register">¿Aún no tiene una cuenta?</a>
         </p>
-        <p class="jOlvidaste"> <a href="#">¿Ha olvidado su contraseña?</a></p>
     </form>
 </div>
 <!-------- PIE DE PAGINAAAAA -------->

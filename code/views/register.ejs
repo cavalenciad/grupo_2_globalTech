@@ -32,7 +32,7 @@
       <!-------- CAJA DE FORMULARIO -------->
 
       <div class="McompletarFormulario">
-        <input name="email" type="email" placeholder="Email" value= "<%= locals.oldData ? oldData.email : null%>">
+        <input name="email" type="text" placeholder="Email" value= "<%= locals.oldData ? oldData.email : null%>">
         <% if (locals.errors && errors.email) { %>
           <div class="Merrors">
            <%= errors.email.msg %> 
@@ -120,14 +120,6 @@
           <% if (locals.errors && errors.contrasena) { %>
             <div class="Merrors">
              <%= errors.contrasena.msg %> 
-            </div>
-           <% } %>
-        </div>
-        <div class="McompletarFormulario">
-          <input name="confirmContrasena" type="password" placeholder="Confirmar contraseña">
-          <% if (locals.errors && errors.confirmContrasena) { %>
-            <div class="Merrors">
-             <%= errors.confirmContrasena.msg %> 
             </div>
            <% } %>
         </div>
