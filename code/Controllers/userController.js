@@ -21,13 +21,17 @@ const userController ={
 
         for(i = 0; i < users.length; i++) {
             if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
-                res.send('Bienvenido a GlobalTech');
-            } else if (resultValidationLog.errors.length > 0) {
-                res.render('login', {errors: resultValidationLog.mapped()});
+                res.redirect('/');
+            } else {
+                return res.render('login', {
+                    errors: {
+                        contrasena: {
+                            msg: 'La contraseña no coincide'
+                        }
+                    }
+                });
             }
-        }
-
-        
+        }        
     },
     register: (req, res) => {
         res.render("register");
@@ -43,7 +47,16 @@ const userController ={
             });
         }
 
+        function generateID(){
+            let lastUser = users.pop();
+            if (lastUser) {
+                return lastUser.id + 1;
+            }
+            return 1;
+        }
+
         let createUser = {
+            id: generateID(),
             email: req.body.email,
             nombre: req.body.nombre,
             apellido: req.body.apellido,
@@ -54,15 +67,26 @@ const userController ={
             termCond: 'Si',
         };
 
+        console.log(createUser);
+
+        for (i = 0; i < users.length; i++){
+            if (users[i].email == req.body.email){
+                return res.render('register', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya está registrado'
+                        }
+                    },
+                    oldData: req.body
+                });
+            }
+        }
+
         users.push(createUser);
-
         let usersJSON = JSON.stringify(users, null, ' ');
-
         fs.writeFileSync('./data/users.json', usersJSON,);
-
-        console.log(req.files);
-
-        res.send('Archivo subido correctamente');
+        
+        res.redirect('/user/login');
     }
 };
 
