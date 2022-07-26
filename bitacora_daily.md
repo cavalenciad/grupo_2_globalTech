@@ -156,3 +156,12 @@ Daily 20/07/2022.
 - Vemos el video de Validations para comenzar a implementarlo en el formulario de registro.
 - Se implementan las validaciones para todos los campos del formulario y se genera su respecivo error en caso tal de llenar el campo correctamente.
 - Se presentan problemas con los campos de contraseña e idfentificamos que el nombre del campo no debe llevar tildes ni ñ.
+
+Daily 25/07/2022
+-Se agregan los estilos a los errores del formulario de registro.
+-Se trabaja en el archivo de login y se logra loguear al ususario.
+-Se agrega la funcionalidad para encriptar la contraseña.
+-Se agrega funcionalidad para que si el usuario pone una contraseña errada, salga un error para ingrese la contraseña correcta.
+-Tambien se dan estilos a los errores del formulario de Login.
+
+
