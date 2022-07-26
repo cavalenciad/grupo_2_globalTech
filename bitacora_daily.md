@@ -158,6 +158,7 @@ Daily 20/07/2022.
 - Se presentan problemas con los campos de contraseña e idfentificamos que el nombre del campo no debe llevar tildes ni ñ.
 
 Daily 25/07/2022
+
 -Se agregan los estilos a los errores del formulario de registro.
 -Se trabaja en el archivo de login y se logra loguear al ususario.
 -Se agrega la funcionalidad para encriptar la contraseña.
