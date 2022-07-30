@@ -44,11 +44,30 @@ a{
     font-weight: 800;
 }
 
+/* --------------- ESTILOS USUARIO --------------- */
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img{
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.user p{
+    color: #1EA1F2;
+    letter-spacing: 2px;
+}
+
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
 
 .fa-bars{
     font-size: 28px;
-    color: #00B8D4;
+    color: #2962FF;
 }
 
 /* -------------- REDES SOCIALES FLOTANTES ------------ */
@@ -349,7 +368,7 @@ a{
 
 @media (min-width: 0px) and (max-width: 576px){
 
-    /* -------------- CABECERA ------------- */
+/* -------------- CABECERA ------------- */
 
 header img{
     width: 200px;
@@ -357,6 +376,14 @@ header img{
 
 .Snavbar{
     display: none;
+}
+
+/* --------------- ESTILOS USUARIO --------------- */
+
+.user p{
+    display: none;
+    color: #1EA1F2;
+    letter-spacing: 2px;
 }
 
     /* ------------- CATEGORIAS PRODUCTOS ----------- */
@@ -385,7 +412,7 @@ header img{
         display: none;
     }
 
-    /* ------------- CATEGORIAS PRODUCTOS ----------- */
+     /* ------------- CATEGORIAS PRODUCTOS ----------- */
 
     .SseccionPrincipalHome{
         width: 90%;

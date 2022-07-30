@@ -69,6 +69,25 @@ header {
   color: #00B8D4;
 }
 
+/* --------------- ESTILOS USUARIO --------------- */
+
+.user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user img{
+  margin-left: 15px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.user p{
+  color: #1EA1F2;
+  letter-spacing: 2px;
+}
+
 
 /* -------------- REDES SOCIALES FLOTANTES ------------ */
 
@@ -315,6 +334,14 @@ header {
   .Snavbar {
     display: none;
   }
+
+  /* --------------- ESTILOS USUARIO --------------- */
+
+.user p{
+  display: none;
+  color: #1EA1F2;
+  letter-spacing: 2px;
+}
 
   
 /*--- CAJA DEL FORM REGISTRO---*/

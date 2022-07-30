@@ -58,6 +58,25 @@ header{
     color: #2962FF;
 }
 
+/* --------------- ESTILOS USUARIO --------------- */
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img{
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.user p{
+    color: #1EA1F2;
+    letter-spacing: 2px;
+  }
+
 /* -------------- REDES SOCIALES FLOTANTES ------------ */
 
 .sticky-social{
@@ -312,6 +331,14 @@ header{
 
     .Snavbar{
         display: none;
+    }
+
+    /* --------------- ESTILOS USUARIO --------------- */
+
+    .user p{
+        display: none;
+        color: #1EA1F2;
+        letter-spacing: 2px;
     }
 }
 
