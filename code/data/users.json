@@ -1,13 +1,35 @@
 [
  {
+  "id": 1,
+  "email": "cavalenciad@outlook.com",
+  "nombre": "camilo",
+  "apellido": "valencia",
+  "nombreUser": "cavalenciad",
+  "pais": "BO",
+  "imagen": "avatar-1659304270564.jpg",
+  "contrasena": "$2a$10$tVCwjAJ6fTsVdp.6Z9vFDedsoP96qNd3l/rAoPP5FcePNHLXCarh2",
+  "termCond": "Si"
+ },
+ {
   "id": 2,
   "email": "camilonofx@gmail.com",
   "nombre": "Camilo Andrés",
-  "apellido": "Valencia Devia",
+  "apellido": "Devia",
   "nombreUser": "cavalenciad",
-  "pais": "HT",
-  "imagen": "avatar-1658879641315.jpg",
-  "contrasena": "$2a$10$LMJo7MdF4N1jbGg6yXnNBOa.57Sj53ZFmVYtPJeTN2QhauYHDGWL2",
+  "pais": "PE",
+  "imagen": "avatar-1659305955715.jpg",
+  "contrasena": "$2a$10$A3zIj4ivkJsrt0dAxbjPR.mbt/6Q.pWAMR/DDo3IEwirLHRkE0gSC",
+  "termCond": "Si"
+ },
+ {
+  "id": 3,
+  "email": "c@v.com",
+  "nombre": "c",
+  "apellido": "v",
+  "nombreUser": "cv",
+  "pais": "HN",
+  "imagen": "avatar-1659307113686.jpg",
+  "contrasena": "$2a$10$qGMfc522v8vQV7a7IjYtyeRjP3VcSq5MU8jQMJphcVPZ5ISZWI4Au",
   "termCond": "Si"
  }
 ]
