@@ -7,32 +7,6 @@ const bcrypt = require('bcryptjs');
 let users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json"), "utf-8"));
 
 const userController ={
-    login: (req, res) => {
-        res.render("login");
-    },
-    processLogin: (req, res) => {
-        const resultValidationLog = validationResult(req);
-
-        if (resultValidationLog.errors.length > 0) {
-            res.render('login', {
-                errors: resultValidationLog.mapped(),
-            });
-        }
-
-        for(i = 0; i < users.length; i++) {
-            if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
-                res.redirect('/');
-            } else {
-                return res.render('login', {
-                    errors: {
-                        contrasena: {
-                            msg: 'La contraseña no coincide'
-                        }
-                    }
-                });
-            }
-        }        
-    },
     register: (req, res) => {
         res.render("register");
     },
@@ -50,6 +24,7 @@ const userController ={
         function generateID(){
             let lastUser = users.pop();
             if (lastUser) {
+                users.push(lastUser);
                 return lastUser.id + 1;
             }
             return 1;
@@ -87,6 +62,32 @@ const userController ={
         fs.writeFileSync('./data/users.json', usersJSON,);
         
         res.redirect('/user/login');
+    },
+    login: (req, res) => {
+        res.render("login");
+    },
+    processLogin: (req, res) => {
+        const resultValidationLog = validationResult(req);
+
+        if (resultValidationLog.errors.length > 0) {
+            res.render('login', {
+                errors: resultValidationLog.mapped(),
+            });
+        }
+
+        let usuarioALoguearse;
+
+        for(i = 0; i < users.length; i++) {            
+            if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
+                usuarioALoguearse = users[i];
+                res.redirect('/');
+                break;
+            } 
+        }
+        if (!usuarioALoguearse){
+            return res.render('login', {
+            errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
+        }
     }
 };
 
