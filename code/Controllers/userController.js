@@ -80,6 +80,7 @@ const userController ={
         for(i = 0; i < users.length; i++) {            
             if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
                 usuarioALoguearse = users[i];
+                req.session.usuarioLogueado = usuarioALoguearse;
                 res.redirect('/');
                 break;
             } 
