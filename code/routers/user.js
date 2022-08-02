@@ -7,7 +7,7 @@ const { body } = require('express-validator');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/images/ImagenesPrueba'));
+        cb(null, path.join(__dirname, '../public/images/images_user'));
     },
     filename: (req, file, cb) => {
         const fileName = 'avatar-' + Date.now() + path.extname(file.originalname);
@@ -50,7 +50,11 @@ const validationsLog = [
     body('contrasena').notEmpty().withMessage('Debes ingresar una contraseña')
 ]
 
+
+
+
 router.get("/user/login", userController.login);
+router.get("/user/userProfile", userController.profile);
 router.get("/user/register", userController.register);
 
 // Enrutado por POST

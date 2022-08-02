@@ -80,7 +80,9 @@ const userController ={
         for(i = 0; i < users.length; i++) {            
             if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
                 usuarioALoguearse = users[i];
-                res.redirect('/');
+                delete usuarioALoguearse.contrasena;
+                req.session.usuarioLogueado = usuarioALoguearse;
+                res.redirect('/user/userProfile');
                 break;
             } 
         }
@@ -88,6 +90,11 @@ const userController ={
             return res.render('login', {
             errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
         }
+    },
+    profile: (req, res) => {
+        res.render("userProfile", {
+            user: req.session.usuarioLogueado
+        });
     }
 };
 

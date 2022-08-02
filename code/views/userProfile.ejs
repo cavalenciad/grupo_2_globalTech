@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="/css/userProfile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <%- include("./partials/header.ejs")%>
+
+    <!-- Redes sociales -->
+    <%- include("./partials/social.ejs")%>
+
+    <div class="MtituloPerfil">
+        <h3><%= user.nombreUser %></h3><br>
+    </div>
+
+            <!---------Perfil-------->
+            <div class="MperfilImg">
+                <img src="/images/images_user/<%= user.imagen%>">
+                <h3><%= user.nombreUser %></h3><br>
+                </div>
+                
+                <div class="MprofileDescription">
+                        <h4>Mis datos</h4><br>
+    
+                    
+                        <span>Nombre y apellido: <%= user.nombre %> <%= user.apellido %></span>
+                        <span>Nombre de usuario: <%= user.nombreUser %> </span>
+                        <span>E-mail: <%= user.email %> </span>
+                        <span>País: <%= user.pais %> </span>
+                    </div>
+        </section>
+
+       
+    </main>
+
+    <!-- PIE DE PAGINA -->
+
+    <%- include("./partials/footer.ejs")%>
+
+</body>
+</html>
