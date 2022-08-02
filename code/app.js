@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const methodOverride = require('method-override');
 const session = require ('express-session');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 const rutaMain = require("./routers/main.js");
 const rutaUser = require("./routers/user.js");
@@ -19,7 +20,9 @@ app.use(session({
    resave: false,
    saveUninitialized: false
 }));
+
 app.use(methodOverride ("_method"));
+app.use(userLoggedMiddleware);
 
 app.use("/", rutaMain);
 app.use("/", rutaUser);

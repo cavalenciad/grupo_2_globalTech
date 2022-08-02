@@ -82,7 +82,7 @@ const userController ={
                 usuarioALoguearse = users[i];
                 delete usuarioALoguearse.contrasena;
                 req.session.usuarioLogueado = usuarioALoguearse;
-                res.redirect('/user/userProfile');
+                res.redirect('/user/userProfile' );
                 break;
             } 
         }
@@ -95,6 +95,10 @@ const userController ={
         res.render("userProfile", {
             user: req.session.usuarioLogueado
         });
+    },
+    logout: (req, res) => {
+       req.session.destroy();
+       return res.redirect('/');
     }
 };
 
