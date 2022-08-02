@@ -165,4 +165,14 @@ Daily 25/07/2022
 - Se agrega funcionalidad para que si el usuario pone una contraseña errada, salga un error para ingrese la contraseña correcta.
 - Tambien se dan estilos a los errores del formulario de Login.
 
+Daily 1/08/2022
+
+- Comenzamos viendo un video guia de sessions y cookies.
+- Se agregaron middlewares para las validaciones en el register y login.
+- Se agrega la vista de profile y algunas funcionalidades como lo son el logout.
+- Cuando un usuario este logueado pueda ver su imagen y nombre en la parte del header superior derecha.
+- Se trabajo en requerir la información de cada usuario en su respectiva vista de Perfil.
+- Queda pendiente el tema de recordar la información y datos personales de los usuarios por medio de cookies y session (Opcional).
+- Se pacta una próxima reunión para el 2/08/2022 a las 5:00 pm.
+
 
