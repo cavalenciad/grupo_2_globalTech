@@ -82,6 +82,9 @@ const userController ={
                 usuarioALoguearse = users[i];
                 delete usuarioALoguearse.contrasena;
                 req.session.usuarioLogueado = usuarioALoguearse;
+                if(req.body.jRecuerdame != undefined){
+                    res.cookie('userEmail', req.body.email, {max: (1000 * 60) * 2});
+                }
                 res.redirect('/user/userProfile' );
                 break;
             } 
@@ -92,13 +95,16 @@ const userController ={
         }
     },
     profile: (req, res) => {
+        console.log(req.cookies.userEmail);
         res.render("userProfile", {
             user: req.session.usuarioLogueado
         });
     },
+
     logout: (req, res) => {
-       req.session.destroy();
-       return res.redirect('/');
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
     }
 };
 
