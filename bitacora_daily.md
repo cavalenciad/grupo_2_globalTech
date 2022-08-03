@@ -175,4 +175,18 @@ Daily 1/08/2022
 - Queda pendiente el tema de recordar la información y datos personales de los usuarios por medio de cookies y session (Opcional).
 - Se pacta una próxima reunión para el 2/08/2022 a las 5:00 pm.
 
+Daily 2/08/2022
+
+- Se instalo el cookie parser.
+- Se reviso el codigo del session y encontramos que cuando cerrabamos una sesion se nos borraba la contraseña y no podiamos ingresar nuevamente con ese usuario.
+- Se elimino la linea de codigo que nos generaba este error.
+- Se configuro el cookie-parser en el app.js.
+- Se creo el middleware de los cookies.
+- Se realizo la configuracion general de los cookies, los cuales quedaron en funcionamiento.
+- Le dimos estilos a la vista de perfil de usuario.
+- Queda lista la vista funcional para responsive.
+- Queda con estilos el icono Avatar del Header en todas las vista.
+- Se crea un Dropdown en el icono Avatar con las opciones de ir al perfil y cerrar sesión.
+- Quedan enrutados los botones de mi perfil y cerrar sesión con la funcionalidad.
+
 
