@@ -21,7 +21,7 @@ app.use(session({
    saveUninitialized: false
 }));
 
-app.use(methodOverride ("_method"));
+app.use(methodOverride ("_method")); 
 app.use(userLoggedMiddleware);
 
 app.use("/", rutaMain);
