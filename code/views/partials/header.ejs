@@ -18,9 +18,17 @@
       
       <% if(locals.userLogged) {%>
         <div class="user">
-        <p><%= locals.userLogged.nombreUser %> </p>
-        <img src="/images/images_user/<%= locals.userLogged.imagen %>" alt="Usuario">   
-    </div>
+            <div class="dataUser">
+                <p><%= locals.userLogged.nombreUser %> </p>
+                <i class="fa-solid fa-caret-down"></i>
+                <img src="/images/images_user/<%= locals.userLogged.imagen %>" alt="Usuario">  
+            </div>
+            <div class="actionUser">
+                <h6><a href="/user/userProfile">Mi Perfil</a></h6>
+                <hr>
+                <h6><a href="/user/logout">Cerrar Sesión</a> </h6>
+            </div>
+        </div>
  <% } %> 
     <!-------- ICONO MENU HAMBURGUESA -------->
     <div class="Sburger-menu">
