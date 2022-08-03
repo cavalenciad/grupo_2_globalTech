@@ -188,5 +188,6 @@ Daily 2/08/2022
 - Queda con estilos el icono Avatar del Header en todas las vista.
 - Se crea un Dropdown en el icono Avatar con las opciones de ir al perfil y cerrar sesión.
 - Quedan enrutados los botones de mi perfil y cerrar sesión con la funcionalidad.
+- Se pacta una próxima reunión para el 3/08/2022 a las 8:30 pm.
 
 
