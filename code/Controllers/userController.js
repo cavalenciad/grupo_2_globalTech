@@ -42,8 +42,6 @@ const userController ={
             termCond: 'Si',
         };
 
-        console.log(createUser);
-
         for (i = 0; i < users.length; i++){
             if (users[i].email == req.body.email){
                 return res.render('register', {
@@ -75,30 +73,43 @@ const userController ={
             });
         }
 
-        let usuarioALoguearse;
+        findByField = function(field, text) {
+            let userFound = users.find(oneUser => oneUser[field] === text);
+            return userFound;
+        }
 
-        for(i = 0; i < users.length; i++) {            
-            if (users[i].email == req.body.email && bcrypt.compareSync(req.body.contrasena, users[i].contrasena)) {
-                usuarioALoguearse = users[i];
-                delete usuarioALoguearse.contrasena;
+        let usuarioALoguearse = findByField('email', req.body.email);
+        console.log(usuarioALoguearse);
+
+        if(usuarioALoguearse){
+            let isOkThePass = bcrypt.compareSync(req.body.contrasena, usuarioALoguearse.contrasena);
+            if (isOkThePass) {
+                //delete usuarioALoguearse.contrasena;
                 req.session.usuarioLogueado = usuarioALoguearse;
-                res.redirect('/user/userProfile' );
-                break;
-            } 
+                if(req.body.jRecuerdame){
+                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
+                }
+                res.redirect('/user/userProfile');
+            }
+            if (!usuarioALoguearse){
+                return res.render('login', {
+                errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
+            }
         }
-        if (!usuarioALoguearse){
-            return res.render('login', {
-            errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
-        }
+        
+            
     },
     profile: (req, res) => {
+        console.log(req.cookies.userEmail);
         res.render("userProfile", {
             user: req.session.usuarioLogueado
         });
     },
+
     logout: (req, res) => {
-       req.session.destroy();
-       return res.redirect('/');
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
     }
 };
 

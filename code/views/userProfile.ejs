@@ -17,32 +17,31 @@
     <!-- Redes sociales -->
     <%- include("./partials/social.ejs")%>
 
-    <div class="MtituloPerfil">
-        <h3><%= user.nombreUser %></h3><br>
-    </div>
-
+<div class="MimagenFondo">
+    
+        <div class="Mperfil">
             <!---------Perfil-------->
             <div class="MperfilImg">
                 <img src="/images/images_user/<%= user.imagen%>">
-                <h3><%= user.nombreUser %></h3><br>
+                <div class="MnombreUser">
+                    <h3><%= user.nombreUser %></h3>
                 </div>
-                
+            </div>
+           <hr>
                 <div class="MprofileDescription">
-                        <h4>Mis datos</h4><br>
-    
-                    
-                        <span>Nombre y apellido: <%= user.nombre %> <%= user.apellido %></span>
-                        <span>Nombre de usuario: <%= user.nombreUser %> </span>
-                        <span>E-mail: <%= user.email %> </span>
-                        <span>País: <%= user.pais %> </span>
-                    </div>
-                    <div>
+                        <h4>MIS DATOS</h4>
+                        <p><b>Nombre y apellido:</b> <%= user.nombre %> <%= user.apellido %></p>
+                        <p><b>Nombre de usuario:</b> <%= user.nombreUser %> </p>
+                        <p><b>E-mail:</b> <%= user.email %> </p>
+                        <p><b>País:</b> <%= user.pais %> </p>
+                </div>
+                    <div class="MbuttonProfile">
                         <a href="/user/logout">Cerrar Sesión</a>
                 </div>
-        </section>
-
+        </div>
+</div>
        
-    </main>
+
 
     <!-- PIE DE PAGINA -->
 

@@ -46,21 +46,60 @@ a{
 
 /* --------------- ESTILOS USUARIO --------------- */
 
-.user{
+.dataUser{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.user img{
+.dataUser img{
     margin-left: 15px;
     border-radius: 50%;
     width: 50px;
+    height: 50px;
 }
 
-.user p{
+.dataUser p{
     color: #1EA1F2;
     letter-spacing: 2px;
+  }
+
+/* -------------- MENÚ DESPLEGABLE ------------ */
+
+.user {
+    position: relative;
+    display: inline-block;
+}
+
+.actionUser {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    padding: 8px 8px;
+    z-index: 1;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    transition: all 0.4s ease;
+}
+
+.user:hover .actionUser {
+    display: block;
+}
+
+.actionUser h6 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.actionUser a {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2962FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
@@ -466,6 +505,10 @@ header img{
     }
 
     .fa-bars{
+        display: none;
+    }
+
+    .dataUser i {
         display: none;
     }
 
