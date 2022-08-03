@@ -9,17 +9,17 @@
         <a href="/products"><i class="fa-solid fa-shop"></i> CATÁLOGO DE PRODUCTOS</a>
         <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i> CARRITO DE COMPRAS</a>
         <% if(!locals.userLogged) {%> 
-        <a href="/user/register"><i class="fa-solid fa-rectangle-list"></i> REGISTRO</a>
-        <a href="/user/login"><i class="fa-solid fa-address-card"></i> LOGIN</a>
+            <a href="/user/register"><i class="fa-solid fa-rectangle-list"></i> REGISTRO</a>
+            <a href="/user/login"><i class="fa-solid fa-address-card"></i> LOGIN</a>
         <% } %> 
     </nav>
 
       <!-------- ICONO Y NOMBRE USUARIO -------->
       
-      <% if(locals.userLogged) {%>  
+      <% if(locals.userLogged) {%>
         <div class="user">
-        <p><%= user.nombreUser %> </p>
-        <img src="/images/images_user/<%= user.imagen %>" alt="Usuario">   
+        <p><%= locals.userLogged.nombreUser %> </p>
+        <img src="/images/images_user/<%= locals.userLogged.imagen %>" alt="Usuario">   
     </div>
  <% } %> 
     <!-------- ICONO MENU HAMBURGUESA -------->

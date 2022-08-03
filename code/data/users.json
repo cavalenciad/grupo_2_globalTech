@@ -1,34 +1,35 @@
 [
  {
   "id": 1,
-  "email": "teorgg@hotmail.com",
-  "nombre": "Mateo",
-  "apellido": "Roldan",
-  "nombreUser": "pilotrsc",
-  "pais": "BO",
-  "imagen": "avatar-1659406444572.jpg",
-  "termCond": "Si"
- },
- {
-  "id": 2,
-  "email": "teo781@hotmail.com",
-  "nombre": "Camilo",
-  "apellido": "RG",
-  "nombreUser": "lilhat",
-  "pais": "VI",
-  "imagen": "avatar-1659406466223.jpg",
-  "contrasena": "$2a$10$QnNYp2stDrNp0hiVC/jUXeK.YzToNNmBXzyJ32fVEt1F/IAZ8ireS",
+  "email": "camilonofx@gmail.com",
+  "nombre": "Camilo Andrés",
+  "apellido": "Devia",
+  "nombreUser": "cv",
+  "pais": "CO",
+  "imagen": "avatar-1659487566142.jpg",
+  "contrasena": "$2a$10$f2WVWqGdIkxfd8CLLHOrVuaM.NwEzJ7/pjOk.A6K1H9RvlRfV.gpi",
   "termCond": "Si"
  },
  {
   "id": 3,
   "email": "c@v.com",
-  "nombre": "Mate",
-  "apellido": "RGG",
-  "nombreUser": "PILOT",
-  "pais": "HT",
-  "imagen": "avatar-1659406496655.jpg",
-  "contrasena": "$2a$10$7GiWx8dZHquEj9KvHePs.eDzcBQy1pfC366VdU6uE6ryJYsW7EDSK",
+  "nombre": "c",
+  "apellido": "v",
+  "nombreUser": "cv",
+  "pais": "BO",
+  "imagen": "avatar-1659488385678.jpg",
+  "contrasena": "$2a$10$lCHjw5fsuj2NEymnOPBROu61MvSyQGOwOewW41Yj1fJfc.7HBwjUS",
+  "termCond": "Si"
+ },
+ {
+  "id": 4,
+  "email": "j.gutierrezv08@gmail.com",
+  "nombre": "Teo",
+  "apellido": "Roldán",
+  "nombreUser": "pilot",
+  "pais": "CU",
+  "imagen": "avatar-1659488946218.jpg",
+  "contrasena": "$2a$10$D6wcLeInsBWDpiesTt06RegblcdH6PY4UDB6Rt.zLeaSp8bnM3wSq",
   "termCond": "Si"
  },
  {

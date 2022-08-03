@@ -23,7 +23,6 @@ app.use(session({
 }));
 
 app.use(cookies());
-
 app.use(methodOverride ("_method"));
 app.use(userLoggedMiddleware);
 
