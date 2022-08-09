@@ -175,7 +175,7 @@ Daily 1/08/2022
 - Queda pendiente el tema de recordar la información y datos personales de los usuarios por medio de cookies y session (Opcional).
 - Se pacta una próxima reunión para el 2/08/2022 a las 5:00 pm.
 
-Daily 2/08/2022
+Daily 02/08/2022
 
 - Se instalo el cookie parser.
 - Se reviso el codigo del session y encontramos que cuando cerrabamos una sesion se nos borraba la contraseña y no podiamos ingresar nuevamente con ese usuario.
@@ -190,4 +190,9 @@ Daily 2/08/2022
 - Quedan enrutados los botones de mi perfil y cerrar sesión con la funcionalidad.
 - Se pacta una próxima reunión para el 3/08/2022 a las 8:30 pm.
 
+Daily 08/08/2022
 
+- Se crea el diagrama de base de datos con las siguientes tablas (productos, categorías, color y usuarios).
+- Se genera el script de creación de la estructura de la base de datos.
+- Presentamos problemas con la relación de las tablas.
+- Se pacta proxima reunión para el 09/08/2022.
