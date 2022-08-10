@@ -42,5 +42,16 @@
   "imagen": "avatar-1659488344256.jpg",
   "contrasena": "$2a$10$s2ROCFHSAjgkhtW104G24.DrHI6J1T3PVxRl/cj5d9dxoPjr7Y4eW",
   "termCond": "Si"
+ },
+ {
+  "id": 5,
+  "email": "c@j.com",
+  "nombre": "camilo",
+  "apellido": "valencia",
+  "nombreUser": "cavalenciad",
+  "pais": "Honduras",
+  "imagen": "avatar-1660091679950.jpg",
+  "contrasena": "$2a$10$u6bigG1UoC2sWoaHPvQLj.XeQ4kXvDNj.BzBUFXPKW7NPjUQwcXLm",
+  "termCond": "Si"
  }
 ]
