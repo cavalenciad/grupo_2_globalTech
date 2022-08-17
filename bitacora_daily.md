@@ -196,3 +196,9 @@ Daily 08/08/2022
 - Se genera el script de creación de la estructura de la base de datos.
 - Presentamos problemas con la relación de las tablas.
 - Se pacta proxima reunión para el 09/08/2022.
+
+Daily 16/08/2022
+
+- Se actuliza la tabla de Categorias directamente desde el workbench.
+- Se crea un producto en la tabla de productos directamente desde el workbench.
+- Se intenta conectar el proyecto con la base de datos por medio de archivos de prueba.
