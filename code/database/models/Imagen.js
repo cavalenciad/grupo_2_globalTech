@@ -10,7 +10,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         Imagen:{
-            type: dataTypes.LONGBLOB,
+            type: dataTypes.LONGBLOG,
             allowNull: false
         },
 
