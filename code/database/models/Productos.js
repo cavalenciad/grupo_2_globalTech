@@ -38,20 +38,20 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     };
 
-    const productos = sequelize.define(alias, cols, config);
+    const Productos = sequelize.define(alias, cols, config);
 
-    productos.associate = function(models) {
-        productos.belongsTo(models.categoria, {
+    Productos.associate = function(models) {
+        Productos.belongsTo(models.categorias, {
             as: "producto_categoria",
             foreignKey: "Categoria_idCategoria"
         })
 
-        productos.hasMany(models.imagen, {
+        Productos.hasMany(models.imagen, {
             as: "producto_imagen",
             foreignKey: "Productos_idProductos"
         })
 
-        productos.belongsToMany(models.colores, {
+        Productos.belongsToMany(models.colores, {
             as: "producto_color",
             through: "productosycolores",
             foreignKey: "Productos_idProductos",
@@ -60,6 +60,6 @@ module.exports = (sequelize, DataTypes) => {
         })
     };
 
-    return productos;
+    return Productos;
 
 }

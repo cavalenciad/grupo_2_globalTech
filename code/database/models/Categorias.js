@@ -1,5 +1,3 @@
-const Imagen = require("./Imagen");
-
 module.exports = (sequelize, dataTypes) => {
 
     let alias = "categorias";

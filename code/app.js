@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const session = require ('express-session');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 const cookies = require ('cookie-parser');
+const pruebaDb = require ("./routers/pruebaDB.js"); 
 
 const rutaMain = require("./routers/main.js");
 const rutaUser = require("./routers/user.js");
@@ -30,6 +31,7 @@ app.use(userLoggedMiddleware);
 app.use("/", rutaMain);
 app.use("/", rutaUser);
 app.use("/products", rutaProducts);
+app.use("/", pruebaDb); 
 
 
 app.use(express.static("./public"));

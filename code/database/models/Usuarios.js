@@ -36,7 +36,7 @@ module.exports = (sequelize, dataTypes) => {
         },
 
         Imagen:{
-            type: dataTypes.LONGBLOB,
+            type: dataTypes.BLOB,
             allowNull: false
         },
 
@@ -63,8 +63,8 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const usuarios = sequelize.define(alias, cols, config);
+    const Usuarios = sequelize.define(alias, cols, config);
 
-    return usuarios;
+    return Usuarios;
 
 }

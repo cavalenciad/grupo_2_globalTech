@@ -10,7 +10,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         Imagen:{
-            type: dataTypes.LONGBLOG,
+            type: dataTypes.BLOB,
             allowNull: false
         },
 
@@ -33,7 +33,7 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
 
-    const imagen = sequelize.define(alias, cols, config);
+    const Imagen = sequelize.define(alias, cols, config);
 
     Imagen.associate = function(models){
         Imagen.belongsTo(models.productos, {
@@ -43,6 +43,6 @@ module.exports = (sequelize, dataTypes) => {
         
     }
 
-    return imagen;
+    return Imagen;
 
 }
