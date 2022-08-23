@@ -26,11 +26,19 @@ const pruebaControllerDB = {
     },
 
     create: function (req,res) {
+        console.log({
+            Nombre: req.body.name,
+            Descripcion: req.body.description,
+            Precio: req.body.precio,
+            Categoria_idCateogoria: parseInt(req.body.categoria)
+
+        });
         db.productos.create({
             Nombre: req.body.name,
             Descripcion: req.body.description,
             Precio: req.body.precio,
-            Categoria_idCateogoria: req.body.categoria
+            Categoria_idCateogoria: parseInt(req.body.categoria)
+
         });
 
         res.redirect("/productos/createProductos")

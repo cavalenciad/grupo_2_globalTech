@@ -57,7 +57,7 @@
                 <label class="Qcategorias">Categoría</label>
                 <select name="categoria" class="Qcategorias"> 
                     <% categoria.forEach(categoria => { %>
-                        <option value="<%= categoria.Categoria %>" <% if (producto.categorias && producto.categorias.idCategoria == categoria.idCategoria) { %><%= 'selected' %><% }; %>><%= categoria.Categoria %></option>
+                        <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
                     <% }); %>
                 </select>
             </div>
