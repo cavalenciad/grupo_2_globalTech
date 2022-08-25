@@ -26,5 +26,10 @@ router.get("/productos/detail/:id/editProducts", pruebaControllerDB.formularioEd
 
 router.post("/productos/createProductos", upload.array('imagen', 4), pruebaControllerDB.create);
 
+router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), pruebaControllerDB.edit);
+
+router.delete("/productos/detail/:id/", pruebaControllerDB.destroy);
+
+
 
 module.exports = router;

@@ -18,7 +18,7 @@
 
 
     <div class="QimagenFondo">
-        <form action="/productos/pruebaEditProducts/<%= producto.Nombre%>/editProducts?_method=put" method="post" enctype="multipart/form-data" class="QformProducts">
+        <form action="/productos/detail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data" class="QformProducts">
             <h3>Editar productos</h3>
             
             <!----CAJA DE FORMULARIO----->
@@ -58,21 +58,17 @@
                 <label class="Qcategorias">Categoría</label>
                 <select name="categoria" class="Qcategorias">
                     <% categoria.forEach(categoria => { %>
-                        <option value="<%= categoria.Categoria %>" <% if (producto.categorias && producto.categorias.idCategoria == categoria.idCategoria) { %><%= 'selected' %><% }; %>><%= categoria.Categoria %></option>
+                        <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
                     <% }); %>
                 </select>
             </div>
 
             <div class="QcompletarFormulario">
-                <span>
-                    <% colores.forEach(colores => {%>
-                        <input type="text" name="color1" id="color1" value="<%= colores.Color %>" 
-                        <% if (producto.colores && producto.colores.idColores == colores.idColores) { %>
-                            <%= idColores.Colores %>
-                            <% }; %>>
-                   <% }) %>
-                
-                </span>
+                <input placeholder="Color 1" type="text" name="color1" id="color1" value="<%= producto.Color1%>" required>
+            </div>
+
+            <div class="QcompletarFormulario">
+                <input placeholder="Color 2" type="text" name="color2" id="color2" value="<%= producto.Color2%>" required>
             </div>
 
             <div class="QcompletarFormulario">

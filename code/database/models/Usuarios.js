@@ -40,12 +40,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
 
-        Contraseña:{
-            type: dataTypes.STRING(45),
-            allowNull: false
-        },
-
-        Contraseña:{
+        Contrasena:{
             type: dataTypes.STRING(45),
             allowNull: false
         },

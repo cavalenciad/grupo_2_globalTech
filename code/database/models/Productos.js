@@ -25,6 +25,16 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
 
+        Color1:{
+            type: DataTypes.STRING(45),
+            allowNull: false
+        },
+
+        Color2:{
+            type: DataTypes.STRING(45),
+            allowNull: false
+        },
+
         Categoria_idCategoria:{
             type: DataTypes.INTEGER,
             foreignKey: true,
@@ -51,13 +61,6 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: "Productos_idProductos"
         })
 
-        Productos.belongsToMany(models.colores, {
-            as: "producto_color",
-            through: "productosycolores",
-            foreignKey: "Productos_idProductos",
-            otherKey: "Colores_idColores",
-            timestamps: false
-        })
     };
 
     return Productos;

@@ -53,5 +53,16 @@
   "imagen": "avatar-1660091679950.jpg",
   "contrasena": "$2a$10$u6bigG1UoC2sWoaHPvQLj.XeQ4kXvDNj.BzBUFXPKW7NPjUQwcXLm",
   "termCond": "Si"
+ },
+ {
+  "id": 6,
+  "email": "sebastianjm1040@gmail.com",
+  "nombre": "Sebastián",
+  "apellido": "Jimenez",
+  "nombreUser": "SebasAdmin1",
+  "pais": "Colombia",
+  "imagen": "avatar-1661395531282.jpg",
+  "contrasena": "$2a$10$RtE9tOcQiEOxxFCcZHHHr.5DokZQK9sU9jcUz4XFS946Qd8ENm1xK",
+  "termCond": "Si"
  }
 ]

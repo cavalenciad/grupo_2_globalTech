@@ -28,7 +28,6 @@ fs
 Object.keys(db).forEach(modelName => {
   
   if (db[modelName].associate) {
-    console.log(modelName);
     db[modelName].associate(db);
   }
 });
