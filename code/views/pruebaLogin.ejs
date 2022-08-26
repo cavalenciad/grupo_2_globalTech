@@ -20,7 +20,7 @@
 <%- include("./partials/social.ejs")%>
 
 <div class="jImagenFondo">
-    <form action="/user/login" method="POST">
+    <form action="/user/iniciarSesion" method="POST">
         <h3>Iniciar Sesión</h3>
         <div>
             <input placeholder="Email" type="text" name="email" id="Email">
@@ -43,7 +43,7 @@
         </div>
 
         <button type="submit">Iniciar Sesión</button>
-        <p class="jNoCuenta"> <a href="/user/register">¿Aún no tiene una cuenta?</a>
+        <p class="jNoCuenta"> <a href="/user/pruebaRegister">¿Aún no tiene una cuenta?</a>
         </p>
     </form>
 </div>

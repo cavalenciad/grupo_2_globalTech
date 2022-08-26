@@ -28,7 +28,6 @@ const pruebaUserController = {
             where: {Email: req.body.email}
         })
         .then((resultado)=>{
-
             if(resultado){
                 res.render('pruebaRegister', {
                     errors: {
@@ -39,8 +38,7 @@ const pruebaUserController = {
                     oldData: req.body
                 });
             }else{
-                db.usuarios.create({
-    
+                db.usuarios.create({    
                     Email: req.body.email,
                     Nombre: req.body.nombre,
                     Apellido: req.body.apellido,
@@ -50,58 +48,46 @@ const pruebaUserController = {
                     Contrasena: bcrypt.hashSync(req.body.contrasena, 10),
                     TerminosYcondiciones: 1
                 })
-
                 res.redirect('/user/iniciarSesion');
             }
-
-        })
-
-            
-
-
+        })            
     },
-
     login: (req, res) => {
-        res.render("login");
+        res.render("pruebaLogin");
     },
     processLogin: (req, res) => {
         const resultValidationLog = validationResult(req);
 
         if (resultValidationLog.errors.length > 0) {
-            res.render('login', {
+            res.render('pruebaLogin', {
                 errors: resultValidationLog.mapped(),
             });
         }
 
-        findByField = function(field, text) {
-            let userFound = users.find(oneUser => oneUser[field] === text);
-            return userFound;
-        }
-
-        let usuarioALoguearse = findByField('email', req.body.email);
-        console.log(usuarioALoguearse);
-
-        if(usuarioALoguearse){
-            let isOkThePass = bcrypt.compareSync(req.body.contrasena, usuarioALoguearse.contrasena);
-            if (isOkThePass) {
-                //delete usuarioALoguearse.contrasena;
-                req.session.usuarioLogueado = usuarioALoguearse;
-                if(req.body.jRecuerdame){
-                    res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
+        db.usuarios.findOne({
+            where: {Email: req.body.email}
+        })
+        .then((usuarioALoguearse) => {
+            console.log(usuarioALoguearse);
+            if(usuarioALoguearse){
+                let isOkThePass = bcrypt.compareSync(req.body.contrasena, usuarioALoguearse.Contrasena);
+                if (isOkThePass) {
+                    req.session.usuarioLogueado = usuarioALoguearse;
+                    if(req.body.jRecuerdame){
+                        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
+                    }
+                    res.redirect('/user/perfil');
                 }
-                res.redirect('/user/userProfile');
+                if (!usuarioALoguearse){
+                    return res.render('pruebaLogin', {
+                    errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
+                }
             }
-            if (!usuarioALoguearse){
-                return res.render('login', {
-                errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
-            }
-        }
-        
-            
+        })                    
     },
     profile: (req, res) => {
         console.log(req.cookies.userEmail);
-        res.render("userProfile", {
+        res.render("pruebaUserProfile", {
             user: req.session.usuarioLogueado
         });
     },
