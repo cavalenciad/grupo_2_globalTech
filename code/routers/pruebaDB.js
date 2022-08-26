@@ -2,10 +2,11 @@ const express = require('express');
 const multer = require('multer');
 const router = express.Router();
 const pruebaControllerDB = require("../Controllers/pruebaControllerDB");
+const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/images/Productos'));
+        cb(null, path.join(__dirname, '../public/images/pruebaProductos'));
     },
     filename: (req, file, cb) => {
         //const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);

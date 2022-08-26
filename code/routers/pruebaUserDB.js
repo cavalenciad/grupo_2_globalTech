@@ -5,7 +5,7 @@ const pruebaUserController = require("../Controllers/pruebaUserControllerDB");
 const path = require('path');
 const { body } = require('express-validator');
 const guestMiddleware = require('../middlewares/guestMiddleware');
-const authMiddleware = require('../middlewares/authMiddleware');
+const pruebaAuthMiddleware = require('../middlewares/pruebaAuthMiddleware');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -52,12 +52,9 @@ const validationsLog = [
     body('contrasena').notEmpty().withMessage('Debes ingresar una contraseña')
 ]
 
-
-
-
 router.get("/user/iniciarSesion", guestMiddleware, pruebaUserController.login);
 router.get("/user/cerrarSesion",  pruebaUserController.logout);
-router.get("/user/perfil", authMiddleware, pruebaUserController.profile);
+router.get("/user/perfil", pruebaAuthMiddleware, pruebaUserController.profile);
 router.get("/user/registro", guestMiddleware, pruebaUserController.register);
 
 // Enrutado por POST

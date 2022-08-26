@@ -1,21 +1,22 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "admin",
+    "password": "Lfftonmz2509*",
     "database": "db_globaltech",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging": sql => sql.substr(0,20)
   },
   "test": {
     "username": "root",
-    "password": "admin",
+    "password": "Lfftonmz2509*",
     "database": "db_globaltech",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "admin",
+    "password": "Lfftonmz2509*",
     "database": "db_globaltech",
     "host": "127.0.0.1",
     "dialect": "mysql"

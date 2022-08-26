@@ -1,3 +1,4 @@
+const fs = require('fs');
 const db = require("../database/models");
 
 const pruebaControllerDB = {
@@ -33,9 +34,17 @@ const pruebaControllerDB = {
             Categoria_idCategoria: req.body.categoria,
             Color1: req.body.color1,
             Color2: req.body.color2
-
         })
-
+        .then((producto) => {
+            let arrayImagen = [];
+            for(let i=0; i<req.files.length; i++){
+                let imagen = fs.readFileSync(req.files[i].path);
+                arrayImagen.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
+            }
+            db.imagen.bulkCreate(
+                arrayImagen
+            )
+        })
         .then(() =>{
             res.redirect("/productos")
         })
@@ -53,8 +62,6 @@ const pruebaControllerDB = {
     },
 
     edit: (req, res) => {
-
-        console.log(req.body);
         db.productos.update({
             Nombre: req.body.name,
             Descripcion: req.body.description,
