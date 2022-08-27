@@ -22,18 +22,18 @@
         <div class="Mperfil">
             <!---------Perfil-------->
             <div class="MperfilImg">
-                <img src="/images/images_user/<%= user.imagen%>">
+                <img src="/images/images_user/<%= usuario.Imagen%>">
                 <div class="MnombreUser">
-                    <h3><%= user.nombreUser %></h3>
+                    <h3><%= usuario.NombreUsuario %></h3>
                 </div>
             </div>
            <hr>
                 <div class="MprofileDescription">
                         <h4>MIS DATOS</h4>
-                        <p><b>Nombre y apellido:</b> <%= user.nombre %> <%= user.apellido %></p>
-                        <p><b>Nombre de usuario:</b> <%= user.nombreUser %> </p>
-                        <p><b>E-mail:</b> <%= user.email %> </p>
-                        <p><b>País:</b> <%= user.pais %> </p>
+                        <p><b>Nombre y apellido:</b> <%= usuario.Nombre %> <%= usuario.Apellido %></p>
+                        <p><b>Nombre de usuario:</b> <%= usuario.NombreUsuario %> </p>
+                        <p><b>E-mail:</b> <%= usuario.Email %> </p>
+                        <p><b>País:</b> <%= usuario.Pais %> </p>
                 </div>
                     <div class="MbuttonProfile">
                         <a href="/user/logout">Cerrar Sesión</a>

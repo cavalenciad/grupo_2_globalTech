@@ -20,12 +20,6 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
 
-        Colores_idColores:{
-            type: dataTypes.INTEGER,
-            foreignKey: true,
-            allowNull: false
-        },
-
     };
 
     let config = {

@@ -10,7 +10,6 @@ const pruebaUserController = {
     register: (req, res) => {
         res.render("pruebaRegister");
     },
-
     createUser: (req, res) => {
        
         const resultValidation = validationResult(req);
@@ -21,8 +20,6 @@ const pruebaUserController = {
                 oldData: req.body
             });
         }
-        
-        console.log(db.usuarios)
 
         db.usuarios.findOne({
             where: {Email: req.body.email}
@@ -48,7 +45,10 @@ const pruebaUserController = {
                     Contrasena: bcrypt.hashSync(req.body.contrasena, 10),
                     TerminosYcondiciones: 1
                 })
-                res.redirect('/user/iniciarSesion');
+                .then((user) => {
+                    console.log(req.file);
+                    res.redirect('/user/iniciarSesion');
+                })                
             }
         })            
     },
@@ -76,7 +76,7 @@ const pruebaUserController = {
                     if(req.body.jRecuerdame){
                         res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
                     }
-                    res.redirect('/user/perfil');
+                    res.redirect('/user/perfil/' + usuarioALoguearse.idUsuarios);
                 }
                 if (!usuarioALoguearse){
                     return res.render('pruebaLogin', {
@@ -86,10 +86,13 @@ const pruebaUserController = {
         })                    
     },
     profile: (req, res) => {
-        console.log(req.cookies.userEmail);
-        res.render("pruebaUserProfile", {
-            user: req.session.usuarioLogueado
-        });
+        db.usuarios.findByPk(req.params.id)
+        .then((usuarioEncontrado) => {
+            res.render("pruebaUserProfile", {
+                usuario: usuarioEncontrado,
+                user: req.session.usuarioLogueado
+            });
+        })        
     },
 
     logout: (req, res) => {

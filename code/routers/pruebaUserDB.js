@@ -54,7 +54,7 @@ const validationsLog = [
 
 router.get("/user/iniciarSesion", guestMiddleware, pruebaUserController.login);
 router.get("/user/cerrarSesion",  pruebaUserController.logout);
-router.get("/user/perfil", pruebaAuthMiddleware, pruebaUserController.profile);
+router.get("/user/perfil/:id", pruebaAuthMiddleware, pruebaUserController.profile);
 router.get("/user/registro", guestMiddleware, pruebaUserController.register);
 
 // Enrutado por POST
