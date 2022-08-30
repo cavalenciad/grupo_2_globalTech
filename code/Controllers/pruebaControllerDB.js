@@ -5,8 +5,10 @@ const Op = db.Sequelize.Op;
 const pruebaControllerDB = {
 
     list: (req, res) => {
-        db.productos.findAll()
-            .then(producto =>{
+        db.productos.findAll({
+            include: [{association: "producto_categoria"}]
+        })
+            .then(function(producto){
                 res.render("pruebaDB", {producto})
         })
     },
@@ -15,10 +17,11 @@ const pruebaControllerDB = {
             .then(producto =>{
                 res.render("pruebaDetail", {producto:producto})
             }) */
+
         let requestProducto = db.productos.findByPk(req.params.id)
         let img = db.imagen.findAll({where: {
             Productos_idProductos: req.params.id,
-            attributes: [[sequelize.fn('min', sequelize.col('idImagen')), 'minId']]
+            /*attributes: [[sequelize.fn('min', sequelize.col('idImagen')), 'minId']]*/
         }})
         Promise.all([requestProducto, img])
             .then(function([producto, img]){
