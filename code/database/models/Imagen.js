@@ -10,7 +10,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         Imagen:{
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING,
             allowNull: false
         },
 
@@ -31,12 +31,9 @@ module.exports = (sequelize, dataTypes) => {
 
     Imagen.associate = function(models){
         Imagen.belongsTo(models.productos, {
-            as: "imagen_producto",
+            as: "producto",
             foreignKey: "Productos_idProductos"
-        })
-        
+        })        
     }
-
     return Imagen;
-
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <title><%= producto.Nombre%></title>
+    <title><%= producto.Nombre %> </title>
     <link rel="stylesheet" href="/css/productDetail.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -23,19 +23,28 @@
         </div>
 
         <section class="container">
-
-            <div class="productImage">
-                <div class="bigImage">
-                    <img src="/images/pruebaProductos/<%= img.Imagen%>">
-                </div>        
-                
-                
+        <div class="productImage">
+            <div class="bigImage">
+                <% for( let i = 0; i < producto.imagen.length; i++ ) { %>
+                    <img src="/images/pruebaProductos/<%= producto.imagen[0].Imagen %>">
+                    <% break %>
+                <% } %>                        
             </div>
+               
+            <div class="imageDescriptionContainer">
+                <% for( let i = 0; i < producto.imagen.length; i++ ) { %> 
+                    <div class="imageDescription">                        
+                        <img src="/images/pruebaProductos/<%= producto.imagen[i].Imagen%>" alt="<%= producto.imagen[i].Imagen%>">                            
+                    </div>
+                <% } %>
+            </div>            
+
+        </div>
 
             <div class="productDescription">
                 <div class="namePrice">
-                    <p class="name"><%=  producto.Nombre%></p>
-                    <p>$<%=  producto.Precio%></p>
+                    <p class="name"><%= producto.Nombre %></p>
+                    <p>$<%= producto.Precio %></p>
                 </div>
 
                 <div class="colorMenu">
