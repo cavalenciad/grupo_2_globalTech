@@ -6,10 +6,13 @@ const pruebaControllerDB = {
 
     list: (req, res) => {
         db.productos.findAll({
-            include: [{association: "producto_categoria"}]
+            include: {
+                all: true,
+                nested: true
+            }
         })
-            .then(function(producto){
-                res.render("pruebaDB", {producto})
+        .then((producto) => {
+            res.render("pruebaDB", {producto})
         })
     },
     detail: (req, res) => {
@@ -18,15 +21,30 @@ const pruebaControllerDB = {
                 res.render("pruebaDetail", {producto:producto})
             }) */
 
-        let requestProducto = db.productos.findByPk(req.params.id)
+        /* let requestProducto = db.productos.findByPk(req.params.id)
         let img = db.imagen.findAll({where: {
             Productos_idProductos: req.params.id,
-            /*attributes: [[sequelize.fn('min', sequelize.col('idImagen')), 'minId']]*/
+            
         }})
         Promise.all([requestProducto, img])
             .then(function([producto, img]){
                 res.render("pruebaDetail", {producto, img})
-            })
+            }) */
+
+        /* db.productos.findByPk(req.params.id, {
+            include: [{association: "producto_imagen"}]
+        })
+        .then((producto) => {
+            res.render("pruebaDetail", {producto});
+        }) */
+
+
+        db.productos.findByPk(req.params.id, {
+            include: [{association: "imagen"}]
+        })
+        .then((producto) => {
+            res.render("pruebaDetail", {producto});                       
+        })
     },
     add: function (req, res) {
         let requestCategoria = db.categorias.findAll();
@@ -55,9 +73,10 @@ const pruebaControllerDB = {
                 arrayImagen
             )
         })
-        .then(() =>{
+        .then(() => {
             res.redirect("/productos")
         })
+        
     },
     formularioEdit: (req, res) =>{
         let productoSelect = db.productos.findByPk(req.params.id);
@@ -84,7 +103,22 @@ const pruebaControllerDB = {
         })
         .then((producto) => {
 
-            let newImg = [];
+            let arrayImagen = [];
+            if(req.files){
+                for(let i=0; i<req.files.length; i++){
+                    let imagen = req.files[i].filename;
+                    arrayImagen.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
+                }
+                db.imagen.bulkCreate(
+                    arrayImagen,
+                    {
+                        updateOnDuplicate: ["Imagen", "Productos_idProductos"]
+                    }
+                )
+            }            
+        })
+
+            /* let newImg = [];
             for(let i=0; i<req.files.length; i++){
                 let imagen = fs.readFileSync(req.files[i].path);
                 newImg.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
@@ -100,11 +134,10 @@ const pruebaControllerDB = {
                 }, 
                 {
                     where:{
-                        magen: oldImg.imagen.dataValues.Imagen
+                        imagen: oldImg.imagen.dataValues.Imagen
                 }
             })
-            })
-        })
+            }) */
         .then(() =>{
             res.redirect("/productos/detail/" + req.params.id)
         })
@@ -142,7 +175,7 @@ const pruebaControllerDB = {
                 attributes: ['Imagen']
             })                
         }) */
-    destroy: (req, res) =>{
+    destroy: (req, res) => {
         db.productos.destroy({
             where: {
                 idProductos: req.params.id
