@@ -29,7 +29,7 @@ router.post("/productos/createProductos", upload.array('imagen', 4), pruebaContr
 
 router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), pruebaControllerDB.edit);
 
-router.delete("/productos/detail/:id/", pruebaControllerDB.destroy);
+router.delete("/productos/detail/:id", pruebaControllerDB.destroy);
 
 
 

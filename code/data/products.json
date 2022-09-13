@@ -326,18 +326,5 @@
   "imagen2": "RedmiNote11Pro-Vista2.jpg",
   "imagen3": "RedmiNote11Pro-Vista3.jpg",
   "imagen4": "RedmiNote11Pro-Vista4.jpg"
- },
- {
-  "id": "4",
-  "nombre": "Prueba",
-  "descripcion": "holaaa",
-  "categoria": "Portatiles Gamer",
-  "color1": "negro",
-  "color2": "blanco",
-  "precio": "44",
-  "imagen1": "MÃ©todos HTTP.PNG",
-  "imagen2": "micro desafio 1.PNG",
-  "imagen3": "Captura.PNG",
-  "imagen4": "Expresiones regulares- detecta patrones.PNG"
  }
 ]

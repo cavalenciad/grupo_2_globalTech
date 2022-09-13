@@ -52,12 +52,12 @@ module.exports = (sequelize, DataTypes) => {
 
     Productos.associate = function(models) {
         Productos.belongsTo(models.categorias, {
-            as: "producto_categoria",
+            as: "categorias",
             foreignKey: "Categoria_idCategoria"
         })
 
         Productos.hasMany(models.imagen, {
-            as: "producto_imagen",
+            as: "imagen",
             foreignKey: "Productos_idProductos"
         })
 
