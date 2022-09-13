@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "Juanma.1991",
+    "password": "",
     "database": "db_globaltech",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -9,14 +9,14 @@ module.exports = {
   },
   "test": {
     "username": "root",
-    "password": "Juanma.1991",
+    "password": "",
     "database": "db_globaltech",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "Juanma.1991",
+    "password": "",
     "database": "db_globaltech",
     "host": "127.0.0.1",
     "dialect": "mysql"
