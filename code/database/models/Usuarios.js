@@ -10,42 +10,42 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
 
-        Email:{
+        email:{
             type: dataTypes.STRING(100),
             allowNull: false
         },
 
-        Nombre:{
+        nombre:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
 
-        Apellido:{
+        apellido:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
 
-        NombreUsuario:{
+        nombreUsuario:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
 
-        Pais:{
+        pais:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
 
-        Imagen:{
+        imagen:{
             type: dataTypes.BLOB,
             allowNull: false
         },
 
-        Contrasena:{
+        contrasena:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
 
-        TerminosYcondiciones:{
+        terminosycondiciones:{
             type: dataTypes.TINYINT,
             allowNull: false
         }
