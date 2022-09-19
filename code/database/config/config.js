@@ -15,10 +15,10 @@ module.exports = {
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "",
-    "database": "db_globaltech",
-    "host": "127.0.0.1",
+    "username": "sql10520645",
+    "password": "EhIl1JbKvM",
+    "database": "sql10520645",
+    "host": "sql10.freemysqlhosting.net",
     "dialect": "mysql"
   }
 }
