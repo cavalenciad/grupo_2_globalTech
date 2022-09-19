@@ -1,0 +1,80 @@
+[
+    {
+     "id": 1,
+     "email": "camilonofx@gmail.com",
+     "nombre": "Camilo Andrés",
+     "apellido": "Devia",
+     "nombreUser": "cv",
+     "pais": "CO",
+     "imagen": "avatar-1659487566142.jpg",
+     "contrasena": "$2a$10$f2WVWqGdIkxfd8CLLHOrVuaM.NwEzJ7/pjOk.A6K1H9RvlRfV.gpi",
+     "termCond": "Si",
+     "rol": 1
+    },
+
+    {
+     "id": 3,
+     "email": "c@v.com",
+     "nombre": "c",
+     "apellido": "v",
+     "nombreUser": "cv",
+     "pais": "BO",
+     "imagen": "avatar-1659488385678.jpg",
+     "contrasena": "$2a$10$lCHjw5fsuj2NEymnOPBROu61MvSyQGOwOewW41Yj1fJfc.7HBwjUS",
+     "termCond": "Si",
+     "rol": 1
+    },
+
+    {
+     "id": 4,
+     "email": "j.gutierrezv08@gmail.com",
+     "nombre": "Teo",
+     "apellido": "Roldán",
+     "nombreUser": "pilot",
+     "pais": "CU",
+     "imagen": "avatar-1659488946218.jpg",
+     "contrasena": "$2a$10$D6wcLeInsBWDpiesTt06RegblcdH6PY4UDB6Rt.zLeaSp8bnM3wSq",
+     "termCond": "Si",
+     "rol": 1
+    },
+
+    {
+     "id": 4,
+     "email": "mqcyd09@gmail.com",
+     "nombre": "Mariana ",
+     "apellido": "Quintero Castañeda",
+     "nombreUser": "Mqcydm",
+     "pais": "Colombia",
+     "imagen": "avatar-1659488344256.jpg",
+     "contrasena": "$2a$10$s2ROCFHSAjgkhtW104G24.DrHI6J1T3PVxRl/cj5d9dxoPjr7Y4eW",
+     "termCond": "Si",
+     "rol": 1
+    },
+
+    {
+     "id": 5,
+     "email": "c@j.com",
+     "nombre": "camilo",
+     "apellido": "valencia",
+     "nombreUser": "cavalenciad",
+     "pais": "Honduras",
+     "imagen": "avatar-1660091679950.jpg",
+     "contrasena": "$2a$10$u6bigG1UoC2sWoaHPvQLj.XeQ4kXvDNj.BzBUFXPKW7NPjUQwcXLm",
+     "termCond": "Si",
+     "rol": 1
+    },
+
+    {
+     "id": 6,
+     "email": "sebastianjm1040@gmail.com",
+     "nombre": "Sebastián",
+     "apellido": "Jimenez",
+     "nombreUser": "SebasAdmin1",
+     "pais": "Colombia",
+     "imagen": "avatar-1661395531282.jpg",
+     "contrasena": "$2a$10$RtE9tOcQiEOxxFCcZHHHr.5DokZQK9sU9jcUz4XFS946Qd8ENm1xK",
+     "termCond": "Si",
+     "rol": 1
+    }
+
+   ]
