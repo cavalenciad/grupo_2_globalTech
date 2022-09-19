@@ -31,13 +31,12 @@
             <% if (producto[i].categorias.Categoria == "Consolas") { %>  
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
-                        <img src="/images/pruebaProductos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
+                        <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
                         <% break %>
                     <% } %>
                     <h4><%= producto[i].Nombre%></h4>
-                    <p><%= producto[i].Categoria_idCategoria%></p>
-                    <p><%= producto[i].Precio%></p>
-                    <a href="/productos/detail/<%= producto[i].idProductos %>"><%= producto[i].Nombre %></a>
+                    <p>$ <%= producto[i].Precio%></p>
+                    <a href="/productos/detail/<%= producto[i].idProductos %>">Más Información</a>
                 </div>
             <% } %>
         <% } %>        
@@ -52,16 +51,15 @@
 
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
-            <% if (producto[i].categorias.Categoria == "Periféricos y Accesorios") { %>  
+            <% if (producto[i].categorias.Categoria == "Perifericos") { %>  
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
-                        <img src="/images/pruebaProductos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
+                        <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
                         <% break %>
                     <% } %>
                     <h4><%= producto[i].Nombre%></h4>
-                    <p><%= producto[i].Categoria_idCategoria%></p>
-                    <p><%= producto[i].Precio%></p>
-                    <a href="/productos/detail/<%= producto[i].idProductos %>"><%= producto[i].Nombre %></a>
+                    <p>$ <%= producto[i].Precio%></p>
+                    <a href="/productos/detail/<%= producto[i].idProductos %>">Más Información</a>
                 </div>
             <% } %>
         <% } %> 
@@ -76,16 +74,15 @@
 
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
-            <% if (producto[i].categorias.Categoria == "Portátiles Gamer") { %>  
+            <% if (producto[i].categorias.Categoria == "Portatiles") { %>  
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
-                        <img src="/images/pruebaProductos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
+                        <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
                         <% break %>
                     <% } %>
                     <h4><%= producto[i].Nombre%></h4>
-                    <p><%= producto[i].Categoria_idCategoria%></p>
-                    <p><%= producto[i].Precio%></p>
-                    <a href="/productos/detail/<%= producto[i].idProductos %>"><%= producto[i].Nombre %></a>
+                    <p>$ <%= producto[i].Precio%></p>
+                    <a href="/productos/detail/<%= producto[i].idProductos %>">Más Información</a>
                 </div>
             <% } %>
         <% } %>        
@@ -103,13 +100,12 @@
             <% if (producto[i].categorias.Categoria == "Hardware") { %>  
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
-                        <img src="/images/pruebaProductos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
+                        <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
                         <% break %>
                     <% } %>
                     <h4><%= producto[i].Nombre%></h4>
-                    <p><%= producto[i].Categoria_idCategoria%></p>
-                    <p><%= producto[i].Precio%></p>
-                    <a href="/productos/detail/<%= producto[i].idProductos %>"><%= producto[i].Nombre %></a>
+                    <p>$ <%= producto[i].Precio%></p>
+                    <a href="/productos/detail/<%= producto[i].idProductos %>">Más Información</a>
                 </div>
             <% } %>
         <% } %>        
@@ -124,16 +120,15 @@
 
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
-            <% if (producto[i].categorias.Categoria == "SmartPhones Gamer") { %>  
+            <% if (producto[i].categorias.Categoria == "Celulares") { %>  
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
-                        <img src="/images/pruebaProductos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
+                        <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].Nombre%>"/>
                         <% break %>
                     <% } %>
                     <h4><%= producto[i].Nombre%></h4>
-                    <p><%= producto[i].Categoria_idCategoria%></p>
-                    <p><%= producto[i].Precio%></p>
-                    <a href="/productos/detail/<%= producto[i].idProductos %>"><%= producto[i].Nombre %></a>
+                    <p>$ <%= producto[i].Precio%></p>
+                    <a href="/productos/detail/<%= producto[i].idProductos %>">Más Información</a>
                 </div>
             <% } %>
         <% } %> 
