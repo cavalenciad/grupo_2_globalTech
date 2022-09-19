@@ -1,0 +1,503 @@
+[
+    {
+        "idImagen": 1,
+        "Imagen": "NintendoSwitch-Vista1.jpg",
+        "Productos_idProductos": 1
+    },
+    {
+        "idImagen": 2,
+        "Imagen": "NintendoSwitch-Vista2.jpg",
+        "Productos_idProductos": 1
+    },
+    {
+        "idImagen": 3,
+        "Imagen": "NintendoSwitch-Vista3.jpg",
+        "Productos_idProductos": 1
+    },
+    {
+        "idImagen": 4,
+        "Imagen": "NintendoSwitch-Vista4.jpg",
+        "Productos_idProductos": 1
+    },
+    {
+        "idImagen": 5,
+        "Imagen": "XboxOne-Vista1.jpg",
+        "Productos_idProductos": 2
+    },
+    {
+        "idImagen": 6,
+        "Imagen": "XboxOne-Vista2.jpg",
+        "Productos_idProductos": 2
+    },
+    {
+        "idImagen": 7,
+        "Imagen": "XboxOne-Vista3.jpg",
+        "Productos_idProductos": 2
+    },
+    {
+        "idImagen": 8,
+        "Imagen": "XboxOne-Vista4.jpg",
+        "Productos_idProductos": 2
+    },
+    {
+        "idImagen": 9,
+        "Imagen": "PlayStation4-Vista1.jpg",
+        "Productos_idProductos": 3
+    },
+    {
+        "idImagen": 10,
+        "Imagen": "PlayStation4-Vista2.jpg",
+        "Productos_idProductos": 3
+    },
+    {
+        "idImagen": 11,
+        "Imagen": "PlayStation4-Vista3.jpg",
+        "Productos_idProductos": 3
+    },
+    {
+        "idImagen": 12,
+        "Imagen": "PlayStation4-Vista4.jpg",
+        "Productos_idProductos": 3
+    },
+    {
+        "idImagen": 13,
+        "Imagen": "XboxSeriesX-Vista1.jpg",
+        "Productos_idProductos": 4
+    },
+    {
+        "idImagen": 14,
+        "Imagen": "XboxSeriesX-Vista2.jpg",
+        "Productos_idProductos": 4
+    },
+    {
+        "idImagen": 15,
+        "Imagen": "XboxSeriesX-Vista3.jpg",
+        "Productos_idProductos": 4
+    },
+    {
+        "idImagen": 16,
+        "Imagen": "XboxSeriesX-Vista4.jpg",
+        "Productos_idProductos": 4
+    },
+    {
+        "idImagen": 17,
+        "Imagen": "PlayStation5-Vista1.jpg",
+        "Productos_idProductos": 5
+    },
+    {
+        "idImagen": 18,
+        "Imagen": "PlayStation5-Vista2.jpg",
+        "Productos_idProductos": 5
+    },
+    {
+        "idImagen": 19,
+        "Imagen": "PlayStation5-Vista3.jpg",
+        "Productos_idProductos": 5
+    },
+    {
+        "idImagen": 20,
+        "Imagen": "PlayStation5-Vista4.jpg",
+        "Productos_idProductos": 5
+    },
+    {
+        "idImagen": 21,
+        "Imagen": "AorusM2-Vista1.jpg",
+        "Productos_idProductos": 6
+    },
+    {
+        "idImagen": 22,
+        "Imagen": "AorusM2-Vista2.jpg",
+        "Productos_idProductos": 6
+    },
+    {
+        "idImagen": 23,
+        "Imagen": "AorusM2-Vista3.jpg",
+        "Productos_idProductos": 6
+    },
+    {
+        "idImagen": 24,
+        "Imagen": "AorusM2-Vista4.jpg",
+        "Productos_idProductos": 6
+    },
+    {
+        "idImagen": 25,
+        "Imagen": "Asus3090-Vista1.jpg",
+        "Productos_idProductos": 7
+    },
+    {
+        "idImagen": 26,
+        "Imagen": "Asus3090-Vista2.jpg",
+        "Productos_idProductos": 7
+    },
+    {
+        "idImagen": 27,
+        "Imagen": "Asus3090-Vista3.jpg",
+        "Productos_idProductos": 7
+    },
+    {
+        "idImagen": 28,
+        "Imagen": "Asus3090-Vista4.jpg",
+        "Productos_idProductos": 7
+    },
+    {
+        "idImagen": 29,
+        "Imagen": "Hyperx-Vista1.jpg",
+        "Productos_idProductos": 8
+    },
+    {
+        "idImagen": 30,
+        "Imagen": "Hyperx-Vista2.jpg",
+        "Productos_idProductos": 8
+    },
+    {
+        "idImagen": 31,
+        "Imagen": "Hyperx-Vista3.jpg",
+        "Productos_idProductos": 8
+    },
+    {
+        "idImagen": 32,
+        "Imagen": "Hyperx-Vista4.jpg",
+        "Productos_idProductos": 8
+    },
+    {
+        "idImagen": 33,
+        "Imagen": "Ryzen5950x-Vista1.jpg",
+        "Productos_idProductos": 9
+    },
+    {
+        "idImagen": 34,
+        "Imagen": "Ryzen5950x-Vista2.jpg",
+        "Productos_idProductos": 9
+    },
+    {
+        "idImagen": 35,
+        "Imagen": "Ryzen5950x-Vista3.jpg",
+        "Productos_idProductos": 9
+    },
+    {
+        "idImagen": 36,
+        "Imagen": "Ryzen5950x-Vista4.jpg",
+        "Productos_idProductos": 9
+    },
+    {
+        "idImagen": 37,
+        "Imagen": "X570-Vista1.jpg",
+        "Productos_idProductos": 10
+    },
+    {
+        "idImagen": 38,
+        "Imagen": "X570-Vista2.jpg",
+        "Productos_idProductos": 10
+    },
+    {
+        "idImagen": 39,
+        "Imagen": "X570-Vista3.jpg",
+        "Productos_idProductos": 10
+    },
+    {
+        "idImagen": 40,
+        "Imagen": "X570-Vista4.jpg",
+        "Productos_idProductos": 10
+    },
+    {
+        "idImagen": 41,
+        "Imagen": "LenovoLegion5-Vista1.jpg",
+        "Productos_idProductos": 11
+    },
+    {
+        "idImagen": 42,
+        "Imagen": "LenovoLegion5-Vista2.jpg",
+        "Productos_idProductos": 11
+    },
+    {
+        "idImagen": 43,
+        "Imagen": "LenovoLegion5-Vista3.jpg",
+        "Productos_idProductos": 11
+    },
+    {
+        "idImagen": 44,
+        "Imagen": "LenovoLegion5-Vista4.jpg",
+        "Productos_idProductos": 11
+    },
+    {
+        "idImagen": 45,
+        "Imagen": "MsiGe76-Vista1.jpg",
+        "Productos_idProductos": 12
+    },
+    {
+        "idImagen": 46,
+        "Imagen": "MsiGe76-Vista2.jpg",
+        "Productos_idProductos": 12
+    },
+    {
+        "idImagen": 47,
+        "Imagen": "MsiGe76-Vista3.jpg",
+        "Productos_idProductos": 12
+    },
+    {
+        "idImagen": 48,
+        "Imagen": "MsiGe76-Vista4.jpg",
+        "Productos_idProductos": 12
+    },
+    {
+        "idImagen": 49,
+        "Imagen": "AcerNitro-Vista1.jpg",
+        "Productos_idProductos": 13
+    },
+    {
+        "idImagen": 50,
+        "Imagen": "AcerNitro-Vista2.jpg",
+        "Productos_idProductos": 13
+    },
+    {
+        "idImagen": 51,
+        "Imagen": "AcerNitro-Vista3.jpg",
+        "Productos_idProductos": 13
+    },
+    {
+        "idImagen": 52,
+        "Imagen": "AcerNitro-Vista4.jpg",
+        "Productos_idProductos": 13
+    },
+    {
+        "idImagen": 53,
+        "Imagen": "HpOmen-Vista1.jpg",
+        "Productos_idProductos": 14
+    },
+    {
+        "idImagen": 54,
+        "Imagen": "HpOmen-Vista2.jpg",
+        "Productos_idProductos": 14
+    },
+    {
+        "idImagen": 55,
+        "Imagen": "HpOmen-Vista3.jpg",
+        "Productos_idProductos": 14
+    },
+    {
+        "idImagen": 56,
+        "Imagen": "HpOmen-Vista4.jpg",
+        "Productos_idProductos": 14
+    },
+    {
+        "idImagen": 57,
+        "Imagen": "AsusF17-Vista1.jpg",
+        "Productos_idProductos": 15
+    },
+    {
+        "idImagen": 58,
+        "Imagen": "AsusF17-Vista2.jpg",
+        "Productos_idProductos": 15
+    },
+    {
+        "idImagen": 59,
+        "Imagen": "AsusF17-Vista3.jpg",
+        "Productos_idProductos": 15
+    },
+    {
+        "idImagen": 60,
+        "Imagen": "AsusF17-Vista4.jpg",
+        "Productos_idProductos": 15
+    },
+    {
+        "idImagen": 61,
+        "Imagen": "LogitechG502-Vista1.jpg",
+        "Productos_idProductos": 16
+    },
+    {
+        "idImagen": 62,
+        "Imagen": "LogitechG502-Vista2.jpg",
+        "Productos_idProductos": 16
+    },
+    {
+        "idImagen": 63,
+        "Imagen": "LogitechG502-Vista3.jpg",
+        "Productos_idProductos": 16
+    },
+    {
+        "idImagen": 64,
+        "Imagen": "LogitechG502-Vista4.jpg",
+        "Productos_idProductos": 16
+    },
+    {
+        "idImagen": 65,
+        "Imagen": "CorsairVirtuoso-Vista1.jpg",
+        "Productos_idProductos": 17
+    },
+    {
+        "idImagen": 66,
+        "Imagen": "CorsairVirtuoso-Vista2.jpg",
+        "Productos_idProductos": 17
+    },
+    {
+        "idImagen": 67,
+        "Imagen": "CorsairVirtuoso-Vista3.jpg",
+        "Productos_idProductos": 17
+    },
+    {
+        "idImagen": 68,
+        "Imagen": "CorsairVirtuoso-Vista4.jpg",
+        "Productos_idProductos": 17
+    },
+    {
+        "idImagen": 69,
+        "Imagen": "TecladoRedragon-Vista1.jpg",
+        "Productos_idProductos": 18
+    },
+    {
+        "idImagen": 70,
+        "Imagen": "TecladoRedragon-Vista2.jpg",
+        "Productos_idProductos": 18
+    },
+    {
+        "idImagen": 71,
+        "Imagen": "TecladoRedragon-Vista3.jpg",
+        "Productos_idProductos": 18
+    },
+    {
+        "idImagen": 72,
+        "Imagen": "TecladoRedragon-Vista4.jpg",
+        "Productos_idProductos": 18
+    },
+    {
+        "idImagen": 73,
+        "Imagen": "StreamDeck-Vista1.jpg",
+        "Productos_idProductos": 19
+    },
+    {
+        "idImagen": 74,
+        "Imagen": "StreamDeck-Vista2.jpg",
+        "Productos_idProductos": 19
+    },
+    {
+        "idImagen": 75,
+        "Imagen": "StreamDeck-Vista3.jpg",
+        "Productos_idProductos": 19
+    },
+    {
+        "idImagen": 76,
+        "Imagen": "StreamDeck-Vista4.jpg",
+        "Productos_idProductos": 19
+    },
+    {
+        "idImagen": 77,
+        "Imagen": "Alienware-Vista1.jpg",
+        "Productos_idProductos": 20
+    },
+    {
+        "idImagen": 78,
+        "Imagen": "Alienware-Vista2.jpg",
+        "Productos_idProductos": 20
+    },
+    {
+        "idImagen": 79,
+        "Imagen": "Alienware-Vista3.jpg",
+        "Productos_idProductos": 20
+    },
+    {
+        "idImagen": 80,
+        "Imagen": "Alienware-Vista4.jpg",
+        "Productos_idProductos": 20
+    },
+    {
+        "idImagen": 81,
+        "Imagen": "XperiaPro-Vista1.jpg",
+        "Productos_idProductos": 21
+    },
+    {
+        "idImagen": 82,
+        "Imagen": "XperiaPro-Vista2.jpg",
+        "Productos_idProductos": 21
+    },
+    {
+        "idImagen": 83,
+        "Imagen": "XperiaPro-Vista3.jpg",
+        "Productos_idProductos": 21
+    },
+    {
+        "idImagen": 84,
+        "Imagen": "XperiaPro-Vista4.jpg",
+        "Productos_idProductos": 21
+    },
+    {
+        "idImagen": 85,
+        "Imagen": "BlackShark4-Vista1.jpg",
+        "Productos_idProductos": 22
+    },
+    {
+        "idImagen": 86,
+        "Imagen": "BlackShark4-Vista2.jpg",
+        "Productos_idProductos": 22
+    },
+    {
+        "idImagen": 87,
+        "Imagen": "BlackShark4-Vista3.jpg",
+        "Productos_idProductos": 22
+    },
+    {
+        "idImagen": 88,
+        "Imagen": "BlackShark4-Vista4.jpg",
+        "Productos_idProductos": 22
+    },
+    {
+        "idImagen": 89,
+        "Imagen": "XiaomiMi11T-Vista1.jpg",
+        "Productos_idProductos": 23
+    },
+    {
+        "idImagen": 90,
+        "Imagen": "XiaomiMi11T-Vista2.jpg",
+        "Productos_idProductos": 23
+    },
+    {
+        "idImagen": 91,
+        "Imagen": "XiaomiMi11T-Vista3.jpg",
+        "Productos_idProductos": 23
+    },
+    {
+        "idImagen": 92,
+        "Imagen": "XiaomiMi11T-Vista4.jpg",
+        "Productos_idProductos": 23
+    },
+    {
+        "idImagen": 93,
+        "Imagen": "RogPhone-Vista1.jpg",
+        "Productos_idProductos": 24
+    },
+    {
+        "idImagen": 94,
+        "Imagen": "RogPhone-Vista2.jpg",
+        "Productos_idProductos": 24
+    },
+    {
+        "idImagen": 95,
+        "Imagen": "RogPhone-Vista3.jpg",
+        "Productos_idProductos": 25
+    },
+    {
+        "idImagen": 96,
+        "Imagen": "RogPhone-Vista4.jpg",
+        "Productos_idProductos": 24
+    },
+    {
+        "idImagen": 97,
+        "Imagen": "RedmiNote11Pro-Vista1.jpg",
+        "Productos_idProductos": 25
+    },
+    {
+        "idImagen": 98,
+        "Imagen": "RedmiNote11Pro-Vista2.jpg",
+        "Productos_idProductos": 25
+    },
+    {
+        "idImagen": 99,
+        "Imagen": "RedmiNote11Pro-Vista3.jpg",
+        "Productos_idProductos": 25
+    },
+    {
+        "idImagen": 100,
+        "Imagen": "RedmiNote11Pro-Vista4.jpg",
+        "Productos_idProductos": 25
+    }
+    
+]
