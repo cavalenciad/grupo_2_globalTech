@@ -3,7 +3,7 @@ module.exports = (sequelize, dataTypes) => {
     let alias = "usuarios";
 
     let cols = {
-        idUsuarios:{
+        idusuarios:{
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
@@ -25,7 +25,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
 
-        nombreUsuario:{
+        nombreusuario:{
             type: dataTypes.STRING(45),
             allowNull: false
         },
@@ -36,20 +36,23 @@ module.exports = (sequelize, dataTypes) => {
         },
 
         imagen:{
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING(100),
             allowNull: false
         },
 
         contrasena:{
-            type: dataTypes.STRING(45),
+            type: dataTypes.STRING(100),
             allowNull: false
         },
 
         terminosycondiciones:{
             type: dataTypes.TINYINT,
             allowNull: false
-        }
+        },
 
+        rol: {
+            type: dataTypes.INTEGER
+        }
 
     };
 
