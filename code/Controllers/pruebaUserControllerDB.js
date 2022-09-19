@@ -22,7 +22,7 @@ const pruebaUserController = {
         }
 
         db.usuarios.findOne({
-            where: {Email: req.body.email}
+            where: {email: req.body.email}
         })
         .then((resultado)=>{
             if(resultado){
@@ -36,14 +36,14 @@ const pruebaUserController = {
                 });
             }else{
                 db.usuarios.create({    
-                    Email: req.body.email,
-                    Nombre: req.body.nombre,
-                    Apellido: req.body.apellido,
-                    NombreUsuario: req.body.nombreUser,
-                    Pais: req.body.pais,
-                    Imagen: req.file.filename,
-                    Contrasena: bcrypt.hashSync(req.body.contrasena, 10),
-                    TerminosYcondiciones: 1
+                    email: req.body.email,
+                    nombre: req.body.nombre,
+                    apellido: req.body.apellido,
+                    nombreusuario: req.body.nombreUser,
+                    pais: req.body.pais,
+                    imagen: req.file.filename,
+                    contrasena: bcrypt.hashSync(req.body.contrasena, 10),
+                    terminosycondiciones: 1
                 })
                 .then((user) => {
                     console.log(req.file);
@@ -65,18 +65,18 @@ const pruebaUserController = {
         }
 
         db.usuarios.findOne({
-            where: {Email: req.body.email}
+            where: {email: req.body.email}
         })
         .then((usuarioALoguearse) => {
             console.log(usuarioALoguearse);
             if(usuarioALoguearse){
-                let isOkThePass = bcrypt.compareSync(req.body.contrasena, usuarioALoguearse.Contrasena);
+                let isOkThePass = bcrypt.compareSync(req.body.contrasena, usuarioALoguearse.contrasena);
                 if (isOkThePass) {
                     req.session.usuarioLogueado = usuarioALoguearse;
                     if(req.body.jRecuerdame){
                         res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
                     }
-                    res.redirect('/user/perfil/' + usuarioALoguearse.idUsuarios);
+                    res.redirect('/user/perfil/' + usuarioALoguearse.idusuarios);
                 }
                 if (!usuarioALoguearse){
                     return res.render('pruebaLogin', {
