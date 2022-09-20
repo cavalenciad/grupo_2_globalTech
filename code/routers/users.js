@@ -52,14 +52,14 @@ const validationsLog = [
     body('contrasena').notEmpty().withMessage('Debes ingresar una contraseña')
 ]
 
-router.get("/user/iniciarSesion", guestMiddleware, usersController.login);
-router.get("/user/cerrarSesion",  usersController.logout);
-router.get("/user/perfil/:id", pruebaAuthMiddleware, usersController.profile);
-router.get("/user/registro", guestMiddleware, usersController.register);
+router.get("/user/login", guestMiddleware, usersController.login);
+router.get("/user/logout",  usersController.logout);
+router.get("/user/userProfile/:id", pruebaAuthMiddleware, usersController.profile);
+router.get("/user/register", guestMiddleware, usersController.register);
 
 // Enrutado por POST
 
-router.post('/user/registro', uploadAvatar.single('imagen'), validationsReg, usersController.createUser);
-router.post('/user/iniciarSesion', validationsLog, usersController.processLogin);
+router.post('/user/register', uploadAvatar.single('imagen'), validationsReg, usersController.createUser);
+router.post('/user/login', validationsLog, usersController.processLogin);
 
 module.exports = router;

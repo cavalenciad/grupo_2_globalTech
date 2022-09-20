@@ -1,19 +1,5 @@
 [
  {
-  "id": "1",
-  "nombre": "Nintendo-Switch",
-  "descripcion": "Obtén el sistema de juego que te permite jugar los juegos que desees, donde estés, como quieras. Incluye la consola Nintendo Switch y la base Nintendo Switch en negro, con controladores JoyCon en contraste izquierdo y derecho, uno rojo, uno azul. También incluye todos los extras que necesitas para empezar. Número de modelo: HAC-001(-01) (el número de serie del producto comienza con XKW). Este modelo incluye una duración de la batería de aproximadamente 4,5 - 9 horas. La duración de la batería dependerá de los juegos que juegues, Por ejemplo, la batería durará aproximadamente 5.5 horas para The Legend of Zelda: Breath of the Wild (los juegos se venden por separado).",
-  "categoria": "consolas",
-  "color1": "blanco",
-  "color2": "negro",
-  "precio": "1.212.000",
-  "imagen1": "NintendoSwitch-Vista1.jpg",
-  "imagen2": "NintendoSwitch-Vista2.jpg",
-  "imagen3": "NintendoSwitch-Vista3.jpg",
-  "imagen4": "NintendoSwitch-Vista4.jpg",
-  "_locals": {}
- },
- {
   "id": "2",
   "nombre": "Microsoft Xbox One 1TB",
   "descripcion": "Conéctate y juega con tus amigos y familiares en Xbox Live, la red de juegos más rápida y fiable Encuentra amigos, rivales y compañeros de equipo en la mejor comunidad mundial de juegos. Xbox Live es la red multijugador más avanzada y proporciona un juego estable y descargas rápidas. Compite, conecte y comparta entre plataformas con los jugadores de Xbox One y Windows 10. Obtén dos o cuatro juegos gratis cada mes con Xbox Live Gold.",
@@ -52,7 +38,20 @@
   "imagen2": "XboxSeriesX-Vista2.jpg",
   "imagen3": "XboxSeriesX-Vista3.jpg",
   "imagen4": "XboxSeriesX-Vista4.jpg",
-  "_locals": {}
+  "_locals": {
+   "userLogged": {
+    "idusuarios": 17,
+    "email": "teo781@hotmail.com",
+    "nombre": "Mateo",
+    "apellido": "Roldan Gutiérrez",
+    "nombreusuario": "pilotrsc",
+    "pais": "Colombia",
+    "imagen": "avatar-1663553183640.jpg",
+    "contrasena": "$2a$10$ryT4AecwLO2KQR/CXJo7bumsLoH2UCqKnI4O4/kcHjaU.j8qAvknq",
+    "terminosycondiciones": 1,
+    "rol": 1
+   }
+  }
  },
  {
   "id": "5",

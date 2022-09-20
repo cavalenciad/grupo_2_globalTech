@@ -5,17 +5,17 @@ const { join } = require('path');
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
 
-const pruebaUserController = {
+const userController = {
 
     register: (req, res) => {
-        res.render("pruebaRegister");
+        res.render("register");
     },
     createUser: (req, res) => {
        
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
-            res.render('pruebaRegister', {
+            res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
@@ -26,7 +26,7 @@ const pruebaUserController = {
         })
         .then((resultado)=>{
             if(resultado){
-                res.render('pruebaRegister', {
+                res.render('register', {
                     errors: {
                         email: {
                             msg: 'Este email ya está registrado'
@@ -47,19 +47,19 @@ const pruebaUserController = {
                 })
                 .then((user) => {
                     console.log(req.file);
-                    res.redirect('/user/iniciarSesion');
+                    res.redirect('/user/login');
                 })                
             }
         })            
     },
     login: (req, res) => {
-        res.render("pruebaLogin");
+        res.render("login");
     },
     processLogin: (req, res) => {
         const resultValidationLog = validationResult(req);
 
         if (resultValidationLog.errors.length > 0) {
-            res.render('pruebaLogin', {
+            res.render('login', {
                 errors: resultValidationLog.mapped(),
             });
         }
@@ -76,10 +76,10 @@ const pruebaUserController = {
                     if(req.body.jRecuerdame){
                         res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
                     }
-                    res.redirect('/user/perfil/' + usuarioALoguearse.idusuarios);
+                    res.redirect('/user/userProfile/' + usuarioALoguearse.idusuarios);
                 }
                 if (!usuarioALoguearse){
-                    return res.render('pruebaLogin', {
+                    return res.render('login', {
                     errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
                 }
             }
@@ -88,7 +88,7 @@ const pruebaUserController = {
     profile: (req, res) => {
         db.usuarios.findByPk(req.params.id)
         .then((usuarioEncontrado) => {
-            res.render("pruebaUserProfile", {
+            res.render("userProfile", {
                 usuario: usuarioEncontrado,
                 user: req.session.usuarioLogueado
             });
@@ -104,4 +104,4 @@ const pruebaUserController = {
 }
 
 
-module.exports = pruebaUserController;
+module.exports = userController;
