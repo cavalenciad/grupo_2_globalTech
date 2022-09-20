@@ -18,17 +18,13 @@
 
 
     <div class="QimagenFondo">
-        <form action="/products/createProducts" method="post" class="QformProducts" enctype="multipart/form-data">
+        <form action="/productos/createProductos" method="post" class="QformProducts" enctype="multipart/form-data">
             <h3>Agregar productos</h3>
             
             <!----CAJA DE FORMULARIO----->
             
             <div class="QcompletarFormulario">
                 <input placeholder="Nombre" type="text" name="name" id="name" >
-            </div>
-
-            <div class="QcompletarFormulario">
-                <input placeholder="ID" type="number" name="id" id="id" >
             </div>
             
             <div class="QcompletarFormulario">
@@ -60,13 +56,12 @@
             <div class="QcompletarFormulario">
                 <label class="Qcategorias">Categoría</label>
                 <select name="categoria" class="Qcategorias"> 
-                    <option value="Portatiles Gamer">Portatiles Gamer</option>
-                    <option value="Accesorios y Perifericos">Accesorios y Periféricos</option>
-                    <option value="Celulares Gamer">Celulares Gamer</option>
-                    <option value="Hardware">Hardware</option>
-                    <option value="Consolas">Consolas</option>
+                    <% categoria.forEach(categoria => { %>
+                        <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
+                    <% }); %>
                 </select>
             </div>
+
 
             <div class="QcompletarFormulario">
                 <input placeholder="Color 1" type="text" name="color1" id="color" >
