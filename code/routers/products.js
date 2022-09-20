@@ -1,12 +1,12 @@
 const express = require('express');
-const router = express.Router();
 const multer = require('multer');
-const productsController = require("../Controllers/productsController");
+const router = express.Router();
+const pruebaControllerDB = require("../Controllers/pruebaControllerDB");
 const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/images/Productos'));
+        cb(null, path.join(__dirname, '../public/images/pruebaProductos'));
     },
     filename: (req, file, cb) => {
         //const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);
@@ -16,35 +16,20 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage});
 
-router.get("/", productsController.productList);
-router.get("/productDetail:/nombre", productsController.featured);
-router.get("/product/:nombre", productsController.consolesDescription);
-router.get("/products/:nombre", productsController.accesoriesDescription);
-router.get("/products/:nombre", productsController.smartPhonesDescription);
-router.get("/products/:nombre", productsController.laptopsGamersDescription);
-router.get("/products/:nombre", productsController.hardwareDescription);
+router.get("/productos", pruebaControllerDB.list)
+router.get("/productos/detail/:id", pruebaControllerDB.detail);
 
-router.get("/productDetail/:nombre", productsController.detalleCrud);
+router.get("/productos/createProductos", pruebaControllerDB.add);
 
-router.get("/productDetail/:nombre/editProducts", productsController.formularioEdit);
-
-router.get("/cart", productsController.productCart);
-router.get("/createProducts", productsController.formularioCreate);
+router.get("/productos/detail/:id/editProducts", pruebaControllerDB.formularioEdit);
 
 // Enrutado por POST
 
-router.post("/createProducts", upload.array('imagen', 4), productsController.create);
+router.post("/productos/createProductos", upload.array('imagen', 4), pruebaControllerDB.create);
 
-// Enrutado por PUT
+router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), pruebaControllerDB.edit);
 
-router.put("/productDetail/:nombre/editProducts", upload.array('imagen', 4), productsController.edit);
-
-// Enrutado por DELETE
-
-
-router.delete("/:nombre/", productsController.destroy);
-
-
+router.delete("/productos/detail/:id", pruebaControllerDB.destroy);
 
 
 
