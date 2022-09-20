@@ -46,6 +46,9 @@ const productsController = {
             res.render("productDetail", {producto});                       
         })
     },
+    productCart: (req, res) =>{
+        res.render("productCart");
+    },
     add: function (req, res) {
         let requestCategoria = db.categorias.findAll();
         let producto = db.productos.findAll()

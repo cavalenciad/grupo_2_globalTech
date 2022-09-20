@@ -23,6 +23,8 @@ router.get("/productos/createProductos", productsController.add);
 
 router.get("/productos/detail/:id/editProducts", productsController.formularioEdit);
 
+router.get("/cart", productsController.productCart);
+
 // Enrutado por POST
 
 router.post("/productos/createProductos", upload.array('imagen', 4), productsController.create);

@@ -19,12 +19,12 @@
       <% if(locals.userLogged) {%>
         <div class="user">
             <div class="dataUser">
-                <p><%= locals.userLogged.nombreUser %> </p>
+                <p><%= locals.userLogged.nombreusuario %> </p>
                 <i class="fa-solid fa-caret-down"></i>
                 <img src="/images/images_user/<%= locals.userLogged.imagen %>" alt="Usuario">  
             </div>
             <div class="actionUser">
-                <h6><a href="/user/userProfile">Mi Perfil</a></h6>
+                <h6><a href="/user/userProfile/<%= locals.userLogged.idusuarios %> ">Mi Perfil</a></h6>
                 <hr>
                 <h6><a href="/user/logout">Cerrar Sesión</a> </h6>
             </div>

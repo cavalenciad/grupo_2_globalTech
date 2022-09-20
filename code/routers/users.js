@@ -5,7 +5,7 @@ const usersController = require("../Controllers/usersController");
 const path = require('path');
 const { body } = require('express-validator');
 const guestMiddleware = require('../middlewares/guestMiddleware');
-const pruebaAuthMiddleware = require('../middlewares/pruebaAuthMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -54,7 +54,7 @@ const validationsLog = [
 
 router.get("/user/login", guestMiddleware, usersController.login);
 router.get("/user/logout",  usersController.logout);
-router.get("/user/userProfile/:id", pruebaAuthMiddleware, usersController.profile);
+router.get("/user/userProfile/:id", authMiddleware, usersController.profile);
 router.get("/user/register", guestMiddleware, usersController.register);
 
 // Enrutado por POST
