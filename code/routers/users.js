@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const multer = require('multer');
-const pruebaUserController = require("../Controllers/pruebaUserControllerDB");
+const usersController = require("../Controllers/usersController");
 const path = require('path');
 const { body } = require('express-validator');
 const guestMiddleware = require('../middlewares/guestMiddleware');
@@ -52,14 +52,14 @@ const validationsLog = [
     body('contrasena').notEmpty().withMessage('Debes ingresar una contraseña')
 ]
 
-router.get("/user/iniciarSesion", guestMiddleware, pruebaUserController.login);
-router.get("/user/cerrarSesion",  pruebaUserController.logout);
-router.get("/user/perfil/:id", pruebaAuthMiddleware, pruebaUserController.profile);
-router.get("/user/registro", guestMiddleware, pruebaUserController.register);
+router.get("/user/iniciarSesion", guestMiddleware, usersController.login);
+router.get("/user/cerrarSesion",  usersController.logout);
+router.get("/user/perfil/:id", pruebaAuthMiddleware, usersController.profile);
+router.get("/user/registro", guestMiddleware, usersController.register);
 
 // Enrutado por POST
 
-router.post('/user/registro', uploadAvatar.single('imagen'), validationsReg, pruebaUserController.createUser);
-router.post('/user/iniciarSesion', validationsLog, pruebaUserController.processLogin);
+router.post('/user/registro', uploadAvatar.single('imagen'), validationsReg, usersController.createUser);
+router.post('/user/iniciarSesion', validationsLog, usersController.processLogin);
 
 module.exports = router;
