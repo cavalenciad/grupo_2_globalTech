@@ -2,7 +2,7 @@ const fs = require('fs');
 const db = require("../database/models");
 const Op = db.Sequelize.Op;
 
-const pruebaControllerDB = {
+const productsController = {
 
     list: (req, res) => {
         db.productos.findAll({
@@ -12,7 +12,7 @@ const pruebaControllerDB = {
             }
         })
         .then((producto) => {
-            res.render("pruebaDB", {producto})
+            res.render("productsList", {producto})
         })
     },
     detail: (req, res) => {
@@ -43,7 +43,7 @@ const pruebaControllerDB = {
             include: [{association: "imagen"}]
         })
         .then((producto) => {
-            res.render("pruebaDetail", {producto});                       
+            res.render("productDetail", {producto});                       
         })
     },
     add: function (req, res) {
@@ -51,7 +51,7 @@ const pruebaControllerDB = {
         let producto = db.productos.findAll()
         Promise.all([requestCategoria])
             .then(function([categoria]){
-                res.render("pruebaCreateProducts", {producto, categoria})
+                res.render("createProducts", {producto, categoria})
             })
     },
     create: function (req,res) {
@@ -188,4 +188,4 @@ const pruebaControllerDB = {
     }
 }
 
-module.exports = pruebaControllerDB;
+module.exports = productsController;
