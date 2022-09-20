@@ -1,12 +1,12 @@
 const express = require('express');
 const multer = require('multer');
 const router = express.Router();
-const pruebaControllerDB = require("../Controllers/pruebaControllerDB");
+const productsController = require("../Controllers/productsController");
 const path = require('path');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, '../public/images/pruebaProductos'));
+        cb(null, path.join(__dirname, '../public/images/Productos'));
     },
     filename: (req, file, cb) => {
         //const fileName = 'prueba-' + Date.now() + path.extname(file.originalname);
@@ -16,20 +16,20 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage});
 
-router.get("/productos", pruebaControllerDB.list)
-router.get("/productos/detail/:id", pruebaControllerDB.detail);
+router.get("/productos", productsController.list)
+router.get("/productos/detail/:id", productsController.detail);
 
-router.get("/productos/createProductos", pruebaControllerDB.add);
+router.get("/productos/createProductos", productsController.add);
 
-router.get("/productos/detail/:id/editProducts", pruebaControllerDB.formularioEdit);
+router.get("/productos/detail/:id/editProducts", productsController.formularioEdit);
 
 // Enrutado por POST
 
-router.post("/productos/createProductos", upload.array('imagen', 4), pruebaControllerDB.create);
+router.post("/productos/createProductos", upload.array('imagen', 4), productsController.create);
 
-router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), pruebaControllerDB.edit);
+router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), productsController.edit);
 
-router.delete("/productos/detail/:id", pruebaControllerDB.destroy);
+router.delete("/productos/detail/:id", productsController.destroy);
 
 
 
