@@ -1,134 +1,191 @@
-const path = require('path');
 const fs = require('fs');
-const { join } = require('path');
+const db = require("../database/models");
+const Op = db.Sequelize.Op;
 
-let consoles = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/consoles.json"), "utf-8"));
-let accesories = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/peripheralsAccesories.json"), "utf-8"));
-let smartPhones = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/smartPhones.json"), "utf-8"));
-let laptopsGamers = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/laptopsGamers.json"), "utf-8"));
-let hardware = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/hardware.json"), "utf-8"));
-let featured = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/featured.json"), "utf-8"));
-let products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), "utf-8"));
+const pruebaControllerDB = {
 
-const productsController ={
-    productList: (req, res) => {
-        res.render("productList", {consoles, accesories, smartPhones, laptopsGamers, hardware});
+    list: (req, res) => {
+        db.productos.findAll({
+            include: {
+                all: true,
+                nested: true
+            }
+        })
+        .then((producto) => {
+            res.render("pruebaDB", {producto})
+        })
     },
-    consolesDescription: (req, res) => {
-        let consolesDescription = consoles.find(item => item.nombre === req.params.nombre);
-        return res.render("productList", {
-            consolesDescription
-        });
+    detail: (req, res) => {
+        /* db.productos.findByPk(req.params.id)
+            .then(producto =>{
+                res.render("pruebaDetail", {producto:producto})
+            }) */
+
+        /* let requestProducto = db.productos.findByPk(req.params.id)
+        let img = db.imagen.findAll({where: {
+            Productos_idProductos: req.params.id,
+            
+        }})
+        Promise.all([requestProducto, img])
+            .then(function([producto, img]){
+                res.render("pruebaDetail", {producto, img})
+            }) */
+
+        /* db.productos.findByPk(req.params.id, {
+            include: [{association: "producto_imagen"}]
+        })
+        .then((producto) => {
+            res.render("pruebaDetail", {producto});
+        }) */
+
+
+        db.productos.findByPk(req.params.id, {
+            include: [{association: "imagen"}]
+        })
+        .then((producto) => {
+            res.render("pruebaDetail", {producto});                       
+        })
     },
-    accesoriesDescription: (req, res) => {
-        let accesoriesDescription = accesories.find(item => item.nombre === req.params.nombre);
-        return res.render("productList", {
-            accesoriesDescription
-        });
+    add: function (req, res) {
+        let requestCategoria = db.categorias.findAll();
+        let producto = db.productos.findAll()
+        Promise.all([requestCategoria])
+            .then(function([categoria]){
+                res.render("pruebaCreateProducts", {producto, categoria})
+            })
     },
-    smartPhonesDescription: (req, res) => {
-        let smartPhonesDescription = smartPhones.find(item => item.nombre === req.params.nombre);
-        return res.render("productList", {
-            smartPhonesDescription
-        });
-    },
-    laptopsGamersDescription: (req, res) => {
-        let laptopsGamersDescription = laptopsGamers.find(item => item.nombre === req.params.nombre);
-        return res.render("productList", {
-            laptopsGamersDescription
-        });
-    },
-    hardwareDescription: (req, res) => {
-        let hardwareDescription = hardware.find(item => item.nombre === req.params.nombre);
-        return res.render("productList", {
-            hardwareDescription
-        });
-    },
-    featured: (req, res) => {
-        let featuredDescription = featured.find(item => item.nombre === req.params.nombre);
-        return res.render("productDetail", featuredDescription);
-    },
-    detalleCrud: (req, res) => {
-        let product = products.find(products => products.nombre === req.params.nombre);
-        res.render('productDetail', product);
-    },
-    productCart: (req, res) =>{
-        res.render("productCart");
+    create: function (req,res) {
+        db.productos.create({
+            Nombre: req.body.name,
+            Descripcion: req.body.description,
+            Precio: req.body.precio,
+            Categoria_idCategoria: req.body.categoria,
+            Color1: req.body.color1,
+            Color2: req.body.color2
+        })
+        .then((producto) => {
+            let arrayImagen = [];
+            for(let i=0; i<req.files.length; i++){
+                let imagen = req.files[i].filename;
+                arrayImagen.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
+            }
+            db.imagen.bulkCreate(
+                arrayImagen
+            )
+        })
+        .then(() => {
+            res.redirect("/productos")
+        })
+        
     },
     formularioEdit: (req, res) =>{
-        let editingProducts = products.find(products => products.nombre === req.params.nombre);
-        res.render("editProducts", editingProducts);
+        let productoSelect = db.productos.findByPk(req.params.id);
+        let requestCategoria = db.categorias.findAll();
+
+        Promise.all([productoSelect, requestCategoria])
+            .then(function([producto, categoria]) {
+                res.render('pruebaEditProducts', {producto, categoria});
+            })  
     },
-    edit: (req, res) =>{
-        console.log(req.files);
-        let newValues = {
-            id: req.body.id,
-            nombre: req.body.name,
-            descripcion: req.body.description,
-            categoria: req.body.categoria,
-            color1: req.body.color1,
-            color2: req.body.color2,
-            precio: req.body.precio,
-            imagen1: req.files[0].originalname,
-            imagen2: req.files[1].originalname,
-            imagen3: req.files[2].originalname,
-            imagen4: req.files[3].originalname,
-        };
+    edit: async(req, res) => {
+        db.productos.update({
+            Nombre: req.body.name,
+            Descripcion: req.body.description,
+            Precio: req.body.precio,
+            Categoria_idCategoria: req.body.categoria,
+            Color1: req.body.color1,
+            Color2: req.body.color2
+        },
+        {
+            where: {
+                idProductos: req.params.id
+            }
+        })
+        .then( async (producto) => {
+            let arrayImagen = [];
+            if(req.files){
+                const productImages = await db.imagen.findAll({limit: req.files.length, where: {Productos_idProductos : req.params.id}})
+                for(let i=0; i<req.files.length; i++){
+                    let imagen = req.files[i].filename;
+                    arrayImagen.push({"idImagen": productImages[i].idImagen, "Imagen": imagen, "Productos_idProductos": req.params.id});
+                }
+                console.table(arrayImagen)
+                db.imagen.bulkCreate(
+                    arrayImagen,
+                    {
+                        updateOnDuplicate: ["Imagen"]
+                    }
+                )
+            }            
+        })
 
-        console.log(newValues);
+            /* let newImg = [];
+            for(let i=0; i<req.files.length; i++){
+                let imagen = fs.readFileSync(req.files[i].path);
+                newImg.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
+            }
 
-        let oldValues = products.find(products => products.nombre === req.params.nombre);
-
-        products.splice(products.indexOf(oldValues), 1, newValues);
-
-        let productsJSON = JSON.stringify(products, null, ' ');
-
-        fs.writeFileSync('./data/products.json', productsJSON,);
-
-        res.redirect('/products');
+            db.imagen.findAll(producto.idProductos)
+            .then((oldImg) => {
+                console.log(newImg)
+                console.log('hola')
+                console.log(oldImg)
+                db.imagen.update({
+                Imagen: newImg
+                }, 
+                {
+                    where:{
+                        imagen: oldImg.imagen.dataValues.Imagen
+                }
+            })
+            }) */
+        .then(() =>{
+            res.redirect("/productos/detail/" + req.params.id)
+        })
     },
+    /* edit: (req, res) => {
 
-    formularioCreate: (req, res) =>{
-        res.render("createProducts");
-    },
-    create: (req, res) => {
-        let createProduct = {
-            id: req.body.id,
-            nombre: req.body.name,
-            descripcion: req.body.description,
-            categoria: req.body.categoria,
-            color1: req.body.color1,
-            color2: req.body.color2,
-            precio: req.body.precio,
-            imagen1: req.files[0].originalname,
-            imagen2: req.files[1].originalname,
-            imagen3: req.files[2].originalname,
-            imagen4: req.files[3].originalname,
-        };
-
-        products.push(createProduct);
-
-        let productsJSON = JSON.stringify(products, null, ' ');
-
-        fs.writeFileSync('./data/products.json', productsJSON,);
-
-        console.log(req.files);
-        res.send('Archivo subido correctamente');
-    },
+        db.productos.update({
+            Nombre: req.body.name,
+            Descripcion: req.body.description,
+            Precio: req.body.precio,
+            Categoria_idCategoria: req.body.categoria,
+            Color1: req.body.color1,
+            Color2: req.body.color2
+        },
+        {
+            where: {
+                idProductos: req.params.id
+            }
+        })
+        .then(() => {
+            let newImg = [];
+            for(let i=0; i<req.files.length; i++){
+                let imagen = fs.readFileSync(req.files[i].path);
+                newImg.push({Imagen: imagen});
+            }
+            console.log(newImg)
+            console.log("Hola")
+            db.imagen.update({
+                newImg
+            }, 
+            {
+                where:{
+                    Productos_idProductos: req.params.id
+                },
+                attributes: ['Imagen']
+            })                
+        }) */
     destroy: (req, res) => {
-
-        let oldValues = products.find(products => products.nombre === req.params.nombre);
-        products.splice(products.indexOf(oldValues), 1);
-
-        let productsJSON = JSON.stringify(products, null, ' ');
-
-        fs.writeFileSync('./data/products.json', productsJSON,);
-        
-        //productDetail.delete(req.params.nombre);
-        res.redirect('/products')
-
-        
+        db.productos.destroy({
+            where: {
+                idProductos: req.params.id
+            }
+        })
+        .then(() =>{
+            res.redirect("/productos")
+        })
     }
 }
-    
-module.exports = productsController;
+
+module.exports = pruebaControllerDB;
