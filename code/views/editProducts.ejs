@@ -18,17 +18,17 @@
 
 
     <div class="QimagenFondo">
-        <form action="/productos/detail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data" class="QformProducts">
+        <form action="/products/productDetail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data" class="QformProducts">
             <h3>Editar productos</h3>
             
             <!----CAJA DE FORMULARIO----->
             
             <div class="QcompletarFormulario">
-                <input placeholder="Nombre" type="text" name="name" id="name" value="<%= producto.Nombre%>" required>
+                <input placeholder="Nombre" type="text" name="name" id="name" value="<%= producto.nombre%>" required>
             </div>
             
             <div class="QcompletarFormulario">
-                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49"><%= producto.Descripcion%></textarea>
+                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49"><%= producto.descripcion%></textarea>
             </div>
             
             <div class="QimagenFormulario">
@@ -64,15 +64,15 @@
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Color 1" type="text" name="color1" id="color1" value="<%= producto.Color1%>" required>
+                <input placeholder="Color 1" type="text" name="color1" id="color1" value="<%= producto.color1%>" required>
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Color 2" type="text" name="color2" id="color2" value="<%= producto.Color2%>" required>
+                <input placeholder="Color 2" type="text" name="color2" id="color2" value="<%= producto.color2%>" required>
             </div>
 
             <div class="QcompletarFormulario">
-                <input placeholder="Precio" type="text" name="precio" id="precio" value="<%= producto.Precio%>" required>
+                <input placeholder="Precio" type="text" name="precio" id="precio" value="<%= producto.precio%>" required>
             </div>
 
             <!-------- BOTONES -------->

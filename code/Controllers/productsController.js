@@ -50,21 +50,32 @@ const productsController = {
         res.render("productCart");
     },
     add: function (req, res) {
-        let requestCategoria = db.categorias.findAll();
+        /* let requestCategoria = db.categorias.findAll();
         let producto = db.productos.findAll()
         Promise.all([requestCategoria])
             .then(function([categoria]){
                 res.render("createProducts", {producto, categoria})
-            })
+            }) */
+        
+        db.categorias.findAll({
+            include: {
+                all: true,
+                nested: true
+            }
+        })
+        .then((categoria) => {
+            res.render("createProducts", {categoria})
+        })
+
     },
     create: function (req,res) {
         db.productos.create({
-            Nombre: req.body.name,
-            Descripcion: req.body.description,
-            Precio: req.body.precio,
+            nombre: req.body.name,
+            descripcion: req.body.description,
+            precio: req.body.precio,
             Categoria_idCategoria: req.body.categoria,
-            Color1: req.body.color1,
-            Color2: req.body.color2
+            color1: req.body.color1,
+            color2: req.body.color2
         })
         .then((producto) => {
             let arrayImagen = [];
@@ -77,7 +88,7 @@ const productsController = {
             )
         })
         .then(() => {
-            res.redirect("/productos")
+            res.redirect("/products")
         })
         
     },
@@ -87,17 +98,17 @@ const productsController = {
 
         Promise.all([productoSelect, requestCategoria])
             .then(function([producto, categoria]) {
-                res.render('pruebaEditProducts', {producto, categoria});
+                res.render('editProducts', {producto, categoria});
             })  
     },
     edit: async(req, res) => {
         db.productos.update({
-            Nombre: req.body.name,
-            Descripcion: req.body.description,
-            Precio: req.body.precio,
+            nombre: req.body.name,
+            descripcion: req.body.description,
+            precio: req.body.precio,
             Categoria_idCategoria: req.body.categoria,
-            Color1: req.body.color1,
-            Color2: req.body.color2
+            color1: req.body.color1,
+            color2: req.body.color2
         },
         {
             where: {
@@ -143,7 +154,7 @@ const productsController = {
             })
             }) */
         .then(() =>{
-            res.redirect("/productos/detail/" + req.params.id)
+            res.redirect("/products/productDetail/" + req.params.id)
         })
     },
     /* edit: (req, res) => {
@@ -186,7 +197,7 @@ const productsController = {
             }
         })
         .then(() =>{
-            res.redirect("/productos")
+            res.redirect("/products")
         })
     }
 }

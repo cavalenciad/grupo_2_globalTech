@@ -10,27 +10,27 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false
         },
 
-        Nombre:{
+        nombre:{
             type: DataTypes.STRING(100),
             allowNull: false
         },
 
-        Descripcion:{
+        descripcion:{
             type: DataTypes.STRING(1000),
             allowNull: false
         },
 
-        Precio:{
+        precio:{
             type: DataTypes.FLOAT,
             allowNull: false
         },
 
-        Color1:{
+        color1:{
             type: DataTypes.STRING(45),
             allowNull: false
         },
 
-        Color2:{
+        color2:{
             type: DataTypes.STRING(45),
             allowNull: false
         },

@@ -74,7 +74,7 @@ const userController = {
                 if (isOkThePass) {
                     req.session.usuarioLogueado = usuarioALoguearse;
                     if(req.body.jRecuerdame){
-                        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 60});
+                        res.cookie('userEmail', req.body.email, {maxAge: (1000 * 60) * 3600});
                     }
                     res.redirect('/user/userProfile/' + usuarioALoguearse.idusuarios);
                 }

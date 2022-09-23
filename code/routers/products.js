@@ -19,19 +19,19 @@ const upload = multer({storage});
 router.get("/", productsController.list)
 router.get("/productDetail/:id", productsController.detail);
 
-router.get("/productos/createProductos", productsController.add);
+router.get("/productDetail/:id/createProducts", productsController.add);
 
-router.get("/productos/detail/:id/editProducts", productsController.formularioEdit);
+router.get("/productDetail/:id/editProducts", productsController.formularioEdit);
 
 router.get("/cart", productsController.productCart);
 
 // Enrutado por POST
 
-router.post("/productos/createProductos", upload.array('imagen', 4), productsController.create);
+router.post("/productDetail/createProducts", upload.array('imagen', 4), productsController.create);
 
-router.put("/productos/detail/:id/editProducts", upload.array('imagen', 4), productsController.edit);
+router.put("/productDetail/:id/editProducts", upload.array('imagen', 4), productsController.edit);
 
-router.delete("/productos/detail/:id", productsController.destroy);
+router.delete("/productDetail/:id", productsController.destroy);
 
 
 
