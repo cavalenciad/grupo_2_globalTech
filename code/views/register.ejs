@@ -1,148 +1,163 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/register.css">
-  
-  <title>Registro</title>
-</head>
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../css/register.css">
+        
+        <title>Registro</title>
+      </head>
 <body>
+<!--MENU NAVEGACIÓN-->
+<%- include("./partials/header.ejs")%>
 
-  <!-- MENU NAVEGACIÓN -->
-  <%- include("./partials/header.ejs")%>
+<!-- REDES SOCIALES -->
+<%- include("./partials/social.ejs")%>
 
-  <!-- MENU NAVEGACIÓN -->
-  <%- include("./partials/social.ejs")%>
+ <!-------- CAJA DE FORMULARIO -------->
 
-  
-      <!-------- IMAGEN DE FONDO -------->
-
-  <div class="MimagenFondo">
-    <form class="MformRegister" action="/user/register" enctype="multipart/form-data" method="post">
-      <h3>Regístrate en Global Tech DB</h3>
-
-      <!-------- CAJA DE FORMULARIO -------->
-
-      <div class="McompletarFormulario">
-        <input name="email" type="text" placeholder="Email" value= "<%= locals.oldData ? oldData.email : null%>">
-        <% if (locals.errors && errors.email) { %>
-          <div class="Merrors">
-           <%= errors.email.msg %> 
-          </div>
-         <% } %>
-      </div>
-        <div class="McompletarFormulario">
-          <input name="nombre" type="text" placeholder="Nombre" value= "<%= locals.oldData ? oldData.nombre : null%>">
-          <% if (locals.errors && errors.nombre) { %>
-            <div class="Merrors">
-             <%= errors.nombre.msg %> 
-            </div>
-           <% } %>
+<div class = "box">
+    <form class="form" action="/user/register" enctype="multipart/form-data" method="post">
+        <h3>Regístrate en Global Tech</h3>
+        
+        
+        <div class="inputBox">
+            <input name="email" type="email" required="required" value= "<%= locals.oldData ? oldData.email : null%>">
+            <span>Email</span>
+            <% if (locals.errors && errors.email) { %>
+                <div class="Merrors">
+                 <%= errors.email.msg %> 
+                </div>
+            <% } %>
+            <i></i>
         </div>
-        <div class="McompletarFormulario">
-          <input name="apellido" type="text" placeholder="Apellidos" value= "<%= locals.oldData ? oldData.apellido : null%>">
-          <% if (locals.errors && errors.apellido) { %>
-           <div class="Merrors">
-            <%= errors.apellido.msg %> 
-           </div>
-          <% } %>
+        
+        
+        <div class="inputBox">
+            <input name="nombre" type="text" required="required" value= "<%= locals.oldData ? oldData.nombre : null%>">
+            <span>Nombre</span>
+            <% if (locals.errors && errors.nombre) { %>
+                <div class="Merrors">
+                    <%= errors.nombre.msg %>
+                </div>
+            <% } %> 
+            <i></i>
         </div>
-        <div class="McompletarFormulario">
-          <input name="nombreUser" type="text" placeholder="Nombre de usuario" value= "<%= locals.oldData ? oldData.nombreUser : null%>">
-          <% if (locals.errors && errors.nombreUser) { %>
-            <div class="Merrors">
-             <%= errors.nombreUser.msg %> 
-            </div>
-           <% } %>
+        
+        
+        <div class="inputBox">
+            <input name="apellido" type="text" required="required" value= "<%= locals.oldData ? oldData.apellido : null%>">
+            <span>Apellidos</span>
+            <% if (locals.errors && errors.apellido) { %>
+                <div class="Merrors">
+                    <%= errors.apellido.msg %> 
+                </div>
+            <% } %> 
+            <i></i>
         </div>
-        <!-------- SELECCIONAR PAÍS -------->
-
-        <div class="McompletarFormulario">
-          <select class="Mpais" name="pais">
-            <option disabled selected>Seleccionar país</option>
-            <option value="Colombia">Colombia</option>
-            <option value="Argentina">Argentina</option>
-            <option value="Bolivia">Bolivia</option>
-            <option value="Brasil">Brasil</option>
-            <option value="Canadá">Canadá</option>
-            <option value="Chile">Chile</option>
-            <option value="Costa Rica">Costa Rica</option>
-            <option value="Cuba">Cuba</option>
-            <option value="Ecuador">Ecuador</option>
-            <option value="Salvador">El Salvador</option>
-            <option value="Estados Unidos">Estados Unidos</option>
-            <option value="Guatemala">Guatemala</option>
-            <option value="Haití">Haití</option>
-            <option value="Honduras">Honduras</option>
-            <option value="Islas menores de Estados Unidos">Islas menores de Estados Unidos</option>
-            <option value="Islas Vírgenes">Islas Vírgenes (EEUU)</option>
-            <option value="Jamaica">Jamaica</option>
-            <option value="México">México</option>
-            <option value="Nicaragua">Nicaragua</option>
-            <option value="Panamá">Panamá</option>
-            <option value="Paraguay">Paraguay</option>
-            <option value="Perú">Perú</option>
-            <option value="Puerto Rico">Puerto Rico</option>
-            <option value="República Dominicana">República Dominicana</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Venezuela">Venezuela</option>
-          </select>
-          <% if (locals.errors && errors.pais) { %>
-            <div class="Merrors">
-             <%= errors.pais.msg %> 
-            </div>
-           <% } %>
+        
+        
+        <div class="inputBox">
+            <input name="nombreUser" type="text" required="required" value= "<%= locals.oldData ? oldData.nombreUser : null%>">
+            <span>Nombre de Usuario</span>
+            <% if (locals.errors && errors.nombreUser) { %>
+                <div class="Merrors">
+                    <%= errors.nombreUser.msg %> 
+                </div>
+            <% } %>
+            <i></i>
+        </div>
+        
+        
+        <!--SELECCIONAR PAÍS-->
+        
+        <div class="inputBox">
+            <select class="Mpais" name="pais" requiered="requiered">
+                <option disabled selected>Seleccionar país</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Canadá">Canadá</option>
+                <option value="Chile">Chile</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Salvador">El Salvador</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Haití">Haití</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Islas menores de Estados Unidos">Islas menores de Estados Unidos</option>
+                <option value="Islas Vírgenes">Islas Vírgenes (EEUU)</option>
+                <option value="Jamaica">Jamaica</option>
+                <option value="México">México</option>
+                <option value="Nicaragua">Nicaragua</option>
+                <option value="Panamá">Panamá</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Perú">Perú</option>
+                <option value="Puerto Rico">Puerto Rico</option>
+                <option value="República Dominicana">República Dominicana</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+            <% if (locals.errors && errors.pais) { %>
+                <div class="Merrors">
+                    <%= errors.pais.msg %> 
+                </div>
+            <% } %>
+            <i></i>
         </div>
 
-        <!-------- IMAGEN -------->
+        <!--IMAGEN-->
 
-        <div class="McompletarFormulario">
-          <label class="Mimagenes">Imagen de perfil</label>
+        <div class="inputBox">
+        <label class="Mimagenes">Imagen de perfil</label>
           <input class="file" type="file" name="imagen" id="imagen">
           <% if (locals.errors && errors.imagen) { %>
             <div class="Merrors">
              <%= errors.imagen.msg %> 
             </div>
           <% } %>          
+            <i></i>
         </div>
 
-        <!-------- CONTRASEÑA -------->
-        <div class="McompletarFormulario">
-          <input name="contrasena" type="password" placeholder="Contraseña">
-          <% if (locals.errors && errors.contrasena) { %>
-            <div class="Merrors">
-             <%= errors.contrasena.msg %> 
-            </div>
-           <% } %>
+        <!--CONTRASEÑA-->    
+
+        <div class="inputBox">
+            <input name="contrasena" type="text" required="required">
+            <span>Contraseña</span>
+            <% if (locals.errors && errors.contrasena) { %>
+                <div class="Merrors">
+                 <%= errors.contrasena.msg %> 
+                </div>
+            <% } %>
+            <i></i>
         </div>
-      
-      <!-------- ACEPTO TÉRMINOS -------->
 
-      <div class="MaceptoTerminos">
-        <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" required>Acepto los
-        <a class="MterminosPolitica" href="#" target="_blank">términos y condiciones</a>
-        y la
-        <a class="MterminosPolitica" href="#" target="_blank">política de privacidad.</a>
-      </div>
-      <!-------- BOTONES REGISTRAR Y YA TENGO CUENTA -------->
+        <!--ACEPTO TÉRMINOS-->
 
-      <div class="Mbutton">
-        <input type="submit" id="Registrarse" value="REGISTRARSE">
-        <input href="/code/views/login" type="submit" id="yaTengoCuenta"
-          value="YA TENGO CUENTA">
-      </div>
+        <div class="inputBox">
+            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" required>Acepto los
+            <a class="links" href="#" target="_blank">términos y condiciones</a>
+                y la
+            <a class="links" href="#" target="_blank">política de privacidad.</a>
+        </div>
+
+        <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->    
+
+        <div class = "links">
+            <a href="#">Ya tengo una cuenta</a>
+        </div>
+        <div>
+            <input type = "submit" value="Registrarse">
+        </div>
     </form>
-  </div>
-      <!--- FOOTER: PIE DE PÁGINA --->
-
-      <%- include("./partials/footer.ejs")%>
+</div>
 </body>
 </html>
