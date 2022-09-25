@@ -6,6 +6,9 @@ const mainController = {
     index: (req, res) =>{
         res.render("index", {featured});
     },
+    about: (req, res) =>{
+        res.render("about");
+    },
     featured: (req, res) =>{
         let featuredDescription = featured.find(item => item.nombre === req.params.nombre);
         return res.render("productDetail", {
