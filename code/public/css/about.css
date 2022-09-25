@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: roboto;
+
+}
+
+body{
+    background-color: #121212;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* -------------- CABECERA ------------- */
+
+header{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 1px 5px #a3a3a3;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+}
+
+.Snavbar{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+a{
+    font-size: 16px;
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #959595;
+    transition: ease 0.5s;
+}
+
+.Snavbar a:hover{
+    color: #2962FF;
+    font-weight: 800;
+}
+
+/* --------------- ESTILOS USUARIO --------------- */
+
+.dataUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataUser img{
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.dataUser p{
+    color: #1EA1F2;
+    letter-spacing: 2px;
+  }
+
+/* -------------- MENÚ DESPLEGABLE ------------ */
+
+.user {
+    position: relative;
+    display: inline-block;
+}
+
+.actionUser {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 125px;
+    padding: 8px 8px;
+    z-index: 1;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    transition: all 0.4s ease;
+}
+
+.user:hover .actionUser {
+    display: block;
+}
+
+.actionUser h6 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.actionUser a {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #2962FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
+.fa-bars{
+    font-size: 28px;
+    color: #2962FF;
+}
+
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social{
+    position:fixed;
+    top:200px;
+    left:0;
+    padding:0px;
+    margin:0px;
+    z-index: 1;
+  }
+  .social{
+    list-style:none;
+  }
+  .social li{
+    padding:10px 10px;
+    font-size:15px;
+    transition:all 0.3s ease-in-out;
+  }
+  .social li:hover{
+      margin-right:-20px;
+  }
+  .social li:hover .fa-brands{
+      margin-left:10px;
+  }
+  
+  .fa-brands{
+    color:#fff;
+    transition:all 0.3s ease-in-out;
+  }
+  .fb{
+    background-color:#3C5A98;
+  }
+  .twitter{
+      background-color:#1EA1F2;
+  }
+  .insta{
+      background-color:#C13584;
+  }
+  .wpp{
+      background-color:#25D366;
+  }
+
+  /* ---------------- SECCIÓN PRICIPAL SOBRE NOSOTROS ---------- */
+
+.SseccionPrincipalAbout{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+
+}
+
+.SseccionPrincipalAbout h1{
+   font-size: 40px;
+   color: #00B8D4;
+}
+
+.SseccionPrincipalAbout p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+
+}
+
+  /* ------------ TARJETAS QUIENES SOMOS ----------- */
+
+  .Scontenedor{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .Scard {
+    padding: 10px;
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+    margin: 0 auto;
+
+  }
+  
+  .ScardContenedor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .Scard:hover .ScardContenedor {
+    transform: rotateY(180deg);
+  }
+  
+  .ScardFront, .ScardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .ScardFront {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .ScardFront img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .ScardBack {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    background-color: #00B8D4;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .ScardBack h5{
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .ScardBack p{
+    margin: 10px;
+    width: 100%;
+  }
+
+
+  /* ---------------- PIE DE PAGINA ---------- */
+
+.Sfooter{
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Sfooter div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Sfooter img{
+    width: 100%;
+}
+
+.Sfooter h3{
+    color: #2962FF;
+    letter-spacing: 1px;
+}
+
+.Sfooter p{
+    margin-top: 15px;
+}
+
+/* ---------- MEDIA QUERYS ----------- */
+
+@media (min-width: 0px) and (max-width: 576px){
+
+    /* -------------- CABECERA ------------- */
+    
+    header img{
+        width: 200px;
+    }
+    
+    .Snavbar{
+        display: none;
+    }
+    
+    /* --------------- ESTILOS USUARIO --------------- */
+    
+    .user p{
+        display: none;
+        color: #1EA1F2;
+        letter-spacing: 2px;
+    }
+
+}
+    
+    @media (min-width: 577px) and (max-width: 899px){
+    
+        /* -------------- CABECERA ------------- */
+    
+        header img{
+            width: 350px;
+        }
+    
+        .Snavbar{
+            display: none;
+        }
+        
+        /* ---------------- PIE DE PAGINA ---------- */
+    
+        .Sfooter img{
+            width: 50%;
+        }
+    } 
+    
+    @media (min-width: 900px) and (max-width: 1920px){
+    
+        /* -------------- CABECERA ------------- */
+    
+        header img{
+            width: 200px;
+        }
+    
+        .fa-bars{
+            display: none;
+        }
+    
+        .dataUser i {
+            display: none;
+        }
+
+        /* ---------------- SECCIÓN PRICIPAL SOBRE NOSOTROS ---------- */
+
+.SseccionPrincipalAbout{
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 150px;
+    padding-top: 70px;
+    margin-bottom: 50px;
+
+}
+
+         /* ------------ TARJETAS QUIENES SOMOS ----------- */
+
+        .Scontenedor{
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+        }
+        
+          .Scard {
+            margin: 15px;
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 0 auto;
+          }
+          
+          .ScardContenedor {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          }
+          
+          .Scard:hover .ScardContenedor {
+            transform: rotateY(180deg);
+          }
+          
+          .ScardFront, .ScardBack {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          
+          .ScardFront {
+            background-color: #bbb;
+            color: black;
+          }
+        
+          .ScardFront img{
+            width: 100%;
+            height: auto;
+          }
+          
+          .ScardBack {
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            background-color: #00B8D4;
+            color: white;
+            transform: rotateY(180deg);
+          }
+        
+          .ScardBack h5{
+            width: 100%;
+            font-size: 30px;
+          }
+        
+          .ScardBack p{
+            margin: 10px;
+            width: 100%;
+          }
+    
+        /* -------------- REDES SOCIALES FLOTANTES ------------ */
+    
+        .social li{
+            padding:10px 10px;
+            transition:all 0.3s ease-in-out;
+          }
+          .social li:hover{
+              margin-right:-30px;
+          }
+          .social li:hover .fa-brands{
+              margin-left:20px;
+          }
+    
+        /* ---------------- PIE DE PAGINA ---------- */
+
+        .Sfooter{
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .Sfooter div{
+            width: 30%;
+        }
+    
+        .Sfooter img{
+            width: 80%;
+        }
+    
+    }
