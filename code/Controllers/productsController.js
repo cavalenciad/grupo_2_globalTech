@@ -87,7 +87,7 @@ const productsController = {
 
         Promise.all([productoSelect, requestCategoria])
             .then(function([producto, categoria]) {
-                res.render('pruebaEditProducts', {producto, categoria});
+                res.render('editProducts', {producto, categoria});
             })  
     },
     edit: async(req, res) => {
