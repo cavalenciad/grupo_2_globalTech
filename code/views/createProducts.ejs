@@ -18,7 +18,7 @@
 
 
     <div class="QimagenFondo">
-        <form action="/productos/createProductos" method="post" class="QformProducts" enctype="multipart/form-data">
+        <form action="/products/productDetail/createProducts" method="post" class="QformProducts" enctype="multipart/form-data">
             <h3>Agregar productos</h3>
             
             <!----CAJA DE FORMULARIO----->
@@ -55,10 +55,12 @@
 
             <div class="QcompletarFormulario">
                 <label class="Qcategorias">Categoría</label>
-                <select name="categoria" class="Qcategorias"> 
+                <select name="categoria" class="Qcategorias">
+
                     <% categoria.forEach(categoria => { %>
-                        <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
+                        <option value="<%= categoria.idCategoria %>"><%= categoria.Categoria %></option>
                     <% }); %>
+
                 </select>
             </div>
 
