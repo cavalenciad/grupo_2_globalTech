@@ -1,28 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap%27');
-*
-{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-    font-family: 'Roboto';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+
+* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
+
+/* -------------- CABECERAAAA ------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
+  position: fixed;
+  
+}
+
+.Snavbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* --------------- BODY  --------------- */
+
 body 
 {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
 	flex-direction: column;
 	background: #23242a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 145px;
 }
+/* -------------- ESTILOS ITEMS MENU ------------- */
+
+
+a {
+  font-size: 16px;
+  font-family: roboto;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #959595;
+  transition: ease 0.5s;
+}
+
+.Snavbar a:hover {
+  color: #2962FF;
+}
+
+
+
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
+
+.Sburger-menu .fa-bars {
+  font-size: 28px;
+  color: #00B8D4;
+}
+
+/* --------------- ESTILOS USUARIO --------------- */
+
+.dataUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataUser img {
+  margin-left: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.dataUser p {
+  color: #1EA1F2;
+  letter-spacing: 2px;
+}
+
+/* -------------- MENÚ DESPLEGABLE ------------ */
+
+.user {
+  position: relative;
+  display: inline-block;
+}
+
+.actionUser {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 125px;
+  padding: 8px 8px;
+  z-index: 1;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  transition: all 0.4s ease;
+}
+
+.user:hover .actionUser {
+  display: block;
+}
+
+.actionUser h6 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.actionUser a {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2962FF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+.social {
+  list-style: none;
+}
+
+.social li {
+  padding: 10px 10px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social li:hover {
+  margin-right: -20px;
+}
+
+.social li:hover .fa-brands {
+  margin-left: 10px;
+}
+
+.fa-brands {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.fb {
+  background-color: #3C5A98;
+}
+
+.twitter {
+  background-color: #1EA1F2;
+}
+
+.insta {
+  background-color: #C13584;
+}
+
+.wpp {
+  background-color: #25D366;
+}
+
+
+
+
+/*----Caja de registro-----*/
+
+.jerrors {
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+
+
 .box 
 {
 	position: relative;
-	width: 500px;
-	height: 700px;
+	width: 380px;
+	height: 420px;
 	background: #1c1c1c;
 	border-radius: 8px;
 	overflow: hidden;
+  margin-bottom: 150px;
+  margin-top: 150px;
+  
+
 }
 .box::before 
 {
@@ -31,10 +211,10 @@ body
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 500px;
-	height: 700px;
+	width: 380px;
+	height: 420px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
 	animation: animate 6s linear infinite;
 }
 .box::after 
@@ -44,10 +224,10 @@ body
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 500px;
-	height: 700px;
+	width: 380px;
+	height: 420px;
 	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
 	animation: animate 6s linear infinite;
 	animation-delay: -3s;
 }
@@ -61,48 +241,49 @@ body
 	{
 		transform: rotate(360deg);
 	}
+
 }
-.form 
-{
+
+form {
 	position: absolute;
 	inset: 2px;
 	background: #28292d;
-	padding: 30px 40px;
+	padding: 50px 40px;
 	border-radius: 8px;
-	z-index: 10;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 }
-.form h2 
-{
-	color: #45f3ff;
-	font-weight: 300;
+
+h2 {
+	color: #00B8D4;
+	font-weight: 500;
 	text-align: center;
-    padding: 10px 10px 10px 10px;
+	letter-spacing: 0.1em;
 }
-.inputBox 
-{
+
+.inputBox {
 	position: relative;
-	width: 200px;
-	margin-top: 15px;
+	width: 300px;
+	margin-top: 35px;
 }
-.inputBox input 
-{
+
+.inputBox input {
 	position: relative;
 	width: 100%;
 	padding: 20px 10px 10px;
 	background: transparent;
 	outline: none;
-	/*box-shadow: none;*/
+	box-shadow: none;
 	border: none;
-	color: #23242a;
+	color: white;
 	font-size: 1em;
 	letter-spacing: 0.05em;
-	/*transition: 0.5s;*/
-	/*z-index: 10;*/
+	transition: 0.5s;
+	
 }
-.inputBox span 
-{
+
+.inputBox span {
 	position: absolute;
 	left: 0;
 	padding: 20px 0px 10px;
@@ -112,62 +293,317 @@ body
 	letter-spacing: 0.05em;
 	transition: 0.5s;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span 
+
+.inputBox input:valid  span,
+.inputBox input:focus  span 
+
 {
-	color: #45f3ff;
+	color: #00B8D4;
 	transform: translateX(0px) translateY(-34px);
 	font-size: 0.75em;
 }
-.inputBox i 
-{
+
+.inputBox i {
 	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #45f3ff;
+	background: #00B8D4;
 	border-radius: 4px;
 	overflow: hidden;
 	transition: 0.5s;
 	pointer-events: none;
 	z-index: 9;
 }
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i 
+
+.inputBox input:valid  i,
+.inputBox input:focus  i 
+
 {
 	height: 44px;
 }
-.links 
-{
+
+.links {
 	display: flex;
 	justify-content: space-between;
 }
-.links a 
-{
+
+.links a {
 	margin: 10px 0;
 	font-size: 0.75em;
 	color: #8f8f8f;
 	text-decoration: beige;
 }
+
 .links a:hover, 
 .links a:nth-child(2)
+
 {
-	color: #45f3ff;
+	color: #00B8D4;
 }
-input[type="submit"]
-{
+
+input[type="submit"] {
 	border: none;
 	outline: none;
 	padding: 11px 25px;
-	background: #45f3ff;
+	background: #00B8D4;
 	cursor: pointer;
 	border-radius: 4px;
 	font-weight: 600;
 	width: 100px;
 	margin-top: 10px;
 }
-input[type="submit"]:active 
-{
+
+input[type="submit"]:active {
 	opacity: 0.8;
+}
+
+
+/*------Cajas para completar login----*/
+
+
+
+/*------Botones Login----*/
+
+button {
+  width: 200px;
+  height: 100px;
+  background-color: #00B8D4;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 65px;
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(0.99);
+  background-color: #2962FF;
+}
+
+.jOlvidaste {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.jNoCuenta {
+  height: 40px;
+  text-align: center;
+}
+
+.jOlvidaste :hover {
+  text-decoration: underline;
+}
+
+.jNoCuenta :hover {
+  text-decoration: underline;
+}
+
+form a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+/*-----Checkbox recuerdame----*/
+
+.jRecuerdame {
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 10px;
+  position: relative;
+  right: 130px;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+}
+
+.jCheckbox {
+  position: relative;
+  top: 2px;
+  right: 4px;
+}
+
+#jRecuerdame {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0.8px;
+}
+
+/*----- Estilos Footer-----*/
+
+.Sfooter {
+  width: 100%;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 680px;
+  position: fixed;
+}
+
+.Sfooter div {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Sfooter img {
+  width: 100%;
+}
+
+.Sfooter h3 {
+  color: #00B8D4;
+  letter-spacing: 1px;
+}
+
+.Sfooter p {
+  margin-top: 15px;
+}
+
+
+
+
+/*------Media Queries--------*/
+
+/*---Media Querie Móvil-----*/
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+  /* -------------- CABECERA ------------- */
+
+  header img {
+    width: 200px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+
+  /* --------------- ESTILOS USUARIO --------------- */
+
+  .user p {
+    display: none;
+    color: #1EA1F2;
+    letter-spacing: 2px;
+  }
+
+  form {
+    width: 80%;
+    position: relative;
+    left: 0%;
+    bottom: 300px;
+  }
+}
+
+.jRecuerdame {
+  margin-top: 10px;
+  font-size: 14px;
+  position: relative;
+  left: -13px;
+  padding-bottom: 10px;
+}
+
+/*---Media Querie Tablet ---*/
+
+@media (min-width: 577px) and (max-width: 899px) {
+
+  header img {
+    width: 350px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+
+  form {
+    width: 500px;
+    position: relative;
+    left: 0%;
+    bottom: 300px;
+  }
+}
+
+.Sfooter img {
+  width: 50%;
+}
+
+.jRecuerdame {
+  margin-top: 10px;
+  font-size: 14px;
+  position: relative;
+  left: -13px;
+  padding-bottom: 10px;
+}
+
+/*---Media Querie Desktop---*/
+
+@media (min-width: 900px) and (max-width: 1920px) {
+
+  /* -------------- CABECERA ------------- */
+  header {
+    margin-bottom: 617px;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+  .social li {
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social li:hover {
+    margin-right: -30px;
+  }
+
+  .social li:hover .fa-brands {
+    margin-left: 20px;
+  }
+
+  /* ---------------- ESTILOS USUARIOS ---------- */
+
+  .dataUser i {
+    display: none;
+  }
+
+  /* ---------------- PIE DE PAGINA ---------- */
+  .box {
+    position: fixed;
+  }
+
+  .Sfooter div {
+    margin-top: 65px;
+    width: 30%;
+    height: 150px;
+    
+  }
+
+  .Sfooter img {
+    width: 80%;
+   
+  }
+
 }

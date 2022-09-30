@@ -65,7 +65,7 @@ const userController = {
         }
 
         db.usuarios.findOne({
-            where: {email: req.body.email}
+            where: { email: req.body.email }
         })
         .then((usuarioALoguearse) => {
             console.log(usuarioALoguearse);
@@ -80,7 +80,7 @@ const userController = {
                 }
                 if (!usuarioALoguearse){
                     return res.render('login', {
-                    errors: {contrasena: {msg: 'La contraseña no es correcta'}}})
+                    errors: { contrasena: { 'msg': 'La contraseña no es correcta' }}})
                 }
             }
         })                    
