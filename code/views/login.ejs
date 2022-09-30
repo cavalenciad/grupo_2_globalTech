@@ -19,32 +19,45 @@
 <!-------- REDES SOCIALES -------->
 <%- include("./partials/social.ejs")%>
 
-<div class="jImagenFondo">
+<div class="box">
     <form action="/user/login" method="POST">
-        <h3>Iniciar Sesión</h3>
-        <div>
-            <input placeholder="Email" type="text" name="email" id="Email">
+
+        <h2>Iniciar Sesión</h2>
+
+        <div class="inputBox">
+
+            <input type="text" name="email" id="email" required="required" placeholder="Email">
+            <i></i>
             <% if (locals.errors && errors.email) { %>
                 <div class="jerrors">
                  <%= errors.email.msg %> 
                 </div>
             <% } %>
+
         </div>
-        <div>
-            <input placeholder="Contraseña" type="password" name="contrasena" id="Contraseña">
+
+        <div class="inputBox">
+
+            <input type="password"  name="contrasena" id="contrasena" required="required" placeholder="Contraseña">
+            <i></i>
                 <% if (locals.errors && errors.contrasena) { %>
                     <div class="jerrors">
                      <%= errors.contrasena.msg %> 
                     </div>
                 <% } %>
         </div>
+
+        <div class="links">
+            <a href="/user/register/"> ¿Aún no tiene una cuenta? </a>
+            <a href="#"></a>
+        </div>
+
         <div class="jRecuerdame">
             <input  class="jCheckbox" type="checkbox" name="jRecuerdame" id="jRecuerdame">Recuérdame
         </div>
 
         <button type="submit">Iniciar Sesión</button>
-        <p class="jNoCuenta"> <a href="/user/register">¿Aún no tiene una cuenta?</a>
-        </p>
+
     </form>
 </div>
 <!-------- PIE DE PAGINAAAAA -------->
