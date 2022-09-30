@@ -40,6 +40,7 @@
 
             <input type="password"  name="contrasena" id="contrasena" required="required" placeholder="Contraseña">
             <i></i>
+            <!-- Validadores de error de campo-->
                 <% if (locals.errors && errors.contrasena) { %>
                     <div class="jerrors">
                      <%= errors.contrasena.msg %> 
@@ -55,6 +56,7 @@
         <div class="jRecuerdame">
             <input  class="jCheckbox" type="checkbox" name="jRecuerdame" id="jRecuerdame">Recuérdame
         </div>
+
 
         <button type="submit">Iniciar Sesión</button>
 
