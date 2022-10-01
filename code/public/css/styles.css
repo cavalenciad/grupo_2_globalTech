@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: roboto;
 }
 
@@ -29,6 +29,7 @@ header{
 }
 
 /* -------------- ESTILOS ITEMS MENU ------------- */
+
 
 a{
     font-size: 16px;
@@ -114,9 +115,10 @@ a{
 .sticky-social{
     position:fixed;
     top:200px;
-    left:0;
+    left:-32px;
     padding:0px;
     margin:0px;
+    z-index: 1;
   }
   .social{
     list-style:none;
@@ -153,9 +155,20 @@ a{
 
 /* ---------------- SLIDE ---------- */
 
-.Scarrusel img{
-    width: 100%;
-    margin-top: 80px;
+#carouselExampleIndicators{
+    padding-top: 80px;
+}
+
+.carousel-control-prev {
+    display: none;
+    margin-top: 0px;
+    left: 50px;
+}
+
+.carousel-control-next {
+    display: none;
+    margin-top: 0px;
+    
 }
 
 /* ---------------- SECCIÓN PRICIPAL HOME ---------- */
@@ -524,6 +537,19 @@ header img{
       .social li:hover .fa-brands{
           margin-left:20px;
       }
+
+    /* ------------- SLIDE ------------------ */
+    .carousel-control-prev {
+        display: block;
+        margin-top: 0px;
+        left: 50px;
+    }
+    
+    .carousel-control-next {
+        display: block;
+        margin-top: 0px;
+        
+    }  
 
     /* ------------- CATEGORIAS PRODUCTOS ----------- */
 
