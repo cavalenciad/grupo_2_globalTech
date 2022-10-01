@@ -8,6 +8,10 @@
     font-family: roboto;
 }
 
+p{
+    margin-bottom: 0 !important;
+}
+
 /* -------------- CABECERA ------------- */
 
 header{
