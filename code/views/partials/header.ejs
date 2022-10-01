@@ -31,8 +31,38 @@
         </div>
  <% } %> 
     <!-------- ICONO MENU HAMBURGUESA -------->
-    <div class="Sburger-menu">
-        <i class="fas fa-bars"></i>
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
     </div>
+    <nav class="menuppal">
+        <ul>
+          <li><a href="/"><i class="fa-solid fa-house-user"></i> INICIO</a></li>
+          <li><a href="/about-us"><i class="fa-solid fa-user-group"></i> SOBRE NOSOTROS</a></li>
+          <li><a href="/products"><i class="fa-solid fa-shop"></i> CATÁLOGO DE PRODUCTOS</a></li>
+          <li><a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i> CARRITO DE COMPRAS</a></li>
+            <% if(!locals.userLogged) {%> 
+              <li><a href="/user/register"><i class="fa-solid fa-rectangle-list"></i> REGISTRO</a></li>
+              <li><a href="/user/login"><i class="fa-solid fa-address-card"></i> LOGIN</a></li>
+          <% } %> 
+        </ul>
+      </nav>
+
+      <script>
+        // selector
+var menu = document.querySelector('.hamburger');
+
+// method
+function toggleMenu (event) {
+  this.classList.toggle('is-active');
+  document.querySelector( ".menuppal" ).classList.toggle("is_active");
+  event.preventDefault();
+}
+
+// event
+menu.addEventListener('click', toggleMenu, false);
+
+      </script>
 
 </header>
