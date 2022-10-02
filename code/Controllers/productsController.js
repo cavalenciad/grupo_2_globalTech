@@ -1,6 +1,7 @@
 const fs = require('fs');
 const db = require("../database/models");
 const Op = db.Sequelize.Op;
+const {validationResult} = require('express-validator');
 
 const productsController = {
 
@@ -69,27 +70,43 @@ const productsController = {
 
     },
     create: function (req,res) {
-        db.productos.create({
-            nombre: req.body.name,
-            descripcion: req.body.description,
-            precio: req.body.precio,
-            Categoria_idCategoria: req.body.categoria,
-            color1: req.body.color1,
-            color2: req.body.color2
-        })
-        .then((producto) => {
-            let arrayImagen = [];
-            for(let i=0; i<req.files.length; i++){
-                let imagen = req.files[i].filename;
-                arrayImagen.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
-            }
-            db.imagen.bulkCreate(
-                arrayImagen
-            )
-        })
-        .then(() => {
-            res.redirect("/products")
-        })
+
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0) {
+            db.categorias.findAll({
+                include: {
+                    all: true,
+                    nested: true
+                }
+            })
+            .then((categoria) => {
+                res.render('createProducts', {categoria, errors: resultValidation.mapped()});
+            })
+        }else{
+            db.productos.create({
+                nombre: req.body.name,
+                descripcion: req.body.description,
+                precio: req.body.precio,
+                Categoria_idCategoria: req.body.categoria,
+                color1: req.body.color1,
+                color2: req.body.color2
+            })
+            .then((producto) => {
+                let arrayImagen = [];
+                for(let i=0; i<req.files.length; i++){
+                    let imagen = req.files[i].filename;
+                    arrayImagen.push({Imagen: imagen, Productos_idProductos: producto.idProductos});
+                }
+                db.imagen.bulkCreate(
+                    arrayImagen
+                )
+            })
+            .then(() => {
+                res.redirect("/products")
+            })
+        }
+
         
     },
     formularioEdit: (req, res) =>{

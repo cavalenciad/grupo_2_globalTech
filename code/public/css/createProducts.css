@@ -150,7 +150,14 @@ header {
   }
 
   /*----CAJA DE FORMULARIO----*/
-
+  .Qerrors{
+    color: #ffffff;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  
   .QcompletarFormulario input{
     width: 82%;
     border: 1px solid white;
