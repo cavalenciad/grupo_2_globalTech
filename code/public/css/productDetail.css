@@ -8,6 +8,10 @@
     font-family: roboto;
 }
 
+p{
+    margin-bottom: 0 !important;
+}
+
 a{
     letter-spacing: 2px;
     font-weight: 600;

@@ -29,7 +29,8 @@
                 <h6><a href="/user/logout">Cerrar Sesión</a> </h6>
             </div>
         </div>
- <% } %> 
+ <% } %>
+
     <!-------- ICONO MENU HAMBURGUESA -------->
     <div class="hamburger">
       <div class="_layer -top"></div>
@@ -53,14 +54,14 @@
         // selector
 var menu = document.querySelector('.hamburger');
 
-// method
+// metodo
 function toggleMenu (event) {
   this.classList.toggle('is-active');
   document.querySelector( ".menuppal" ).classList.toggle("is_active");
   event.preventDefault();
 }
 
-// event
+// evento
 menu.addEventListener('click', toggleMenu, false);
 
       </script>
