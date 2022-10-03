@@ -9,6 +9,10 @@
 
 }
 
+p{
+  margin-bottom: 0 !important;
+}
+
 body{
     background-color: #121212;
     position: relative;

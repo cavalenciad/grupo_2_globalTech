@@ -22,13 +22,15 @@
   <!-- MENU NAVEGACIÓN -->
   <%- include("./partials/social.ejs")%>
 
+
+
   <div class = "box">
     <form class="form" action="/user/register" enctype="multipart/form-data" method="post">
-        <h3>Regístrate en Global Tech</h3>
+        <h2>Regístrate en Global Tech</h2>
         
         
         <div class="inputBox">
-            <input name="email" type="email" required="required" value= "<%= locals.oldData ? oldData.email : null%>">
+            <input name="email" type="email" value= "<%= locals.oldData ? oldData.email : null%>">
             <span>Email</span>
             <% if (locals.errors && errors.email) { %>
                 <div class="Merrors">
@@ -40,7 +42,7 @@
         
         
         <div class="inputBox">
-            <input name="nombre" type="text" required="required" value= "<%= locals.oldData ? oldData.nombre : null%>">
+            <input name="nombre" type="text" value= "<%= locals.oldData ? oldData.nombre : null%>">
             <span>Nombre</span>
             <% if (locals.errors && errors.nombre) { %>
                 <div class="Merrors">
@@ -52,7 +54,7 @@
         
         
         <div class="inputBox">
-            <input name="apellido" type="text" required="required" value= "<%= locals.oldData ? oldData.apellido : null%>">
+            <input name="apellido" type="text"  value= "<%= locals.oldData ? oldData.apellido : null%>">
             <span>Apellidos</span>
             <% if (locals.errors && errors.apellido) { %>
                 <div class="Merrors">
@@ -64,7 +66,7 @@
         
         
         <div class="inputBox">
-            <input name="nombreUser" type="text" required="required" value= "<%= locals.oldData ? oldData.nombreUser : null%>">
+            <input name="nombreUser" type="text"  value= "<%= locals.oldData ? oldData.nombreUser : null%>">
             <span>Nombre de Usuario</span>
             <% if (locals.errors && errors.nombreUser) { %>
                 <div class="Merrors">
@@ -78,7 +80,7 @@
         <!--SELECCIONAR PAÍS-->
         
         <div class="inputBox">
-            <select class="Mpais" name="pais" requiered="requiered">
+            <select class="Mpais" name="pais">
                 <option disabled selected>Seleccionar país</option>
                 <option value="Colombia">Colombia</option>
                 <option value="Argentina">Argentina</option>
@@ -131,7 +133,7 @@
         <!--CONTRASEÑA-->    
 
         <div class="inputBox">
-            <input name="contrasena" type="text" required="required">
+            <input name="contrasena" type="text" >
             <span>Contraseña</span>
             <% if (locals.errors && errors.contrasena) { %>
                 <div class="Merrors">
@@ -144,8 +146,7 @@
         <!--ACEPTO TÉRMINOS-->
 
         <div class="inputBox">
-            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" required>Acepto los
-            <a class="links" href="#" target="_blank">términos y condiciones</a>
+            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" >Acepto los<a class="links" href="#" target="_blank">términos y condiciones</a>
                 y la
             <a class="links" href="#" target="_blank">política de privacidad.</a>
         </div>
@@ -161,8 +162,11 @@
     </form>
 </div>
 
+
+
 <!--- FOOTER: PIE DE PÁGINA --->
 
 <%- include("./partials/footer.ejs")%>
+
 </body>
 </html>

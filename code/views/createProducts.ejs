@@ -25,31 +25,61 @@
             
             <div class="QcompletarFormulario">
                 <input placeholder="Nombre" type="text" name="name" id="name" >
+                <% if (locals.errors && errors.name) { %>
+                    <div class="Qerrors">
+                        <%= errors.name.msg %> 
+                    </div>
+                 <% } %>
             </div>
             
             <div class="QcompletarFormulario">
                 <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49" ></textarea>
+                <% if (locals.errors && errors.description) { %>
+                    <div class="Qerrors">
+                        <%= errors.description.msg %> 
+                    </div>
+                 <% } %>
             </div>
             
             <div class="QimagenFormulario">
             <div class="QdivInterno">
                 <label for='imagen' class="Qimagenes">Imagen 1</label>
-                <input type="file" name="imagen" id="imagen">                
+                <input type="file" name="imagen" id="imagen">   
+                <% if (locals.errors && errors.imagen) { %>
+                    <div class="Qerrors">
+                        <%= errors.imagen.msg %> 
+                    </div>
+                 <% } %>             
             </div>
 
             <div class="QdivInterno">
                 <label for='imagen' class="Qimagenes">Imagen 2</label>
                 <input type="file" name="imagen" id="imagen">
+                <% if (locals.errors && errors.imagen) { %>
+                    <div class="Qerrors">
+                        <%= errors.imagen.msg %> 
+                    </div>
+                 <% } %>
             </div>
 
             <div class="QdivInterno">
                 <label for='imagen' class="Qimagenes">Imagen 3</label>
                 <input type="file" name="imagen" id="imagen">
+                <% if (locals.errors && errors.imagen) { %>
+                    <div class="Qerrors">
+                        <%= errors.imagen.msg %> 
+                    </div>
+                <% } %>    
             </div>
 
             <div class="QdivInterno">
                 <label for='imagen' class="Qimagenes">Imagen 4</label>
                 <input type="file" name="imagen" id="imagen">
+                <% if (locals.errors && errors.imagen) { %>
+                    <div class="Qerrors">
+                        <%= errors.imagen.msg %> 
+                    </div>
+                <% } %> 
             </div>
             </div>
 
@@ -67,14 +97,29 @@
 
             <div class="QcompletarFormulario">
                 <input placeholder="Color 1" type="text" name="color1" id="color" >
+                <% if (locals.errors && errors.color1) { %>
+                    <div class="Qerrors">
+                        <%= errors.color1.msg %> 
+                    </div>
+                <% } %> 
             </div>
 
             <div class="QcompletarFormulario">
                 <input placeholder="Color 2" type="text" name="color2" id="color" >
+                <% if (locals.errors && errors.color2) { %>
+                    <div class="Qerrors">
+                        <%= errors.color2.msg %> 
+                    </div>
+                <% } %> 
             </div>
 
             <div class="QcompletarFormulario">
                 <input placeholder="Precio" type="number" name="precio" id="precio" >
+                <% if (locals.errors && errors.precio) { %>
+                    <div class="Qerrors">
+                        <%= errors.precio.msg %> 
+                    </div>
+                <% } %> 
             </div>
 
             <!-------- BOTONES -------->
