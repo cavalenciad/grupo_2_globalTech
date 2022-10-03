@@ -202,3 +202,11 @@ Daily 16/08/2022
 - Se actuliza la tabla de Categorias directamente desde el workbench.
 - Se crea un producto en la tabla de productos directamente desde el workbench.
 - Se intenta conectar el proyecto con la base de datos por medio de archivos de prueba.
+
+Daily 3/10/2022
+
+- Pactamos para terminar los formularios de crear y editar productos.
+- Terminar el responsive de los formularios de Register y Login.
+- Implementar las validaciones en los formularios en el backend y frontend.
+- Determinamos cambiar el estilo de la página principal a fondo oscuro y otros detalles.
+
