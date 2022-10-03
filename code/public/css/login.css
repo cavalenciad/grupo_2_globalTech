@@ -139,6 +139,11 @@ a {
 
 .social {
   list-style: none;
+  position: absolute;
+  top: 441px;
+  display: flex;
+
+ 
 }
 
 .social li {
@@ -183,18 +188,21 @@ a {
 
 .jerrors {
   color: #ffffff;
-  font-size: 13px;
+  font-size: 11px;
   margin-bottom: 15px;
   font-weight: bold;
   letter-spacing: 0.5px;
+  display: flex;
+  justify-content: start;
+  padding-top: 8px;
+ 
 }
 
 
 
-.box 
-{
+.box {
 	position: relative;
-	width: 380px;
+	width: 85%;
 	height: 420px;
 	background: #1c1c1c;
 	border-radius: 8px;
@@ -202,10 +210,10 @@ a {
   margin-bottom: 150px;
   margin-top: 150px;
   
+  
 
 }
-.box::before 
-{
+.box::before {
 	content: '';
 	z-index: 1;
 	position: absolute;
@@ -246,12 +254,15 @@ a {
 
 form {
 	position: absolute;
+  width: 97%;
+  height: 416px;
 	inset: 2px;
 	background: #28292d;
-	padding: 50px 40px;
+	padding: 35px 7px;
 	border-radius: 8px;
 	z-index: 2;
 	display: flex;
+  margin: 0 auto;
 	flex-direction: column;
 }
 
@@ -266,12 +277,13 @@ h2 {
 	position: relative;
 	width: 300px;
 	margin-top: 35px;
+  margin-left: 26px;
 }
 
 .inputBox input {
 	position: relative;
 	width: 100%;
-	padding: 20px 10px 10px;
+	padding: 1px 4px 6px 8px;
 	background: transparent;
 	outline: none;
 	box-shadow: none;
@@ -307,7 +319,7 @@ h2 {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 100%;
+	width: 85%;
 	height: 2px;
 	background: #00B8D4;
 	border-radius: 4px;
@@ -315,6 +327,7 @@ h2 {
 	transition: 0.5s;
 	pointer-events: none;
 	z-index: 9;
+  
 }
 
 .inputBox input:valid  i,
@@ -330,7 +343,9 @@ h2 {
 }
 
 .links a {
-	margin: 10px 0;
+	
+  margin-top: 20px;
+  margin-left: 22px;
 	font-size: 0.75em;
 	color: #8f8f8f;
 	text-decoration: beige;
@@ -367,20 +382,20 @@ input[type="submit"]:active {
 /*------Botones Login----*/
 
 button {
-  width: 200px;
-  height: 100px;
   background-color: #00B8D4;
   border: none;
   color: white;
   margin-bottom: 10px;
+  
   border-radius: 5px;
   font-size: 17px;
   font-weight: bold;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 65px;
   transition: all 0.3s;
+  display: flex;
+  margin: 0 auto;
+  padding: 13px;
+  margin-top: 16px;
 }
 
 button:hover {
@@ -418,10 +433,8 @@ form a {
 
 .jRecuerdame {
   font-size: 15px;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-right: 10px;
-  position: relative;
-  right: 130px;
   color: #fff;
   display: flex;
   justify-content: flex-start;
@@ -451,7 +464,7 @@ form a {
   flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
-  margin-top: 680px;
+  margin-top: 610px;
   position: fixed;
 }
 
@@ -464,16 +477,18 @@ form a {
 }
 
 .Sfooter img {
-  width: 100%;
+  width: 80%;
 }
 
 .Sfooter h3 {
   color: #00B8D4;
   letter-spacing: 1px;
+  margin-top: -12px;
 }
 
 .Sfooter p {
   margin-top: 15px;
+  font-size: 14px;
 }
 
 
@@ -495,6 +510,11 @@ form a {
     display: none;
   }
 
+  h2 {
+    
+  }
+
+
   /* --------------- ESTILOS USUARIO --------------- */
 
   .user p {
@@ -504,12 +524,12 @@ form a {
   }
 
   form {
-    width: 80%;
+    width: 98%;
     position: relative;
     left: 0%;
     bottom: 300px;
   }
-}
+
 
 .jRecuerdame {
   margin-top: 10px;
@@ -517,6 +537,7 @@ form a {
   position: relative;
   left: -13px;
   padding-bottom: 10px;
+}
 }
 
 /*---Media Querie Tablet ---*/
@@ -531,24 +552,51 @@ form a {
     display: none;
   }
 
-  form {
-    width: 500px;
-    position: relative;
-    left: 0%;
-    bottom: 300px;
+  .box {
+    width: 63%;
   }
-}
+
+  form {
+    width: 98%;
+    height: 415px;
+    bottom: 300px;
+    padding-left: 38px;
+  }
+
+  h2 {
+    align-items: center;
+  }
+
+  .inputBox  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputBox i {
+    width: 75%;
+  }
+
+  .jerrors {
+    position: relative;
+    left: 15px;
+  }
+
+
+  .jRecuerdame {
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    left: -13px;
+    padding-bottom: 10px;
+  }
+
 
 .Sfooter img {
   width: 50%;
 }
 
-.jRecuerdame {
-  margin-top: 10px;
-  font-size: 14px;
-  position: relative;
-  left: -13px;
-  padding-bottom: 10px;
+
 }
 
 /*---Media Querie Desktop---*/
@@ -569,6 +617,9 @@ form a {
   }
 
   /* -------------- REDES SOCIALES FLOTANTES ------------ */
+  .social {
+    display: flex;
+  }
 
   .social li {
     padding: 10px 10px;
@@ -592,18 +643,50 @@ form a {
   /* ---------------- PIE DE PAGINA ---------- */
   .box {
     position: fixed;
+    width: 20%;
+    height: 421px; 
   }
 
-  .Sfooter div {
-    margin-top: 65px;
-    width: 30%;
-    height: 150px;
+  form {
+    width: 99%;
+    padding-top: 34px;
+    padding-right: 20px;
+    padding-left: 38px;
+  }
+
+  h2 {
+    padding-top: 15px;
     
   }
 
-  .Sfooter img {
-    width: 80%;
+ 
+  .jerrors {
+    padding-top: 7px;
+    position: relative;
+    left: 26px;
+  }
+
+  .links a {
+    position: relative;
+    left: 23px;
    
   }
 
+  .jRecuerdame {
+    display: flex;
+  }
+
+  .Sfooter {
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .Sfooter div{
+    width: 30%;
 }
+
+.Sfooter img{
+    width: 80%;
+}
+}
+
