@@ -20,33 +20,33 @@
 <%- include("./partials/social.ejs")%>
 
 <div class="box">
-    <form action="/user/login" method="POST">
+    <form action="/user/login" method="POST" id="userLoginForm">
 
         <h2>Iniciar Sesión</h2>
 
         <div class="inputBox">
 
-            <input type="text" name="email" id="email" required="required" placeholder="Email">
+            <input type="text" name="email" id="email"  placeholder="Email">
             <i></i>
-            <% if (locals.errors && errors.email) { %>
-                <div class="jerrors">
-                 <%= errors.email.msg %> 
-                </div>
-            <% } %>
-
         </div>
+        <% if (locals.errors && errors.email) { %>
+            <div class="jerrors">
+             <%= errors.email.msg %> 
+            </div>
+        <% } %>
 
         <div class="inputBox">
 
-            <input type="password"  name="contrasena" id="contrasena" required="required" placeholder="Contraseña">
+            <input type="password"  name="contrasena" id="contrasena"  placeholder="Contraseña">
             <i></i>
-            <!-- Validadores de error de campo-->
-                <% if (locals.errors && errors.contrasena) { %>
-                    <div class="jerrors">
-                     <%= errors.contrasena.msg %> 
-                    </div>
-                <% } %>
+            <!-- Validadores de error de campo -->
         </div>
+
+        <% if (locals.errors && errors.contrasena) { %>
+            <div class="jerrors">
+             <%= errors.contrasena.msg %> 
+            </div>
+        <% } %>
 
         <div class="links">
             <a href="/user/register/"> ¿Aún no tiene una cuenta? </a>
@@ -58,10 +58,14 @@
         </div>
 
 
-        <button type="submit">Iniciar Sesión</button>
+        <button type="submit"> Ingresar </button>
 
     </form>
 </div>
+
+<script src="/js/loginFormValidator.js"></script>
+
+
 <!-------- PIE DE PAGINAAAAA -------->
 
 <%- include ("./partials/footer.ejs")%>
