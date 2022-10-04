@@ -41,7 +41,7 @@ const userController = {
                     apellido: req.body.apellido,
                     nombreusuario: req.body.nombreUser,
                     pais: req.body.pais,
-                    imagen: req.file.filename,
+                    /*imagen: req.file.filename,*/
                     contrasena: bcrypt.hashSync(req.body.contrasena, 10),
                     terminosycondiciones: 1
                 })

@@ -25,57 +25,61 @@
 
 
   <div class = "box">
-    <form class="form" action="/user/register" enctype="multipart/form-data" method="post">
+    
+    <form class="register" action="/user/register" enctype="multipart/form-data" method="post" id="registerForm">
         <h2>Regístrate en Global Tech</h2>
-        
-        
-        <div class="inputBox">
-            <input name="email" type="email" placeholder="Email" value= "<%= locals.oldData ? oldData.email : null%>">
-            <% if (locals.errors && errors.email) { %>
-                <div class="Merrors">
-                 <%= errors.email.msg %> 
-                </div>
-            <% } %>
-            <i></i>
+        <div class = "errors" id="errorsRegister">
+            <ul>
+    
+            </ul>
         </div>
         
+        <div class="inputBox">
+            <input name="email" type="email" placeholder="Email"> <!-- value= "<%= locals.oldData ? oldData.email : null%>"> -->
+            <i></i>
+        </div>
+        <% if (locals.errors && errors.email) { %>
+            <div class="Merrors">
+             <%= errors.email.msg %> 
+            </div>
+        <% } %>
         
         <div class="inputBox">
-            <input name="nombre" type="text" placeholder="Nombre" value= "<%= locals.oldData ? oldData.nombre : null%>"> 
-            <% if (locals.errors && errors.nombre) { %>
+            <input name="nombre" type="text" placeholder="Nombre" value= "<%= locals.oldData ? oldData.nombre : null%>">
+            <i></i>
+        </div>
+        <% if (locals.errors && errors.nombre) { %>
                 <div class="Merrors">
                     <%= errors.nombre.msg %>
                 </div>
             <% } %> 
-            <i></i>
-        </div>
         
         
         <div class="inputBox">
             <input name="apellido" type="text" placeholder="Apellidos" value= "<%= locals.oldData ? oldData.apellido : null%>">
-            <% if (locals.errors && errors.apellido) { %>
-                <div class="Merrors">
-                    <%= errors.apellido.msg %> 
-                </div>
-            <% } %> 
             <i></i>
         </div>
+        <% if (locals.errors && errors.apellido) { %>
+            <div class="Merrors">
+                <%= errors.apellido.msg %> 
+            </div>
+        <% } %> 
         
         
         <div class="inputBox">
             <input name="nombreUser" type="text" placeholder="Nombre de Usuario"  value= "<%= locals.oldData ? oldData.nombreUser : null%>">
-            <% if (locals.errors && errors.nombreUser) { %>
-                <div class="Merrors">
-                    <%= errors.nombreUser.msg %> 
-                </div>
-            <% } %>
             <i></i>
         </div>
+        <% if (locals.errors && errors.nombreUser) { %>
+            <div class="Merrors">
+                <%= errors.nombreUser.msg %> 
+            </div>
+        <% } %>
         
         
         <!--SELECCIONAR PAÍS-->
         
-     
+            <div>
             <select class="inputCountry" name="pais" >
                 <option disabled selected>Seleccionar país</option>
                 <option value="Colombia">Colombia</option>
@@ -105,12 +109,13 @@
                 <option value="Uruguay">Uruguay</option>
                 <option value="Venezuela">Venezuela</option>
             </select>
+            <i></i>
+            </div>
             <% if (locals.errors && errors.pais) { %>
                 <div class="Merrors">
                     <%= errors.pais.msg %> 
                 </div>
             <% } %>
-            <i></i>
       
 
         <!--IMAGEN-->
@@ -118,25 +123,25 @@
         <div class="inputTerms">
         <label class="Mimagenes"></label>
           <input class="file" type="file" name="imagen" placeholder="Imagen de Perfil" id="imagen">
-          <% if (locals.errors && errors.imagen) { %>
+            <i></i>
+        </div>
+        <% if (locals.errors && errors.imagen) { %>
             <div class="Merrors">
              <%= errors.imagen.msg %> 
             </div>
           <% } %>          
-            <i></i>
-        </div>
 
         <!--CONTRASEÑA-->    
 
         <div class="inputBox">
             <input name="contrasena" type="password" placeholder="Contraseña" >
-            <% if (locals.errors && errors.contrasena) { %>
-                <div class="Merrors">
-                 <%= errors.contrasena.msg %> 
-                </div>
-            <% } %>
             <i></i>
         </div>
+        <% if (locals.errors && errors.contrasena) { %>
+            <div class="Merrors">
+             <%= errors.contrasena.msg %> 
+            </div>
+        <% } %>
 
         <!--ACEPTO TÉRMINOS-->
 
@@ -144,22 +149,18 @@
             <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" >Acepto los <a class="links" href="#" target="_blank">términos y condiciones</a> y la <a class="links" href="#" target="_blank">política de privacidad.</a>
         </div>
 
-        <!--<div class="inputBox">
-            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" >Acepto los<a class="links" href="#" target="_blank">términos y condiciones</a> y la <a class="links" href="#" target="_blank">política de privacidad.</a>
-        </div>-->
-
         <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->    
 
         <div class = "links">
             <a href="#">Ya tengo una cuenta</a>
         </div>
         <div>
-            <input type = "submit" value="Registrarse" class="boton">
+            <input type = "submit" value="Registrarme" class="boton">
         </div>
     </form>
 </div>
 
-
+<script src = "/js/registerFormValidator.js"></script>
 
 <!--- FOOTER: PIE DE PÁGINA --->
 

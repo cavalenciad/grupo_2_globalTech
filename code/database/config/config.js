@@ -1,24 +1,24 @@
 module.exports = {
   "development": {
-    "username": "sql10522671",
-    "password": "QbtIqexaNA",
-    "database": "sql10522671",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "admin",
+    "password": "Juanma.1991",
+    "database": "sys",
+    "host": "database-globaltech.ccgyy5spftmr.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
     "logging": sql => sql.substr(0,20)
   },
   "test": {
-    "username": "sql10522671",
-    "password": "QbtIqexaNA",
-    "database": "sql10522671",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "admin",
+    "password": "Juanma.1991",
+    "database": "sys",
+    "host": "database-globaltech.ccgyy5spftmr.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
   },
   "production": {
-    "username": "sql10522671",
-    "password": "QbtIqexaNA",
-    "database": "sql10522671",
-    "host": "sql10.freemysqlhosting.net",
+    "username": "admin",
+    "password": "Juanma.1991",
+    "database": "sys",
+    "host": "database-globaltech.ccgyy5spftmr.us-east-1.rds.amazonaws.com",
     "dialect": "mysql",
   }
 }
