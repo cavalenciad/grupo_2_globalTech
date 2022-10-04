@@ -32,8 +32,122 @@ header {
   justify-content: space-around;
 }
 
+/* --------------- BODY  --------------- */
+
+body 
+{
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background: #23242a;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-bottom: 145px;
+}
+
 /*----ESTILOS ITEMS MENU----*/
 
+body{margin:0;padding:0;}
+.hamburger{
+	position:relative;
+  background-color:transparent;
+	left:0;
+	top:-9px;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#1EA1F2;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+   background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+  margin:0;padding:0;
+}
+.menuppal ul li { 
+  list-style: none;
+	text-align:center;
+	font-family: Verdadna, Arial, Helvetica;
+	color:#00B8D4;
+	font-size:1.5rem;
+	line-height:3em;
+	height:3em;
+	text-transform:none;
+	font-weight:bold;
+}
+.menuppal ul li a{
+  text-decoration:none;
+  color:#959595;
+}
+.menuppal ul li a:hover{
+  text-decoration:none;
+  color:#0d6efd;
+}
 
 .Snavbar a {
   font-size: 16px;
@@ -113,68 +227,253 @@ header {
   padding-bottom: 20px;
 }
 
- /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
-    
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
 
- .QimagenFondo {
-    background-color: rgb(23, 23, 23);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color:white;
-  }
+.sticky-social {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+}
 
-  .QformProducts{
-    width: 24%;
-    height: auto;
-    margin: 0 auto;
-    box-shadow: 0px 0px 6px #9d9d9d;
-    padding: 8px;
-    border-top: 4px solid #017bab;
-    border-radius: 8px;
-    margin-bottom: 145px;
-    margin-top: 90px;
-  }
+.social {
+  list-style: none;
+}
 
-/*-----------TITULO:CAJA FORMULARIO------------*/
-  
-.QformProducts h3{
-  margin: 0;
+.social li {
+  padding: 10px 10px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social li:hover {
+  margin-right: -20px;
+}
+
+.social li:hover .fa-brands {
+  margin-left: 10px;
+}
+
+.fa-brands {
   color: #fff;
-  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.fb {
+  background-color: #3C5A98;
+}
+
+.twitter {
+  background-color: #1EA1F2;
+}
+
+.insta {
+  background-color: #C13584;
+}
+
+.wpp {
+  background-color: #25D366;
+}
+
+
+  
+ /*----CAJA DE FORMULARIO----*/
+.Qerrors{
+  color: #ffffff;
+  font-size: 13px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+ .box {
+  display: flex;
+  margin: 0 auto;
+	position: relative;
+	width: 380px;
+	height: 1300px;
+	background: #1c1c1c;
+	border-radius: 8px;
+	overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.box::before {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 1300px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
+	animation: animate 6s linear infinite;
+}
+
+.box::after {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 1300px;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+
+@keyframes animate {
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+form {
+	position: absolute;
+	inset: 2px;
+	background: #28292d;
+	padding: 50px 40px;
+	border-radius: 8px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+  margin: 0;
   height: 40px;
   margin-bottom: 30px;
-  border-bottom: 1px solid;
-  font-size: 20px;
+	color: #00B8D4;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
 
-  }
+.inputBox {
+	position: relative;
+	width: 300px;
+	margin-top: 25px;
+}
 
-  /*----CAJA DE FORMULARIO----*/
-  .Qerrors{
-    color: #ffffff;
-    font-size: 13px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-  }
-  
-  .QcompletarFormulario input{
-    width: 82%;
-    border: 1px solid white;
-    margin-bottom: 15px;
-    color: black;
-    height: 34px;
-    padding: 11px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
+.inputBox input {
+	position: relative;
+  margin-bottom: 3px;
+	width: 82%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	outline: none;
+	box-shadow: none;
+	border: none;
+	color: white;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+	z-index: 10;
+}
+
+.inputBox span {
+	position: absolute;
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #8f8f8f;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+.inputBox input:valid  span,
+.inputBox input:focus  span 
+
+{
+	color: #00B8D4;
+	transform: translateX(0px) translateY(-34px);
+	font-size: 0.75em;
+}
+
+.inputBox label {
+	left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #8f8f8f;
+  letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+.Qimagenes{
+  left: 0;
+	padding: 20px 0px 10px;
+	pointer-events: none;
+	font-size: 1em;
+	color: #8f8f8f;
+  letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+.inputBox i {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #00B8D4;
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+
+.Qimagenes i{
+  position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #00B8D4;
+	border-radius: 4px;
+	overflow: hidden;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+	height: 44px;
+}
+
+
+input[type="submit"]{
+	border: none;
+	outline: none;
+	padding: 11px 25px;
+	background: #00B8D4;
+	cursor: pointer;
+	border-radius: 4px;
+	font-weight: 600;
+	width: 100px;
+	margin-top: 10px;
+}
+
+input[type="submit"]:active {
+	opacity: 0.8;
+}
+
 
   /*----CAJA DE CATEGORIAS----*/
+  
  .Qcategorias{
   padding: 5px ;
   margin-top: 15px;
@@ -187,7 +486,6 @@ header {
     width: 83%;
   }
   
- 
 
   /*-----BOTÓN DE CAJA----*/
 
@@ -203,20 +501,24 @@ header {
   .Qboton input{
     width: 130px;
     height: 40px;
-    background-color: #00b8d4;
+    background-color: #00B8D4;
     border: none;
-    color:#fff;
+    color:white;
     border-radius: 5px;
     font-size: 15px;
     font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 71px;
+    margin-right: -10px;
     transition: all 0.3s ease;
   }
 
   .Qboton input:hover{
-    background-color: #2962ff;
+    background-color: #2962FF;
   }
+
+ 
+  
+
 
   /*----PIE DE PÁGINA----*/
 
@@ -244,17 +546,17 @@ header {
 }
 
 .Sfooter h3 {
-  color: #2962FF;
+  color: #00B8D4;
   letter-spacing: 1px;
 }
 
 .Sfooter p {
   margin-top: 15px;
 }
+ 
 
 
-
-/*---- Media querys Movil---*/
+/*---- Media querie Movil---*/
 
 @media (min-width: 0px) and (max-width: 576px){
   
@@ -275,7 +577,6 @@ header img {
   color: #1EA1F2;
   letter-spacing: 2px;
 }
-
 
 /*--- CAJA DEL FORM ---*/
 
@@ -386,6 +687,10 @@ header img {
   
 /*----CABECERA DE LA PÁGINA----*/
   
+.hamburger{
+  display: none;
+}
+
 header img {
     width: 200px;
   }
