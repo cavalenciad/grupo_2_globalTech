@@ -434,7 +434,10 @@ input[type="submit"]:active {
 
 input#imagen {
   color:#fff;
-  width: 400px;
+  width: 390px;
+  padding: 5px;
+  border: 1px solid #00b8d4;
+  border-radius: 5px;
 }
 
 
