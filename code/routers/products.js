@@ -35,6 +35,30 @@ const validationCreate = [
     body ('precio').notEmpty().withMessage('Debes agregar el valor del producto'),
 ]
 
+const validationEdit = [
+    body ('name').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+    body ('description').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+    body('imagen').custom((value, {req}) => {
+        let file = req.files;
+        let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg'];
+
+        if (!file) {
+            throw new Error('Tienes que subir una imagen');
+        } else {
+            let fileExtension = path.extname(file.originalname);
+            if (!acceptedExtensions.includes(fileExtension)) {
+                throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+            }  
+        }
+
+        return true;
+    }),
+    body ('categoria').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+    body ('color1').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+    body ('color2').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+    body ('precio').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
+]
+
 
 router.get("/", productsController.list)
 router.get("/productDetail/:id", productsController.detail);
