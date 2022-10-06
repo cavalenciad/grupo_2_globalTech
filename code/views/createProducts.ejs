@@ -6,148 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
     <link href="/css/createProducts.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" >
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>FORMULARIO DE PRODUCTOS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
+    <title>CREACIÓN DE PRODUCTOS</title>
 </head>
 <body>
 
-<!-------- MENU DE NAVEGACIÓN -------->
-<%- include("./partials/header.ejs")%>
+    <!-------- MENU DE NAVEGACIÓN -------->
+    <%- include("./partials/header.ejs")%>
 
-<!-------- REDES SOCIALES -------->
-<%- include("./partials/social.ejs")%>
-    
+    <section class="background">
+
         <div class="box">
-            <form autocomplete="off" action="/productos/createProductos" method="post" enctype="multipart/fora">
-                <h3>Agregar Producto</h3>
-
- <!----CAJA DE FORMULARIO----->
-                <div class="inputBox">
-                    <input placeholder="Nombre" type="text" name="name" id="name" >
-                    <i></i>
+            <form action="/products/productDetail/createProducts" method="post" enctype="multipart/form-data">
+    
+                <!----CAJA DE FORMULARIO----->
+                
+                <div class="form">
+    
+                    <h2>Agregar Productos</h2>
+    
+                    <div class="inputBox">
+                        <input placeholder="Nombre" type="text" name="name">
+                        <i></i>
+                    </div>
                     <% if (locals.errors && errors.name) { %>
-                    <div class="Qerrors">
-                        <%= errors.name.msg %> 
-                    </div>
-                 <% } %>
-                </div>
-
-                <div class="inputBox">
-                    <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49" ></textarea>
-                    <i></i>
-                    <% if (locals.errors && errors.description) { %>
-                    <div class="Qerrors">
-                        <%= errors.description.msg %> 
-                    </div>
+                        <div class="Qerrors">
+                            <%= errors.name.msg %> 
+                        </div>
                     <% } %>
-                    
+    
+                    <div class="inputBox">
+                        <input placeholder="Descripción" type="text" name="description">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.description) { %>
+                        <div class="Qerrors">
+                            <%= errors.description.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 1</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 2</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 3</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 4</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputSelect">
+                        <select name="categoria">
+                            <% categoria.forEach(categoria => { %>
+                                <option value="<%= categoria.idCategoria %>"><%= categoria.Categoria %></option>
+                            <% }); %>
+                        </select>
+                    </div>
+    
+                    <div class="inputBox">
+                        <input placeholder="Color 1" type="text" name="color1">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.color1) { %>
+                        <div class="Qerrors">
+                            <%= errors.color1.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputBox">
+                        <input placeholder="Color2" type="text" name="color2">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.color2) { %>
+                        <div class="Qerrors">
+                            <%= errors.color2.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputBox">
+                        <input placeholder="Precio" type="text" name="precio">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.precio) { %>
+                        <div class="Qerrors">
+                            <%= errors.precio.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <!-------- BOTONES -------->
+    
+                    <input type="submit" value="Cargar Producto">
+    
                 </div>
     
-                <div class="Qimagenes">
-                    <label for='imagen'>Imagen 1</label>
-                    <input type="file" name="imagen" id="imagen">    
-                    <i></i>
-                    <% if (locals.errors && errors.imagen) { %>
-                    <div class="Qerrors">
-                        <%= errors.imagen.msg %> 
-                    </div>
-                   <% } %>  
-                    
-                </div>
-    
-                <div class="Qimagenes">
-                    <!-- <label for='imagen'>Imagen 2</label> -->
-                   <input placeholder="Imagen2" type="file" name="imagen" id="imagen">   
-                   <i></i>
-                   <% if (locals.errors && errors.imagen) { %>
-                    <div class="Qerrors">
-                        <%= errors.imagen.msg %> 
-                    </div>
-                   <% } %>  
-                    
-                </div>
-
-                <div class="Qimagenes">
-                    <label for='imagen'>Imagen 3</label>
-                   <input type="file" name="imagen" id="imagen">  
-                   <% if (locals.errors && errors.imagen) { %>
-                    <div class="Qerrors">
-                        <%= errors.imagen.msg %> 
-                    </div>
-                   <% } %>   
-                    <i></i>
-                </div>
-
-                <div class="Qimagenes">
-                    <label for='imagen'>Imagen 4</label>
-                   <input type="file" name="imagen" id="imagen">   
-                   <% if (locals.errors && errors.imagen) { %>
-                    <div class="Qerrors">
-                        <%= errors.imagen.msg %> 
-                    </div>
-                   <% } %>  
-                    <i></i>
-                </div>
-
-                <div class="inputBox">
-                    <label class="Qcategorias">Categoría</label>
-                    <select name="categoria" class="Qcategorias">
-
-                        <% categoria.forEach(categoria => { %>
-                            <option value="<%= categoria.idCategoria %>"><%= categoria.Categoria %></option>
-                        <% }); %>
-    
-                    </select>
-
-                    <i></i>
-                </div>
-
-                <div class="inputBox">
-                    <input placeholder="Color 1" type="text" name="color1" id="color" >
-                    <span>Color1</span>
-                <% if (locals.errors && errors.color1) { %>
-                    <div class="Qerrors">
-                        <%= errors.color1.msg %> 
-                    </div>
-                <% } %> 
-                    <i></i>
-                </div>
-
-                <div class="inputBox">
-                    <input placeholder="Color 2" type="text" name="color2" id="color" >
-                    <span>Color2</span>
-                <% if (locals.errors && errors.color2) { %>
-                    <div class="Qerrors">
-                        <%= errors.color2.msg %> 
-                    </div>
-                <% } %> 
-                    <i></i>
-                </div>
-
-                <div class="inputBox">
-                    <input placeholder="Precio" type="number" name="precio" id="precio" >
-                    <span>Precio</span>
-                <% if (locals.errors && errors.precio) { %>
-                    <div class="Qerrors">
-                        <%= errors.precio.msg %> 
-                    </div>
-                <% } %> 
-                    <i></i>
-                </div>
-
-     <!-------- BOTONES -------->
-                <div class="Qboton">
-                    <input type="submit" id="cargarProducto" value="Cargar Producto">
-                </div>
-
             </form>
+    
         </div>
     
-
+    </section>
+    
      <!--- FOOTER: PIE DE PÁGINA --->
      <%- include("./partials/footer.ejs")%>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </html>

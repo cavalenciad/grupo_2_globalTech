@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
-  font-family: roboto;
+  font-family: 'Poppins', 'roboto', sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -23,7 +24,8 @@ header {
   box-shadow: 0px 1px 5px #a3a3a3;
   background-color: #fff;
   position: fixed;
-  z-index: 1;
+  margin-bottom: 80px;
+  z-index: 100;
 }
 
 .Snavbar {
@@ -32,25 +34,7 @@ header {
   justify-content: space-around;
 }
 
-/* --------------- BODY  --------------- */
-
-body 
-{
-	display: flex;
-	align-items: center;
-	min-height: 100vh;
-	flex-direction: column;
-	background: #23242a;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-bottom: 145px;
-}
-
 /*----ESTILOS ITEMS MENU----*/
-
 body{margin:0;padding:0;}
 .hamburger{
 	position:relative;
@@ -149,6 +133,7 @@ body{margin:0;padding:0;}
   color:#0d6efd;
 }
 
+
 .Snavbar a {
   font-size: 16px;
   font-family: 'roboto';
@@ -227,298 +212,233 @@ body{margin:0;padding:0;}
   padding-bottom: 20px;
 }
 
-/* -------------- REDES SOCIALES FLOTANTES ------------ */
+ /*---- FORMULARIO PRODUCTOS----*/
 
-.sticky-social {
-  position: fixed;
-  top: 200px;
-  left: 0;
-  padding: 0px;
-  margin: 0px;
-}
-
-.social {
-  list-style: none;
-}
-
-.social li {
-  padding: 10px 10px;
-  font-size: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.social li:hover {
-  margin-right: -20px;
-}
-
-.social li:hover .fa-brands {
-  margin-left: 10px;
-}
-
-.fa-brands {
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.fb {
-  background-color: #3C5A98;
-}
-
-.twitter {
-  background-color: #1EA1F2;
-}
-
-.insta {
-  background-color: #C13584;
-}
-
-.wpp {
-  background-color: #25D366;
-}
-
-
-  
- /*----CAJA DE FORMULARIO----*/
 .Qerrors{
   color: #ffffff;
   font-size: 13px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  font-weight: bold;  
+  letter-spacing: 0.05em;
+  margin-bottom: 0px;
 }
-
- .box {
+    
+.background{
   display: flex;
-  margin: 0 auto;
-	position: relative;
-	width: 380px;
-	height: 1300px;
-	background: #1c1c1c;
-	border-radius: 8px;
-	overflow: hidden;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+  background-color: #23242a;
 }
 
-.box::before {
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 1300px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
-	animation: animate 6s linear infinite;
-}
-
-.box::after {
-	content: '';
-	z-index: 1;
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 380px;
-	height: 1300px;
-	transform-origin: bottom right;
-	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
-	animation: animate 6s linear infinite;
-	animation-delay: -3s;
-}
-
-@keyframes animate {
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(360deg);
-	}
-}
-
-form {
-	position: absolute;
-	inset: 2px;
-	background: #28292d;
-	padding: 50px 40px;
-	border-radius: 8px;
-	z-index: 2;
-	display: flex;
-	flex-direction: column;
-}
-
-h3 {
-  margin: 0;
-  height: 40px;
-  margin-bottom: 30px;
-	color: #00B8D4;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: 0.1em;
-}
-
-.inputBox {
-	position: relative;
-	width: 300px;
-	margin-top: 25px;
-}
-
-.inputBox input {
-	position: relative;
-  margin-bottom: 3px;
-	width: 82%;
-	padding: 20px 10px 10px;
-	background: transparent;
-	outline: none;
-	box-shadow: none;
-	border: none;
-	color: white;
-	font-size: 1em;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-	z-index: 10;
-}
-
-.inputBox span {
-	position: absolute;
-	left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #8f8f8f;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-}
-
-.inputBox input:valid  span,
-.inputBox input:focus  span 
-
+.box
 {
-	color: #00B8D4;
-	transform: translateX(0px) translateY(-34px);
-	font-size: 0.75em;
+  position: relative;
+  width: 500px;
+  height: 1050px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.inputBox label {
-	left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #8f8f8f;
-  letter-spacing: 0.05em;
-	transition: 0.5s;
-}
-
-.Qimagenes{
-  left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #8f8f8f;
-  letter-spacing: 0.05em;
-	transition: 0.5s;
-}
-
-.inputBox i {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #00B8D4;
-	border-radius: 4px;
-	overflow: hidden;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
-}
-
-.Qimagenes i{
+.box::before
+{
+  content: '';
   position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #00B8D4;
-	border-radius: 4px;
-	overflow: hidden;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
+  top: -50%;
+  left: -50%;
+  width: 500px;
+  height: 1050px;
+  background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
 }
-
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i {
-	height: 44px;
+.box::after
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 500px;
+  height: 1050px;
+  background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
 }
-
-
-input[type="submit"]{
-	border: none;
-	outline: none;
-	padding: 11px 25px;
-	background: #00B8D4;
-	cursor: pointer;
-	border-radius: 4px;
-	font-weight: 600;
-	width: 100px;
-	margin-top: 10px;
+@keyframes animate
+{
+  0%
+  {
+      transform:rotate(0deg)
+  }
+  100%
+  {
+      transform:rotate(360deg)
+  }
 }
-
-input[type="submit"]:active {
-	opacity: 0.8;
+.form
+{
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
 }
-
-
-  /*----CAJA DE CATEGORIAS----*/
-  
- .Qcategorias{
-  padding: 5px ;
-  margin-top: 15px;
-  margin-bottom: 15px;}
-
-  textarea {
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 4px;
-    width: 83%;
-  }
-  
-
-  /*-----BOTÓN DE CAJA----*/
-
-  .Qboton{
-    height: 35px;
-    margin: 25px 0;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-bottom: 22px;
-
-  }
-
-  .Qboton input{
-    width: 130px;
-    height: 40px;
-    background-color: #00B8D4;
-    border: none;
-    color:white;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 71px;
-    margin-right: -10px;
-    transition: all 0.3s ease;
-  }
-
-  .Qboton input:hover{
-    background-color: #2962FF;
-  }
-
- 
-  
-
+.form h2
+{
+  color: #00b8d4;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.inputBox input
+{
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+/* .inputBox textarea
+{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  font-size: 0.90em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: #00b8d4;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}*/
+.inputBox i
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #00b8d4;
+  border-radius: 4px;
+}
+/* .inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+  height: 44px;
+} */
+.inputImage
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+.inputImage label
+{   
+  font-size: 0.90em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+}
+input[type="file"]
+{  
+  border: 1px solid #00b8d4;
+  outline: none;
+  color: #8f8f8f;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+.inputSelect
+{
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+.inputSelect select
+{
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 1px solid #00b8d4;
+  border-radius: 4px;
+  margin-top: 25px;
+  width: 100%;
+  height: 32px;
+  font-size: 0.80em;
+  background-color: transparent;
+  letter-spacing: 0.05em;
+}
+.inputSelect select option
+{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  background-color: #28292d;
+  letter-spacing: 0.05em;
+}
+input[type="submit"]
+{
+  align-self: center;
+  border: none;
+  outline: none;
+  color: white;
+  background: #00b8d4;
+  padding: 11px 25px;
+  width: 200px;
+  margin-top: 25px;
+  border-radius: 4px;
+  font-size: 0.90em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+input[type="submit"]:hover
+{
+  background-color: #2962FF;
+}
 
   /*----PIE DE PÁGINA----*/
 
@@ -546,17 +466,17 @@ input[type="submit"]:active {
 }
 
 .Sfooter h3 {
-  color: #00B8D4;
+  color: #2962FF;
   letter-spacing: 1px;
 }
 
 .Sfooter p {
   margin-top: 15px;
 }
- 
 
 
-/*---- Media querie Movil---*/
+
+/*---- Media querys Movil---*/
 
 @media (min-width: 0px) and (max-width: 576px){
   
@@ -577,6 +497,7 @@ header img {
   color: #1EA1F2;
   letter-spacing: 2px;
 }
+
 
 /*--- CAJA DEL FORM ---*/
 
@@ -699,11 +620,17 @@ header img {
     display: none;
   }
 
-/*----ESTILOS USUARIOS----*/
-
+  /* ------- ESTILOS USUARIOS --------- */
+ 
   .dataUser i {
     display: none;
 }
+
+  /* ------- INPUTS --------- */
+
+  .QdivInterno{
+    margin-top: 10px;
+  }
 
  /*----PIE DE PÁGINA----*/
 
