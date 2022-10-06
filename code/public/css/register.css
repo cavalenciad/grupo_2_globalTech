@@ -348,6 +348,10 @@ scroll-page {
 
 }
 
+.is-invalid{
+  border-color: #800000;
+}
+
 form {
 	position: absolute;
 	inset: 2px;
@@ -522,6 +526,7 @@ input[type="submit"] {
 	font-weight: 600;
 	width: 150px;
 	margin-top: 10px;
+  color:#fff;
 }
 
 input[type="submit"]:active {

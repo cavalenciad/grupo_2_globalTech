@@ -8,6 +8,12 @@
   text-decoration: none;
 }
 
+
+
+.errorsDiv { 
+  border-color: #800000;
+}
+
 p{
   margin-bottom: 0 !important;
 }
@@ -230,58 +236,45 @@ a {
 
 /* -------------- REDES SOCIALES FLOTANTES ------------ */
 
-.sticky-social {
-  position: fixed;
-  top: 200px;
+.sticky-social{
+  position:fixed;
+  top:200px;
   left: 0;
-  padding: 0px;
-  margin: 0px;
+  padding:0px;
+  margin:0px;
+  z-index: 1;
+}
+.social{
+  list-style:none;
+}
+.social li{
+  padding:10px 10px;
+  font-size:15px;
+  transition:all 0.3s ease-in-out;
+}
+.social li:hover{
+    margin-right:-20px;
+}
+.social li:hover .fa-brands{
+    margin-left:10px;
 }
 
-.social {
-  list-style: none;
-  position: absolute;
-  top: 441px;
-  display: flex;
-
- 
+.fa-brands{
+  color:#fff;
+  transition:all 0.3s ease-in-out;
 }
-
-.social li {
-  padding: 10px 10px;
-  font-size: 15px;
-  transition: all 0.3s ease-in-out;
+.fb{
+  background-color:#3C5A98;
 }
-
-.social li:hover {
-  margin-right: -20px;
+.twitter{
+    background-color:#1EA1F2;
 }
-
-.social li:hover .fa-brands {
-  margin-left: 10px;
+.insta{
+    background-color:#C13584;
 }
-
-.fa-brands {
-  color: #fff;
-  transition: all 0.3s ease-in-out;
+.wpp{
+    background-color:#25D366;
 }
-
-.fb {
-  background-color: #3C5A98;
-}
-
-.twitter {
-  background-color: #1EA1F2;
-}
-
-.insta {
-  background-color: #C13584;
-}
-
-.wpp {
-  background-color: #25D366;
-}
-
 
 
 
@@ -719,9 +712,7 @@ form a {
   }
 
   /* -------------- REDES SOCIALES FLOTANTES ------------ */
-  .social {
-    display: flex;
-  }
+ 
 
   .social li {
     padding: 10px 10px;
