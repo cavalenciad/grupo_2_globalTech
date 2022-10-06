@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 *{
-  font-family: roboto;
+  font-family: 'Poppins', 'roboto', sans-serif;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -23,7 +24,8 @@ header {
   box-shadow: 0px 1px 5px #a3a3a3;
   background-color: #fff;
   position: fixed;
-  z-index: 1;
+  margin-bottom: 80px;
+  z-index: 100;
 }
 
 .Snavbar {
@@ -210,102 +212,233 @@ body{margin:0;padding:0;}
   padding-bottom: 20px;
 }
 
- /*----BAACKGROUND FORMULARIOPRODUCTOS----*/
+ /*---- FORMULARIO PRODUCTOS----*/
+
+.Qerrors{
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;  
+  letter-spacing: 0.05em;
+  margin-bottom: 0px;
+}
     
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150vh;
+  background-color: #23242a;
+}
 
- .QimagenFondo {
-    background-color: rgb(23, 23, 23);
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color:white;
+.box
+{
+  position: relative;
+  width: 500px;
+  height: 1050px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box::before
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 500px;
+  height: 1050px;
+  background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+.box::after
+{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 500px;
+  height: 1050px;
+  background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+@keyframes animate
+{
+  0%
+  {
+      transform:rotate(0deg)
   }
-
-  .QformProducts{
-    width: 24%;
-    height: auto;
-    margin: 0 auto;
-    box-shadow: 0px 0px 6px #9d9d9d;
-    padding: 8px;
-    border-top: 4px solid #017bab;
-    border-radius: 8px;
-    margin-bottom: 145px;
-    margin-top: 90px;
+  100%
+  {
+      transform:rotate(360deg)
   }
-
-/*-----------TITULO:CAJA FORMULARIO------------*/
-  
-.QformProducts h3{
-  margin: 0;
-  color: #fff;
+}
+.form
+{
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.form h2
+{
+  color: #00b8d4;
+  font-weight: 500;
   text-align: center;
-  height: 40px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid;
-  font-size: 20px;
-
-  }
-
-  /*----CAJA DE FORMULARIO----*/
-
-  .QcompletarFormulario input{
-    width: 82%;
-    border: 1px solid white;
-    margin-bottom: 15px;
-    color: black;
-    height: 34px;
-    padding: 11px 10px;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-
-  /*----CAJA DE CATEGORIAS----*/
- .Qcategorias{
-  padding: 5px ;
-  margin-top: 15px;
-  margin-bottom: 15px;}
-
-  textarea {
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 4px;
-  }
-  
- 
-
-  /*-----BOTÓN DE CAJA----*/
-
-  .Qboton{
-    height: 35px;
-    margin: 25px 0;
-    padding: 10px;
-    padding-bottom: 50px;
-    margin-bottom: 22px;
-
-  }
-
-  .Qboton input{
-    width: 130px;
-    height: 40px;
-    background-color: #00b8d4;
-    border: none;
-    color:#fff;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-  }
-
-  .Qboton input:hover{
-    background-color: #2962ff;
-  }
+  letter-spacing: 0.1em;
+}
+.inputBox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+.inputBox input
+{
+  position: relative;
+  width: 100%;
+  padding: 10px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+/* .inputBox textarea
+{
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  font-size: 0.90em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+  color: #00b8d4;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}*/
+.inputBox i
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #00b8d4;
+  border-radius: 4px;
+}
+/* .inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+  height: 44px;
+} */
+.inputImage
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+.inputImage label
+{   
+  font-size: 0.90em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+}
+input[type="file"]
+{  
+  border: 1px solid #00b8d4;
+  outline: none;
+  color: #8f8f8f;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+.inputSelect
+{
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+.inputSelect select
+{
+  position: relative;
+  text-align: center;
+  color: white;
+  border: 1px solid #00b8d4;
+  border-radius: 4px;
+  margin-top: 25px;
+  width: 100%;
+  height: 32px;
+  font-size: 0.80em;
+  background-color: transparent;
+  letter-spacing: 0.05em;
+}
+.inputSelect select option
+{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  background-color: #28292d;
+  letter-spacing: 0.05em;
+}
+input[type="submit"]
+{
+  align-self: center;
+  border: none;
+  outline: none;
+  color: white;
+  background: #00b8d4;
+  padding: 11px 25px;
+  width: 200px;
+  margin-top: 25px;
+  border-radius: 4px;
+  font-size: 0.90em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+input[type="submit"]:hover
+{
+  background-color: #2962FF;
+}
 
   /*----PIE DE PÁGINA----*/
 

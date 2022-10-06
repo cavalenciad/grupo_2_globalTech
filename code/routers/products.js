@@ -39,27 +39,11 @@ const validationCreate = [
 const validationEdit = [
     body ('name').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
     body ('description').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
-    body('imagen').custom((value, {req}) => {
-        let file = req.files;
-        let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg'];
-
-        if (!file) {
-            throw new Error('Tienes que subir una imagen');
-        } else {
-            let fileExtension = path.extname(file.originalname);
-            if (!acceptedExtensions.includes(fileExtension)) {
-                throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
-            }  
-        }
-
-        return true;
-    }),
     body ('categoria').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
     body ('color1').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
     body ('color2').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
     body ('precio').notEmpty().withMessage('Recuerda no dejar este campo vacío'),
 ]
-
 
 router.get("/", productsController.list)
 router.get("/productDetail/:id", productsController.detail);
@@ -74,7 +58,7 @@ router.get("/cart", productsController.productCart);
 
 router.post("/productDetail/createProducts", upload.array('imagen', 4), validationCreate, productsController.create);
 
-router.put("/productDetail/:id/editProducts", upload.array('imagen', 4), productsController.edit);
+router.put("/productDetail/:id/editProducts", upload.array('imagen', 4), validationEdit, productsController.edit);
 
 router.delete("/productDetail/:id", productsController.destroy);
 

@@ -9,79 +9,142 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
       integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
       crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
-    <title>FORMULARIO DE PRODUCTOS</title>
+    <title>EDICIÓN DE PRODUCTOS</title>
 </head>
 <body>
 
-<!-------- MENU DE NAVEGACIÓN -------->
-<%- include("./partials/header.ejs")%>
+    <!-------- MENU DE NAVEGACIÓN -------->
+    <%- include("./partials/header.ejs")%>
 
+    <section class="background">
 
-    <div class="QimagenFondo">
-        <form action="/products/productDetail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data" class="QformProducts">
-            <h3>Editar productos</h3>
-            
-            <!----CAJA DE FORMULARIO----->
-            
-            <div class="QcompletarFormulario">
-                <input placeholder="Nombre" type="text" name="name" id="name" value="<%= producto.nombre%>" required>
-            </div>
-            
-            <div class="QcompletarFormulario">
-                <textarea placeholder="Descripción" name="description" id="description" rows="8" cols="49"><%= producto.descripcion%></textarea>
-            </div>
-            
-            <div class="QimagenFormulario">
-            <div class="QdivInterno">
-                <label class="Qimagenes">Imagen 1</label>
-                <input type="file" name="imagen" id="imagen">
+        <div class="box">
+            <form action="/products/productDetail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data">
+    
+                <!----CAJA DE FORMULARIO----->
                 
-            </div>
-
-            <div class="QdivInterno">
-                <label class="Qimagenes">Imagen 2</label>
-                <input type="file" name="imagen" id="imagen">
-            </div>
-
-            <div class="QdivInterno">
-                <label class="Qimagenes">Imagen 3</label>
-                <input type="file" name="imagen" id="imagen">
-            </div>
-
-            <div class="QdivInterno">
-                <label class="Qimagenes">Imagen 4</label>
-                <input type="file" name="imagen" id="imagen">
-            </div>
-            </div>
-
-            <div class="QcompletarFormulario">
-                <label class="Qcategorias">Categoría</label>
-                <select name="categoria" class="Qcategorias">
-                    <% categoria.forEach(categoria => { %>
-                        <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
-                    <% }); %>
-                </select>
-            </div>
-
-            <div class="QcompletarFormulario">
-                <input placeholder="Color 1" type="text" name="color1" id="color1" value="<%= producto.color1%>" required>
-            </div>
-
-            <div class="QcompletarFormulario">
-                <input placeholder="Color 2" type="text" name="color2" id="color2" value="<%= producto.color2%>" required>
-            </div>
-
-            <div class="QcompletarFormulario">
-                <input placeholder="Precio" type="text" name="precio" id="precio" value="<%= producto.precio%>" required>
-            </div>
-
-            <!-------- BOTONES -------->
-
-            <div class="Qboton">
-                <input type="submit" id="Actualizar" value="Editar">
-            </div>
-        </form>
-    </div>
+                <div class="form">
+    
+                    <h2>Editar Productos</h2>
+    
+                    <div class="inputBox">
+                        <input placeholder="Nombre" type="text" name="name" value="<%= producto.nombre%>">
+                        <i></i>
+                    </div>
+                    <% if (locals.errors && errors.name) { %>
+                        <div class="Qerrors">
+                            <%= errors.name.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputBox">
+                        <input placeholder="Descripción" type="text" name="description" value="<%= producto.descripcion%>">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.description) { %>
+                        <div class="Qerrors">
+                            <%= errors.description.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 1</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 2</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 3</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputImage">
+                        <div>
+                            <label for="imagen">Imagen 4</label>
+                            <input type="file" name="imagen">
+                            <% if (locals.errors && errors.imagen) { %>
+                                <div class="Qerrors">
+                                    <%= errors.imagen.msg %> 
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+    
+                    <div class="inputSelect">
+                        <select name="categoria">
+                            <% categoria.forEach(categoria => { %>
+                                <option value="<%= categoria.idCategoria %>" <% if (producto.categorias && producto.categorias.idCategoria === categoria.idCategoria) { %> selected <% }; %>><%= categoria.Categoria %></option>
+                            <% }); %>
+                        </select>
+                    </div>
+    
+                    <div class="inputBox">
+                        <input placeholder="Color 1" type="text" name="color1" value="<%= producto.color1%>">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.color1) { %>
+                        <div class="Qerrors">
+                            <%= errors.color1.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputBox">
+                        <input placeholder="Color2" type="text" name="color2" value="<%= producto.color2%>">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.color2) { %>
+                        <div class="Qerrors">
+                            <%= errors.color2.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <div class="inputBox">
+                        <input placeholder="Precio" type="text" name="precio" value="<%= producto.precio%>">
+                        <i></i>                        
+                    </div>
+                    <% if (locals.errors && errors.precio) { %>
+                        <div class="Qerrors">
+                            <%= errors.precio.msg %> 
+                        </div>
+                    <% } %>
+    
+                    <!-------- BOTONES -------->
+    
+                    <input type="submit" value="Editar Producto">
+    
+                </div>
+    
+            </form>
+    
+        </div>
+    
+    </section>
+    
      <!--- FOOTER: PIE DE PÁGINA --->
      <%- include("./partials/footer.ejs")%>
 </body>
