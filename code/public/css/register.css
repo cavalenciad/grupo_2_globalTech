@@ -285,6 +285,13 @@ scroll-page {
 
 /*----Caja de registro-----*/
 
+#errorsDiv p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
 .jerrors {
   color: #ffffff;
   font-size: 13px;

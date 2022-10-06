@@ -9,11 +9,6 @@
 }
 
 
-
-.errorsDiv { 
-  border-color: #800000;
-}
-
 p{
   margin-bottom: 0 !important;
 }
@@ -279,6 +274,13 @@ a {
 
 
 /*----Caja de registro-----*/
+
+#errorsDiv p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
 
 .jerrors {
   color: #ffffff;

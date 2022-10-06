@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             errorsDiv.innerHTML = "";
             errorsArray.forEach(error =>{
                 errorsDiv.hidden = false;
-                errorsDiv.innerHTML += `<p>- ${error} </p>`
+                errorsDiv.innerHTML += `<p> ${error} </p>`
             })
         }
         console.log(errorsArray);
