@@ -1,39 +1,33 @@
-document.addEventListener('DOMcontentLoaded', (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
+ 
+    const userLoginForm = document.querySelector("#userLoginForm");
 
-   const userLoginForm = document.querySelector("#userLoginForm.login")
-
-   userLoginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    let errors = [];
-
-    let inputEmail = document.querySelector('input.email');
-
-    if(inputEmail.value === '') {
-        error.push('El campo de Email tiene que estar completo');
-    }else if(inputEmail.value.length < 3) {
-        errors.push('El campo de Email tiene que tenes al menos 3 caracteres')
-    }
-
-    let inputPassword = document.querySelector('input.nombreUser');
-
-    if(inputPassword.value === '') {
-        errors.push('El campo de Contraseña tiene que estar completo');
-    }else if(inputPassword.value.length < 3) {
-        errors.push('El campo de Contraseña tiene que tenes al menos 3 caracteres')
-    }
-
-    if(errors.length > 0) {
-        e.preventDefault();
-
-        let ulErrorres =document.querySelector("#errorsRegister ul");
-        for (let i = 0; i < errors.length; i++){
+    userLoginForm.addEventListener("submit", (event) =>{
+        const errorsArray = [];
+        event.preventDefault();
+        Array.from(userLoginForm.elements).forEach(element =>{
             
-            ulErrorres.innerHTML += `<ul>${errors}</ul>`
+            if(element.type !== "submit"){
+                if(element.value === "" || element.value === null || element.value === undefined){
+                    element.classList.add("is-invalid")
+                    errorsArray.push(` El campo <strong>${element.dataset.label}</strong> debe ser diligenciado `)
+                }else{
+                    element.classList.remove("is-invalid")
+                }
+            }
+
+        })
+        if(errorsArray.length === 0){
+            userLoginForm.submit();
+        }else{
+            const errorsDiv = document.getElementById("errorsDiv");
+            errorsDiv.innerHTML = "";
+            errorsArray.forEach(error =>{
+                errorsDiv.hidden = false;
+                errorsDiv.innerHTML += `<p>- ${error} </p>`
+            })
         }
-    }
-
-
-    });
+        console.log(errorsArray);
+    })
 
 });

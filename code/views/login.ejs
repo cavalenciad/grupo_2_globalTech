@@ -24,9 +24,12 @@
 
         <h2>Iniciar Sesión</h2>
 
-        <div class="inputBox">
+        <div hidden id="errorsDiv">
 
-            <input type="text" name="email" id="email"  placeholder="Email">
+        </div>
+        <div class="inputBox">
+           
+            <input type="text" name="email" id="email"  placeholder="Email" data-label="Email">
             <i></i>
         </div>
         <% if (locals.errors && errors.email) { %>
@@ -36,8 +39,8 @@
         <% } %>
 
         <div class="inputBox">
-
-            <input type="password"  name="contrasena" id="contrasena"  placeholder="Contraseña">
+         
+            <input type="password"  name="contrasena" id="contrasena"  placeholder="Contraseña" data-label="Contraseña">
             <i></i>
             <!-- Validadores de error de campo -->
         </div>
@@ -49,12 +52,12 @@
         <% } %>
 
         <div class="links">
-            <a href="/user/register/"> ¿Aún no tiene una cuenta? </a>
+            <a href="/user/register"> ¿Aún no tiene una cuenta? </a>
             <a href="#"></a>
         </div>
 
         <div class="jRecuerdame">
-            <input  class="jCheckbox" type="checkbox" name="jRecuerdame" id="jRecuerdame">Recuérdame
+            <input  class="jCheckbox" type="checkbox" name="jRecuerdame" id="jRecuerdame" >Recuérdame
         </div>
 
 
