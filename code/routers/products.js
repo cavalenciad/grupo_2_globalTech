@@ -23,10 +23,11 @@ const validationCreate = [
     body('imagen').custom((value, {req}) => {
         let file = req.files;
 
-        if (file.length<4) {
+        if (file && file.length < 4) {
+            throw new Error('Tienes que subir una imagen');
+        }else if(!file){
             throw new Error('Tienes que subir una imagen');
         }
-
         return true;
     }),
     body ('categoria').notEmpty().withMessage('Debes seleccionar la categoría correcta del producto'),
