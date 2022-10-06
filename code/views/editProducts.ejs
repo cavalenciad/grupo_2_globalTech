@@ -19,16 +19,19 @@
     <section class="background">
 
         <div class="box">
-            <form action="/products/productDetail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data">
+            <form action="/products/productDetail/<%= producto.idProductos%>/editProducts?_method=put" method="post" enctype="multipart/form-data" id="editProductsValidator">
     
                 <!----CAJA DE FORMULARIO----->
                 
                 <div class="form">
     
                     <h2>Editar Productos</h2>
+
+                    <div hidden id="errorsDiv">
+                    </div>
     
                     <div class="inputBox">
-                        <input placeholder="Nombre" type="text" name="name" value="<%= producto.nombre%>">
+                        <input placeholder="Nombre" type="text" name="name" value="<%= producto.nombre%>" data-label="Nombre">
                         <i></i>
                     </div>
                     <% if (locals.errors && errors.name) { %>
@@ -38,7 +41,7 @@
                     <% } %>
     
                     <div class="inputBox">
-                        <input placeholder="Descripción" type="text" name="description" value="<%= producto.descripcion%>">
+                        <input placeholder="Descripción" type="text" name="description" value="<%= producto.descripcion%>" data-label="Descripción">
                         <i></i>                        
                     </div>
                     <% if (locals.errors && errors.description) { %>
@@ -104,7 +107,7 @@
                     </div>
     
                     <div class="inputBox">
-                        <input placeholder="Color 1" type="text" name="color1" value="<%= producto.color1%>">
+                        <input placeholder="Color 1" type="text" name="color1" value="<%= producto.color1%>" data-label="Color 1">
                         <i></i>                        
                     </div>
                     <% if (locals.errors && errors.color1) { %>
@@ -114,7 +117,7 @@
                     <% } %>
     
                     <div class="inputBox">
-                        <input placeholder="Color2" type="text" name="color2" value="<%= producto.color2%>">
+                        <input placeholder="Color2" type="text" name="color2" value="<%= producto.color2%>" data-label="Color 2">
                         <i></i>                        
                     </div>
                     <% if (locals.errors && errors.color2) { %>
@@ -124,7 +127,7 @@
                     <% } %>
     
                     <div class="inputBox">
-                        <input placeholder="Precio" type="text" name="precio" value="<%= producto.precio%>">
+                        <input placeholder="Precio" type="text" name="precio" value="<%= producto.precio%>" data-label="Precio">
                         <i></i>                        
                     </div>
                     <% if (locals.errors && errors.precio) { %>
@@ -147,5 +150,8 @@
     
      <!--- FOOTER: PIE DE PÁGINA --->
      <%- include("./partials/footer.ejs")%>
+
+    <script src="/js/editProductsValidator.js"></script>
+
 </body>
 </html>
