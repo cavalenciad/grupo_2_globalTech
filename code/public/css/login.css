@@ -284,17 +284,12 @@ a {
 
 .jerrors {
   color: #ffffff;
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 15px;
   font-weight: bold;
   letter-spacing: 0.5px;
-  display: flex;
-  justify-content: start;
-  padding-top: 8px;
- 
+  padding-top: 8px; 
 }
-
-
 
 .box {
 	position: relative;
@@ -670,10 +665,6 @@ form a {
     width: 75%;
   }
 
-  .jerrors {
-    position: relative;
-    left: 15px;
-  }
 
 
   .jRecuerdame {
@@ -755,11 +746,6 @@ form a {
   }
 
  
-  .jerrors {
-    padding-top: 7px;
-    position: relative;
-    left: 26px;
-  }
 
   .links a {
     position: relative;

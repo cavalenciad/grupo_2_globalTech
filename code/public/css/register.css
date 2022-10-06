@@ -292,12 +292,15 @@ scroll-page {
   letter-spacing: 1px;
 }
 
-.jerrors {
+.Merrors {
   color: #ffffff;
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 11px;
+  margin-bottom: 5px;
   font-weight: bold;
   letter-spacing: 0.5px;
+  display: flex;
+  justify-content: start;
+  padding-top: 8px; 
 }
 
 
