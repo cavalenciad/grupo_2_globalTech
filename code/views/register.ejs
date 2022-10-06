@@ -26,16 +26,15 @@
 
   <div class = "box">
     
-    <form class="register" action="/user/register" enctype="multipart/form-data" method="post" id="registerForm">
+    <form  action="/user/register" enctype="multipart/form-data" method="post" id="userRegisterForm">
         <h2>Regístrate en Global Tech</h2>
-        <div class = "errors" id="errorsRegister">
-            <ul>
-    
-            </ul>
+        
+        <div hidden id="errorsDiv">
+
         </div>
         
         <div class="inputBox">
-            <input name="email" type="email" placeholder="Email"> <!-- value= "<%= locals.oldData ? oldData.email : null%>"> -->
+            <input id="email" name="email" type="text" placeholder="Email" data-label="Email"> 
             <i></i>
         </div>
         <% if (locals.errors && errors.email) { %>
@@ -45,7 +44,7 @@
         <% } %>
         
         <div class="inputBox">
-            <input name="nombre" type="text" placeholder="Nombre" value= "<%= locals.oldData ? oldData.nombre : null%>">
+            <input id="nombre" name="nombre" type="text" placeholder="Nombre" data-label="Nombre">
             <i></i>
         </div>
         <% if (locals.errors && errors.nombre) { %>
@@ -56,7 +55,7 @@
         
         
         <div class="inputBox">
-            <input name="apellido" type="text" placeholder="Apellidos" value= "<%= locals.oldData ? oldData.apellido : null%>">
+            <input id="apellido" name="apellido" type="text" placeholder="Apellidos" data-label="Apellidos">
             <i></i>
         </div>
         <% if (locals.errors && errors.apellido) { %>
@@ -67,7 +66,7 @@
         
         
         <div class="inputBox">
-            <input name="nombreUser" type="text" placeholder="Nombre de Usuario"  value= "<%= locals.oldData ? oldData.nombreUser : null%>">
+            <input id="nombreUser" name="nombreUser" type="text" placeholder="Nombre de Usuario" data-label="Nombre de Usuario">
             <i></i>
         </div>
         <% if (locals.errors && errors.nombreUser) { %>
@@ -80,7 +79,7 @@
         <!--SELECCIONAR PAÍS-->
         
             <div>
-            <select class="inputCountry" name="pais" >
+            <select id="inputCountry" class="inputCountry" name="pais">
                 <option disabled selected>Seleccionar país</option>
                 <option value="Colombia">Colombia</option>
                 <option value="Argentina">Argentina</option>
@@ -111,20 +110,16 @@
             </select>
             <i></i>
             </div>
-            <% if (locals.errors && errors.pais) { %>
-                <div class="Merrors">
-                    <%= errors.pais.msg %> 
-                </div>
-            <% } %>
+          
       
 
         <!--IMAGEN-->
 
         <div class="inputTerms">
         <label class="Mimagenes"></label>
-          <input class="file" type="file" name="imagen" placeholder="Imagen de Perfil" id="imagen">
+          <input id="imagen"class="file" type="file" name="imagen" placeholder="Imagen de Perfil" id="imagen" data-label="Imagen">
             <i></i>
-        </div>
+        </div> 
         <% if (locals.errors && errors.imagen) { %>
             <div class="Merrors">
              <%= errors.imagen.msg %> 
@@ -134,7 +129,7 @@
         <!--CONTRASEÑA-->    
 
         <div class="inputBox">
-            <input name="contrasena" type="password" placeholder="Contraseña" >
+            <input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" data-label="Contraseña" >
             <i></i>
         </div>
         <% if (locals.errors && errors.contrasena) { %>
@@ -146,21 +141,21 @@
         <!--ACEPTO TÉRMINOS-->
 
         <div class="inputBox">
-            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond" >Acepto los <a class="links" href="#" target="_blank">términos y condiciones</a> y la <a class="links" href="#" target="_blank">política de privacidad.</a>
+            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond">Acepto los <a class="links" href="#" target="_blank">términos y condiciones</a> y la <a class="links" href="#" target="_blank">política de privacidad.</a>
         </div>
 
         <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->    
 
         <div class = "links">
-            <a href="#">Ya tengo una cuenta</a>
+            <a href="/user/login">Ya tengo una cuenta</a>
         </div>
         <div>
-            <input type = "submit" value="Registrarse" class="boton">
+            <input type="submit" value="Registrarse"></input> 
         </div>
     </form>
 </div>
 
-
+<script src="/js/registerFormValidator.js"></script>
 
 <!--- FOOTER: PIE DE PÁGINA --->
 
