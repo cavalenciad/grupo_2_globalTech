@@ -305,7 +305,7 @@ a {
 	overflow: hidden;
   margin-bottom: 150px;
   margin-top: 150px;
-  
+  margin-left: 30px;
   
 
 }
@@ -354,7 +354,7 @@ form {
   height: 416px;
 	inset: 2px;
 	background: #28292d;
-	padding: 35px 7px;
+	padding: 35px 32px;
 	border-radius: 8px;
 	z-index: 2;
 	display: flex;
@@ -742,11 +742,15 @@ form a {
     height: 421px; 
   }
 
+  .inputBox i {
+    width:100%;
+  }
+
   form {
     width: 99%;
     padding-top: 34px;
     padding-right: 20px;
-    padding-left: 38px;
+    padding-left: 15px;
   }
 
   h2 {
