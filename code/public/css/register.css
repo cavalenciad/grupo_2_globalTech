@@ -34,7 +34,7 @@ body
 {
 	display: flex;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 182vh;
 	flex-direction: column;
 	background: #23242a;
   /*background-size: cover;
@@ -292,12 +292,15 @@ scroll-page {
   letter-spacing: 1px;
 }
 
-.jerrors {
+.Merrors {
   color: #ffffff;
-  font-size: 13px;
-  margin-bottom: 15px;
+  font-size: 11px;
+  margin-bottom: 5px;
   font-weight: bold;
   letter-spacing: 0.5px;
+  display: flex;
+  justify-content: start;
+  padding-top: 8px; 
 }
 
 
@@ -305,15 +308,15 @@ scroll-page {
 .box 
 {
 	position: absolute;
-	width: 500px;
-	height: 1000px;
+	width: 400px;
+	height: 845px;
 	background: #1c1c1c;
 	border-radius: 8px;
 	overflow: hidden;
-  margin-bottom: 200px;
-  margin-top: 200px;
-  
-
+  margin-top: 140px;
+  margin-left: 33px;
+  align-items: center;
+  z-index: 1;
 }
 .box::before 
 {
@@ -322,8 +325,8 @@ scroll-page {
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 500px;
-	height: 1000px;
+	width: 415px;
+	height: 956px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
 	animation: animate 6s linear infinite;
@@ -335,8 +338,8 @@ scroll-page {
 	position: absolute;
 	top: -50%;
 	left: -50%;
-	width: 500px;
-	height: 1000px;
+	width: 415px;
+	height: 956px;
 	transform-origin: bottom right;
 	background: linear-gradient(0deg,transparent,#00B8D4,#00B8D4);
 	animation: animate 6s linear infinite;
@@ -360,15 +363,17 @@ scroll-page {
 }
 
 form {
-	position: absolute;
+	
 	inset: 2px;
 	background: #28292d;
 	padding: 50px 40px;
 	border-radius: 8px;
 	z-index: 2;
+  margin-left: -9px;
 	display: flex;
 	flex-direction: column;
   align-items: center;
+  position: absolute;
 }
 
 h2 {
@@ -389,6 +394,7 @@ h2 {
 .inputBox input {
 	position: relative;
 	width: 100%;
+  left: 20px;
 	padding: 20px 10px 10px;
 	background: transparent;
 	outline: none;
@@ -433,10 +439,11 @@ option{
   color: #fff;
   line-height: 1.3;
   padding: .4em 1.4em .3em .8em;
-  width: 400px;
+  width: 340px;
   max-width: 100%; 
   box-sizing: border-box;
-  margin: 40px;
+  margin: 35px;
+  margin-left: 15px;
   border: 1px solid #00b8d4;
   box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
   border-radius: .3em;
@@ -473,9 +480,9 @@ option{
 
 .inputBox i {
 	position: absolute;
-	left: 0;
+	left: 20px;
 	bottom: 0;
-	width: 100%;
+	width: 340px;
 	height: 2px;
 	background: #00B8D4;
 	border-radius: 4px;
@@ -542,8 +549,10 @@ input[type="submit"]:active {
 
 input#imagen {
   color:#fff;
-  width: 390px;
+  width: 330px;
   padding: 5px;
+  position: relative;
+  left: -9px;
   border: 1px solid #00b8d4;
   border-radius: 5px;
 }
@@ -572,7 +581,7 @@ input#imagen {
   transition: all 0.3s;
 }
 
-button:hover {
+.boton:hover {
   transform: scale(0.99);
   background-color: #2962FF;
 }
@@ -694,9 +703,9 @@ form a {
   }
 
   form {
-    width: 80%;
+    width: 79%;
     position: relative;
-    left: 0%;
+    left: 2.7%;
     bottom: 300px;
   }
 }
@@ -722,7 +731,7 @@ form a {
   }
 
   form {
-    width: 500px;
+    width: 452px;
     position: relative;
     left: 0%;
     bottom: 300px;
@@ -744,6 +753,36 @@ form a {
 /*---Media Querie Desktop---*/
 
 @media (min-width: 900px) and (max-width: 1920px) {
+
+body {
+  min-height: 176vh;
+}
+
+
+
+
+.box{
+  height: 820px;
+  width: 410px;
+
+}
+
+.box::after {
+  height: 820px;
+  width: 410px;
+  
+}
+
+.box::before {
+  height: 820px;
+  width: 410px;
+  
+}
+
+
+
+
+}
 
   /* -------------- CABECERA ------------- */
   
@@ -803,4 +842,3 @@ form a {
    
   }
 
-}
