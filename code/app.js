@@ -14,6 +14,7 @@ const rutaProducts = require("./routers/products.js");
 /* ----------Rutas Api ----------------------- */ 
 
 const rutaApiProducts = require("./routers/api/apiProducts.js");
+const rutaApiUsers = require("./routers/api/apiUsers.js");
 
 /* ---- IMPLEMENTANDO MOTOR DE PLANTILLAS ----- */
 app.set("view engine", "ejs");
@@ -35,7 +36,7 @@ app.use("/", rutaMain);
 app.use("/", rutaUser);
 app.use("/products", rutaProducts);
 app.use("/", rutaApiProducts);
-
+app.use("/", rutaApiUsers);
 
 app.use(express.static("./public"));
 

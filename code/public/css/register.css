@@ -369,7 +369,6 @@ form {
 	padding: 50px 40px;
 	border-radius: 8px;
 	z-index: 2;
-  margin-left: -9px;
 	display: flex;
 	flex-direction: column;
   align-items: center;
