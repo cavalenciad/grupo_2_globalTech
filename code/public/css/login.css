@@ -300,7 +300,7 @@ a {
 	overflow: hidden;
   margin-bottom: 150px;
   margin-top: 150px;
-  
+  margin-left: 30px;
   
 
 }
@@ -349,7 +349,7 @@ form {
   height: 416px;
 	inset: 2px;
 	background: #28292d;
-	padding: 35px 7px;
+	padding: 35px 15px;
 	border-radius: 8px;
 	z-index: 2;
 	display: flex;
@@ -410,7 +410,7 @@ h2 {
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	width: 85%;
+	width: 100%;
 	height: 2px;
 	background: #00B8D4;
 	border-radius: 4px;
@@ -648,7 +648,7 @@ form a {
     width: 98%;
     height: 415px;
     bottom: 300px;
-    padding-left: 38px;
+    padding-left: 5px;
   }
 
   h2 {
@@ -662,7 +662,7 @@ form a {
   }
 
   .inputBox i {
-    width: 75%;
+    width: 100%;
   }
 
 
@@ -733,11 +733,15 @@ form a {
     height: 421px; 
   }
 
+  .inputBox i {
+    width:100%;
+  }
+
   form {
     width: 99%;
     padding-top: 34px;
     padding-right: 20px;
-    padding-left: 38px;
+    padding-left: 15px;
   }
 
   h2 {
