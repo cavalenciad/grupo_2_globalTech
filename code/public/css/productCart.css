@@ -4,12 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
     font-family: roboto;
 }
 
 p{
     margin-bottom: 0 !important;
+    
 }
 
 /* -------------- CABECERA ------------- */
@@ -153,6 +154,15 @@ body{margin:0;padding:0;}
 .menuppal ul li a:hover{
   text-decoration:none;
   color:#0d6efd;
+}
+
+a{
+    font-size: 16px;
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: ease 0.5s;
 }
 
 .dataUser{
@@ -420,6 +430,16 @@ body{margin:0;padding:0;}
     flex-wrap: wrap;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.Smapa{
+    flex-direction: column;
+    display: flex;
+
+}
+
+.Smapa a:hover{
+    color: #00B8D4;
 }
 
 .Sfooter div{

@@ -148,15 +148,15 @@ body{margin:0;padding:0;}
   color:#0d6efd;
 }
 
-
-a {
+a{
   font-size: 16px;
   font-family: roboto;
   letter-spacing: 2px;
   font-weight: 600;
-  color: #959595;
+  color: #ffffff;
   transition: ease 0.5s;
 }
+
 
 .Snavbar a:hover {
   color: #2962FF;
@@ -557,6 +557,16 @@ form a {
   padding-bottom: 20px;
   margin-top: 610px;
   position: fixed;
+}
+
+.Smapa{
+  flex-direction: column;
+  display: flex;
+
+}
+
+.Smapa a:hover{
+  color: #00B8D4;
 }
 
 .Sfooter div {

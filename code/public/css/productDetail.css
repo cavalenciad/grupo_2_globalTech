@@ -438,6 +438,16 @@ body{margin:0;padding:0;}
     padding-bottom: 20px;
 }
 
+.Smapa{
+    flex-direction: column;
+    display: flex;
+
+}
+
+.Smapa a:hover{
+    color: #00B8D4;
+}
+
 .Sfooter div{
     padding-top: 20px;
     padding-bottom: 20px;
