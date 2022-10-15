@@ -35,8 +35,15 @@
                         <p><b>E-mail:</b> <%= usuario.email %> </p>
                         <p><b>País:</b> <%= usuario.pais %> </p>
                 </div>
+                <div class="Mbuttons">
                     <div class="MbuttonProfile">
                         <a href="/user/logout">Cerrar Sesión</a>
+                    </div>
+                <% if(locals.userLogged && locals.userLogged.rol === 1) {%>        
+                    <div class="MbuttonProfile">
+                        <a href="https://globaltech-dashboard.herokuapp.com/" target="_blank">Dashboard</a>
+                    </div>
+                <% }%>
                 </div>
         </div>
 </div>
