@@ -232,8 +232,14 @@ hr{
     font-size: 18px;
 }
 
+
+
+.MbuttonProfile{
+    padding-top: 10px;
+}
+
 .MbuttonProfile a{
-    width: 130px;
+    width: 142px;
     padding: 10px;
     display: flex;
     margin: 0 auto;
@@ -244,6 +250,7 @@ hr{
     box-shadow: 0px 0px 3px #c3c3c3;
     margin-bottom: 15px;
     transition: all 0.3s ease;
+
 }
 
 .MbuttonProfile a:hover{
@@ -507,6 +514,16 @@ hr{
             top: 78%;
             font-size: 160%
             
+        }
+
+        /*---------------BOTONES----------------*/
+        .Mbuttons{
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        .Mbuttons .MbuttonProfile{
+            margin: 10px;
         }
     
         /* ---------------- PIE DE PAGINA ---------- */
