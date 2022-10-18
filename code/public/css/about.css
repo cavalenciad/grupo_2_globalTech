@@ -170,7 +170,7 @@ a{
 }
 
 .dataUser p{
-    color: #1EA1F2;
+    color: #00B8D4;
     letter-spacing: 2px;
   }
 
@@ -392,9 +392,16 @@ a{
     width: 100%;
 }
 
-.Sfooter h3{
-    color: #00B8D4;
-    letter-spacing: 1px;
+.Sfooter h3 {
+  font-weight: 200;
+  font-size: 1.75em;
+  color: #00B8D4;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.Smapa a{
+  margin: 2px;
 }
 
 .Sfooter p{

@@ -39,6 +39,7 @@ body{
     padding:0;
     background:#23242a;
 }
+
 .hamburger{
 	position:relative;
   background-color:transparent;
@@ -167,7 +168,7 @@ a{
 }
 
 .dataUser p{
-    color: #1EA1F2;
+    color: #00B8D4;
     letter-spacing: 2px;
   }
 
@@ -378,13 +379,15 @@ a{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 15px;
-    margin-bottom: 35px;
+    width: 95%;
+    padding-bottom: 50px;
+    margin: 0 auto;
 }
 
 .SproductosDestacados div{
     background-color: #ffffff;
-    margin-top: 7px;
-    margin-bottom: 7px;
+    margin-top: 13px;
+    margin-bottom: 13px;
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -697,7 +700,7 @@ header img{
     /* ------------- CAJAS PRODUCTOS ----------- */
 
     .SproductosDestacados div{
-        width: 24%;
+        width: 23%;
         height: auto;
         margin-top: 10px;
         margin-bottom: 10px;
