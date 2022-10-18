@@ -53,7 +53,7 @@ const userController = {
         })            
     },
     login: (req, res) => {
-        res.render("login");
+        res.render("loginCopy");
     },
     processLogin: (req, res) => {
         const resultValidationLog = validationResult(req);

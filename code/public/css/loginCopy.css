@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 
+
 p{
   margin-bottom: 0 !important;
 }
@@ -40,15 +41,16 @@ header {
 {
 	display: flex;
 	align-items: center;
-	min-height: 182vh;
+	min-height: 100vh;
 	flex-direction: column;
 	background: #23242a;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   text-align: center;
-  position: relative;
+  padding-bottom: 145px;
 } */
-
 
 /* -------------- ESTILOS ITEMS MENU ------------- */
 body{margin:0;padding:0;}
@@ -229,62 +231,55 @@ a{
 
 /* -------------- REDES SOCIALES FLOTANTES ------------ */
 
-.sticky-social {
-  position: fixed;
-  top: 200px;
+.sticky-social{
+  position:fixed;
+  top:200px;
   left: 0;
-  padding: 0px;
-  margin: 0px;
+  padding:0px;
+  margin:0px;
+  z-index: 1;
+}
+.social{
+  list-style:none;
+}
+.social li{
+  padding:10px 10px;
+  font-size:15px;
+  transition:all 0.3s ease-in-out;
+}
+.social li:hover{
+    margin-right:-20px;
+}
+.social li:hover .fa-brands{
+    margin-left:10px;
 }
 
-.social {
-  list-style: none;
+.fa-brands{
+  color:#fff;
+  transition:all 0.3s ease-in-out;
+}
+.fb{
+  background-color:#3C5A98;
+}
+.twitter{
+    background-color:#1EA1F2;
+}
+.insta{
+    background-color:#C13584;
+}
+.wpp{
+    background-color:#25D366;
 }
 
-.social li {
-  padding: 10px 10px;
-  font-size: 15px;
-  transition: all 0.3s ease-in-out;
-}
-
-.social li:hover {
-  margin-right: -20px;
-}
-
-.social li:hover .fa-brands {
-  margin-left: 10px;
-}
-
-.fa-brands {
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
-
-.fb {
-  background-color: #3C5A98;
-}
-
-.twitter {
-  background-color: #1EA1F2;
-}
-
-.insta {
-  background-color: #C13584;
-}
-
-.wpp {
-  background-color: #25D366;
-}
-
-scroll-page {
+/* scroll-page {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   font-size: 5em;
-}
+} */
 
-/*---- REGISTRO ----*/
+/*---- LOGIN -----*/
 
 #errorsDiv p {
   color: #fff;
@@ -294,19 +289,20 @@ scroll-page {
   text-align: center;
 }
 
-.Merrors{
+.jerrors {
   color: #ffffff;
   font-size: 12px;
-  font-weight: bold;  
-  letter-spacing: 0.05em;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-top: 8px; 
 }
-    
+
 .Jbackground{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 140vh;
+  min-height: 80vh;
   background-color: #23242a;
 }
 
@@ -314,7 +310,7 @@ scroll-page {
 {
   position: relative;
   width: 500px;
-  height: 930px;
+  height: 450px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -327,7 +323,7 @@ scroll-page {
   top: -50%;
   left: -50%;
   width: 500px;
-  height: 930px;
+  height: 450px;
   background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
@@ -339,7 +335,7 @@ scroll-page {
   top: -50%;
   left: -50%;
   width: 500px;
-  height: 930px;
+  height: 450px;
   background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
@@ -404,94 +400,21 @@ scroll-page {
   background: #00b8d4;
   border-radius: 4px;
 }
-.inputSelect
-{
-  position: relative;
-  width: 100%;
-  margin-top: 25px;
-}
-.inputSelect select
-{
-  position: relative;
-  text-align: center;
-  color: white;
-  border: 1px solid #00b8d4;
-  border-radius: 4px;
-  margin-top: -10px;
-  width: 100%;
-  height: 32px;
-  font-size: 0.80em;
-  background-color: transparent;
-  letter-spacing: 0.05em;
-}
-.inputSelect select option
-{
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size: 1em;
-  background-color: #28292d;
-  letter-spacing: 0.05em;
-}
-.inputImage
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  margin-top: 5px;
-}
-.inputImage label
-{   
-  font-size: 0.90em;
-  color: #8f8f8f;
-  pointer-events: none;
-  letter-spacing: 0.05em;
-}
-input[type="file"]
-{  
-  border: 1px solid #00b8d4;
-  outline: none;
-  color: #8f8f8f;
-  padding: 5px;
-  background-color: transparent;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
-  margin-top: 25px;
-  border-radius: 4px;
-}
+
 .links
 {
   display: flex;
+  justify-content: justify;
+}
+[type=checkbox]
+{
+  margin-top: 20px;
 }
 .links p
 {
-  margin: 20px ;
+  margin: 20px 20px;
   color: white;
   text-align: justify;
-  justify-content: center;
-}
-.links p a
-{
-  color: #8f8f8f;
-  transition: all 0.3s;
-}
-.links p a:hover
-{
-  color: #00B8D4;
-}
-.registered
-{
-  text-align: center;
-  justify-content: center;
-  margin-top: 20px;
-	color: #8f8f8f;
-  transition: all 0.3s;
-}
-.registered:hover
-{
-  color: #00B8D4;
 }
 input[type="submit"]
 {
@@ -512,6 +435,18 @@ input[type="submit"]
 input[type="submit"]:hover
 {
   background-color: #2962FF;
+}
+.unregistered
+{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+	color: #8f8f8f;
+  transition: all 0.3s;
+}
+.unregistered:hover
+{
+  color: #00B8D4;
 }
 
 /*----- Estilos Footer-----*/
@@ -564,17 +499,17 @@ input[type="submit"]:hover
 @media (min-width: 0px) and (max-width: 576px) {
 
   .box{
-    height: 930px;
+    height: 450px;
     width: 500px;
   }
   
   .box::after {
-    height: 930px;
+    height: 450px;
     width: 500px;  
   }
   
   .box::before {
-    height: 930px;
+    height: 450px;
     width: 500px;  
   }
 
@@ -596,11 +531,6 @@ input[type="submit"]:hover
     margin-bottom: 0px;
   }
 
-  .inputImage label
-  {
-    display: none;
-  }
-
   /* -------------- CABECERA ------------- */
 
   header img {
@@ -619,11 +549,19 @@ input[type="submit"]:hover
     letter-spacing: 2px;
   }
 
-  /* .form {
-    width: 79%;
+  /* form {
+    width: 98%;
     position: relative;
-    left: 2.7%;
+    left: 0%;
     bottom: 300px;
+  }
+
+  .jRecuerdame {
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    left: -13px;
+    padding-bottom: 10px;
   } */
 }
 
@@ -632,20 +570,20 @@ input[type="submit"]:hover
 @media (min-width: 577px) and (max-width: 899px) {
 
   .box{
-    height: 930px;
+    height: 450px;
     width: 500px;
   }
   
   .box::after {
-    height: 930px;
+    height: 450px;
     width: 500px;  
   }
   
   .box::before {
-    height: 930px;
+    height: 450px;
     width: 500px;  
   }
-  
+
   header img {
     width: 350px;
   }
@@ -654,15 +592,45 @@ input[type="submit"]:hover
     display: none;
   }
 
+  /* form {
+    width: 98%;
+    height: 415px;
+    bottom: 300px;
+    padding-left: 5px;
+  }
+
+  h2 {
+    align-items: center;
+  }
+
+  .inputBox  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inputBox i {
+    width: 100%;
+  } 
+
+  .jRecuerdame {
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    left: -13px;
+    padding-bottom: 10px;
+  }*/
+
   .Jbackground{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 110vh;
+    min-height: 70vh;
     background-color: #23242a;
   }
-  
-  .Sfooter img {
+
+  .Sfooter img 
+  {
     width: 50%;
   }
 }
@@ -671,31 +639,26 @@ input[type="submit"]:hover
 
 @media (min-width: 900px) and (max-width: 1920px) {
 
-/* body {
-  min-height: 176vh;
-} */
-
-.box{
-  height: 930px;
-  width: 500px;
-}
-
-.box::after {
-  height: 930px;
-  width: 500px;  
-}
-
-.box::before {
-  height: 930px;
-  width: 500px;  
-}
+  .box{
+    height: 450px;
+    width: 500px;
+  }
+  
+  .box::after {
+    height: 450px;
+    width: 500px;  
+  }
+  
+  .box::before {
+    height: 450px;
+    width: 500px;  
+  }
 
   /* -------------- CABECERA ------------- */
-  
   .hamburger{
     display: none;
   }
-
+  
   header {
     margin-bottom: 617px;
   }
@@ -709,6 +672,7 @@ input[type="submit"]:hover
   }
 
   /* -------------- REDES SOCIALES FLOTANTES ------------ */
+ 
 
   .social li {
     padding: 10px 10px;
@@ -730,12 +694,49 @@ input[type="submit"]:hover
   }
 
   /* ---------------- PIE DE PAGINA ---------- */
- 
+  /*.box {
+    position: fixed;
+    width: 20%;
+    height: 421px; 
+  }
+
+  .inputBox i {
+    width:100%;
+  }
+
+   form {
+    width: 99%;
+    padding-top: 34px;
+    padding-right: 20px;
+    padding-left: 15px;
+  } 
+
+  h2 {
+    padding-top: 15px;
+    
+  }
+
+  .links a {
+    position: relative;
+    left: 23px;
+   
+  }
+
+  .jRecuerdame {
+    display: flex;
+  }*/
+
+  .Sfooter {
+    position: absolute;
+    bottom: 0px;
+  }
+
   .Sfooter div{
     width: 30%;
   }
-  
+
   .Sfooter img{
     width: 80%;
   }
 }
+
