@@ -528,7 +528,7 @@ a{
     .Qbotondecompra button{
         background-color: #00B8D4;
         border-radius: 5px;
-        width: 30%;
+        width: 40%;
         height: 30px;
         border: none;
         margin: 15px;
@@ -537,10 +537,11 @@ a{
     
     .QbotonAgregar{
         position: relative;
-        width: 16%;
+        width: 20%;
         padding: 0px;
         border-radius: 10px;
         left:14%;
+        background: #00B8D4;
     }
     
     .Qmas{
