@@ -8,14 +8,14 @@ const bcrypt = require('bcryptjs');
 const userController = {
 
     register: (req, res) => {
-        res.render("registerCopy");
+        res.render("register");
     },
     createUser: (req, res) => {
        
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
-            res.render('registerCopy', {
+            res.render('register', {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
@@ -26,7 +26,7 @@ const userController = {
         })
         .then((resultado)=>{
             if(resultado){
-                res.render('registerCopy', {
+                res.render('register', {
                     errors: {
                         email: {
                             msg: 'Este email ya está registrado'
@@ -53,7 +53,7 @@ const userController = {
         })            
     },
     login: (req, res) => {
-        res.render("loginCopy");
+        res.render("login");
     },
     processLogin: (req, res) => {
         const resultValidationLog = validationResult(req);

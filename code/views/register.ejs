@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="/css/register.css" type="text/css">
   
   <title>Registro</title>
 </head>
@@ -22,138 +22,124 @@
   <!-- MENU NAVEGACIÓN -->
   <%- include("./partials/social.ejs")%>
 
+  <section class="Jbackground">
 
+    <div class="box">
+        <form action="/user/register" method="post" id="userRegisterForm" enctype="multipart/form-data">
 
-  <div class = "box">
-    
-    <form  action="/user/register" enctype="multipart/form-data" method="post" id="userRegisterForm">
-        <h2>Regístrate en Global Tech</h2>
-        
-        <div hidden id="errorsDiv">
+            <!----CAJA DE FORMULARIO----->
+            
+            <div class="form">
 
-        </div>
-        
-        <div class="inputBox">
-            <input id="email" name="email" type="text" placeholder="Email" data-label="Email"> 
-            <i></i>
-        </div>
-        <% if (locals.errors && errors.email) { %>
-            <div class="Merrors">
-             <%= errors.email.msg %> 
-            </div>
-        <% } %>
-        
-        <div class="inputBox">
-            <input id="nombre" name="nombre" type="text" placeholder="Nombre" data-label="Nombre">
-            <i></i>
-        </div>
-        <% if (locals.errors && errors.nombre) { %>
-                <div class="Merrors">
-                    <%= errors.nombre.msg %>
+                <h2>Regístrate en Global Tech</h2>
+
+                <div hidden id="errorsDiv"></div>
+
+                <div class="inputBox">
+                    <input placeholder="Email" type="text" name="email" data-label="Email">
+                    <i></i>
                 </div>
-            <% } %> 
-        
-        
-        <div class="inputBox">
-            <input id="apellido" name="apellido" type="text" placeholder="Apellidos" data-label="Apellidos">
-            <i></i>
-        </div>
-        <% if (locals.errors && errors.apellido) { %>
-            <div class="Merrors">
-                <%= errors.apellido.msg %> 
+                <% if (locals.errors && errors.email) { %>
+                    <div class="Merrors">
+                        <%= errors.email.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Nombre" type="text" name="name" data-label="Nombre">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.name) { %>
+                    <div class="Merrors">
+                        <%= errors.name.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Apellido" type="text" name="lastName" data-label="Apellido">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.lastName) { %>
+                    <div class="Merrors">
+                        <%= errors.lastName.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Nombre de Usuario" type="text" name="userName" data-label="Nombre de Usuario">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.userName) { %>
+                    <div class="Merrors">
+                        <%= errors.userName.msg %> 
+                    </div>
+                <% } %>                
+
+                <div class="inputBox">
+                    <input placeholder="Contraseña" type="text" name="contrasena" data-label="Contraseña">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.contrasena) { %>
+                    <div class="Qerrors">
+                        <%= errors.contrasena.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputImage">
+                    <div>
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" placeholder="Imagen de Perfil" data-label="Imagen">
+                        <% if (locals.errors && errors.imagen) { %>
+                            <div class="Qerrors">
+                                <%= errors.imagen.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="inputSelect">
+                    <select data-label="País" name="pais">
+                        <option disabled selected>Seleccionar país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="México">México</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                    <i></i>
+                </div>
+
+                <!--ACEPTO TÉRMINOS-->
+
+                <div class="links">
+                    <input type="checkbox" name="termCond">
+                    <p>Acepto los <a href="#" target="_blank">términos y condiciones </a> y la <a href="#" target="_blank">política de privacidad.</a></p>
+                </div>
+
+                <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->
+                
+                <input type="submit" value="Registrarse"></input>     
+
+                <a class = "registered" href="/user/login">Ya tengo una cuenta</a>
+                
+
             </div>
-        <% } %> 
-        
-        
-        <div class="inputBox">
-            <input id="nombreUser" name="nombreUser" type="text" placeholder="Nombre de Usuario" data-label="Nombre de Usuario">
-            <i></i>
-        </div>
-        <% if (locals.errors && errors.nombreUser) { %>
-            <div class="Merrors">
-                <%= errors.nombreUser.msg %> 
-            </div>
-        <% } %>
-        
-        
-        <!--SELECCIONAR PAÍS-->
-        
-            <div>
-            <select id="inputCountry" class="inputCountry" name="pais">
-                <option disabled selected>Seleccionar país</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Argentina">Argentina</option>
-                <option value="Bolivia">Bolivia</option>
-                <option value="Brasil">Brasil</option>
-                <option value="Canadá">Canadá</option>
-                <option value="Chile">Chile</option>
-                <option value="Costa Rica">Costa Rica</option>
-                <option value="Cuba">Cuba</option>
-                <option value="Ecuador">Ecuador</option>
-                <option value="Salvador">El Salvador</option>
-                <option value="Estados Unidos">Estados Unidos</option>
-                <option value="Guatemala">Guatemala</option>
-                <option value="Haití">Haití</option>
-                <option value="Honduras">Honduras</option>
-                <option value="Islas menores de Estados Unidos">Islas menores de Estados Unidos</option>
-                <option value="Islas Vírgenes">Islas Vírgenes (EEUU)</option>
-                <option value="Jamaica">Jamaica</option>
-                <option value="México">México</option>
-                <option value="Nicaragua">Nicaragua</option>
-                <option value="Panamá">Panamá</option>
-                <option value="Paraguay">Paraguay</option>
-                <option value="Perú">Perú</option>
-                <option value="Puerto Rico">Puerto Rico</option>
-                <option value="República Dominicana">República Dominicana</option>
-                <option value="Uruguay">Uruguay</option>
-                <option value="Venezuela">Venezuela</option>
-            </select>
-            <i></i>
-            </div>
-          
-      
 
-        <!--IMAGEN-->
+        </form>
 
-        <div class="inputTerms">
-        <label class="Mimagenes"></label>
-          <input id="imagen"class="file" type="file" name="imagen" placeholder="Imagen de Perfil" id="imagen" data-label="Imagen">
-            <i></i>
-        </div> 
-        <% if (locals.errors && errors.imagen) { %>
-            <div class="Merrors">
-             <%= errors.imagen.msg %> 
-            </div>
-          <% } %>          
+    </div>
 
-        <!--CONTRASEÑA-->    
-
-        <div class="inputBox">
-            <input id="contrasena" name="contrasena" type="password" placeholder="Contraseña" data-label="Contraseña" >
-            <i></i>
-        </div>
-        <% if (locals.errors && errors.contrasena) { %>
-            <div class="Merrors">
-             <%= errors.contrasena.msg %> 
-            </div>
-        <% } %>
-
-        <!--ACEPTO TÉRMINOS-->
-
-        <div class="inputBox">
-            <input class="Mcheckbox" type="checkbox" id="aceptoTerminos" name="termCond">Acepto los <a class="links" href="#" target="_blank">términos y condiciones</a> y la <a class="links" href="#" target="_blank">política de privacidad.</a>
-        </div>
-
-        <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->    
-
-        <div class = "links">
-            <a href="/user/login">Ya tengo una cuenta</a>
-        </div>
-        <div>
-            <input type="submit" value="Registrarse"></input> 
-        </div>
-    </form>
-</div>
+</section>
 
 <script src="/js/registerFormValidator.js"></script>
 
