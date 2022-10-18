@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/registerCopy.css" type="text/css">
+  
+  <title>Registro</title>
+</head>
+
+<body>
+
+  <!-- MENU NAVEGACIÓN -->
+  <%- include("./partials/header.ejs")%>
+
+  <!-- MENU NAVEGACIÓN -->
+  <%- include("./partials/social.ejs")%>
+
+  <section class="Jbackground">
+
+    <div class="box">
+        <form action="/user/register" method="post" id="userRegisterForm" enctype="multipart/form-data">
+
+            <!----CAJA DE FORMULARIO----->
+            
+            <div class="form">
+
+                <h2>Regístrate en Global Tech</h2>
+
+                <div hidden id="errorsDiv"></div>
+
+                <div class="inputBox">
+                    <input placeholder="Email" type="text" name="email" data-label="Email">
+                    <i></i>
+                </div>
+                <% if (locals.errors && errors.email) { %>
+                    <div class="Merrors">
+                        <%= errors.email.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Nombre" type="text" name="name" data-label="Nombre">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.name) { %>
+                    <div class="Merrors">
+                        <%= errors.name.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Apellido" type="text" name="lastName" data-label="Apellido">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.lastName) { %>
+                    <div class="Merrors">
+                        <%= errors.lastName.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputBox">
+                    <input placeholder="Nombre de Usuario" type="text" name="userName" data-label="Nombre de Usuario">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.userName) { %>
+                    <div class="Merrors">
+                        <%= errors.userName.msg %> 
+                    </div>
+                <% } %>                
+
+                <div class="inputBox">
+                    <input placeholder="Contraseña" type="text" name="contrasena" data-label="Contraseña">
+                    <i></i>                        
+                </div>
+                <% if (locals.errors && errors.contrasena) { %>
+                    <div class="Qerrors">
+                        <%= errors.contrasena.msg %> 
+                    </div>
+                <% } %>
+
+                <div class="inputImage">
+                    <div>
+                        <label for="imagen">Imagen</label>
+                        <input type="file" name="imagen" placeholder="Imagen de Perfil" data-label="Imagen">
+                        <% if (locals.errors && errors.imagen) { %>
+                            <div class="Qerrors">
+                                <%= errors.imagen.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <div class="inputSelect">
+                    <select data-label="País" name="pais">
+                        <option disabled selected>Seleccionar país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="México">México</option>
+                        <option value="Panamá">Panamá</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Puerto Rico">Puerto Rico</option>
+                        <option value="Uruguay">Uruguay</option>
+                    </select>
+                    <i></i>
+                </div>
+
+                <!--ACEPTO TÉRMINOS-->
+
+                <div class="links">
+                    <input type="checkbox" name="termCond">
+                    <p>Acepto los <a href="#" target="_blank">términos y condiciones </a> y la <a href="#" target="_blank">política de privacidad.</a></p>
+                </div>
+
+                <!--BOTONES REGISTRAR Y YA TENGO CUENTA-->
+                
+                <input type="submit" value="Registrarse"></input>     
+
+                <a class = "registered" href="/user/login">Ya tengo una cuenta</a>
+                
+
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="/js/registerFormValidator.js"></script>
+
+<!--- FOOTER: PIE DE PÁGINA --->
+
+<%- include("./partials/footer.ejs")%>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
   font-family: 'Poppins', 'roboto', sans-serif;
   margin: 0;
   padding: 0;
@@ -11,10 +11,9 @@
 
 p{
   margin-bottom: 0 !important;
-  color: #ffffff;
 }
 
-/*----CABECERA DE LA PÁGINA----*/
+/* -------------- CABECERAAAA ------------- */
 
 header {
   display: flex;
@@ -22,7 +21,8 @@ header {
   justify-content: space-around;
   width: 100%;
   height: 80px;
-  background-color: #000000;
+  box-shadow: 0px 1px 5px #a3a3a3;
+  background-color: #fff;
   position: fixed;
   margin-bottom: 80px;
   z-index: 100;
@@ -34,7 +34,24 @@ header {
   justify-content: space-around;
 }
 
-/*----ESTILOS ITEMS MENU----*/
+/* --------------- BODY  --------------- */
+
+/* body 
+{
+	display: flex;
+	align-items: center;
+	min-height: 182vh;
+	flex-direction: column;
+	background: #23242a;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+} */
+
+
+/* -------------- ESTILOS ITEMS MENU ------------- */
+body{margin:0;padding:0;}
 .hamburger{
 	position:relative;
   background-color:transparent;
@@ -141,43 +158,34 @@ a{
   transition: ease 0.5s;
 }
 
-.Snavbar a {
-  font-size: 16px;
-  font-family: 'roboto';
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #ffffff;
-  transition: ease 0.5s;
-}
-
 .Snavbar a:hover {
-  color: #00B8D4;
+  color: #2962FF;
 }
 
-/*----ICONO MENU HAMBURGUESA----*/
+/* ---------- ICONO MENU HAMBURGUESA -------------- */
 
-.fa-bars {
+.Sburger-menu .fa-bars {
   font-size: 28px;
   color: #00B8D4;
 }
 
 /* --------------- ESTILOS USUARIO --------------- */
 
-.dataUser{
+.dataUser {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dataUser img{
+.dataUser img {
   margin-left: 15px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
 }
 
-.dataUser p{
-  color: #00B8D4;
+.dataUser p {
+  color: #1EA1F2;
   letter-spacing: 2px;
 }
 
@@ -219,8 +227,66 @@ a{
   padding-bottom: 20px;
 }
 
- /*---- FORMULARIO PRODUCTOS----*/
- #errorsDiv p {
+/* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+.sticky-social {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+.social {
+  list-style: none;
+}
+
+.social li {
+  padding: 10px 10px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social li:hover {
+  margin-right: -20px;
+}
+
+.social li:hover .fa-brands {
+  margin-left: 10px;
+}
+
+.fa-brands {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.fb {
+  background-color: #3C5A98;
+}
+
+.twitter {
+  background-color: #1EA1F2;
+}
+
+.insta {
+  background-color: #C13584;
+}
+
+.wpp {
+  background-color: #25D366;
+}
+
+scroll-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 5em;
+}
+
+/*---- REGISTRO ----*/
+
+#errorsDiv p {
   color: #fff;
   font-size: 12px;
   margin-top: 10px;
@@ -228,19 +294,19 @@ a{
   text-align: center;
 }
 
-.Qerrors{
+.Merrors{
   color: #ffffff;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;  
   letter-spacing: 0.05em;
   margin-bottom: 0px;
 }
     
-.background{
+.Jbackground{
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 150vh;
+  min-height: 140vh;
   background-color: #23242a;
 }
 
@@ -248,7 +314,7 @@ a{
 {
   position: relative;
   width: 500px;
-  height: 1050px;
+  height: 930px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
@@ -261,7 +327,7 @@ a{
   top: -50%;
   left: -50%;
   width: 500px;
-  height: 1050px;
+  height: 930px;
   background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
@@ -273,7 +339,7 @@ a{
   top: -50%;
   left: -50%;
   width: 500px;
-  height: 1050px;
+  height: 930px;
   background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
   transform-origin: bottom right;
   animation: animate 6s linear infinite;
@@ -297,7 +363,7 @@ a{
   border-radius: 8px;
   background: #28292d;
   z-index: 10;
-  padding: 50px 40px;
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -338,34 +404,6 @@ a{
   background: #00b8d4;
   border-radius: 4px;
 }
-.inputImage
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative;
-  width: 100%;
-  margin-top: 5px;
-}
-.inputImage label
-{   
-  font-size: 0.90em;
-  color: #8f8f8f;
-  pointer-events: none;
-  letter-spacing: 0.05em;
-}
-input[type="file"]
-{  
-  border: 1px solid #00b8d4;
-  outline: none;
-  color: #8f8f8f;
-  padding: 5px;
-  background-color: transparent;
-  font-size: 0.8em;
-  letter-spacing: 0.05em;
-  margin-top: 25px;
-  border-radius: 4px;
-}
 .inputSelect
 {
   position: relative;
@@ -395,6 +433,66 @@ input[type="file"]
   background-color: #28292d;
   letter-spacing: 0.05em;
 }
+.inputImage
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+}
+.inputImage label
+{   
+  font-size: 0.90em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+}
+input[type="file"]
+{  
+  border: 1px solid #00b8d4;
+  outline: none;
+  color: #8f8f8f;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 0.8em;
+  letter-spacing: 0.05em;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+.links
+{
+  display: flex;
+}
+.links p
+{
+  margin: 20px ;
+  color: white;
+  text-align: justify;
+  justify-content: center;
+}
+.links p a
+{
+  color: #8f8f8f;
+  transition: all 0.3s;
+}
+.links p a:hover
+{
+  color: #00B8D4;
+}
+.registered
+{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+	color: #8f8f8f;
+  transition: all 0.3s;
+}
+.registered:hover
+{
+  color: #00B8D4;
+}
 input[type="submit"]
 {
   align-self: center;
@@ -416,11 +514,11 @@ input[type="submit"]:hover
   background-color: #2962FF;
 }
 
-  /*----PIE DE PÁGINA----*/
+/*----- Estilos Footer-----*/
 
 .Sfooter {
   width: 100%;
-  background-color: #000000;
+  background-color: #ececec;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -432,7 +530,6 @@ input[type="submit"]:hover
 .Smapa{
   flex-direction: column;
   display: flex;
-
 }
 
 .Smapa a:hover{
@@ -452,255 +549,193 @@ input[type="submit"]:hover
 }
 
 .Sfooter h3 {
-  font-weight: 200;
-  font-size: 1.75em;
-  color: #00B8D4;
+  color: #2962FF;
   letter-spacing: 1px;
-  margin-bottom: 18px;
-}
-
-.Smapa a{
-  margin: 2px;
 }
 
 .Sfooter p {
   margin-top: 15px;
 }
 
+/*------Media Queries--------*/
 
+/*---Media Querie Móvil-----*/
 
-/*---- Media querys Movil---*/
+@media (min-width: 0px) and (max-width: 576px) {
 
-@media (min-width: 0px) and (max-width: 576px){
-  
-  /*----CABECERA----*/
-
-header img {
-  width: 200px;
-}
-
-.Snavbar {
-  display: none;
-}
-
-/* --------------- ESTILOS USUARIO --------------- */
-
-.user p{
-  display: none;
-  color: #1EA1F2;
-  letter-spacing: 2px;
-}
-
-
-/*--- CAJA DEL FORM ---*/
-
-.QformProducts {
-  width: 95%;
-  height: auto;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  position: relative;
-  top: 100px;
-  margin-bottom: 100px;
-  bottom: 50px;
-}
-
-.QimagenFormulario div{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.QdivInterno {
-  margin-top: 15px;
-}
-
-.Qimagenes{
-  margin-top: 10px;
-}
-
-.QimagenFormulario #imagen{
-  width: 70%;
-}
-
-.QformProducts h3 {
-  font-size: 20px;
-  position: relative;
-  top: 10px;    
-}
-
-.QformProducts input {
-  width: 95%;
-  height: 35px;
-  padding: 7px;
-}
-
-/*----BOTONES----*/
-
-.Qboton {
-  margin-top: 5px;
-}
-
-.Qboton input{
-  width: 130px;
-}
-}
-
-
-/*---- Media queries Tablet---*/
-
-@media (min-width: 577px) and (max-width: 899px) {
-  .box
-  {
-    position: relative;
+  .box{
+    height: 930px;
     width: 500px;
-    height: 1050px;
-    background: #1c1c1c;
-    border-radius: 8px;
-    overflow: hidden;
   }
   
-  .box::before
-  {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500px;
-    height: 1050px;
-    background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-  }
-  .box::after
-  {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500px;
-    height: 1050px;
-    background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
-  }
-
-/*----CABECERA----*/
-
-header img {
-  width: 350px;
-}
-
-.Snavbar {
-  display: none;
-}
-   
-/*--- CAJA DEL FORM ---*/
-
-.QformProducts {
-  width: 95%;
-  height: 550px;
-  margin: 0 auto;
-}
-  
-.QformProducts h3 {
-  font-size: 20px;
-  position: relative;
-  top: 10px;
-}
-
-.QformProducts input {
-  width: 95%;
-  height: 35px;
-  padding: 7px;
-}
-
-/*----BOTONES----*/
-
-.Qboton {
-  margin-top: 5px;
-}
-
-.Qboton input{
-  width: 130px;
-}
-
-}
-
-/*---- Media queries Escritorio---*/
-
-@media (min-width: 900px) and (max-width: 1925px){
-
-  .box
-  {
-    position: relative;
-    width: 520px;
-    height: 1050px;
-    background: #1c1c1c;
-    border-radius: 8px;
-    overflow: hidden;
+  .box::after {
+    height: 930px;
+    width: 500px;  
   }
   
-  .box::before
-  {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500px;
-    height: 1050px;
-    background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
+  .box::before {
+    height: 930px;
+    width: 500px;  
   }
-  .box::after
-  {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 500px;
-    height: 1050px;
-    background: linear-gradient(0deg,transparent,#00b8d4,#00b8d4);
-    transform-origin: bottom right;
-    animation: animate 6s linear infinite;
-    animation-delay: -3s;
-  }
-/*----CABECERA DE LA PÁGINA----*/
-  
-.hamburger{
-  display: none;
-}
 
-header img {
+  #errorsDiv p {
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    align-content: center;
+    text-align: center;
+  }
+
+  .Merrors{
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: lighter;  
+    letter-spacing: 0.05em;
+    margin-bottom: 0px;
+  }
+
+  .inputImage label
+  {
+    display: none;
+  }
+
+  /* -------------- CABECERA ------------- */
+
+  header img {
     width: 200px;
   }
 
-.Sburger-menu .fa-bars {
+  .Snavbar {
     display: none;
   }
 
-  /* ------- ESTILOS USUARIOS --------- */
- 
+  /* --------------- ESTILOS USUARIO --------------- */
+
+  .user p {
+    display: none;
+    color: #1EA1F2;
+    letter-spacing: 2px;
+  }
+
+  /* .form {
+    width: 79%;
+    position: relative;
+    left: 2.7%;
+    bottom: 300px;
+  } */
+}
+
+/*---Media Querie Tablet ---*/
+
+@media (min-width: 577px) and (max-width: 899px) {
+
+  .box{
+    height: 930px;
+    width: 500px;
+  }
+  
+  .box::after {
+    height: 930px;
+    width: 500px;  
+  }
+  
+  .box::before {
+    height: 930px;
+    width: 500px;  
+  }
+  
+  header img {
+    width: 350px;
+  }
+
+  .Snavbar {
+    display: none;
+  }
+
+  .Jbackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background-color: #23242a;
+  }
+  
+  .Sfooter img {
+    width: 50%;
+  }
+}
+
+/*---Media Querie Desktop---*/
+
+@media (min-width: 900px) and (max-width: 1920px) {
+
+/* body {
+  min-height: 176vh;
+} */
+
+.box{
+  height: 930px;
+  width: 500px;
+}
+
+.box::after {
+  height: 930px;
+  width: 500px;  
+}
+
+.box::before {
+  height: 930px;
+  width: 500px;  
+}
+
+  /* -------------- CABECERA ------------- */
+  
+  .hamburger{
+    display: none;
+  }
+
+  header {
+    margin-bottom: 617px;
+  }
+
+  header img {
+    width: 200px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  /* -------------- REDES SOCIALES FLOTANTES ------------ */
+
+  .social li {
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .social li:hover {
+    margin-right: -30px;
+  }
+
+  .social li:hover .fa-brands {
+    margin-left: 20px;
+  }
+
+  /* ---------------- ESTILOS USUARIOS ---------- */
+
   .dataUser i {
     display: none;
-}
-
-  /* ------- INPUTS --------- */
-
-  .QdivInterno{
-    margin-top: 10px;
   }
 
- /*----PIE DE PÁGINA----*/
-
- .Sfooter div{
-  width: 30%;
-}
-
-.Sfooter img{
-  width: 80%;
-}
+  /* ---------------- PIE DE PAGINA ---------- */
+ 
+  .Sfooter div{
+    width: 30%;
+  }
+  
+  .Sfooter img{
+    width: 80%;
+  }
 }

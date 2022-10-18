@@ -13,13 +13,16 @@ const apiProductsController ={
 
         const totalProducts = allProducts.length;
 
+        //Constante con el detalle de producto
+
         const productDetail = allProducts.map(product => {
             return {
                 id: product.idProductos,
                 name: product.nombre,
                 description: product.descripcion,
+                image: product.imagen[0].Imagen,
                 category: product.categorias.Categoria,
-                detail: `http://localhost:3050/apiProducts/${product.idProductos}`
+                detail: `http://globaltech-grupo2.herokuapp.com/apiProducts/${product.idProductos}`
             }
         })
 
@@ -90,7 +93,7 @@ const apiProductsController ={
                     "price": producto.precio,
                     "color1": producto.color1,
                     "color2": producto.color2,
-                    "url_image": `http://localhost:3050/images/Productos/${producto.imagen[0].Imagen}`,
+                    "url_image": `http://globaltech-grupo2.herokuapp.com/images/Productos/${producto.imagen[0].Imagen}`,
                     'endpoint': `/apiProducts/${producto.idProductos}`
                 })
             }else{
@@ -105,6 +108,105 @@ const apiProductsController ={
         }       
 
     },
+
+    lastDetail: async (req,res) =>{
+        
+        try {
+            const productos = await db.productos
+            .findAll({
+                include:{
+                    all:true,
+                    nested:true,                    
+                }
+            });
+
+            let arrayId = productos.map(id => id.idProductos)
+            let lastId = (Math.max(...arrayId))
+
+            let lastProductDetail;
+            productos.forEach(product => {
+                if(product.idProductos === lastId) {
+                    lastProductDetail = {
+                        id: product.idProductos,
+                        name: product.nombre,
+                        description: product.descripcion,
+                        image: product.imagen[0].Imagen,
+                        category: product.categorias.Categoria,
+                        price: product.precio,
+                        color1: product.color1,
+                        color2: product.color2,
+                        detail: `http://globaltech-grupo2.herokuapp.com/apiProducts/${product.idProductos}`
+                    }
+                }
+                return lastProductDetail;
+            })
+
+            if(productos){
+                res.status(200).json(lastProductDetail)
+            }else{
+                res.render('error', { title: 'Error', msg: 'No hay datos para mostrar' });
+            }
+        }
+
+        catch (error) {
+            console.log(error);
+            // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+            res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});        
+        }       
+
+    },
+
+    category: async (req,res) =>{
+        
+        try {
+            const allCategories =  await db.categorias.findAll({
+                    include:{
+                        all:true,
+                        nested:true
+                    }});
+
+            const totalCategories = allCategories.length;
+    
+            let countAll = function(id) {
+                let counter = 0;
+    
+                allCategories.forEach(category => {
+                    category.producto.forEach(product => {
+                        if(id === product.Categoria_idCategoria){
+                        counter++;
+                        }
+                    })                    
+                })
+                
+                return counter
+            }
+
+            const categoryDetail = allCategories.map(categoria => {
+                return {
+                    id: categoria.idCategoria,
+                    category: categoria.Categoria,
+                    totalProducts: countAll(categoria.idCategoria)
+                }
+            });
+    
+            if(allCategories) {
+                res.status(200).json({
+                    'status': 200,
+                    'endpoint': '/apiCategory',
+                    'countCategories': totalCategories,
+                    'data': categoryDetail,
+                })
+            }else{
+                res.status(404).json({'msg': 'No hay datos para mostrar'});
+            }
+        }
+        catch (error) {
+            console.log(error);
+            // res.render('error', { title: 'Error', msg: '500 - Ha ocurrido un error interno' });
+            res.status(500).json({'msg': '500 - Ha ocurrido un error interno'});        
+        }
+    
+    }
 
 }
 
