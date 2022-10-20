@@ -23,10 +23,10 @@ const validationsReg = [
     body('email')
         .notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
         .isEmail().withMessage('Debes escribir un formato de correo válido'),
-    body('nombre').notEmpty().withMessage('Debes ingresar un nombre'),
-    body('apellido').notEmpty().withMessage('Debes ingresar un apellido'),
-    body('nombreUser').notEmpty().withMessage('Debes ingresar un nombre de usuario'),
-    body('pais').notEmpty().withMessage('Debes seleccionar un país'),
+    body('name').notEmpty().withMessage('Debes ingresar un nombre'),
+    body('lastName').notEmpty().withMessage('Debes ingresar un apellido'),
+    body('userName').notEmpty().withMessage('Debes ingresar un nombre de usuario'),
+    body('country').notEmpty().withMessage('Debes seleccionar un país'),
     body('imagen').custom((value, {req}) => {
         let file = req.file;
         let acceptedExtensions = ['.jpg', '.png', '.gif', '.jpeg'];

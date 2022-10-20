@@ -19,9 +19,8 @@ const userController = {
                 errors: resultValidation.mapped(),
                 oldData: req.body
             });
-        }
-
-        db.usuarios.findOne({
+        }else{
+            db.usuarios.findOne({
             where: {email: req.body.email}
         })
         .then((resultado)=>{
@@ -46,11 +45,12 @@ const userController = {
                     terminosycondiciones: 1
                 })
                 .then((user) => {
-                    console.log(req.file);
                     res.redirect('/user/login');
                 })                
             }
-        })            
+        })
+        }        
+
     },
     login: (req, res) => {
         res.render("login");
