@@ -551,6 +551,10 @@ a{
 
             /*-- Caja de Categorías --*/
 
+            .categories h2 {
+                font-size: 35px;                
+            }
+
             .Mproducts {
                 display: flex;
                 justify-content: space-around;
