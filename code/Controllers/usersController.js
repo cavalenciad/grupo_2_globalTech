@@ -37,10 +37,10 @@ const userController = {
             }else{
                 db.usuarios.create({    
                     email: req.body.email,
-                    nombre: req.body.nombre,
-                    apellido: req.body.apellido,
-                    nombreusuario: req.body.nombreUser,
-                    pais: req.body.pais,
+                    nombre: req.body.name,
+                    apellido: req.body.lastName,
+                    nombreusuario: req.body.userName,
+                    pais: req.body.country,
                     imagen: req.file.filename,
                     contrasena: bcrypt.hashSync(req.body.contrasena, 10),
                     terminosycondiciones: 1
