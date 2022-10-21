@@ -1,26 +1,26 @@
 module.exports = {
   "development": {
     "username": "root",
-    "port": "5506",
-    "password": "jjWgjtRTZilHTCiGGP0U",
+    "port": "6534",
+    "password": "QOiztsRpizf1yIsg2HqE",
     "database": "railway",
-    "host": "containers-us-west-59.railway.app",
+    "host": "containers-us-west-92.railway.app",
     "dialect": "mysql",
   },
   "test": {
     "username": "root",
-    "port": "5506",
-    "password": "jjWgjtRTZilHTCiGGP0U",
+    "port": "6534",
+    "password": "QOiztsRpizf1yIsg2HqE",
     "database": "railway",
-    "host": "containers-us-west-59.railway.app",
+    "host": "containers-us-west-92.railway.app",
     "dialect": "mysql",
   },
   "production": {
     "username": "root",
-    "port": "5506",
-    "password": "jjWgjtRTZilHTCiGGP0U",
+    "port": "6534",
+    "password": "QOiztsRpizf1yIsg2HqE",
     "database": "railway",
-    "host": "containers-us-west-59.railway.app",
+    "host": "containers-us-west-92.railway.app",
     "dialect": "mysql",
   }
 }

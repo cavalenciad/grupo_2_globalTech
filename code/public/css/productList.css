@@ -552,7 +552,8 @@ a{
             /*-- Caja de Categorías --*/
 
             .categories h2 {
-                font-size: 35px;                
+                font-size: 48px;     
+                letter-spacing: 3px;           
             }
 
             .Mproducts {
