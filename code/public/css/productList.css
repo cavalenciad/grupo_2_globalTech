@@ -11,6 +11,8 @@
 p{
     margin-bottom: 0 !important;
     color: #ffffff;
+    width: 10%;
+    display: flex;
 }
 
 header {
@@ -284,6 +286,7 @@ a{
     position: relative;
     top: 100px;
     justify-content: center;
+   /*  opacity: 0.5; */
     
     
 }
@@ -305,8 +308,7 @@ a{
     font-size: 18px;
     text-align: center;
     padding-bottom: 10px;
-    
-
+    opacity: 0.8;
 }
 
 /*-- Caja de Productos --*/
@@ -334,11 +336,11 @@ a{
 } 
 
 .MproductsDetail {
-    margin: 7px;
+    margin-bottom: 288px;
     width: 100%;
-    height: auto;
-    background: #ffffff;
-    border-radius: 10px;
+    height: 250px;
+    padding-top: 250px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -355,6 +357,7 @@ a{
     height: auto;
     margin: 7px;
     border-radius: 10px;
+  
     
 }
 
@@ -365,17 +368,19 @@ a{
     margin-bottom: 5px;
     color: #23242a;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .MproductsDetail p {
     width: 100%;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 20px;
     color: #000;
     letter-spacing: 1px;
     padding: 10px;
     margin-bottom: 5px;
-
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -385,9 +390,10 @@ a{
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
-    border-radius: 5px;
+    border-radius: 13px;
     margin-bottom: 15px;
     transition: all 0.3 ease;
+    width: 86%;
 }
 
 .MproductsDetail a:hover {
@@ -505,6 +511,7 @@ a{
             justify-content: center;
         }
 
+
          /* ---------------- PIE DE PAGINA ---------- */
 
     .Sfooter img{
@@ -557,6 +564,7 @@ a{
             }
 
             .Mproducts {
+                width: 100%;
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
@@ -576,6 +584,22 @@ a{
                 text-align: center;
                 align-items: center;
                 justify-content: center;
+                padding-top: 30px;
+            }
+            /* 
+            hr{
+            color: #1EA1F2;
+            border-radius: 13px;
+            width: 87%;
+            position: relative;
+            left: 26px;
+            padding-top: 70px;
+            margin-bottom: 54px;
+            } */
+            
+
+            .MproductsDetail a {
+                width: 95%;
             }
 
              /* ---------------- PIE DE PAGINA ---------- */

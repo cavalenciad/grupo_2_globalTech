@@ -359,7 +359,7 @@ a{
   border-radius: 8px;
   background: #28292d;
   z-index: 1;
-  padding: 40px 40px;
+  padding: 100px 40px;
   display: flex;
   flex-direction: column;
 }

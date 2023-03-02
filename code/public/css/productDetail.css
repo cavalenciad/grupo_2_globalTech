@@ -31,6 +31,7 @@ header{
     background-color: #000;
     position: fixed;
     z-index: 1;
+
 }
 
 .Snavbar{
@@ -289,23 +290,32 @@ body{
     color: rgb(39, 39, 39);
     font-weight: 100;
     width: 100%;
-    padding: 10px;
+    padding: 16px;
     margin: 10px;
-    background:#ffffff;
+    background: #ffffff;
     border-radius: 10px;
     align-self: center;
+    position: relative;
+    bottom: 70px;
+    height: 516px;
+}
+
+.namePrice {
+    text-align: start;
+    
 }
 
 .namePrice .name{
     font-size: 50px;
     color: rgb(39, 39, 39);
-    text-align: center;
+    text-align: start;
 }
 
 .namePrice p{
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(39, 39, 39);
-    text-align: center;
+    text-align: start;
+   
 }
 
 .bigImage img{
@@ -556,13 +566,14 @@ body{
     /* ---------- DESCRIPCIÓN DE PRODUCTO -----------*/
 
     .container{
-        padding-top: 40px;
+        padding-top: 160px;
         width: 90%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 0 auto;
+        padding-bottom: 60px;
     }
     
     .productImage{

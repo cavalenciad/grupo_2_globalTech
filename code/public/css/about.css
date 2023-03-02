@@ -276,6 +276,7 @@ a{
 .SseccionPrincipalAbout h1{
    font-size: 40px;
    color: #00B8D4;
+   padding-bottom: 100px;
 }
 
 .SseccionPrincipalAbout p{
@@ -356,16 +357,33 @@ a{
     background-color: #00B8D4;
     color: white;
     transform: rotateY(180deg);
+    border-radius: 13px;
   }
 
   .ScardBack h5{
     width: 100%;
     font-size: 30px;
+    color: #000000;
+  }
+
+  b {
+    color: #000000;
   }
 
   .ScardBack p{
     margin: 10px;
     width: 100%;
+  }
+
+  hr{
+    color: #1EA1F2;
+    border-radius: 13px;
+    width: 87%;
+    position: relative;
+    left: 26px;
+    padding-top: 70px;
+    margin-bottom: 54px;
+    
   }
 
 
@@ -496,13 +514,23 @@ a{
 
 }
 
+.SseccionPrincipalAbout h1{
+  margin-top: -30px;
+}
+
+.SseccionPrincipalAbout p {
+  margin-top: 20px;
+}
+
          /* ------------ TARJETAS QUIENES SOMOS ----------- */
 
         .Scontenedor{
-            width: 85%;
-            display: flex;
-            flex-direction: row;
-            margin: 0 auto;
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          margin: 0 auto;
+          padding-top: 35px;
+          padding-bottom: 434px;
         }
         
           .Scard {
@@ -542,7 +570,7 @@ a{
         
           .ScardFront img{
             width: 100%;
-            height: auto;
+            height: 277px;
           }
           
           .ScardBack {
@@ -552,16 +580,26 @@ a{
             background-color: #00B8D4;
             color: white;
             transform: rotateY(180deg);
+            border-radius: 13px;
+            width: 100%;
           }
         
           .ScardBack h5{
             width: 100%;
             font-size: 30px;
+            color: #000000;
           }
         
           .ScardBack p{
             margin: 10px;
             width: 100%;
+          }
+
+          .hrStyle {
+
+            color: #1EA1F2;
+            padding-right: 55px;
+            height: 200px;
           }
     
         /* -------------- REDES SOCIALES FLOTANTES ------------ */
