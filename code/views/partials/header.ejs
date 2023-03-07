@@ -7,7 +7,14 @@
         <a href="/"><i class="fa-solid fa-house-user"></i> INICIO</a>
         <a href="/about-us"><i class="fa-solid fa-user-group"></i> SOBRE NOSOTROS</a>
         <a href="/products"><i class="fa-solid fa-shop"></i> CATÁLOGO DE PRODUCTOS</a>
-        <a href="/products/cart"><i class="fa-solid fa-cart-shopping"></i> CARRITO DE COMPRAS</a>
+        <a href="/products/cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>CARRITO DE COMPRAS</span>
+        <div>
+          <div class="contenedorDeNumero">
+            <P class="numeroDeCarrito"> 0 </P>
+          </div>
+        </div> </a>
         <% if(!locals.userLogged) {%> 
             <a href="/user/register"><i class="fa-solid fa-rectangle-list"></i> REGISTRO</a>
             <a href="/user/login"><i class="fa-solid fa-address-card"></i> LOGIN</a>

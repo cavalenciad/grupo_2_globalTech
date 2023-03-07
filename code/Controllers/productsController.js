@@ -2,6 +2,7 @@ const fs = require('fs');
 const db = require("../database/models");
 const Op = db.Sequelize.Op;
 const {validationResult} = require('express-validator');
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 const productsController = {
 
@@ -44,11 +45,11 @@ const productsController = {
             include: [{association: "imagen"}]
         })
         .then((producto) => {
-            res.render("productDetail", {producto});                       
+            res.render("productDetail", {producto, toThousand});                       
         })
     },
     productCart: (req, res) =>{
-        res.render("productCart");
+        res.render("productCart", {toThousand});
     },
     add: function (req, res) {
         /* let requestCategoria = db.categorias.findAll();

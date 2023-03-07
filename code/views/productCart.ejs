@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <title>Carrito de compras</title>
-    <link rel="stylesheet" href="/css/productCart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---head-->
+    <%- include("./partials/head.ejs", {title:"Carrito de compras", css:"/css/productCart.css"})%>
 
-</head>
 <body>
 
     <!--MENU DE NAVEGACIÓN-->
@@ -21,7 +14,7 @@
 
     <!-------banner------>
     <div id="Qtituloenbaner">
-        <img src="../images/images_productCart/banner-productCart.jpg" alt="banner carrito de compras" class="Qcabecera">
+        <img src="../images/m.jpg" alt="banner carrito de compras" class="Qcabecera">
         <a href="" class="Qtitulo">CARRITO DE COMPRAS<i class="fa-solid fa-cart-shopping"></i></a>
     </div>
 
@@ -38,58 +31,17 @@
 
             <!---------Productos-------->
             
-            <div class="Qproducto1">
-                <img src="/images/Productos/AcerNitro-Vista1.jpg">
-                <div class="QtextoProducto1">
-                    <p>Nombre producto: Portatil</p>
-                    <p>Precio: $2.840.000</p>
-                    <p>Eliminar</p>
-                </div>
-                <div class="QbotonAgregar">
-                    <button class="Qmenos">-</button>
-                    <button class="Qmas">+</button>
-                </div>
-            </div>
+            
 
             
-            <div class="Qproducto2">
-            
-                <img src="/images/Productos/Alienware-Vista1.jpg">
-                <div class="QtextoProducto2">
-                    <p>Nombre producto: Monitor</p>
-                    <p>Precio: $1.500.000</p>
-                    <p>Eliminar</p>
-                </div>
-                <div class="QbotonAgregar">
-                    <button class="Qmenos">-</button>
-                    <button class="Qmas">+</button>
-                </div>
-            </div>
-
-            
-            <div class="Qproducto3">
-                <img src="/images/Productos/Asus3090-Vista1.jpg">
-                <div class="QtextoProducto3">
-                    <p>Nombre producto: Gráfica</p>
-                    <p>Precio: $8.100.000</p>
-                    <p>Eliminar</p>
-                </div>
-
-                <div class="QbotonAgregar">
-                    <button class="Qmenos">-</button>
-                    <button class="Qmas">+</button>
-                </div>
-            </div>
-
-            <!--------total carrito--------->
-        
     </div>
+    <!--------total carrito--------->
     
 
     <div class="Qtotalcarrito">
         <div>
             <p><b>TOTAL DEL CARRITO</b></p>
-            <p>Subtotal: $000.000</p>
+            <p class="Qsubtotal">Subtotal: $000.000</p>
             <p>Total a pagar: $000.000 </p>
         </div>
         <div class="Qbotondecompra">
@@ -100,5 +52,6 @@
     <!-------- PIE DE PAGINA -------->
 
     <%- include("./partials/footer.ejs")%>
+    <script src="/js/carritoFront.js"></script>
 </body>
 </html>

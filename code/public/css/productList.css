@@ -8,6 +8,8 @@
     font-family: 'roboto';
 }
 
+ul{padding-left: 0;}
+
 p{
     margin-bottom: 0 !important;
     color: #ffffff;
@@ -151,6 +153,17 @@ a{
     color: #00B8D4;
 }
 
+p.numeroDeCarrito {
+    background-color: #fff;
+    display: inline-block;
+    color: #000;
+    padding: 3px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -8px;
+    font-size: 10px;
+}
 /* ---------- ICONO MENU HAMBURGUESA -------------- */
 
 .fa-bars{
@@ -380,7 +393,6 @@ a{
 }
 
 
-
 .MproductsDetail a {
     padding: 10px;
     color: #ffffff;
@@ -390,10 +402,30 @@ a{
     transition: all 0.3 ease;
 }
 
+
 .MproductsDetail a:hover {
     background-color: #2962FF;
 }
 
+.MproductsDetail button {
+    padding: 10px;
+    color: #ffffff;
+    background-color: #00B8D4;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3 ease;
+    border: 1px solid ;
+    font-size: 16px;
+    font-family: roboto;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #ffffff;
+    transition: ease 0.5s;
+}
+
+.MproductsDetail button:hover {
+    background-color: #2962FF;
+}
 
 /* -- PIE DE PAGINA -- */
 

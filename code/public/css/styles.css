@@ -8,6 +8,7 @@
     font-family: roboto;
 }
 
+
 p{
     margin-bottom: 0 !important;
     color: #fff;
@@ -150,6 +151,18 @@ a{
 .Snavbar a:hover{
     color: #00B8D4;
     font-weight: 800;
+}
+
+p.numeroDeCarrito {
+    background-color: #fff;
+    display: inline-block;
+    color: #000;
+    padding: 3px;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -8px;
+    font-size: 10px;
 }
 
 /* --------------- ESTILOS USUARIO --------------- */

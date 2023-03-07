@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/productList.css">
-    <title>Listado de Productos</title>
-</head>
+    <!---head-->
+    <%- include("./partials/head.ejs", {title:"Listado de productos", css:"/css/productList.css"})%>
+
 <body>
      <!-------- MENU DE NAVEGACIÓN -------->
      <%- include("./partials/header.ejs")%>
@@ -36,7 +30,8 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <a  href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </div>
             <% } %>
         <% } %>        
@@ -60,6 +55,7 @@
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
                     <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </div>
             <% } %>
         <% } %> 
@@ -83,6 +79,7 @@
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
                     <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </div>
             <% } %>
         <% } %>        
@@ -106,6 +103,7 @@
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
                     <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </div>
             <% } %>
         <% } %>        
@@ -129,6 +127,7 @@
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
                     <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </div>
             <% } %>
         <% } %> 
@@ -137,5 +136,6 @@
        
     <!-------- PIE DE PAGINA -------->
     <%- include("./partials/footer.ejs")%>
+    
 </body>
 </html>
