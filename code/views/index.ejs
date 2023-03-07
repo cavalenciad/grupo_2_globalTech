@@ -18,8 +18,12 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
         <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="images/images_index/slide-5.jpg" class="d-block w-100" alt="...">
+              </div>
           <div class="carousel-item active">
             <img src="images/images_index/slide-4.jpg" class="d-block w-100" alt="...">
           </div>
@@ -32,6 +36,7 @@
           <div class="carousel-item">
             <img src="images/images_index/slide-1.jpg" class="d-block w-100" alt="...">
           </div>
+          
         </div>
         
     </div>
@@ -46,10 +51,10 @@
 
     <!-------- SECCIÓN PRINCIPAL -------->
     <section class="SseccionPrincipalHome">
-        <h1><i class="fa-solid fa-gamepad-modern"></i>¡BIENVENIDO A GLOBAL TECH!</h1>
-        <p>Estamos muy contentos de tenerte aquí, de que puedas explorar la amplia variedad de tecnología gamer 
+        <h1><i class="fa-solid fa-gamepad-modern"></i> EXPLORAR PRODUCTOS </h1>
+       <!--  <p>Estamos muy contentos de tenerte aquí, de que puedas explorar la amplia variedad de tecnología gamer 
             que tenemos para ti y por supuesto de que te sientas comodo y seguro al adquirir los productos que te haran 
-            muy feliz. Esperamos que sea de gran agrado el recorrido por nuestra pagina.</p>
+            muy feliz. Esperamos que sea de gran agrado el recorrido por nuestra pagina.</p> -->
     </section>
 
     <!-------- SECCIÓN PRODUCTOS DESTACADOS -------->
@@ -107,18 +112,20 @@
     <!-------- SECCIÓN PRODUCTOS HOME -------->
     <section class="SseccionProductosHome">
         <h2>PRODUCTOS MÁS VENDIDOS</h2>
-        <p>Para Global Tech es de suma importancia brindar una excelente experiencia a nuestros usuarios,
+        <!-- <p>Para Global Tech es de suma importancia brindar una excelente experiencia a nuestros usuarios,
             incluso mientras se deleitan observando la gran cantidad de productos que podemos ofrecerles,
             por este motivo te mostramos a continuación los productos mas comprados por nuestros clientes.
-        </p>
+        </p> -->
     </section>
 
     <div class="SproductosDestacados">
         <% featured.forEach(featured => { %>
         <div class="Sproducto">
-            <img src="/images/Productos/<%= featured.imagen1 %>" alt="<%=featured.nombre%>"/>
+            <a href="products">
+            <img src="/images/Productos/<%= featured.imagen1 %>" alt="<%=featured.nombre%>">
             <h4><%= featured.nombre%></h4>
             <p class="Sprecio"><%= featured.precio%></p>
+        </a>
             <!-- <a href=""><i class="fas fa-info-circle"></i> Más información</a> -->
         </div>
         <% }) %>

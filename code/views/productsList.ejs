@@ -21,8 +21,10 @@
     </section>
 
     <div class="Mproducts">
+        
         <% for( let i = 0; i < producto.length; i++ ) { %>
             <% if (producto[i].categorias.Categoria == "Consolas") { %>  
+                <a href="/products/productDetail/<%= producto[i].idProductos %>">
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -30,12 +32,15 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a  href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
-                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
+                </a> 
                 </div>
+            
             <% } %>
-        <% } %>        
+         
+        <% } %>   
+       
     </div>
+
 
         <!-- Categoría Periféricos y Accesorios -->
 
@@ -44,9 +49,12 @@
         <p>Como si fuera poco, tenemos un amplio grupo de accesorios y periféricos, que se adaptan perfectamente a los diferentes productos y gustos del cliente que, además de volver mas fácil el uso de los equipos, también ayudan  a tener una mejor experiencia brindando entretenimiento y comodidad al usuario.</p>
     </section>
 
+    
     <div class="Mproducts">
+        
         <% for( let i = 0; i < producto.length; i++ ) { %>
-            <% if (producto[i].categorias.Categoria == "Perifericos") { %>  
+            <% if (producto[i].categorias.Categoria == "Perifericos") { %> 
+                <a href="/products/productDetail/<%= producto[i].idProductos %>"> 
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -54,9 +62,9 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
-                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
+                    </a>
                 </div>
+            
             <% } %>
         <% } %> 
     </div>
@@ -65,12 +73,14 @@
 
     <section class="categories" id="portatiles">
         <h2>Portátiles Gamer</h2>
+        <!-- <hr> -->
         <p>Los portátiles para video juegos combinan la potencia de las maquinas de escritorio con la movilidad de los equipos portátiles, ya no necesitas estar en casa en tu set up de escritorio, ahora puedes jugar y realizar tareas que precisen de un buen equipo desde cualquier lugar del mundo.</p>
     </section>
 
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
             <% if (producto[i].categorias.Categoria == "Portatiles") { %>  
+                <a href="/products/productDetail/<%= producto[i].idProductos %>">
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -78,9 +88,9 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
-                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
+                   </a>
                 </div>
+               
             <% } %>
         <% } %>        
     </div>
@@ -95,6 +105,7 @@
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
             <% if (producto[i].categorias.Categoria == "Hardware") { %>  
+                <a href="/products/productDetail/<%= producto[i].idProductos %>">
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -102,8 +113,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
-                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
+                    </a>
                 </div>
             <% } %>
         <% } %>        
@@ -119,6 +129,7 @@
     <div class="Mproducts">
         <% for( let i = 0; i < producto.length; i++ ) { %>
             <% if (producto[i].categorias.Categoria == "Celulares") { %>  
+                <a href="/products/productDetail/<%= producto[i].idProductos %>">
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -126,8 +137,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
-                    <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a>
-                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
+                    </a>
                 </div>
             <% } %>
         <% } %> 

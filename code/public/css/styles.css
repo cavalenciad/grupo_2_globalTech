@@ -309,6 +309,7 @@ p.numeroDeCarrito {
 .SseccionPrincipalHome h1{
    font-size: 40px;
    color: #00B8D4;
+   /* display: flex; */
 }
 
 .SseccionPrincipalHome p{
@@ -398,7 +399,6 @@ p.numeroDeCarrito {
 }
 
 .SproductosDestacados div{
-    background-color: #ffffff;
     margin-top: 13px;
     margin-bottom: 13px;
     width: 100%;
@@ -417,10 +417,13 @@ p.numeroDeCarrito {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+   /*  background-color: #1EA1F2; */
 }
 
 .Sproducto img{
-    width: 55%;
+    width:98%;
+    border-radius: 20px;
+  
 }
 
 .Sproducto h4{
@@ -428,7 +431,7 @@ p.numeroDeCarrito {
     font-size: 24px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #2962FF;
+    color: #000;
     letter-spacing: 1px;
 }
 
@@ -447,10 +450,11 @@ p.numeroDeCarrito {
 }
 
 .Sproducto a{
+    width: 90%;
     padding: 10px;
     color: #ffffff;
     background-color: #00B8D4;
-    border-radius: 5px;
+    border-radius: 13px;
     box-shadow: 0px 0px 3px #c3c3c3;
     margin-bottom: 15px;
     transition: all 0.3 ease;
@@ -636,7 +640,8 @@ header img{
 }
 
     .Sproducto img{
-        width: 65%;
+        width: 100%;
+        
 }
 
     
@@ -732,7 +737,7 @@ header img{
 }
 
     .Sproducto img{
-        width: 65%;
+        width: 100%;
 }
 
     /* ---------------- FONDO FIJO ---------- */

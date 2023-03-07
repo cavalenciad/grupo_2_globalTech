@@ -326,12 +326,13 @@ scroll-page {
   align-items: center;
   min-height: 140vh;
   background-color: #23242a;
+  padding-bottom: 80px;
 }
 
 .box
 {
   position: relative;
-  width: 500px;
+  width: 98%;
   height: 930px;
   background: #1c1c1c;
   border-radius: 8px;
@@ -381,7 +382,7 @@ scroll-page {
   border-radius: 8px;
   background: #28292d;
   z-index: 1;
-  padding: 40px 40px;
+  padding: 100px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -485,6 +486,7 @@ input[type="file"]
 }
 .links p
 {
+  font-size: 14px;
   margin: 20px ;
   color: white;
   text-align: justify;

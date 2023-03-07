@@ -13,6 +13,7 @@ const userController = {
     createUser: (req, res) => {
        
         const resultValidation = validationResult(req);
+        console.log(resultValidation);
 
         if (resultValidation.errors.length > 0) {
             res.render('register', {
