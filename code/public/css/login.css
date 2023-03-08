@@ -327,11 +327,15 @@ p.numeroDeCarrito {
 .box
 {
   position: relative;
-  width: 480px;
+  width: 301px;
   height: 450px;
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
+  margin-top: 111px;
+  width: 92%;
+  margin-bottom: 72px;
+  margin-left: 30px;
 }
 
 .box::before
@@ -372,12 +376,14 @@ p.numeroDeCarrito {
 }
 .form
 {
+  width: 99%;
+  margin-right: 200px;
   position: absolute;
   inset: 2px;
   border-radius: 8px;
   background: #28292d;
   z-index: 1;
-  padding: 100px 40px;
+  padding: 84px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -413,7 +419,7 @@ p.numeroDeCarrito {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 97%;
   height: 2px;
   background: #00b8d4;
   border-radius: 4px;
@@ -524,8 +530,8 @@ input[type="submit"]:hover
 @media (min-width: 0px) and (max-width: 576px) {
 
   .box{
-    height: 450px;
-    width: 500px;
+    height: 478px;
+    width: 379px;
   }
   
   .box::after {
@@ -717,6 +723,19 @@ input[type="submit"]:hover
   .dataUser i {
     display: none;
   }
+
+  form {
+    width: 99%;
+    margin-top: -60px;
+    padding-bottom: 134px;
+    padding-right: 20px;
+    padding-left: 15px;
+  } 
+
+  .box {
+    height: 498px;
+  }
+
 
   /* ---------------- PIE DE PAGINA ---------- */
   /*.box {

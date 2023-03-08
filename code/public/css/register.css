@@ -700,10 +700,14 @@ input[type="submit"]:hover
 /* body {
   min-height: 176vh;
 } */
-
+.form {
+  margin-top: 1px;
+}
 .box{
-  height: 930px;
+  height: 950px;
   width: 500px;
+  margin-top: 114px;
+  padding-bottom: 11px; 
 }
 
 .box::after {

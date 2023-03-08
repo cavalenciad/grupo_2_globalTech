@@ -266,6 +266,8 @@ p.numeroDeCarrito {
   background: #1c1c1c;
   border-radius: 8px;
   overflow: hidden;
+  margin-top: 105px;
+  margin-bottom: 61px;
 }
 
 .box::before

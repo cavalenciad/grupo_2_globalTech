@@ -34,7 +34,7 @@ let container = document.querySelector(".Qcontenedor")
                     <p>Nombre producto: ${product.name}</p>
                     <p> Precio: ${product.price}  </p>
                     <p>Cantidad: ${item.quantity}</p>
-                    <p>Eliminar</p>
+                    
                 </div>
                 <div class="QbotonAgregar">
                     <button class="Qmenos">-</button>

@@ -16,7 +16,7 @@
 
     <!-- Categoría Consolas -->
      <section class="categories" id="consolas">
-        <h2>Consolas de Video Juegos</h2>
+        <h2>CONSOLAS DE VIDEO JUEGOS</h2>
         <p>Para aquellos que les encantan los video juegos, pero que no quieren gastar sumas astronómicas en set ups de escritorio o portátiles para video juegos, la opción que mas se adapta son las consolas, ya que ofrecen un excelente rendimiento por un menor precio, además, debemos tener en cuenta los juegos exclusivos de cada marca para sus consolas y así comprar la que mejor se acomode a nuestros gustos y presupuestos.</p>
     </section>
 
@@ -25,6 +25,7 @@
         <% for( let i = 0; i < producto.length; i++ ) { %>
             <% if (producto[i].categorias.Categoria == "Consolas") { %>  
                 <a href="/products/productDetail/<%= producto[i].idProductos %>">
+                
                 <div class="MproductsDetail">
                     <% for( let j = 0; j < producto[i].imagen.length; j++ ) { %>
                         <img src="/images/Productos/<%= producto[i].imagen[0].Imagen %>" alt="<%=producto[i].nombre%>"/>
@@ -32,6 +33,8 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
+                    <!-- <a href="/products/productDetail/<%= producto[i].idProductos %>">Más Información</a> -->
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                 </a> 
                 </div>
             
@@ -45,7 +48,7 @@
         <!-- Categoría Periféricos y Accesorios -->
 
     <section class="categories" id="perifericos">
-        <h2>Periféricos y Accesorios</h2>
+        <h2><b>PERIFÉRICOS Y ACCESORIOS</b></h2>
         <p>Como si fuera poco, tenemos un amplio grupo de accesorios y periféricos, que se adaptan perfectamente a los diferentes productos y gustos del cliente que, además de volver mas fácil el uso de los equipos, también ayudan  a tener una mejor experiencia brindando entretenimiento y comodidad al usuario.</p>
     </section>
 
@@ -62,6 +65,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                     </a>
                 </div>
             
@@ -72,7 +76,7 @@
      <!-- Categoría Portátiles Gamer -->
 
     <section class="categories" id="portatiles">
-        <h2>Portátiles Gamer</h2>
+        <h2><b>PORTÁTILES GAMER</b></h2>
         <!-- <hr> -->
         <p>Los portátiles para video juegos combinan la potencia de las maquinas de escritorio con la movilidad de los equipos portátiles, ya no necesitas estar en casa en tu set up de escritorio, ahora puedes jugar y realizar tareas que precisen de un buen equipo desde cualquier lugar del mundo.</p>
     </section>
@@ -88,6 +92,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                    </a>
                 </div>
                
@@ -98,7 +103,7 @@
     <!-- Categoría Hardware -->
 
     <section class="categories" id="hardware">
-        <h2>Hardware</h2>
+        <h2><b>HARDWARE</b></h2>
         <p> Tendremos todo tipo de componentes para que puedas personalizar tu computador de cualquier manera, nos enfocamos en equipos para diseño, modelado 3D, Videojuegos de última  generación, realidad aumentada, contamos con equipos de todas las gamas que se acomodan a todo tipo de presupuesto.</p>
     </section>
 
@@ -113,6 +118,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                     </a>
                 </div>
             <% } %>
@@ -122,7 +128,7 @@
      <!-- Categoría SmartPhones -->
 
     <section class="categories" id="celulares">
-        <h2>SmartPhones Gamer</h2>
+        <h2><b>SMART PHONES</b></h2>
         <p> Aquellas personas que les gusta la portabilidad, la facilidad de llevar en cualquier momento un equipo potente y disfrutar de sus video juegos favoritos, tenemos una excelente gama de equipos celulares en los que, además de integrar las funcionalidades de un smartphone tradicional, contará con potencia y capacidad para soportar gran cantidad de títulos.</p>
     </section>
 
@@ -137,6 +143,7 @@
                     <% } %>
                     <h4><%= producto[i].nombre%></h4>
                     <p>$ <%= producto[i].precio%></p>
+                    <button class="Qagregarcarrito" data-id="<%= producto[i].idProductos %>">Agregar al carrito</button>
                     </a>
                 </div>
             <% } %>

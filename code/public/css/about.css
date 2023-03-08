@@ -392,11 +392,12 @@ p.numeroDeCarrito {
     color: #1EA1F2;
     border-radius: 13px;
     width: 87%;
+    height: 100px;
     position: relative;
     left: 26px;
     padding-top: 70px;
     margin-bottom: 54px;
-    
+    margin-top: 4px;
   }
 
 
@@ -533,6 +534,7 @@ p.numeroDeCarrito {
 
 .SseccionPrincipalAbout p {
   margin-top: 20px;
+  font-size: 25px;
 }
 
          /* ------------ TARJETAS QUIENES SOMOS ----------- */

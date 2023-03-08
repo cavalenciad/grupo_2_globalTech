@@ -175,6 +175,7 @@ const productsController = {
             res.redirect("/products")
         })
     }
+
 }
 
 module.exports = productsController;

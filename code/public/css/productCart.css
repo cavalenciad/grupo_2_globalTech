@@ -323,7 +323,7 @@ a{
 
 .Qcantidad{
     position: relative;
-    left: 3%;
+    right: 7px;
 }
 
 .Qcontenedor {
@@ -343,6 +343,7 @@ a{
 .Qcontenedor p{
     color: #000000 !important;
     margin-top: 8px;
+    font-size: 10px;
 }
 
 .Qcontenedor p:last-child{
@@ -351,6 +352,7 @@ a{
 
 .Qproducto1, .Qproducto2, .Qproducto3{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     margin-left: -22px;
@@ -439,7 +441,7 @@ a{
 .Qbotondecompra button {
     background-color: #00B8D4 ;
     border-radius: 5px;
-    width: 15%;
+    width: 20%;
     height: 35px;
     border: none;
     margin: 15px;
@@ -542,7 +544,7 @@ a{
     .Qbotondecompra button{
         background-color: #00B8D4;
         border-radius: 5px;
-        width: 40%;
+        width: 58%;
         height: 30px;
         border: none;
         margin: 15px;
@@ -728,6 +730,10 @@ a{
         font-size: 20px;
         position: relative;
         left: 25px;
+    }
+
+    .Qcontenedor p {
+        font-size: 20px;
     }
 
     .Qcantidad{

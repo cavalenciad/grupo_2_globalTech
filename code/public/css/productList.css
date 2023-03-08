@@ -15,6 +15,7 @@ p{
     color: #ffffff;
     width: 10%;
     display: flex;
+    font-size: 25px;
 }
 
 header {
@@ -156,6 +157,8 @@ a{
 }
 
 p.numeroDeCarrito {
+    width: 1%;
+    text-align: center;
     background-color: #fff;
     display: inline-block;
     color: #000;
@@ -318,7 +321,7 @@ p.numeroDeCarrito {
 .categories p {
     width: 87%;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     padding-bottom: 10px;
     opacity: 0.8;
@@ -401,7 +404,7 @@ p.numeroDeCarrito {
 .MproductsDetail a {
     padding: 10px;
     color: #ffffff;
-    background-color: #00B8D4;
+    background-color: #fff;
     border-radius: 13px;
     margin-bottom: 15px;
     transition: all 0.3 ease;
@@ -410,7 +413,7 @@ p.numeroDeCarrito {
 
 
 .MproductsDetail a:hover {
-    background-color: #2962FF;
+    background-color: #00B8D4;
 }
 
 .MproductsDetail button {
@@ -571,7 +574,25 @@ p.numeroDeCarrito {
 
             .dataUser i {
                 display: none;
-            }        
+            }  
+            
+            .dataUser img {
+
+            }
+
+            .dataUser #text {
+                
+            }
+            .user p {
+                position: relative;
+                right: 17px;
+                font-size: 19px;
+            }
+
+            .user img{
+                position: relative;
+                left: 46px;
+            }
 
             /* -------------- REDES SOCIALES FLOTANTES ------------ */
 
@@ -598,6 +619,7 @@ p.numeroDeCarrito {
             .Mproducts {
                 width: 100%;
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-around;
                 flex-direction: row;
                 padding: 15px;
@@ -618,6 +640,54 @@ p.numeroDeCarrito {
                 justify-content: center;
                 padding-top: 30px;
             }
+
+            .MproductsDetail a{
+                background: #fff;
+            }
+
+            .MproductsDetail a:hover {
+                background-color: #00B8D4;
+            }
+            
+            .MproductsDetail button {
+                padding: 10px;
+                height: 44px;
+                color: #ffffff;
+                background-color: #212529;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                transition: all 0.3 ease;
+                border: 1px solid ;
+                font-size: 16px;
+                font-family: roboto;
+                letter-spacing: 2px;
+                font-weight: 600;
+                color: #ffffff;
+                transition: ease 0.5s;
+            }
+            
+            .MproductsDetail button:hover {
+                background-color: #2962FF;
+            }
+
+            button {
+                background-color: #4CAF50; /* Color de fondo */
+                border: none; /* Sin borde */
+                color: white; /* Color del texto */
+                padding: 12px 24px; /* Tamaño del relleno */
+                text-align: center; /* Alineación del texto */
+                text-decoration: none; /* Sin subrayado */
+                display: inline-block; /* Mostrar como bloque en línea */
+                font-size: 16px; /* Tamaño de fuente */
+                margin: 4px 2px; /* Margen */
+                cursor: pointer; /* Cursor al pasar por encima */
+                border-radius: 20px; /* Radio de borde */
+              } 
+
+              p.numeroDeCarrito {
+                width: 1%;
+                text-align: center;
+              }
             /* 
             hr{
             color: #1EA1F2;

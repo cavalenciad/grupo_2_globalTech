@@ -289,10 +289,13 @@ body{
 /* ---------- IMAGEN Y DESCRIPCIÓN DE PRODUCTO ----------*/
 
 .container{
-    width: 100%;
-    display : flex;
-    flex-direction : row;
+    width: 91%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-left: 34px;
+    margin-bottom: 28px;
+    padding-top: 104px; 
 }
 
 .productImage{
@@ -309,9 +312,7 @@ body{
     background: #ffffff;
     border-radius: 10px;
     align-self: center;
-    position: relative;
-    bottom: 70px;
-    height: 516px;
+    height: 822px;
 }
 
 .namePrice {
@@ -367,21 +368,29 @@ body{
 }
 
 .blockDescription{
-    width: 100%;
-    margin: 5px;
-    padding: 5px;
+    width: 131%;
+    margin: 6px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .blockDescription label {
+    position: relative;
+    right: 109px;
+  }
 
 #color{
     background-color: transparent;
-    width: 30%;
+    width: 53%;
     position: relative;
     border-radius: 5px;
     padding: 9px;
-    left: 20px;
+    right: 56px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px #9d9d9d;
     margin: 5px;
@@ -395,9 +404,9 @@ body{
     border: none;
     background-color: #00B8D4;
     position: relative;
-    width: 30%;
+    width: 53%;
     padding: 9px;
-    left: 20px;
+    right: 56px;
     border-radius: 10px;
     box-shadow: 0px 0px 3px #9d9d9d;
     margin: 5px;
@@ -411,6 +420,7 @@ body{
 
 .textDescription{
     width: 100%;
+    font-size: 18px;
     margin: 5px;
     padding: 5px;
     text-align: justify;

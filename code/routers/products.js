@@ -62,6 +62,9 @@ router.put("/productDetail/:id/editProducts", upload.array('imagen', 4), validat
 
 router.delete("/productDetail/:id", productsController.destroy);
 
+router.delete("/productCart/:id", productsController.destroy)
+
+
 
 
 module.exports = router;
